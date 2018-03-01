@@ -1,0 +1,23 @@
+
+footer{
+	min-height: 560px;
+	position: relative;
+	padding: 40px;
+	p{
+
+		color: #BBD1E2;
+		font-family: $medium;
+		text-transform: uppercase;
+		text-align: center;
+		@include font-size(20px);
+		line-height: 20px;
+		&.copy{
+			text-transform: none;
+		}
+		@media(max-width: 767px){
+			//line-height: 28px;
+	   	}
+
+}
+	}
+

@@ -1,0 +1,49 @@
+//Tipografía
+//@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,700");
+
+$black: 'Gotham-Black', arial, sans-serif;
+$bold: 'Gotham-Bold', arial, sans-serif;
+$bold-italic: 'Gotham-Bold-Italic', arial, sans-serif;
+$medium: 'Gotham-Medium', arial, sans-serif;
+
+
+//Colores
+$color-principal: $negro;
+$color-link: $rosa;
+$color-link-menu: $cafe;
+$color-hover: darken($color-link, 20%);
+$color-parrafo: #1A171B;
+$size: 16px;
+
+//Rems
+//Set a rem font size with pixel fallback
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+// Pesos
+
+@mixin bold($size, $color-principal){
+  font-weight: 700;
+  color: $color-principal;
+  @include font-size($size);
+}
+@mixin regular($size, $color-principal){
+  font-weight: 400;
+  color: $color-principal;
+  @include font-size($size);
+}
+@mixin light($size, $color-principal){
+  font-weight: 300;
+  color: $color-principal;
+  @include font-size($size);
+}
+
+
+

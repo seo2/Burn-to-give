@@ -1,0 +1,68 @@
+
+section.aporte{
+	//min-height: 500px;
+	padding: 20px;
+	form{
+		  	display: inline-block;
+		  	margin-bottom: 40px;
+   		//	margin: 0 auto 40px auto;
+   			position: relative;
+	   			img{
+	   				margin: 0 30px;
+	   				@media(max-width: 767px){
+						position: absolute;
+						left: -20px;
+						bottom: 70px;
+	   				}
+   			}
+		.form-group {
+			.form-control{
+				width: 380px;
+				height: 175px;
+				text-align: center;
+				color: $naranjo;
+				font-family: $bold;
+				padding: 0;
+				@include font-size(150px);
+				@media(max-width: 767px){
+					width: 280px;
+					height: 130px;
+	   			}
+
+
+			}
+		}
+		.btn-enviar-calorias{
+			background-color: transparent;
+			background: url(../img/btn-donar.png);
+			background-size: cover;
+			background-position: center;
+			border: none;
+			width: 185px;
+			height: 175px;
+		}
+	}
+	p{
+
+		color: #fff;
+		font-family: $black;
+		text-transform: uppercase;
+		text-align: center;
+		@media(max-width: 767px){
+			line-height: 28px;
+	   	}
+		&.txt1{
+			@include font-size(30px);
+			margin-bottom: 30px;
+		}
+		&.txt2{
+			@include font-size(28px);
+			a{
+				@include link;
+				color:$amarillo;
+
+			}
+		}
+
+	}
+}

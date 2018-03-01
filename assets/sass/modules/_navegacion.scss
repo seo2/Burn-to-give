@@ -1,0 +1,293 @@
+			.navbar-brand{
+
+				// position: absolute;
+				// display: block;
+				// top: 20px;
+				// z-index: 1000;
+				// height: auto;
+				// padding: 0;
+				@media(max-width: 767px){
+					//left: 50px;
+					width: 44px;
+					padding: 5px;
+
+				}
+				// img#logo-desk{
+				// 	width: 170px;
+				// 	height: auto;
+				// 	@media(max-width: 768px){
+				// 		width: 130px;
+				// 	}
+				// 	@media(max-width: 767px){
+				// 		display: none;
+				// 	}
+				// }
+
+			}
+			// .logo-xs{
+			// 	display: none;
+			// 	@media(max-width: 767px){
+			// 		display:block;
+			// 		//margin-bottom: 20px;
+			// 		//width: 130px;
+			// 	}
+			// 	img#logo-mobile{
+			// 		width: 60px;
+			// 		height: auto;
+			// 		position: absolute;
+			// 		top: 10px;
+			// 		@media(min-width: 768px){
+			// 			display: none;
+			// 		}
+			// 	}
+			// }
+section#site-header{
+	//min-height: 350px;
+	position: relative;
+
+	#main-nav{
+		margin-bottom: 0;
+		background-color: transparent;
+		border-radius: 0;
+		border-color: transparent;
+		min-height: auto;
+		position: relative;
+		z-index: 1000;
+		@media(max-width: 767px){
+			min-height: 80px;
+		}
+
+		#navbar{
+
+			background-color: $celeste-fondo;
+			position: absolute;
+			top: 30px;
+			right: 0;
+			@media(max-width: 767px){
+				//padding-left: 30px;
+				position: relative;
+				top: auto;
+				right: auto;
+				border-color: transparent;
+				box-shadow: none;
+				background-color: $celeste-fondo;
+
+			}
+			ul#nav-list{
+				padding: 10px 15px;
+				margin-right: 75px;
+				@media(max-width: 767px){
+					padding: 20px 15px;
+					margin-right: 0;
+				}
+				li{
+					@media(max-width: 767px){
+						&#btn-ingresa-xs{
+							padding: 5px;
+							background-color: $naranjo;
+							a{
+								color: white;
+							}
+						}
+
+					}
+
+					&.active{
+						background-color: transparent;
+					}
+					&.active a {
+						background-color: transparent;
+						color: lighten($vino, 20%);
+					}
+
+					@media(max-width: 767px){
+					 	margin-bottom: 20px;
+					}
+					a{
+
+						@include link;
+						color: #444444;
+						text-transform: uppercase;
+						@include font-size(12px);
+						font-family: $bold;
+						padding: 0 10px;
+						line-height: 22px;
+						@media(max-width: 1023px){
+							@include font-size(14px);
+						}
+						@media(max-width: 767px){
+							@include font-size(20px);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+// #sub-menu, #sub-menu-2{
+
+// 	position: absolute;
+// 	min-height: 440px;
+// 	background: white;
+// 	width: 100%;
+// 	margin-top: 110px;
+// 	z-index: 100;
+// 	padding: 100px 0 0 0;
+// 	background-color: white;
+// 	opacity: 1;
+// 	transition: all 0.5s ease-in-out;
+// 	top: 0;
+//  	&.clander, &.clander2{margin-top: -450px; opacity: 0;}
+
+// }
+
+// #fig-header-reveal-wrapper {
+//   	display: none;
+//     position: absolute;
+//     right: 20px;
+//     top: 82px;
+//     width: 50%;
+//     max-width: 700px;
+//     padding: 3.125rem 2rem 1.875rem 2rem;
+//     z-index: 100;
+//     background-color: #fff;
+// 	&.chamber{
+// 		display:block;
+// 	}
+//     .fig-header-reveal-block {
+//         text-align: center;
+//         //padding: .9375rem;
+//         @media(min-width: 768px){
+//         	    padding: 0;
+//         }
+
+//         a{
+//         	display: inline-block;
+//         	cursor: pointer;
+//         	text-align: center;
+//         	@include link;
+//         	color: $gris-texto-caja-conacto;
+//         //	@include link;
+//         	span{
+//         		&.icon-Mail{
+// 					background: url(../img/ico-email.svg) no-repeat;
+// 					width: 36px;
+// 					height: 25px;
+// 					display:inline-block;
+// 					vertical-align: top;
+// 					margin-bottom: 15px;
+
+//         		}
+//         		&.icon-Phone{
+// 					background: url(../img/ico-wasap.svg) no-repeat;
+// 					width: 29px;
+// 					height: 30px;
+// 					display:inline-block;
+// 					vertical-align: top;
+// 					margin-bottom: 15px;
+//         		}
+//         		&.icon-Phone2{
+// 					background: url(../img/ico-fono.svg) no-repeat;
+// 					width: 25px;
+// 					height: 40px;
+// 					display:inline-block;
+// 					vertical-align: top;
+// 					margin-bottom: 7px;
+
+//         		}
+
+//         	}
+//     		p{
+//     			margin-bottom: 0;
+//     			padding: 0;
+//     			//line-height: 0;
+//     			margin-bottom: 10px;
+//     			&.text{
+// 	    			font-family: $bold;
+// 	    			font-weight: 400;
+// 	    			text-transform: uppercase;
+// 					@include font-size(10px);
+// 					color: $gris-texto-caja-conacto;
+//     			}
+//     		}
+
+
+
+// 		}
+//     }
+
+// }
+
+
+
+
+
+// #sub-menu-experiences-container{
+
+// 	background-color: $invierno;
+// 	position: absolute;
+//     bottom: 0;
+//     width: 100%;
+//     @media(max-width: 768px){
+//     	position: relative;
+//     	padding: 30px;
+//     }
+//     .menu-list-wrapper{
+//     	position: relative;
+// 		min-height: 90px;
+// 		width: 100%;
+// 	    ul{
+// 			@include centerer(false, true);
+// 			//width: 100%;
+// 			width: 100%;
+// 			display: block;
+// 			padding:0;
+// 			list-style-type: none;
+// 	    	li{
+// 				display: inline-block;
+// 				padding: 0 6px;
+// 				&:first-child{
+// 					padding-left: 0;
+// 				}
+// 				&:last-child{
+// 					padding-right: 0;
+// 				}
+// 	    		@media(max-width: 767px){
+// 	    			margin-bottom: 8px;
+// 	    			display: block;
+// 	    			padding: 0px;
+// 	    		}
+// 	    		a{
+// 	    			//display: inline-block;
+// 	    			padding-top: 0;
+// 	    			padding-bottom: 0;
+// 					text-decoration: none;
+// 					font-family: $bold;
+// 	    			color: $vino;
+// 	    			@include font-size(16px);
+// 	    			 transition: all 0.3s ease-in-out;
+// 	    			//@include link;
+// 	    			&:hover{
+// 	    				background-color: transparent;
+// 	    				color: $gris-oscuro;
+
+// 	    			}
+// 	    			&:focus{
+// 	    				background-color: transparent;
+// 	    			}
+// 	    			@media(max-width: 767px){
+// 	    				@include font-size(18px);
+// 	    			}
+// 	    		}
+// 	    	}
+// 	    }
+//     }
+
+
+// }
+
