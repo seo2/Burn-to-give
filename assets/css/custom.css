@@ -606,9 +606,18 @@ section.compra-polera {
   background: #bg-gris; }
 
 footer {
-  min-height: 560px;
   position: relative;
   padding: 40px; }
+  footer .logos-footer .grid-4 {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 200px;
+    grid-gap: 10px; }
+  footer .logos-footer .grid-3 {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 200px;
+    grid-gap: 10px; }
   footer p {
     color: #BBD1E2;
     font-family: "Gotham-Medium", arial, sans-serif;

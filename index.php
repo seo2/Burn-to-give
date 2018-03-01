@@ -40,7 +40,13 @@
 	</section> <!-- status -->
 	<section class="compra-polera section">
 		<div class="container">
-			<img class="img-responsive" src="assets/img/compra-polera.jpg" alt="">
+			<div class="row">
+				<div class="col-sm-12">
+					<img class="img-responsive center-block" src="assets/img/compra-polera.jpg" alt="">
+				</div>
+			</div>
+
+
 		</div>
 
 	</section> <!-- compra polera -->

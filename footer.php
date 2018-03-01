@@ -8,6 +8,21 @@
 				</div>
 			</div>
 			<section class="logos-footer clearfix">
+					<div class="grid-4">
+							<img class="img-responsive" src="https://api.fnkr.net/testimg/200x200/00CED1/FFF/?text=img+placeholder">
+							<img class="img-responsive" src="https://api.fnkr.net/testimg/200x200/00CED1/FFF/?text=img+placeholder">
+							<img class="img-responsive" src="https://api.fnkr.net/testimg/200x200/00CED1/FFF/?text=img+placeholder">
+							<img class="img-responsive" src="https://api.fnkr.net/testimg/200x200/00CED1/FFF/?text=img+placeholder">
+
+						</div>
+						<div class="grid-3">
+									<img class="img-responsive" src="https://api.fnkr.net/testimg/300x200/00CED1/FFF/?text=img+placeholder">
+									<img class="img-responsive" src="https://api.fnkr.net/testimg/300x200/00CED1/FFF/?text=img+placeholder">
+									<img class="img-responsive" src="https://api.fnkr.net/testimg/300x200/00CED1/FFF/?text=img+placeholder">
+							</div>
+
+
+
 					<p class="copy">© 2018 Burn to give <br>
 					Versión 0.1 Beta</p>
 			</section> <!-- logos footer -->

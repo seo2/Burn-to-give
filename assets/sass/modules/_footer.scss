@@ -1,8 +1,24 @@
 
 footer{
-	min-height: 560px;
+	//min-height: 560px;
 	position: relative;
 	padding: 40px;
+	.logos-footer{
+		.grid-4{
+			display: grid;
+			grid-template-columns: 25% 25% 25% 25%;
+	  		grid-template-rows: 200px;
+	  		grid-gap: 10px
+		}
+		.grid-3{
+			display: grid;
+			grid-template-columns: 33% 33% 33% ;
+	  		grid-template-rows: 200px;
+	  		grid-gap: 10px
+		}
+
+	}
+
 	p{
 
 		color: #BBD1E2;
