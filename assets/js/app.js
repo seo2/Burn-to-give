@@ -1,4 +1,4 @@
-
+//$('#main-nav').offcanvas();
 
 // ===== Scroll to Top ====
               $(window).scroll(function() {

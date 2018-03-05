@@ -3,37 +3,35 @@ footer{
 	//min-height: 560px;
 	position: relative;
 	padding: 40px;
+	.logo-footer{
+		margin-bottom: 20px;
+		margin-top: 90px;
+		@media(max-width: 767px){
+					margin-top: 30px;
+		}
+	}
 	.logos-footer{
-		.grid-4{
-			display: grid;
-			grid-template-columns: 25% 25% 25% 25%;
-	  		grid-template-rows: 200px;
-	  		grid-gap: 10px
-		}
-		.grid-3{
-			display: grid;
-			grid-template-columns: 33% 33% 33% ;
-	  		grid-template-rows: 200px;
-	  		grid-gap: 10px
-		}
-
+		margin: 70px 0 0px 0;
+		@media(max-width: 767px){
+					margin: 20px 0 0px 0;
+			   	}
 	}
 
-	p{
+			p{
 
-		color: #BBD1E2;
-		font-family: $medium;
-		text-transform: uppercase;
-		text-align: center;
-		@include font-size(20px);
-		line-height: 20px;
-		&.copy{
-			text-transform: none;
+				color: #BBD1E2;
+				font-family: $medium;
+				text-transform: uppercase;
+				text-align: center;
+				@include font-size(20px);
+				line-height: 20px;
+				&.copy{
+					text-transform: none;
+				}
+				@media(max-width: 767px){
+					//line-height: 28px;
+			   	}
+
 		}
-		@media(max-width: 767px){
-			//line-height: 28px;
-	   	}
-
-}
 	}
 

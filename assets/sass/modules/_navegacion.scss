@@ -41,10 +41,55 @@
 			// 		}
 			// 	}
 			// }
-section#site-header{
-	//min-height: 350px;
-	position: relative;
 
+
+			html, body {
+  height: 100%;
+}
+
+.navbar-toggle {
+  float: left;
+  margin-left: 15px;
+}
+
+.navmenu {
+  z-index: 1;
+}
+
+.canvas {
+  position: relative;
+  left: 0;
+  z-index: 2;
+  min-height: 100%;
+  padding: 50px 0 0 0;
+  background: #fff;
+}
+
+@media (min-width: 0) {
+  .navbar-toggle {
+    display: block; /* force showing the toggle */
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    padding: 0;
+  }
+  .navbar {
+    right: auto;
+    background: none;
+    border: none;
+  }
+  .canvas {
+    padding: 0;
+  }
+}
+
+
+.main-nav-wrapper {
+	padding: 0px 0px 20px 0px;
+	display: block;
+}
 	#main-nav{
 		margin-bottom: 0;
 		background-color: transparent;
@@ -59,59 +104,61 @@ section#site-header{
 
 		#navbar{
 
-			background-color: $celeste-fondo;
-			position: absolute;
-			top: 30px;
-			right: 0;
-			@media(max-width: 767px){
-				//padding-left: 30px;
-				position: relative;
-				top: auto;
-				right: auto;
-				border-color: transparent;
-				box-shadow: none;
-				background-color: $celeste-fondo;
+			background-color: $celeste-menu;
+			padding-bottom: 30px;
+			position: relative;
+			border-color: transparent;
+			box-shadow: none;
+			background-color: $celeste-menu;
 
-			}
 			ul#nav-list{
-				padding: 10px 15px;
-				margin-right: 75px;
+				//padding: 10px 15px;
+			//	margin-right: 75px;
+
 				@media(max-width: 767px){
-					padding: 20px 15px;
-					margin-right: 0;
+			//		padding: 20px 15px;
+			//		margin-right: 0;
 				}
 				li{
+
+					margin: 0;
+					padding: 20px 0;
+					background-color: $azul-item;
 					@media(max-width: 767px){
-						&#btn-ingresa-xs{
-							padding: 5px;
-							background-color: $naranjo;
-							a{
-								color: white;
-							}
-						}
+						// &#btn-ingresa-xs{
+						// 	padding: 5px;
+						// 	background-color: $naranjo;
+						// 	a{
+						// 		color: white;
+						// 	}
+						// }
+
 
 					}
-
+					&:first-child{
+						margin-top: 40px;
+					}
 					&.active{
 						background-color: transparent;
 					}
+					&.odd{
+						background-color: $celeste-menu;
+					}
 					&.active a {
-						background-color: transparent;
-						color: lighten($vino, 20%);
+						// background-color: transparent;
+						// color: lighten($vino, 20%);
 					}
 
 					@media(max-width: 767px){
-					 	margin-bottom: 20px;
+					 //	margin-bottom: 20px;
 					}
 					a{
 
-						@include link;
-						color: #444444;
+						text-align: center;
 						text-transform: uppercase;
-						@include font-size(12px);
-						font-family: $bold;
-						padding: 0 10px;
-						line-height: 22px;
+						@include font-size(40px);
+						font-family: $black;
+						color: white;
 						@media(max-width: 1023px){
 							@include font-size(14px);
 						}
@@ -119,11 +166,13 @@ section#site-header{
 							@include font-size(20px);
 						}
 					}
+
+
 				}
 			}
 		}
 	}
-}
+
 
 
 

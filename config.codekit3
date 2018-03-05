@@ -7,13 +7,20 @@
 		"uuidString": "066117C4-7F36-4B47-954C-3712EF0C86B2"
 		}
 	],
-"creatorBuild": "26268",
+"creatorBuild": "26330",
 "files": {
 	"\/.gitattributes": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/.gitattributes",
+		"oF": 0
+		},
+	"\/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/.gitignore",
 		"oF": 0
 		},
 	"\/assets\/css\/custom.css": {
@@ -44,6 +51,36 @@
 		"oA": 1,
 		"oAP": "\/assets\/css\/fonts-min.css",
 		"oF": 3,
+		"oS": 3
+		},
+	"\/assets\/css\/jasny-bootstrap.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/css\/jasny-bootstrap.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/css\/owl.carousel.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/css\/owl.carousel.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/css\/owl.theme.default.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/css\/owl.theme.default.min-min.css",
+		"oF": 0,
 		"oS": 3
 		},
 	"\/assets\/fonts\/fontawesome-webfont.eot": {
@@ -281,6 +318,14 @@
 		"oAP": "\/assets\/fonts\/GothamMedium.woff2",
 		"oF": 0
 		},
+	"\/assets\/img\/ajax-loader.gif": {
+		"ft": 4194304,
+		"iS": 3208,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ajax-loader.gif",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/assets\/img\/banner-xs.jpg": {
 		"ft": 16384,
 		"iS": 113596,
@@ -312,6 +357,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/assets\/img\/cerrar.png": {
+		"ft": 32768,
+		"iS": 4263,
+		"oA": 0,
+		"oAP": "\/assets\/img\/cerrar.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/img\/compra-polera.jpg": {
 		"ft": 16384,
 		"iS": 52389,
@@ -327,6 +383,17 @@
 		"iS": 3873,
 		"oA": 0,
 		"oAP": "\/assets\/img\/flecha.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/ico-user.png": {
+		"ft": 32768,
+		"iS": 5633,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ico-user.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -355,6 +422,61 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/assets\/img\/logo-ingresa.png": {
+		"ft": 32768,
+		"iS": 12788,
+		"oA": 0,
+		"oAP": "\/assets\/img\/logo-ingresa.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/logo-mobile.png": {
+		"ft": 32768,
+		"iS": 5695,
+		"oA": 0,
+		"oAP": "\/assets\/img\/logo-mobile.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/logos-footer.png": {
+		"ft": 32768,
+		"iS": 23967,
+		"oA": 0,
+		"oAP": "\/assets\/img\/logos-footer.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/owl.video.play.png": {
+		"ft": 32768,
+		"iS": 4976,
+		"oA": 0,
+		"oAP": "\/assets\/img\/owl.video.play.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/texto-ingresa.png": {
+		"ft": 32768,
+		"iS": 15720,
+		"oA": 0,
+		"oAP": "\/assets\/img\/texto-ingresa.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/js\/app.js": {
 		"ft": 64,
 		"ma": 0,
@@ -362,6 +484,26 @@
 		"oA": 1,
 		"oAP": "\/assets\/js\/app-min.js",
 		"oF": 1,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/assets\/js\/jasny-bootstrap.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/jasny-bootstrap.min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/assets\/js\/owl.carousel.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/owl.carousel.min-min.js",
+		"oF": 0,
 		"sC": 0,
 		"tS": 0
 		},
@@ -1114,6 +1256,20 @@
 		"oAP": "\/assets\/sass\/.sass-cache\/907a4e1d4c499db19624fb58ec436aa934d858c1\/_footer.scssc",
 		"oF": 0
 		},
+	"\/assets\/sass\/.sass-cache\/907a4e1d4c499db19624fb58ec436aa934d858c1\/_header.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/.sass-cache\/907a4e1d4c499db19624fb58ec436aa934d858c1\/_header.scssc",
+		"oF": 0
+		},
+	"\/assets\/sass\/.sass-cache\/907a4e1d4c499db19624fb58ec436aa934d858c1\/_ingresa.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/.sass-cache\/907a4e1d4c499db19624fb58ec436aa934d858c1\/_ingresa.scssc",
+		"oF": 0
+		},
 	"\/assets\/sass\/.sass-cache\/907a4e1d4c499db19624fb58ec436aa934d858c1\/_navegacion.scssc": {
 		"cB": 0,
 		"ft": 8192,
@@ -1593,6 +1749,32 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/sass\/modules\/_header.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/modules\/_header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/sass\/modules\/_ingresa.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/modules\/_ingresa.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/sass\/modules\/_navegacion.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -1684,6 +1866,20 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/datos-usuario.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/datos-usuario.php",
+		"oF": 0
+		},
+	"\/datos.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/datos.php",
+		"oF": 0
+		},
 	"\/footer.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1705,11 +1901,25 @@
 		"oAP": "\/index.php",
 		"oF": 0
 		},
+	"\/ingresa.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ingresa.php",
+		"oF": 0
+		},
 	"\/main-nav.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/main-nav.php",
+		"oF": 0
+		},
+	"\/modal-calcula-calorias.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/modal-calcula-calorias.php",
 		"oF": 0
 		}
 	},

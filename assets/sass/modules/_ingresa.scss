@@ -1,0 +1,249 @@
+header{
+	&.fondo-degradado-naranja{
+		padding: 20px 0;
+		@media(max-width:768px){
+			min-height: 300px;
+
+		}
+	}
+	&.fondo-celeste{
+		min-height: 220px;
+		.cerrar{
+			position: absolute;
+			right: 20px;
+			top: 20px;
+		}
+	}
+	.logo-ingresa{
+		margin-left: 15px;
+		@media(max-width:768px){
+			width: 80px;
+
+		}
+	}
+	.texto-ingresa{
+		@media(max-width:768px){
+			//width: 170px;
+
+		}
+	}
+}
+section.ingresa{
+
+	.con-facebook{
+		min-height: 340px;
+		padding-top: 100px;
+		margin-bottom: 20px;
+		p{
+			background-color: #33b2e9;
+			@include font-size(30px);
+			text-transform: uppercase;
+			color: white;
+			font-family: $bold;
+			text-align: center;
+			padding: 50px 0;
+
+		}
+		a{
+			//@include link;
+			//background-color: #fff;
+		}
+	}
+	.con-email{
+		padding: 30px 15px;
+		min-height: 340px;
+		margin-bottom: 20px;
+
+		p{
+					//background-color: #33b2e9;
+					@include font-size(30px);
+					text-transform: uppercase;
+					color: white;
+					font-family: $bold;
+					text-align: center;
+					//padding: 50px 0;
+					@media(max-width:768px){
+
+						@include font-size(28px);
+					}
+
+				}
+
+
+					.form-group{
+						max-width: 600px;
+						margin-top: 80px;
+						@media(max-width:768px){
+							margin-top: 60px;
+						}
+						.form-control{
+							text-align:center;
+							height: 80px;
+							@include font-size(30px);
+							font-family: $bold;
+
+						}
+					}
+
+	}
+	.datos{
+		@extend .con-email;
+		padding: 40px 0;
+		margin-bottom: 30px;
+
+		.form-group{
+			position: relative;
+			margin: 0 auto 30px auto;
+			::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+
+				    font-family: $bold-italic;
+				    color: $gris;
+				    opacity: 1; /* Firefox */
+				    @include font-size(20px);
+				     @media(max-width:768px){
+				 		@include font-size(16px);
+				 	}
+
+				}
+				.ico-user{
+					position: absolute;
+					left: 15px;
+					top: 15px;
+				}
+
+				:-ms-input-placeholder { /* Internet Explorer 10-11 */
+
+				    font-family: $bold-italic;
+				    color: $gris;
+				    @include font-size(20px);
+				      @media(max-width:768px){
+				 		@include font-size(16px);
+				 	}
+
+				}
+
+				::-ms-input-placeholder { /* Microsoft Edge */
+
+				    font-family: $bold-italic;
+				    color: $gris;
+				    @include font-size(20px);
+				      @media(max-width:768px){
+				 		@include font-size(16px);
+				 	}
+
+				}
+
+			.form-control{
+
+				@include font-size(30px);
+				font-family: $bold;
+				color: black;
+				     @media(max-width:768px){
+						@include font-size(16px);
+					}
+
+				option{
+
+							//color: $gris;
+				}
+
+			}
+			select.form-control{
+				font-family: $bold;
+				background-color: $amarillo;
+				border: none;
+
+			//text-align: center;
+				color: #f87b3b;
+				@include font-size(20px);
+			}
+		}
+	}
+	.datos-calorias{
+		background-color: #fff;
+		margin-top: -30px;
+		padding: 30px 15px;
+		@media(max-width:768px){
+			padding: 20px 15px;
+		}
+		.box-calorias{
+
+			max-width: 600px;
+			display: block;
+			margin: 0 auto;
+			h3{
+				@include font-size(40px);
+				 font-family: $black;
+				 color: #bbbbb8;
+				 text-align: center;
+				 	margin-bottom: 30px;
+				 	display: inline-block;
+
+				 //	line-height: 20px;
+				 @media(max-width:768px){
+				 	@include font-size(30px);
+
+				 }
+			}
+			p{
+				&.equivalente{
+						@include font-size(28px);
+				 		font-family: $bold-italic;
+				 		color: $naranjo;
+				 		text-align: center;
+				 		@media(max-width:768px){
+							@include font-size(26px);
+				 		}
+				 		@media(max-width:320px){
+							@include font-size(20px);
+				 		}
+				}
+			}
+			.box-total{
+				border: 1px solid $naranjo;
+				margin-bottom: 15px;
+				padding: 5px;
+				border-radius: 4px;
+				p{
+					margin: 0;
+					padding: 0;
+					@include font-size(46px);
+				 		font-family: $black;
+				 		@media(max-width:768px){
+							@include font-size(26px);
+				 		}
+				 		@media(max-width:320px){
+							@include font-size(20px);
+				 		}
+					&.total{
+				 		color: $gris;
+					}
+					&.numero{
+				 		color: $naranjo;
+					}
+				}
+
+			}
+			.bloque{
+				border: 1px solid $naranjo;
+				padding-top: 10px;
+				margin-bottom: 20px;
+				border-radius: 4px;
+				p{
+					@include font-size(28px);
+			 		font-family: $bold;
+
+			 		@media(max-width:768px){
+						@include font-size(18px);
+			 		}
+					&.fecha{
+						color: $gris;
+					}
+					&.calorias{
+						color: $naranjo;
+					}
+				}
+			}
+		}
+	}
+}

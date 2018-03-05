@@ -1,4 +1,10 @@
 
+	.linea-gris{
+		max-width: 600px;
+		height: 2px;
+		border-bottom: 3px solid $gris;
+		margin-bottom: 30px;
+	}
 	h2{
 
 		font-family: $black;
@@ -34,6 +40,13 @@
 	}
 
 //.hide-beta{display: none !important;}
+	.fondo-celeste{
+		background: #00a2e9;
+		background: -moz-linear-gradient(top, #00a2e9 0%, #00a2e9 100%);
+		background: -webkit-linear-gradient(top, #00a2e9 0%,#00a2e9 100%);
+		background: linear-gradient(to bottom, #00a2e9 0%,#00a2e9 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a2e9', endColorstr='#00a2e9',GradientType=0 );
+	}
 	.fondo-degradado-naranja{
 		background: #fac118; /* Old browsers */
 		background: -moz-linear-gradient(top, #fac118 0%, #f8763e 44%, #f55f2c 100%); /* FF3.6-15 */
@@ -90,6 +103,7 @@
 	text-align: center;
 	//width: 100px;
 	//height: 42px;
+
 	a{
 		display:block;
 		cursor: pointer;
@@ -107,6 +121,32 @@
 			color: black;
 		}
 	}
+}
+.bt-naranjo{
+		background-color: $naranjo;
+			border: none;
+		//display:block;
+		//cursor: pointer;
+		//font-weight: 800;
+		//width: 100px;
+		//height: 42px;
+		padding: 40px 70px 30px 70px;
+		@include font-size(40px);
+		//font-style: italic;
+		font-family: $black;
+		@include link;
+		color: white;
+		text-transform: uppercase;
+		border-bottom: 15px solid #f45223;
+		&:hover, &:focus{
+			color: white;
+			background-color: lighten($naranjo, 5%);
+		}
+		@media(max-width:768px){
+			padding: 20px;
+			@include font-size(30px);
+		}
+
 }
 
 
