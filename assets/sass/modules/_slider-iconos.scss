@@ -1,0 +1,120 @@
+
+.slider-wrapper{
+		width: 60%;
+		margin-bottom: 50px;
+		margin-left: auto;
+		margin-right: auto;
+		@media(max-width:767px){
+			width: 50%;
+		}
+	}
+
+
+	   .slider-iconos {
+	        position: relative;
+	       //padding: 0 15px 0 15px;
+	     //  width: 60%;
+	       margin-bottom: 50px;
+	      	.item {
+	            position: relative;
+
+	        }
+
+	      .owl-nav{
+	        margin: 0;
+	        &.disabled {
+	          display: none;
+	        }
+	      }
+
+	      .owl-dots {
+
+			position: absolute;
+			right: 80px;
+			bottom:10px;
+			margin: 0;
+			@media(max-width: 768px){
+				position: relative;
+				right: auto;
+				bottom: auto;
+				margin-top: 10px;
+			}
+	        &.disabled {
+	            display: none;
+	        }
+	        .owl-dot {
+	            span {
+	                 //border: 2px solid white;
+	                  background: black;
+	                  border-radius: 50px;
+	                  height: 10px;
+	                  width: 10px;
+	                  cursor: pointer;
+	                  opacity: 0.7;
+	                  @media(max-width: 767px){
+	                      margin-left: 5px;
+	                      margin-right: 5px;
+	                  }
+
+	            }
+			// boton activo
+	             &.active span{
+	          			  background-color:#EF1B1C;
+	          		}
+
+
+	          }
+	          // .owl-dot.active {
+	          //     span {
+
+	          //     }
+	          // }
+
+	        } // dots
+	        .owl-next, .owl-prev {
+	               width:29px;
+	               height: 52px;
+	               position: absolute;
+	               text-indent: -9999px;
+	               top: 50%;
+	               margin-top: -25px;
+	               cursor:pointer;
+	                opacity: 0.9;
+	              // @include transition(all 0.2s ease-in-out);
+	                  &:hover {
+	                   background-color: transparent;
+	                   opacity: 0.5;
+	                 }
+	                  @media (max-width:767px){
+	                    // display: none;
+	                 }
+	        }
+
+	         .owl-next {
+	             background: url(../img/next.png) no-repeat !important;
+	             right: -45px;
+	                 @media (max-width:1024px){
+	                  // right: 30px;
+	                 //  margin-top: -30px !important;
+	               }
+	                @media (max-width:768px){
+	                   right: -45px;
+	               }
+	         }
+	         .owl-prev {
+	             background: url(../img/prev.png) no-repeat !important;
+	             left: -45px;
+	             @media (max-width:1024px){
+	               //  margin-top: -30px !important;
+	             }
+	               @media (max-width:768px){
+	                   left: -45px;
+	               }
+	         }
+
+	      }
+
+
+
+
+

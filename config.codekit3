@@ -23,6 +23,20 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
+	"\/ajax\/_lib\/config.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/config.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/MysqliDb.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/MysqliDb.php",
+		"oF": 0
+		},
 	"\/assets\/css\/custom.css": {
 		"aP": 1,
 		"bl": 0,
@@ -357,6 +371,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/assets\/img\/cerrar-modal.png": {
+		"ft": 32768,
+		"iS": 4517,
+		"oA": 0,
+		"oAP": "\/assets\/img\/cerrar-modal.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/img\/cerrar.png": {
 		"ft": 32768,
 		"iS": 4263,
@@ -400,9 +425,141 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/assets\/img\/iconos\/bici.png": {
+		"ft": 32768,
+		"iS": 1865,
+		"oA": 0,
+		"oAP": "\/assets\/img\/iconos\/bici.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/iconos\/boxeo.png": {
+		"ft": 32768,
+		"iS": 1554,
+		"oA": 0,
+		"oAP": "\/assets\/img\/iconos\/boxeo.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/iconos\/correr.png": {
+		"ft": 32768,
+		"iS": 1823,
+		"oA": 0,
+		"oAP": "\/assets\/img\/iconos\/correr.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/iconos\/correrai.png": {
+		"ft": 32768,
+		"iS": 1838,
+		"oA": 0,
+		"oAP": "\/assets\/img\/iconos\/correrai.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/iconos\/futbol.png": {
+		"ft": 32768,
+		"iS": 1889,
+		"oA": 0,
+		"oAP": "\/assets\/img\/iconos\/futbol.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/iconos\/ico-correr.png": {
+		"ft": 32768,
+		"iS": 6375,
+		"oA": 0,
+		"oAP": "\/assets\/img\/iconos\/ico-correr.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/iconos\/natacion.png": {
+		"ft": 32768,
+		"iS": 1770,
+		"oA": 0,
+		"oAP": "\/assets\/img\/iconos\/natacion.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/iconos\/pesas.png": {
+		"ft": 32768,
+		"iS": 1492,
+		"oA": 0,
+		"oAP": "\/assets\/img\/iconos\/pesas.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/iconos\/surf.png": {
+		"ft": 32768,
+		"iS": 1588,
+		"oA": 0,
+		"oAP": "\/assets\/img\/iconos\/surf.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/iconos\/tenis.png": {
+		"ft": 32768,
+		"iS": 1709,
+		"oA": 0,
+		"oAP": "\/assets\/img\/iconos\/tenis.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/iconos\/yoga.png": {
+		"ft": 32768,
+		"iS": 1769,
+		"oA": 0,
+		"oAP": "\/assets\/img\/iconos\/yoga.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/igual.png": {
+		"ft": 32768,
+		"iS": 3695,
+		"oA": 0,
+		"oAP": "\/assets\/img\/igual.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/img\/logo-footer.png": {
 		"ft": 32768,
-		"iS": 13529,
+		"iS": 167947,
 		"oA": 0,
 		"oAP": "\/assets\/img\/logo-footer.png",
 		"oF": 0,
@@ -455,11 +612,33 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/assets\/img\/next.png": {
+		"ft": 32768,
+		"iS": 4642,
+		"oA": 0,
+		"oAP": "\/assets\/img\/next.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/img\/owl.video.play.png": {
 		"ft": 32768,
 		"iS": 4976,
 		"oA": 0,
 		"oAP": "\/assets\/img\/owl.video.play.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/prev.png": {
+		"ft": 32768,
+		"iS": 4226,
+		"oA": 0,
+		"oAP": "\/assets\/img\/prev.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -1270,11 +1449,25 @@
 		"oAP": "\/assets\/sass\/.sass-cache\/907a4e1d4c499db19624fb58ec436aa934d858c1\/_ingresa.scssc",
 		"oF": 0
 		},
+	"\/assets\/sass\/.sass-cache\/907a4e1d4c499db19624fb58ec436aa934d858c1\/_modales.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/.sass-cache\/907a4e1d4c499db19624fb58ec436aa934d858c1\/_modales.scssc",
+		"oF": 0
+		},
 	"\/assets\/sass\/.sass-cache\/907a4e1d4c499db19624fb58ec436aa934d858c1\/_navegacion.scssc": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/sass\/.sass-cache\/907a4e1d4c499db19624fb58ec436aa934d858c1\/_navegacion.scssc",
+		"oF": 0
+		},
+	"\/assets\/sass\/.sass-cache\/907a4e1d4c499db19624fb58ec436aa934d858c1\/_slider-iconos.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/.sass-cache\/907a4e1d4c499db19624fb58ec436aa934d858c1\/_slider-iconos.scssc",
 		"oF": 0
 		},
 	"\/assets\/sass\/.sass-cache\/907a4e1d4c499db19624fb58ec436aa934d858c1\/_status.scssc": {
@@ -1707,7 +1900,7 @@
 		"oA": 0,
 		"oAP": "\/assets\/css\/custom.css",
 		"oF": 2,
-		"oS": 0,
+		"oS": 2,
 		"uL": 0
 		},
 	"\/assets\/sass\/modules\/_aporte.scss": {
@@ -1775,6 +1968,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/sass\/modules\/_modales.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/modules\/_modales.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/sass\/modules\/_navegacion.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -1784,6 +1990,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/assets\/sass\/modules\/_navegacion.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/sass\/modules\/_slider-iconos.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/modules\/_slider-iconos.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

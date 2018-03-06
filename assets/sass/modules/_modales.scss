@@ -1,0 +1,144 @@
+#modal-calcula{
+	.modal-dialog{
+		@media (min-width: 768px){
+			width: 750px;
+		    margin: 30px auto;
+		}
+
+		.modal-content{
+			.modal-header{
+				border-bottom: none;
+				button{
+					&.close{
+						opacity: 1;
+						margin-top: 20px;
+						margin-right: 20px;
+					}
+				}
+			}
+			.modal-body{
+				h2{
+					@include font-size(50px);
+					color: $gris;
+					font-family: $black;
+					text-transform: uppercase;
+					@media (max-width: 767px){
+						@include font-size(35px);
+					}
+				}
+				h3{
+					@include font-size(25px);
+					text-align: center;
+					color: #159fdd;
+					font-family: $medium;
+					text-transform: uppercase;
+					margin-bottom: 30px;
+				}
+				p{
+					@include font-size(25px);
+					text-align: center;
+					color: #159fdd;
+					font-family: $medium;
+					text-transform: uppercase;
+					line-height: 24px;
+					&.nota{
+						@include font-size(20px);
+					}
+				}
+				form#formCalculaCalorias{
+					//background-color: tomato;
+					.calculadora{
+						min-height: 200px;
+						position: relative;
+						display: block;
+						padding: 30px 0;
+
+						.col-sm-3{
+							width: 33% !important;
+							text-align: center;
+							@media(max-width:767px){
+								@include font-size(20px);
+									float: none;
+									margin: 0 auto;
+
+							}
+						}
+
+						.igual{
+							position: absolute;
+							top: 84px;
+							right: 240px;
+							@include font-size(50px);
+							color: white;
+							line-height:0;
+
+							@media(max-width:767px){
+								@include font-size(40px);
+								left: 68px;
+								top: 323px;
+								color: white;
+							}
+						}
+						p{
+							color: white;
+							font-family: $medium;
+							@include font-size(25px);
+							text-transform: uppercase;
+							text-align: center;
+							margin-top: 20px;
+							@media(max-width:767px){
+								@include font-size(12px);
+								margin-top: 10px;
+								margin-left: 10px;
+							}
+						}
+						.bloque-blanco{
+							width: 140px;
+							height: 110px;
+							background-color: #fff;
+							border-radius: 6px;
+							position: relative;
+							@media(max-width:767px){
+								width: 80px;
+								height: 80px;
+							}
+
+						}
+					}
+					button{
+						margin-bottom: 50px;
+					}
+					.form-group{
+						position: relative;
+
+						.form-control{
+							width: 140px;
+							height: 110px;
+							background-color: #fff;
+							border-radius: 6px;
+							border: none;
+							font-family: $bold;
+							color: $gris;
+							@include font-size(60px);
+							text-align: center;
+							padding: 0;
+							letter-spacing: -2px;
+							display: inline-block;
+							@media(max-width:767px){
+								width: 80px;
+								height: 80px;
+								@include font-size(40px);
+							}
+
+						}
+					}
+				}
+
+
+			}
+			.modal-footer{
+					border-top: none;
+				}
+		}
+	}
+}

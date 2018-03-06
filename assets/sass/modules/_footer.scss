@@ -3,18 +3,25 @@ footer{
 	//min-height: 560px;
 	position: relative;
 	padding: 40px;
-	.logo-footer{
-		margin-bottom: 20px;
-		margin-top: 90px;
-		@media(max-width: 767px){
-					margin-top: 30px;
-		}
-	}
+
 	.logos-footer{
 		margin: 70px 0 0px 0;
+
 		@media(max-width: 767px){
 					margin: 20px 0 0px 0;
 			   	}
+			   	.grilla-logos{
+			   		margin-bottom: 90px;
+			   		@media(max-width: 767px){
+						margin-bottom: 30px;
+					}
+			   	}
+			   	.logo-footer{
+					margin-bottom: 20px;
+				//	margin-top: 90px;
+					max-width: 70px;
+
+				}
 	}
 
 			p{

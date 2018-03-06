@@ -148,6 +148,13 @@
 		}
 
 }
+.bt-ok{
+	padding: 30px 150px 20px 150px;
+	@media(max-width:767px){
+			padding: 40px 90px 30px 90px;
+			@include font-size(30px);
+		}
+}
 
 
 
