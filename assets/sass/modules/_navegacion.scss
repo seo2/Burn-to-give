@@ -1,103 +1,8 @@
-			.navbar-brand{
-
-				// position: absolute;
-				// display: block;
-				// top: 20px;
-				// z-index: 1000;
-				// height: auto;
-				// padding: 0;
-				@media(max-width: 767px){
-					//left: 50px;
-					width: 44px;
-					padding: 5px;
-
-				}
-				// img#logo-desk{
-				// 	width: 170px;
-				// 	height: auto;
-				// 	@media(max-width: 768px){
-				// 		width: 130px;
-				// 	}
-				// 	@media(max-width: 767px){
-				// 		display: none;
-				// 	}
-				// }
-
-			}
-			// .logo-xs{
-			// 	display: none;
-			// 	@media(max-width: 767px){
-			// 		display:block;
-			// 		//margin-bottom: 20px;
-			// 		//width: 130px;
-			// 	}
-			// 	img#logo-mobile{
-			// 		width: 60px;
-			// 		height: auto;
-			// 		position: absolute;
-			// 		top: 10px;
-			// 		@media(min-width: 768px){
-			// 			display: none;
-			// 		}
-			// 	}
-			// }
 
 
-			html, body {
-  height: 100%;
-}
 
-.navbar-toggle {
-  float: left;
-  margin-left: 15px;
-}
-
-.navmenu {
-  z-index: 1;
-}
-
-.canvas {
-  position: relative;
-  left: 0;
-  z-index: 2;
-  min-height: 100%;
-  padding: 50px 0 0 0;
-  background: #fff;
-}
-
-@media (min-width: 0) {
-  .navbar-toggle {
-    display: block; /* force showing the toggle */
-  }
-}
-
-@media (min-width: 992px) {
-  body {
-    padding: 0;
-  }
-  .navbar {
-    right: auto;
-    background: none;
-    border: none;
-  }
-  .canvas {
-    padding: 0;
-  }
-}
-
-
-.main-nav-wrapper {
-	padding: 0px 0px 20px 0px;
-	display: block;
-}
 	#main-nav{
-		margin-bottom: 0;
-		background-color: transparent;
-		border-radius: 0;
-		border-color: transparent;
-		min-height: auto;
-		position: relative;
-		z-index: 1000;
+
 		@media(max-width: 767px){
 			min-height: 80px;
 		}
@@ -111,232 +16,89 @@
 			box-shadow: none;
 			background-color: $celeste-menu;
 
-			ul#nav-list{
-				//padding: 10px 15px;
-			//	margin-right: 75px;
 
-				@media(max-width: 767px){
-			//		padding: 20px 15px;
-			//		margin-right: 0;
-				}
-				li{
-
-					margin: 0;
-					padding: 20px 0;
-					background-color: $azul-item;
-					@media(max-width: 767px){
-						// &#btn-ingresa-xs{
-						// 	padding: 5px;
-						// 	background-color: $naranjo;
-						// 	a{
-						// 		color: white;
-						// 	}
-						// }
-
-
-					}
-					&:first-child{
-						margin-top: 40px;
-					}
-					&.active{
-						background-color: transparent;
-					}
-					&.odd{
-						background-color: $celeste-menu;
-					}
-					&.active a {
-						// background-color: transparent;
-						// color: lighten($vino, 20%);
-					}
-
-					@media(max-width: 767px){
-					 //	margin-bottom: 20px;
-					}
-					a{
-
-						text-align: center;
-						text-transform: uppercase;
-						@include font-size(40px);
-						font-family: $black;
-						color: white;
-						@media(max-width: 1023px){
-							@include font-size(14px);
-						}
-						@media(max-width: 767px){
-							@include font-size(20px);
-						}
-					}
-
-
-				}
-			}
 		}
 	}
 
 
 
 
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: #0390d0;
+    overflow-x: hidden;
+    transition: 0.5s;
 
+    	a{
+			padding: 8px;
+			text-decoration: none;
+			font-size: 36px;
+			color: #818181;
+			display: block;
+			transition: 0.3s;
+	    	&:hover, &:focus{
+				color: #f1f1f1;
+	    	}
+	}
+	.closebtn {
+	    position: absolute;
+	    top: 20px;
+	    right: 45px;
+	    font-size: 60px;
+	    color: white;
+	}
 
-// #sub-menu, #sub-menu-2{
+	.overlay-content {
+	    position: relative;
+	    top: 10%;
+	    width: 100%;
+	    text-align: center;
+	    margin-top: 30px;
+		    ul#nav-list{
+		    	padding: 0;
 
-// 	position: absolute;
-// 	min-height: 440px;
-// 	background: white;
-// 	width: 100%;
-// 	margin-top: 110px;
-// 	z-index: 100;
-// 	padding: 100px 0 0 0;
-// 	background-color: white;
-// 	opacity: 1;
-// 	transition: all 0.5s ease-in-out;
-// 	top: 0;
-//  	&.clander, &.clander2{margin-top: -450px; opacity: 0;}
+		    	li{
+		    		margin: 0;
+		    		padding: 20px 0;
+		    		background-color: $azul-item;
+		    		display: block;
 
-// }
+		    		&:first-child{
+		    			margin-top: 40px;
+		    		}
+		    		&.active{
+		    			background-color: transparent;
+		    		}
+		    		&.odd{
+		    			background-color: $celeste-menu;
+		    		}
+		    		&.active a {
+		    			// background-color: transparent;
+		    			// color: lighten($vino, 20%);
+		    		}
 
-// #fig-header-reveal-wrapper {
-//   	display: none;
-//     position: absolute;
-//     right: 20px;
-//     top: 82px;
-//     width: 50%;
-//     max-width: 700px;
-//     padding: 3.125rem 2rem 1.875rem 2rem;
-//     z-index: 100;
-//     background-color: #fff;
-// 	&.chamber{
-// 		display:block;
-// 	}
-//     .fig-header-reveal-block {
-//         text-align: center;
-//         //padding: .9375rem;
-//         @media(min-width: 768px){
-//         	    padding: 0;
-//         }
+		    		a{
+		    			text-align: center;
+		    			text-transform: uppercase;
+		    			@include font-size(40px);
+		    			font-family: $black;
+		    			color: white;
+		    			@media(max-width: 1023px){
+		    				@include font-size(20px);
+		    			}
+		    		}
 
-//         a{
-//         	display: inline-block;
-//         	cursor: pointer;
-//         	text-align: center;
-//         	@include link;
-//         	color: $gris-texto-caja-conacto;
-//         //	@include link;
-//         	span{
-//         		&.icon-Mail{
-// 					background: url(../img/ico-email.svg) no-repeat;
-// 					width: 36px;
-// 					height: 25px;
-// 					display:inline-block;
-// 					vertical-align: top;
-// 					margin-bottom: 15px;
-
-//         		}
-//         		&.icon-Phone{
-// 					background: url(../img/ico-wasap.svg) no-repeat;
-// 					width: 29px;
-// 					height: 30px;
-// 					display:inline-block;
-// 					vertical-align: top;
-// 					margin-bottom: 15px;
-//         		}
-//         		&.icon-Phone2{
-// 					background: url(../img/ico-fono.svg) no-repeat;
-// 					width: 25px;
-// 					height: 40px;
-// 					display:inline-block;
-// 					vertical-align: top;
-// 					margin-bottom: 7px;
-
-//         		}
-
-//         	}
-//     		p{
-//     			margin-bottom: 0;
-//     			padding: 0;
-//     			//line-height: 0;
-//     			margin-bottom: 10px;
-//     			&.text{
-// 	    			font-family: $bold;
-// 	    			font-weight: 400;
-// 	    			text-transform: uppercase;
-// 					@include font-size(10px);
-// 					color: $gris-texto-caja-conacto;
-//     			}
-//     		}
-
-
-
-// 		}
-//     }
-
-// }
+		    	}
+		    }
+		}
+}
 
 
 
 
-
-// #sub-menu-experiences-container{
-
-// 	background-color: $invierno;
-// 	position: absolute;
-//     bottom: 0;
-//     width: 100%;
-//     @media(max-width: 768px){
-//     	position: relative;
-//     	padding: 30px;
-//     }
-//     .menu-list-wrapper{
-//     	position: relative;
-// 		min-height: 90px;
-// 		width: 100%;
-// 	    ul{
-// 			@include centerer(false, true);
-// 			//width: 100%;
-// 			width: 100%;
-// 			display: block;
-// 			padding:0;
-// 			list-style-type: none;
-// 	    	li{
-// 				display: inline-block;
-// 				padding: 0 6px;
-// 				&:first-child{
-// 					padding-left: 0;
-// 				}
-// 				&:last-child{
-// 					padding-right: 0;
-// 				}
-// 	    		@media(max-width: 767px){
-// 	    			margin-bottom: 8px;
-// 	    			display: block;
-// 	    			padding: 0px;
-// 	    		}
-// 	    		a{
-// 	    			//display: inline-block;
-// 	    			padding-top: 0;
-// 	    			padding-bottom: 0;
-// 					text-decoration: none;
-// 					font-family: $bold;
-// 	    			color: $vino;
-// 	    			@include font-size(16px);
-// 	    			 transition: all 0.3s ease-in-out;
-// 	    			//@include link;
-// 	    			&:hover{
-// 	    				background-color: transparent;
-// 	    				color: $gris-oscuro;
-
-// 	    			}
-// 	    			&:focus{
-// 	    				background-color: transparent;
-// 	    			}
-// 	    			@media(max-width: 767px){
-// 	    				@include font-size(18px);
-// 	    			}
-// 	    		}
-// 	    	}
-// 	    }
-//     }
-
-
-// }
 

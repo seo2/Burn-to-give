@@ -1,6 +1,5 @@
 <?php include('header.php'); ?>
-
-	<?php // include('main-nav.php'); ?>
+	<?php include('main-nav.php'); ?>
 	<header>
 		<div class="container position-relative">
 			<div class="row">
@@ -17,6 +16,13 @@
 					</li>
 				</ul>
 			</div>
+
+			<div class="row">
+				<span class="menu-icon" onclick="openNav()">
+					<img class="img-responsive toggle-menu" src="assets/img/menu-icon.png" alt="">
+				</span>
+			</div>
+
 		</div>
 
 		<img class="img-responsive visible-sm visible-md visible-lg" src="assets/img/banner.jpg" alt="">

@@ -180,33 +180,25 @@ header .selector-idioma ul li.divisor { color: white; font-family: "Gotham-Mediu
 header .selector-idioma ul li a { display: inline-block; color: white; font-family: "Gotham-Medium", arial, sans-serif; text-transform: uppercase; font-size: 25px; font-size: 1.5625rem; text-decoration: none; opacity: 0.7; }
 @media (max-width: 767px) { header .selector-idioma ul li a { font-size: 16px; font-size: 1rem; } }
 header .selector-idioma ul li a.selected { border-bottom: 2px solid white; opacity: 1; }
+header .menu-icon { position: absolute; right: 0; top: 70px; cursor: pointer; display: inline-block; }
+@media (max-width: 767px) { header .menu-icon { right: 10px; top: 40px; } }
+@media (max-width: 768px) { header .menu-icon .toggle-menu { width: 100%; max-width: 60px; } }
 
-@media (max-width: 767px) { .navbar-brand { width: 44px; padding: 5px; } }
-
-html, body { height: 100%; }
-
-.navbar-toggle { float: left; margin-left: 15px; }
-
-.navmenu { z-index: 1; }
-
-.canvas { position: relative; left: 0; z-index: 2; min-height: 100%; padding: 50px 0 0 0; background: #fff; }
-
-@media (min-width: 0) { .navbar-toggle { display: block; /* force showing the toggle */ } }
-@media (min-width: 992px) { body { padding: 0; }
-  .navbar { right: auto; background: none; border: none; }
-  .canvas { padding: 0; } }
-.main-nav-wrapper { padding: 0px 0px 20px 0px; display: block; }
-
-#main-nav { margin-bottom: 0; background-color: transparent; border-radius: 0; border-color: transparent; min-height: auto; position: relative; z-index: 1000; }
 @media (max-width: 767px) { #main-nav { min-height: 80px; } }
 #main-nav #navbar { background-color: #0390d0; padding-bottom: 30px; position: relative; border-color: transparent; -webkit-box-shadow: none; box-shadow: none; background-color: #0390d0; }
-#main-nav #navbar ul#nav-list li { margin: 0; padding: 20px 0; background-color: #1aa4e3; }
-#main-nav #navbar ul#nav-list li:first-child { margin-top: 40px; }
-#main-nav #navbar ul#nav-list li.active { background-color: transparent; }
-#main-nav #navbar ul#nav-list li.odd { background-color: #0390d0; }
-#main-nav #navbar ul#nav-list li a { text-align: center; text-transform: uppercase; font-size: 40px; font-size: 2.5rem; font-family: "Gotham-Black", arial, sans-serif; color: white; }
-@media (max-width: 1023px) { #main-nav #navbar ul#nav-list li a { font-size: 14px; font-size: 0.875rem; } }
-@media (max-width: 767px) { #main-nav #navbar ul#nav-list li a { font-size: 20px; font-size: 1.25rem; } }
+
+.overlay { height: 100%; width: 0; position: fixed; z-index: 100; top: 0; left: 0; background-color: #0390d0; overflow-x: hidden; -webkit-transition: 0.5s; transition: 0.5s; }
+.overlay a { padding: 8px; text-decoration: none; font-size: 36px; color: #818181; display: block; -webkit-transition: 0.3s; transition: 0.3s; }
+.overlay a:hover, .overlay a:focus { color: #f1f1f1; }
+.overlay .closebtn { position: absolute; top: 20px; right: 45px; font-size: 60px; color: white; }
+.overlay .overlay-content { position: relative; top: 10%; width: 100%; text-align: center; margin-top: 30px; }
+.overlay .overlay-content ul#nav-list { padding: 0; }
+.overlay .overlay-content ul#nav-list li { margin: 0; padding: 20px 0; background-color: #1aa4e3; display: block; }
+.overlay .overlay-content ul#nav-list li:first-child { margin-top: 40px; }
+.overlay .overlay-content ul#nav-list li.active { background-color: transparent; }
+.overlay .overlay-content ul#nav-list li.odd { background-color: #0390d0; }
+.overlay .overlay-content ul#nav-list li a { text-align: center; text-transform: uppercase; font-size: 40px; font-size: 2.5rem; font-family: "Gotham-Black", arial, sans-serif; color: white; }
+@media (max-width: 1023px) { .overlay .overlay-content ul#nav-list li a { font-size: 20px; font-size: 1.25rem; } }
 
 section.aporte { padding: 20px; }
 section.aporte form { display: inline-block; margin-bottom: 40px; position: relative; }

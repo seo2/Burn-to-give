@@ -58,4 +58,26 @@ header{
 			}
 		}
 	}
+	.menu-icon{
+		position: absolute;
+		right: 0;
+		top: 70px;
+		cursor: pointer;
+		display: inline-block;
+		@media(max-width: 767px){
+			right:10px;
+			top: 40px;
+			}
+
+
+
+		.toggle-menu{
+			@media(max-width: 768px){
+				width: 100%;
+				max-width: 60px;
+			}
+
+		}
+
+	}
 }

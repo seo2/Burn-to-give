@@ -18,7 +18,6 @@
 		<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 		<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-		<link rel="stylesheet" href="assets/css/jasny-bootstrap.min.css">
 		<link rel="stylesheet" href="assets/css/custom.css">
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -33,3 +32,4 @@
 	      	<i class="fa fa-chevron-up" aria-hidden="true"></i>
 </a>
  -->
+

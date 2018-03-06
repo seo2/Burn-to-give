@@ -23,20 +23,6 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
-	"\/ajax\/_lib\/config.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/ajax\/_lib\/config.php",
-		"oF": 0
-		},
-	"\/ajax\/_lib\/MysqliDb.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/ajax\/_lib\/MysqliDb.php",
-		"oF": 0
-		},
 	"\/assets\/css\/custom.css": {
 		"aP": 1,
 		"bl": 0,
@@ -65,16 +51,6 @@
 		"oA": 1,
 		"oAP": "\/assets\/css\/fonts-min.css",
 		"oF": 3,
-		"oS": 3
-		},
-	"\/assets\/css\/jasny-bootstrap.min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/assets\/css\/jasny-bootstrap.min-min.css",
-		"oF": 0,
 		"oS": 3
 		},
 	"\/assets\/css\/owl.carousel.min.css": {
@@ -665,6 +641,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/assets\/img\/menu-icon.png": {
+		"ft": 32768,
+		"iS": 5908,
+		"oA": 0,
+		"oAP": "\/assets\/img\/menu-icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/img\/next.png": {
 		"ft": 32768,
 		"iS": 4642,
@@ -716,16 +703,6 @@
 		"oA": 1,
 		"oAP": "\/assets\/js\/app-min.js",
 		"oF": 1,
-		"sC": 0,
-		"tS": 0
-		},
-	"\/assets\/js\/jasny-bootstrap.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/assets\/js\/jasny-bootstrap.min-min.js",
-		"oF": 0,
 		"sC": 0,
 		"tS": 0
 		},
