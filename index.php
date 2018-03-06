@@ -61,7 +61,7 @@
 
 					</div>
 					<div class="total">
-						<p class="txt-total">30MM calorias</p>
+						<p class="txt-total">30MM calorías</p>
 						<div class="t-azul"></div>
 					</div>
 				</div>

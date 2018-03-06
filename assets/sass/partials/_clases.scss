@@ -1,4 +1,28 @@
-
+.back{
+	@include link;
+	font-family: $medium;
+	@include font-size(20px);
+	color: $naranjo;
+	text-transform: uppercase;
+	text-decoration:none ;
+	border-bottom: 3px solid $naranjo;
+	padding-bottom: 4px;
+	float: left;
+	display:inline-block;
+	margin-bottom: 40px;
+	text-decoration: none !important;
+	&:hover, &:focus{
+		color: darken($naranjo, 10%);
+	}
+}
+	.txt-naranjo{
+		color: #f79d2c;
+		font-family: $black;
+	}
+	.txt-amarillo{
+		color: #f8ba0b;
+		font-family: $black;
+	}
 	.linea-gris{
 		max-width: 600px;
 		height: 2px;

@@ -1,0 +1,104 @@
+section.share{
+		.bloque-imagen{
+			background-color: #fff;
+			padding: 50px;
+			@media (max-width: 767px){
+				padding: 20px;
+			}
+			.container{
+				max-width: 650px;
+			}
+			.img-wrap{
+				position: relative;
+
+				display:inline-block;
+
+			.img-post{
+				width: 100%;
+				max-width:580px;
+				margin-bottom: 50px;
+
+			}
+			.img-barra{
+				position: absolute;
+				bottom:0;
+				left: 0;
+				width: 100%;
+				max-width:580px;
+				z-index: 0;
+			}
+			.box-total-calorias{
+				position: absolute;
+				right:15px;
+				bottom: 15px;
+				z-index: 1;
+				background-color: #fff;
+				border-radius: 50%;
+				width:140px;
+				height:140px;
+				padding-top: 40px;
+				p{
+					@include font-size(11px);
+					text-align: center;
+					color: $naranjo;
+					font-family: $medium;
+					text-transform: uppercase;
+					margin: 0;
+					padding: 0;
+					@media (max-width: 480px){
+						@include font-size(10px);
+					}
+					&.num-calorias{
+						@include font-size(40px);
+						font-family: $black;
+						line-height: 1;
+						@media (max-width: 480px){
+							@include font-size(35px);
+						}
+					}
+					&.sub-text{
+						@include font-size(14px);
+						font-family: $medium;
+						@media (max-width: 480px){
+							@include font-size(13px);
+						}
+					}
+				}
+			}
+	}
+		}
+
+	.bloque-texto{
+		padding: 40px 15px;
+		min-height: 340px;
+		//margin-bottom: 20px;
+
+		p{
+			//background-color: #33b2e9;
+			@include font-size(20px);
+			text-transform: uppercase;
+			color: white;
+			font-family: $medium;
+			text-align: center;
+			padding: 0 200px;
+			//padding: 50px 0;
+			&.recuerda{
+				@include font-size(30px);
+				margin-top: 30px;
+				margin-bottom: 30px;
+				@media(max-width:767px){
+					@include font-size(25px);
+				}
+			}
+			@media(max-width:768px){
+				@include font-size(28px);
+				padding: 0 40px;
+			}
+			@media(max-width:767px){
+				@include font-size(20px);
+				padding: 0px;
+			}
+		}
+	}
+
+}

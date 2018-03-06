@@ -9,8 +9,8 @@
        <!--  <h4 class="modal-title" id="calcula-calorias">Modal title</h4> -->
       </div>
       <div class="modal-body">
-        <h2>calcula tus calorias</h2>
-        <img src="" alt="">
+        <h2>calcula tus calorías</h2>
+
         <form id="formCalculaCalorias" class="form-inline">
         	<div class="row">
 				<div class="calculadora fondo-celeste clearfix">

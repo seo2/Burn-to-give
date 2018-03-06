@@ -17,6 +17,9 @@
 
 			</div>
 		</footer>
+		<?php include('modal-calcula-calorias.php'); ?>
+		<?php include('modal-share.php'); ?>
+
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="//code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>

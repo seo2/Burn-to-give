@@ -360,6 +360,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/assets\/img\/barra-post.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/assets\/img\/barra-post.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/img\/btn-donar.png": {
 		"ft": 32768,
 		"iS": 10014,
@@ -376,6 +387,17 @@
 		"iS": 4517,
 		"oA": 0,
 		"oAP": "\/assets\/img\/cerrar-modal.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/cerrar-share.png": {
+		"ft": 32768,
+		"iS": 4263,
+		"oA": 0,
+		"oAP": "\/assets\/img\/cerrar-share.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -557,6 +579,26 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/assets\/img\/img-post.jpg": {
+		"ft": 16384,
+		"iS": 239631,
+		"oA": 0,
+		"oAP": "\/assets\/img\/img-post.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/assets\/img\/img-share.jpg": {
+		"ft": 16384,
+		"iS": 89739,
+		"oA": 0,
+		"oAP": "\/assets\/img\/img-share.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/assets\/img\/logo-footer.png": {
 		"ft": 32768,
 		"iS": 167947,
@@ -595,6 +637,17 @@
 		"iS": 5695,
 		"oA": 0,
 		"oAP": "\/assets\/img\/logo-mobile.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/logo-share.png": {
+		"ft": 32768,
+		"iS": 5398,
+		"oA": 0,
+		"oAP": "\/assets\/img\/logo-share.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -1463,6 +1516,13 @@
 		"oAP": "\/assets\/sass\/.sass-cache\/907a4e1d4c499db19624fb58ec436aa934d858c1\/_navegacion.scssc",
 		"oF": 0
 		},
+	"\/assets\/sass\/.sass-cache\/907a4e1d4c499db19624fb58ec436aa934d858c1\/_share.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/.sass-cache\/907a4e1d4c499db19624fb58ec436aa934d858c1\/_share.scssc",
+		"oF": 0
+		},
 	"\/assets\/sass\/.sass-cache\/907a4e1d4c499db19624fb58ec436aa934d858c1\/_slider-iconos.scssc": {
 		"cB": 0,
 		"ft": 8192,
@@ -1994,6 +2054,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/sass\/modules\/_share.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/modules\/_share.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/sass\/modules\/_slider-iconos.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -2139,6 +2212,20 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/modal-calcula-calorias.php",
+		"oF": 0
+		},
+	"\/modal-share.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/modal-share.php",
+		"oF": 0
+		},
+	"\/share-post.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/share-post.php",
 		"oF": 0
 		}
 	},

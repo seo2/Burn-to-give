@@ -2,7 +2,7 @@
 	.modal-dialog{
 		@media (min-width: 768px){
 			width: 750px;
-		    margin: 30px auto;
+		    margin: 20px auto;
 		}
 
 		.modal-content{
@@ -133,6 +133,126 @@
 						}
 					}
 				}
+
+
+			}
+			.modal-footer{
+					border-top: none;
+				}
+		}
+	}
+}
+
+
+#modal-share{
+	.modal-dialog{
+		@media (min-width: 768px){
+			width: 750px;
+		    margin: 20px auto;
+		}
+
+		.modal-content{
+			background-color: rgba(0,0,0,0.9);
+			border-radius:0;
+			.modal-header{
+				border-bottom: none;
+				padding-top: 30px;
+
+				button{
+					&.close{
+						opacity: 1;
+						margin-top: -50px;
+						margin-right: 20px;
+					}
+				}
+			}
+			.modal-body{
+				button{
+					margin-bottom: 30px;
+					&.bt-subir{
+						padding-top: 30px;
+					}
+				}
+				.img-wrap{
+						position: relative;
+						margin-bottom: 30px;
+						display:inline-block;
+
+
+						.img-post{
+							width: 100%;
+							max-width:450px;
+
+						}
+						.box-total-calorias{
+							position: absolute;
+							right:15px;
+							bottom: 15px;
+							p{
+								@include font-size(20px);
+								text-align: center;
+								color: #fff;
+								font-family: $black;
+								text-transform: uppercase;
+								margin: 0;
+								padding: 0;
+								@media (max-width: 480px){
+										@include font-size(15px);
+								}
+								&.num-calorias{
+									@include font-size(50px);
+									font-family: $black;
+									line-height: 1;
+									@media (max-width: 480px){
+										@include font-size(45px);
+									}
+								}
+								&.sub-text{
+									@include font-size(20px);
+									font-family: $bold;
+									border-bottom: 1px solid white;
+									display: inline-block;
+									@media (max-width: 480px){
+										@include font-size(15px);
+									}
+								}
+							}
+						}
+				}
+
+				p{
+					@include font-size(25px);
+					text-align: center;
+					color: #fff;
+					font-family: $bold;
+					text-transform: uppercase;
+					//line-height: 24px;
+					margin-bottom: 30px;
+
+				}
+				h2{
+					@include font-size(50px);
+					color: $celeste-menu;
+					font-family: $black;
+					text-transform: uppercase;
+					margin-bottom: 30px;
+					@media (max-width: 767px){
+						@include font-size(35px);
+					}
+				}
+				h4{
+					@include font-size(40px);
+					text-align: center;
+					color: white;
+					font-family: $black;
+					text-transform: uppercase;
+					margin-bottom: 30px;
+					@media (max-width:767px){
+						@include font-size(30px);
+					}
+				}
+
+
 
 
 			}
