@@ -1,0 +1,129 @@
+section.video{
+	margin-bottom: 30px;
+}
+section.que-es{
+
+}
+
+section.como{
+	padding-top: 50px;
+	h2{
+		margin-left: 115px;
+	}
+}
+
+section.historia{
+		h2{
+		font-family: $black;
+		@include font-size(60px);
+		color: white;
+		text-transform: uppercase;
+		font-style: italic;
+		margin-bottom: 20px;
+		margin-left: 115px;
+		text-align: left;
+
+
+	}
+}
+section.problema{
+	padding-top: 30px;
+	background-color: #fff;
+		h2{
+			font-family: $black;
+			@include font-size(50px);
+			color: #2362a3;
+			text-transform: uppercase;
+			font-style: italic;
+			margin-bottom: 20px;
+			margin-left: 115px;
+			text-align: left;
+		}
+		h3{
+			@extend h2;
+			@include font-size(45px);
+			color: white;
+
+		}
+		h4{
+			@extend h2;
+			@include font-size(40px);
+			color: #949494;
+			display: inline-block;
+			border-bottom: 1px solid $naranjo;
+			margin-left: 0;
+			text-transform: none;
+
+
+		}
+}
+section.empresas{
+	padding: 30px;
+		h2{
+			font-family: $black;
+			@include font-size(50px);
+			color: #fff;
+			text-transform: uppercase;
+			font-style: italic;
+			margin-bottom: 20px;
+			//margin-left: 115px;
+			text-align: left;
+			border-bottom: 1px solid $amarillo;
+		}
+		h3{
+			@extend h2;
+			@include font-size(45px);
+			color: white;
+
+		}
+		h4{
+			@extend h2;
+			@include font-size(40px);
+			color: #949494;
+			display: inline-block;
+			border-bottom: 1px solid $naranjo;
+			margin-left: 0;
+			text-transform: none;
+
+
+		}
+		.texto-amarillo{
+			color: $amarillo;
+			text-align: center;
+			font-family: $bold;
+			@include font-size(30px);
+			display: block;
+			line-height: 31px;
+		}
+}
+section.preguntas{
+	padding: 30px;
+	h2{
+			font-family: $black;
+			@include font-size(50px);
+			color: #fff;
+			text-transform: uppercase;
+			font-style: italic;
+			margin-bottom: 20px;
+			margin-left: 115px;
+			text-align: left;
+
+		}
+		h3{
+			@extend h2;
+			@include font-size(45px);
+			color: white;
+
+		}
+		h4{
+			@extend h2;
+			@include font-size(40px);
+			color: #949494;
+			display: inline-block;
+			border-bottom: 1px solid $naranjo;
+			margin-left: 0;
+			text-transform: none;
+
+
+		}
+}

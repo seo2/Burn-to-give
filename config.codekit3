@@ -1458,6 +1458,13 @@
 		"oAP": "\/assets\/sass\/.sass-cache\/907a4e1d4c499db19624fb58ec436aa934d858c1\/_compra_polera.scssc",
 		"oF": 0
 		},
+	"\/assets\/sass\/.sass-cache\/907a4e1d4c499db19624fb58ec436aa934d858c1\/_empresas.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/.sass-cache\/907a4e1d4c499db19624fb58ec436aa934d858c1\/_empresas.scssc",
+		"oF": 0
+		},
 	"\/assets\/sass\/.sass-cache\/907a4e1d4c499db19624fb58ec436aa934d858c1\/_footer.scssc": {
 		"cB": 0,
 		"ft": 8192,
@@ -1966,6 +1973,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/sass\/modules\/_empresas.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/modules\/_empresas.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/sass\/modules\/_footer.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -2147,6 +2167,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/datos.php",
+		"oF": 0
+		},
+	"\/empresas.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/empresas.php",
 		"oF": 0
 		},
 	"\/footer.php": {
