@@ -5,6 +5,17 @@
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$IEValue+")";
   filter: alpha(opacity=$IEValue);
 }
+@mixin fullbg-top{
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	padding-top: 200px;
+}
+
+
+
+
 
 @mixin link{
   transition: all 0.2s ease-in-out;

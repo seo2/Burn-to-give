@@ -1,30 +1,44 @@
 section.video{
-	margin-bottom: 30px;
+	margin-bottom: 0px;
 }
 section.que-es{
 
 }
 
 section.como{
-	padding-top: 50px;
+
+	//padding-top: 50px;
 	h2{
-		margin-left: 115px;
+		margin-left: 70px;
+		margin-top: 150px;
+	}
+	.bg-como{
+		position: absolute;
+		@include centerer(true, false);
+		top:0;
+		z-index: -1;
 	}
 }
 
 section.historia{
 		h2{
-		font-family: $black;
-		@include font-size(60px);
-		color: white;
-		text-transform: uppercase;
-		font-style: italic;
-		margin-bottom: 20px;
-		margin-left: 115px;
-		text-align: left;
+			font-family: $black;
+			@include font-size(60px);
+			color: white;
+			text-transform: uppercase;
+			font-style: italic;
+			margin-bottom: 20px;
+			margin-left: 70px;
+			text-align: left;
+			margin-top: 200px;
+		}
+		.bg-historia{
+			position: absolute;
+			@include centerer(true, false);
+			top:0;
+			z-index: -1;
+		}
 
-
-	}
 }
 section.problema{
 	padding-top: 30px;
@@ -36,7 +50,8 @@ section.problema{
 			text-transform: uppercase;
 			font-style: italic;
 			margin-bottom: 20px;
-			margin-left: 115px;
+			margin-left: 70px;
+			margin-top: 150px;
 			text-align: left;
 		}
 		h3{
@@ -58,7 +73,7 @@ section.problema{
 		}
 }
 section.empresas{
-	padding: 30px;
+	padding: 30px 30px 50px 30px;
 		h2{
 			font-family: $black;
 			@include font-size(50px);
@@ -66,7 +81,7 @@ section.empresas{
 			text-transform: uppercase;
 			font-style: italic;
 			margin-bottom: 20px;
-			//margin-left: 115px;
+			//margin-left: 70px;
 			text-align: left;
 			border-bottom: 1px solid $amarillo;
 		}
@@ -105,7 +120,7 @@ section.preguntas{
 			text-transform: uppercase;
 			font-style: italic;
 			margin-bottom: 20px;
-			margin-left: 115px;
+			margin-left: 70px;
 			text-align: left;
 
 		}

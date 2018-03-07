@@ -347,6 +347,67 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/assets\/img\/bg-como.jpg": {
+		"ft": 16384,
+		"iS": 55449,
+		"oA": 0,
+		"oAP": "\/assets\/img\/bg-como.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/assets\/img\/bg-faq.jpg": {
+		"ft": 16384,
+		"iS": 68587,
+		"oA": 0,
+		"oAP": "\/assets\/img\/bg-faq.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/img\/bg-historia-2.jpg": {
+		"ft": 16384,
+		"iS": 214299,
+		"oA": 0,
+		"oAP": "\/assets\/img\/bg-historia-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/img\/bg-historia.jpg": {
+		"ft": 16384,
+		"iS": 240993,
+		"oA": 0,
+		"oAP": "\/assets\/img\/bg-historia.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/assets\/img\/bg-historia.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/assets\/img\/bg-historia.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/bg-obesidad.jpg": {
+		"ft": 16384,
+		"iS": 226387,
+		"oA": 0,
+		"oAP": "\/assets\/img\/bg-obesidad.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/assets\/img\/btn-donar.png": {
 		"ft": 32768,
 		"iS": 10014,
@@ -399,6 +460,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/img\/down.png": {
+		"ft": 32768,
+		"iS": 4137,
+		"oA": 0,
+		"oAP": "\/assets\/img\/down.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/assets\/img\/flecha.png": {

@@ -11,6 +11,8 @@ body { min-height: 100%; position: relative; background-color: #ebebeb; }
 ---------------------------------------*/
 a:focus, input[type="text"] { outline: none !important; }
 
+.mw { max-width: 750px; }
+
 .linea-azul-xs { width: 60px; height: 3px; background-color: #0870a6; display: block; margin-bottom: 30px; }
 
 .mb-100 { margin-bottom: 100px !important; }
@@ -39,7 +41,7 @@ a:focus, input[type="text"] { outline: none !important; }
 
 .hash { font-family: "Gotham-Black", arial, sans-serif; font-size: 23px; font-size: 1.4375rem; color: white; }
 
-.caja-texto-sombra { -webkit-box-shadow: 1px 1px 17px 3px rgba(0, 0, 0, 0.31); box-shadow: 1px 1px 17px 3px rgba(0, 0, 0, 0.31); width: 80%; padding: 30px; background-color: #fff; display: block; margin-right: auto; margin-left: auto; position: relative; }
+.caja-texto-sombra { -webkit-box-shadow: 1px 1px 17px 3px rgba(0, 0, 0, 0.31); box-shadow: 1px 1px 17px 3px rgba(0, 0, 0, 0.31); width: 80%; padding: 30px; background-color: #fff; display: block; margin-right: auto; margin-left: auto; position: relative; max-width: 680px; }
 .caja-texto-sombra ul { margin: 0; padding: 0; }
 .caja-texto-sombra ul li { font-family: "Gotham-Medium", arial, sans-serif; font-size: 30px; font-size: 1.875rem; color: #a7a7a7; margin-bottom: 30px; padding: 0; line-height: 1; }
 .caja-texto-sombra p { font-family: "Gotham-Medium", arial, sans-serif; font-size: 30px; font-size: 1.875rem; color: #a7a7a7; margin-bottom: 30px; padding: 0; line-height: 1; }
@@ -234,7 +236,7 @@ header .menu-icon { position: absolute; right: 0; top: 70px; cursor: pointer; di
 .overlay .closebtn { position: absolute; top: -30px; right: 15px; font-size: 60px; color: white; z-index: 100; }
 .overlay .overlay-content { position: relative; top: 0; width: 100%; text-align: center; margin-top: 30px; }
 .overlay .overlay-content ul#nav-list { padding: 0; }
-.overlay .overlay-content ul#nav-list li { margin: 0; padding: 20px 0; background-color: #1aa4e3; display: block; }
+.overlay .overlay-content ul#nav-list li { margin: 0; padding: 10px 0; background-color: #1aa4e3; display: block; }
 .overlay .overlay-content ul#nav-list li:first-child { margin-top: 40px; }
 .overlay .overlay-content ul#nav-list li.active { background-color: transparent; }
 .overlay .overlay-content ul#nav-list li.odd { background-color: #0390d0; }
@@ -404,26 +406,27 @@ section.share .bloque-texto p.recuerda { font-size: 30px; font-size: 1.875rem; m
 @media (max-width: 768px) { section.share .bloque-texto p { font-size: 28px; font-size: 1.75rem; padding: 0 40px; } }
 @media (max-width: 767px) { section.share .bloque-texto p { font-size: 20px; font-size: 1.25rem; padding: 0px; } }
 
-section.video { margin-bottom: 30px; }
+section.video { margin-bottom: 0px; }
 
-section.como { padding-top: 50px; }
-section.como h2, section.como section.problema h3, section.problema section.como h3, section.como section.problema h4, section.problema section.como h4, section.como section.empresas h3, section.empresas section.como h3, section.como section.empresas h4, section.empresas section.como h4, section.como section.preguntas h3, section.preguntas section.como h3, section.como section.preguntas h4, section.preguntas section.como h4 { margin-left: 115px; }
+section.como h2, section.como section.problema h3, section.problema section.como h3, section.como section.problema h4, section.problema section.como h4, section.como section.empresas h3, section.empresas section.como h3, section.como section.empresas h4, section.empresas section.como h4, section.como section.preguntas h3, section.preguntas section.como h3, section.como section.preguntas h4, section.preguntas section.como h4 { margin-left: 70px; margin-top: 150px; }
+section.como .bg-como { position: absolute; position: absolute; left: 50%; -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); top: 0; z-index: -1; }
 
-section.historia h2, section.historia section.problema h3, section.problema section.historia h3, section.historia section.problema h4, section.problema section.historia h4, section.historia section.empresas h3, section.empresas section.historia h3, section.historia section.empresas h4, section.empresas section.historia h4, section.historia section.preguntas h3, section.preguntas section.historia h3, section.historia section.preguntas h4, section.preguntas section.historia h4 { font-family: "Gotham-Black", arial, sans-serif; font-size: 60px; font-size: 3.75rem; color: white; text-transform: uppercase; font-style: italic; margin-bottom: 20px; margin-left: 115px; text-align: left; }
+section.historia h2, section.historia section.problema h3, section.problema section.historia h3, section.historia section.problema h4, section.problema section.historia h4, section.historia section.empresas h3, section.empresas section.historia h3, section.historia section.empresas h4, section.empresas section.historia h4, section.historia section.preguntas h3, section.preguntas section.historia h3, section.historia section.preguntas h4, section.preguntas section.historia h4 { font-family: "Gotham-Black", arial, sans-serif; font-size: 60px; font-size: 3.75rem; color: white; text-transform: uppercase; font-style: italic; margin-bottom: 20px; margin-left: 70px; text-align: left; margin-top: 200px; }
+section.historia .bg-historia { position: absolute; position: absolute; left: 50%; -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); top: 0; z-index: -1; }
 
 section.problema { padding-top: 30px; background-color: #fff; }
-section.problema h2, section.problema h3, section.problema h4 { font-family: "Gotham-Black", arial, sans-serif; font-size: 50px; font-size: 3.125rem; color: #2362a3; text-transform: uppercase; font-style: italic; margin-bottom: 20px; margin-left: 115px; text-align: left; }
+section.problema h2, section.problema h3, section.problema h4 { font-family: "Gotham-Black", arial, sans-serif; font-size: 50px; font-size: 3.125rem; color: #2362a3; text-transform: uppercase; font-style: italic; margin-bottom: 20px; margin-left: 70px; margin-top: 150px; text-align: left; }
 section.problema h3 { font-size: 45px; font-size: 2.8125rem; color: white; }
 section.problema h4 { font-size: 40px; font-size: 2.5rem; color: #949494; display: inline-block; border-bottom: 1px solid #ed611c; margin-left: 0; text-transform: none; }
 
-section.empresas { padding: 30px; }
+section.empresas { padding: 30px 30px 50px 30px; }
 section.empresas h2, section.empresas h3, section.empresas h4 { font-family: "Gotham-Black", arial, sans-serif; font-size: 50px; font-size: 3.125rem; color: #fff; text-transform: uppercase; font-style: italic; margin-bottom: 20px; text-align: left; border-bottom: 1px solid #fdd80a; }
 section.empresas h3 { font-size: 45px; font-size: 2.8125rem; color: white; }
 section.empresas h4 { font-size: 40px; font-size: 2.5rem; color: #949494; display: inline-block; border-bottom: 1px solid #ed611c; margin-left: 0; text-transform: none; }
 section.empresas .texto-amarillo { color: #fdd80a; text-align: center; font-family: "Gotham-Bold", arial, sans-serif; font-size: 30px; font-size: 1.875rem; display: block; line-height: 31px; }
 
 section.preguntas { padding: 30px; }
-section.preguntas h2, section.preguntas h3, section.preguntas h4 { font-family: "Gotham-Black", arial, sans-serif; font-size: 50px; font-size: 3.125rem; color: #fff; text-transform: uppercase; font-style: italic; margin-bottom: 20px; margin-left: 115px; text-align: left; }
+section.preguntas h2, section.preguntas h3, section.preguntas h4 { font-family: "Gotham-Black", arial, sans-serif; font-size: 50px; font-size: 3.125rem; color: #fff; text-transform: uppercase; font-style: italic; margin-bottom: 20px; margin-left: 70px; text-align: left; }
 section.preguntas h3 { font-size: 45px; font-size: 2.8125rem; color: white; }
 section.preguntas h4 { font-size: 40px; font-size: 2.5rem; color: #949494; display: inline-block; border-bottom: 1px solid #ed611c; margin-left: 0; text-transform: none; }
 

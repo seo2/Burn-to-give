@@ -25,7 +25,7 @@
 		</div>
 	</section>
 	<section class="que-es">
-		<div class="container">
+		<div class="container mw">
 			<div class="row">
 				<div class="bloque-amarillo">
 					<h2>¿que es burn to give?</h2>
@@ -56,7 +56,8 @@
 
 	</section>
 	<section class="como">
-		<div class="container">
+		<div class="container position-relative mw">
+			<img class="img-responsive bg-como" src="assets/img/bg-como.jpg" alt="">
 			<div class="row">
 				<h2 class="texto-amarillo-italic">¿CÓMO  <br> PUEDES AYUDAR?</h2>
 				<div class="caja-texto-sombra  pb-100 mb-100">
@@ -79,7 +80,8 @@
 		</div>
 	</section>
 	<section class="historia">
-		<div class="container">
+		<div class="container mw position-relative">
+			<img class="img-responsive bg-historia" src="assets/img/bg-historia.png" alt="">
 			<div class="row">
 				<h2>historia</h2>
 				<div class="caja-texto-sombra mb-30 pb-100">
@@ -115,7 +117,7 @@
 
 	</section>
 	<section class="problema">
-		<div class="container">
+		<div class="container mw">
 			<div class="row">
 				<h2 class="titulo-azul">el problema</h2>
 				<h3>Obesidad</h3>
@@ -146,7 +148,7 @@
 		</div>
 	</section>
 	<section class="empresas bloque-celeste">
-		<div class="container">
+		<div class="container mw">
 			<div class="row">
 				<div class="">
 					<h2>Empresas</h2>
@@ -165,7 +167,7 @@
 
 	</section>
 	<section class="preguntas">
-		<div class="container">
+		<div class="container mw">
 			<div class="row">
 				<h2>preguntas <br> frecuentes</h2>
 				<div class="caja-texto-sombra">
