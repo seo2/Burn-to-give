@@ -14,16 +14,31 @@
 			<p>Multiplica tus calorías x2 compartiendo tu aporte en
 				redes sociales con <span class="txt-naranjo">#burntogive</span> para motivar a otros
 			</p>
-		<button type="submit" class="btn btn-default bt-naranjo bt-subir fondo-degradado-naranja center-block ">subir foto</button>
+		
+		
+		<form action="ajax/upload.php" method="post" enctype="multipart/form-data" id="form-upload">
+			<input type="hidden" name="userID" id="userID">
+			<input type="hidden" name="op" value="personalizada">
+			<input type="file" name="fileToUpload" id="fileToUpload">
+			<button type="submit" class="btn btn-default bt-naranjo bt-subir fondo-degradado-naranja center-block ">subir foto</button>
+		</form>
+		<div class="progress">
+		       <div class="bar"></div >
+		       <div class="percent">0%</div >
+		</div>
+		   
+		<div id="status"></div>
+
 		<h4>o usar esta imagen</h4>
 			<div class="text-center">
+				<a href="javascript:void(0);" onclick="imagenSecundaria();">
 				<div class="img-wrap">
 				<div class="box-total-calorias">
 					<p>acabo de donar</p>
-					<p class="num-calorias">385</p>
+					<p class="num-calorias" id="num-calorias2">385</p>
 					<p class="sub-text">calorías</p>
 				</div>
-				<img class="img-responsive center-block img-post" src="assets/img/img-share.jpg" alt="">
+				<img class="img-responsive center-block img-post" src="assets/img/img-share.jpg" alt=""></a>
 			</div>
 		</div>
 

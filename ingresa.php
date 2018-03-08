@@ -25,8 +25,16 @@
 	<div class="container-fluid no-padding">
 		<div class="row">
 				<div class="con-facebook fondo-celeste">
-					<p>inicia sesión con
-						<a href="#">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-12">
+							<a class="back" href="index.php">volver</a>
+							</div>
+						</div>
+					</div>
+					<p>
+						<a href="javascript:void(0);" class="login-fb" onclick="myFacebookLogin()">
+							inicia sesión con 
 							<span class="fa-stack fa-lg">
 							  <i class="fa fa-circle fa-stack-2x"></i>
 							  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -35,14 +43,18 @@
 					</p>
 				</div>
 
-				<form>
+				<form method="post" action="ajax/login.php" id="form-login" autocomplete="false">
 				<div class="con-email fondo-degradado-naranja">
 					<div class="container">
-						 <p>o con tu direccion de email</p>
+						 <p>o con los datos de tu cuenta</p>
 
 							  <div class="form-group center-block">
 							  <!--   <label for="exampleInputEmail1">Email address</label> -->
-							    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
+							    <input type="email" class="form-control" id="email" placeholder="email@dominio.com" name="log-mail" required="">
+							  </div>
+							  <div class="form-group center-block">
+							  <!--   <label for="exampleInputEmail1">Email address</label> -->
+							    <input type="password" class="form-control" id="pass" placeholder="Contraseña" name="log-pass" required="">
 							  </div>
 					</div>
 
@@ -50,6 +62,8 @@
 
 					<button type="submit" class="btn btn-default bt-naranjo center-block">iniciar sesión</button>
 				</form>
+
+				<a href="datos.php">Crear Cuenta</a>
 		</div>
 	</div>
 

@@ -39,12 +39,19 @@
 				<div class="row">
 					<div class="col-m-12 text-center">
 						<p class="txt1">¿cuantas calorías quemaste hoy?</p>
-							<form id="formEnviarCalorias" class="form-inline">
+							<form id="formEnviarCalorias" action="ajax/save-calories.php" class="form-inline" method="post">
 								<div class="form-group">
-									<input type="text" class="form-control" name="numCalorias" id="numCalorias" placeholder="">
+									<input type="number" class="form-control" name="numCalorias" id="numCalorias" placeholder="" required="" min="1" max="3000">
 								</div>
 								<img src="assets/img/flecha.png" alt="">
+								<?php
+								if(isset($_SESSION["burntogive"])) :?>
+								<input type="hidden" name="userid" value="<?php echo $_SESSION["burntogive"];?>">
+								<!--logueado -->
 									<button type="submit" class="btn btn-default btn-enviar-calorias"></button>
+								<?php else : ?>
+									<a href="ingresa.php" class="btn btn-default btn-enviar-calorias"></a>
+								<?php endif;?>
 							</form>
 
 							<p class="txt2">¿NO SABES? CALCULAR <a href="#" data-toggle="modal" data-target="#modal-calcula">AQUÍ</a> </p>
@@ -56,18 +63,29 @@
 	</section><!-- aporte -->
 	<section class="status section">
 		<div class="container">
-			<h2 class="title-status">quedan 18 dÍas</h2>
+			<?php
+			
+			$datos = $db->getOne ("datos_barra");
+			
+			$datoQuedan = $datos['datoQuedan'];
+			$datoMeta = $datos['datoMeta'];
+			$datoLlevamos = $datos['datoLlevamos'];
+			$datoEquivale = $datos['datoEquivale'];
+			$datoPorcentaje = $datos['datoPorcentaje'];
+
+			?>
+			<h2 class="title-status">quedan <?php echo $datoQuedan;?></h2>
 			<div class="box-contador">
 				<div class="range-container">
-					<p class="txt-llevamos">llevamos 7.6 MM calorías <br>
-						equivalente a 15.200 comidas</p>
-					<div class="llevamos">
+					<p class="txt-llevamos">llevamos <?php echo $datoLlevamos;?> calorías <br>
+						equivalente a <?php echo $datoEquivale;?> comidas</p>
+					<div class="llevamos" style="width: <?php echo $datoPorcentaje."%";?>">
 
 						<div class="t-naranjo"></div>
 
 					</div>
 					<div class="total">
-						<p class="txt-total">30MM calorías</p>
+						<p class="txt-total"><?php echo $datoMeta;?> calorías</p>
 						<div class="t-azul"></div>
 					</div>
 				</div>
@@ -89,5 +107,7 @@
 	</section> <!-- compra polera -->
 
 <?php include('modal-calcula-calorias.php'); ?>
+<?php include('modal-share.php'); ?>
+
 <?php include('footer.php'); ?>
 

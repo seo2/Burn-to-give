@@ -4,9 +4,9 @@
   <div class="overlay-content">
 
     		<ul id="nav-list" class="">
-    			<li class="odd"> <a href="javascript:void(0);">home <span class="sr-only">(current)</span></a></li>
+    			<li class="odd"> <a href="index.php">home <span class="sr-only">(current)</span></a></li>
 
-    			<li><a href="javascript:void(0);">mi perfil</a></li>
+    			<li><a href="datos-usuario.php">mi perfil</a></li>
 
     			<li class="odd"><a href="javascript:void(0);">historia</a></li>
 

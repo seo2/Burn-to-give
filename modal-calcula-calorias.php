@@ -19,14 +19,14 @@
 						<div class="col-sm-3">
 			        		<div class="bloque-blanco center-block">
 			        			<div class="icono center">
-			        				<img class="img-responsive" src="assets/img/iconos/ico-correr.png" alt="">
+			        				<img class="img-responsive" src="assets/img/iconos/ico-correr.png" alt="" id="icono-activo">
 			        			</div>
 			        		</div>
 			        		<p>running</p>
 			        	</div>
 			        	<div class=" col-sm-3">
 			        		<div class="form-group">
-								<input type="text" class="form-control" name="numCalorias" id="numCalorias" placeholder="">
+								<input type="text" class="form-control" name="minutos" id="minutos" placeholder="" required="">
 								<p>min</p>
 
 							</div>
@@ -34,7 +34,7 @@
 
 			        	<div class="col-sm-3">
 			        		<div class="form-group">
-								<input type="text" class="form-control" name="numCalorias" id="numCalorias" placeholder="">
+								<input type="text" class="form-control" name="calCalorias" id="calCalorias" placeholder="" readonly="">
 								<p>calorías*</p>
 							</div>
 			        	</div>
@@ -48,36 +48,36 @@
 			<div class="slider-wrapper">
 				<div class="slider-iconos owl-carousel">
 				<div class="item">
-					<a href=""><img src="assets/img/iconos/bici.png"></a>
+					<a href="javascript:void(0);" id="3" onClick="calcular_calorias(this.id)"><img src="assets/img/iconos/bici.png"></a>
 				</div>
 				<div class="item">
-					<a href=""><img src="assets/img/iconos/boxeo.png"></a>
+					<a href="javascript:void(0);" id="13" onClick="calcular_calorias(this.id)"><img src="assets/img/iconos/boxeo.png"></a>
 				</div>
 				<div class="item">
-					<a href=""><img src="assets/img/iconos/correr.png"></a>
+					<a href="javascript:void(0);" id="2"  onClick="calcular_calorias(this.id)"><img src="assets/img/iconos/correr.png"></a>
 				</div>
 				<div class="item">
-					<a href=""><img src="assets/img/iconos/futbol.png"></a>
+					<a href="javascript:void(0);" id="1"  onClick="calcular_calorias(this.id)"><img src="assets/img/iconos/futbol.png"></a>
 				</div>
 				<div class="item">
-					<a href=""><img src="assets/img/iconos/natacion.png"></a>
+					<a href="javascript:void(0);" id="5"  onClick="calcular_calorias(this.id)"><img src="assets/img/iconos/natacion.png"></a>
 				</div>
 				<div class="item">
-					<a href=""><img src="assets/img/iconos/pesas.png"></a>
+					<a href="javascript:void(0);" id="6"  onClick="calcular_calorias(this.id)"><img src="assets/img/iconos/pesas.png"></a>
 				</div>
 				<div class="item">
-					<a href=""><img src="assets/img/iconos/surf.png"></a>
+					<a href="javascript:void(0);" id="10"  onClick="calcular_calorias(this.id)"><img src="assets/img/iconos/surf.png"></a>
 				</div>
 				<div class="item">
-					<a href=""><img src="assets/img/iconos/tenis.png"></a>
+					<a href="javascript:void(0);" id="4"  onClick="calcular_calorias(this.id)"><img src="assets/img/iconos/tenis.png"></a>
 				</div>
 				<div class="item">
-					<a href=""><img src="assets/img/iconos/yoga.png"></a>
+					<a href="javascript:void(0);" id="13"  onClick="calcular_calorias(this.id)"><img src="assets/img/iconos/yoga.png"></a>
 				</div>
 			</div>
 			</div>
 
-			<button type="submit" class="btn btn-default bt-naranjo bt-ok center-block">OK</button>
+			<button type="button" class="btn btn-default bt-naranjo bt-ok center-block" data-dismiss="modal">OK</button>
 		</form>
 		<p class="nota">calorías APROXIMADAS CALCULADAS EN BASE A PESO, PROMEDIO Y BLA BLA BLA...</p>
       </div>
@@ -87,4 +87,23 @@
       </div>
     </div>
   </div>
+</div>
+<div style="display: none">
+	<?php 
+	$cols = Array ("conID", "conMin", "conHor");
+	$conversion = $db->get ("conversion", null, $cols);
+	if ($db->count > 0){
+	    foreach ($conversion as $cv) { 
+	    	if($cv['conID'] == 2){
+	    		$valor_incial = $cv['conMin'];
+	    	}
+	    	?>
+		
+		<span id="con-<?php echo $cv['conID'];?>" data-min="<?php echo $cv['conMin'];?>" data-hor="<?php echo $cv['conHor'];?>"></span>	
+
+		<?php
+	    }
+	}
+	?>
+	<input type="hidden" name="factor" id="factor" value="<?php echo $valor_incial;?>">
 </div>

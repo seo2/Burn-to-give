@@ -28,6 +28,10 @@
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		<script src="assets/js/owl.carousel.min.js"></script>
+		<script src="assets/vendor/jquery.form.min.js"></script>
+		<script src="assets/vendor/jquery.validate.min.js"></script>
+		<script src="assets/vendor/jquery.maskedinput.js"></script>
+		<script src="assets/vendor/sweetalert.min.js"></script>
 		<script src="assets/js/app.js"></script>
 
 </body>

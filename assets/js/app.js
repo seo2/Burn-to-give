@@ -43,6 +43,152 @@ $('.slider-iconos').owlCarousel({
     }
 })
 
+
+
+
+function myFacebookLogin() {
+  FB.login(function(response){
+  	if (response.authResponse) {
+     console.log('Welcome!  Fetching your information.... ');
+     FB.api('/me?fields=id,name,gender,email', function(response) {
+       //console.log(response);
+       //console.log('Good to see you, ' + response.name + '.');
+       var id = response.id;
+       $.ajax({
+		  type: "POST",
+		  url: 'ajax/save-user-fb.php',
+		  data: response,
+		  success: function(data){
+		  	if(data == 'ok'){
+		  		window.location.href = "datos.php?_fbid="+id;
+		  	}else if(data == 'existe'){
+		  		window.location.href = "index.php"
+		  	}
+		  }
+		});
+     });
+    } else {
+     console.log('User cancelled login or did not fully authorize.');
+    }
+  }, {scope: 'email, public_profile'});
+}
+
+function sharefbimage() {
+
+	var img = $("#img-share").attr('src');
+	var id = $("#img-share").attr('data-id');
+	var url_img = "http://burntogive.com/app/"+img;
+
+	//console.log(url_img);
+
+    FB.ui(
+    {
+        method: 'share',
+        name: 'Burn a calorie feed a child',
+        href: $(location).attr('href') + '?_p=' + id,
+        picture: url_img,
+        caption: '#BURNTOGIVE',
+        description: 'Burn a calorie feed a child'
+    },
+    function (response) {
+        if (response) {
+            console.log(response);
+        } else {
+            console.log('error');
+        }
+    });
+}
+
+var v = jQuery("#form-register").validate({
+			submitHandler: function(form) {
+				jQuery(form).ajaxSubmit({
+					beforeSubmit: function(){
+						//mostrar login
+					},
+					success: function(data){
+						console.log(data);
+						if(data == 'ok'){
+							swal({
+							      title: "Usuario creado con éxito!", 
+							      text: "Debes ingresar con tus datos", 
+							      type: "success",
+							      button: "Ingresar",
+							      showCancelButton: true
+							    }).then(
+							      // Redirect the user
+							      function(){
+							      window.location.href = "ingresa.php";
+							      });
+
+						}else if(data == 'ok-fb'){
+							swal({
+							      title: "Usuario creado con éxito!", 
+							      text: "Ya puedes ingresar con Facebook", 
+							      type: "success",
+							      button: "Ingresar",
+							      showCancelButton: true
+							    }).then(
+							      // Redirect the user
+							      function(){
+							      window.location.href = "ingresa.php";
+							      });
+	
+						}else if(data == 'existe'){
+							swal("Usuario ya existe!", "", "warning");
+						}
+					}
+				});
+			}
+		});
+
+$("input.fecha").mask("99-99-9999");
+
+var v1 = jQuery("#form-login").validate({
+			submitHandler: function(form) {
+				jQuery(form).ajaxSubmit({
+					beforeSubmit: function(){
+						//mostrar login
+					},
+					success: function(data){
+						if(data == 'ok'){
+							window.location.href = "index.php";
+						}
+						
+					}
+				});
+			}
+		});
+
+var v2 = jQuery("#formEnviarCalorias").validate({
+			submitHandler: function(form) {
+				jQuery(form).ajaxSubmit({
+					beforeSubmit: function(){
+						//mostrar login
+					},
+					success: function(data){
+						console.log(data);
+						if(data >= 1){
+							//window.location.href = "index.php";
+							console.log("mostrar modal");
+							var calorias = $("#numCalorias").val();
+							$("#num-calorias2").html(calorias);
+							$("#userID").val(data);
+							$("#modal-share").modal();
+
+						}else{
+							if(data == 0){
+								swal("Atención - Máximo de calorías diarias: 3.000", "Llegaste al límite de calorías diarias, vuelve a ingresar mañana.", "error");
+							}
+						}
+						
+					}
+				});
+			}
+		});
+
+
+
+
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
 }
@@ -52,6 +198,119 @@ function closeNav() {
 }
 
 
+function imagenSecundaria(){
+
+	var idUser = $("#userID").val();
+
+	  $.ajax({
+		  type: "POST",
+		  url: 'ajax/upload.php',
+		  data: {userID: idUser, op: 'generica'},
+		  beforeSend: function() {
+	    	//mostrar loading
+	    	console.log("enviar post");
+	  		},
+		  success: function(data){
+		  	console.log(data);
+		  	    if(data >= 1){
+		  			window.location.href = "share-post.php?_p="+data;
+		  		}else{
+		  			swal("Lo sentimos", "Ha ocurrido un error, inténtalo m{as tarde", "warning");
+		  		}
+		  }
+		});
+
+}
+
+function calcular_calorias(clicked_id){
+	//console.log(clicked_id);
+	var str = $("#"+clicked_id+" img").attr("src");
+	var img = str.replace("iconos/", "iconos/ico-");
+	$('#icono-activo').attr('src',img);
+
+	var factor = $("#con-"+clicked_id).attr("data-min");
+	//console.log(factor);
+
+	$("#factor").val(factor);
+
+	doneTyping();
+}
+
+//setup before functions
+var typingTimer;                //timer identifier
+var doneTypingInterval = 200;  //time in ms, 5 second for example
+var $input = $('#minutos');
+
+//on keyup, start the countdown
+$input.on('keyup', function () {
+  clearTimeout(typingTimer);
+  typingTimer = setTimeout(doneTyping, doneTypingInterval);
+});
+
+//on keydown, clear the countdown 
+$input.on('keydown', function () {
+  clearTimeout(typingTimer);
+});
+
+//user is "finished typing," do something
+function doneTyping () {
+  //do something
+  //console.log("calcular ahora");
+  var factor = $("#factor").val();
+  var min = $("#minutos").val();
+
+  var totalCalorias = Math.round(parseFloat(factor) * parseFloat(min));
+
+  //console.log(totalCalorias);
+  if(!isNaN(totalCalorias)){
+  	$("#calCalorias").val(totalCalorias);
+  }
+
+}
+
+$('#modal-calcula').on('hidden.bs.modal', function () {
+    // do something…
+    console.log('pasar valor de calorias');
+    var calCalorias = $("#calCalorias").val();
+    if(parseInt(calCalorias) > 0){
+    	$("#numCalorias").val(calCalorias);
+    }else{
+    	$("#numCalorias").val('');
+    }
+});
 
 
+(function() {
+    
+var bar = $('.bar');
+var percent = $('.percent');
+var status = $('#status');
+   
+$('#form-upload').ajaxForm({
+    beforeSend: function() {
+        status.empty();
+        var percentVal = '0%';
+        bar.width(percentVal)
+        percent.html(percentVal);
+    },
+    uploadProgress: function(event, position, total, percentComplete) {
+        var percentVal = percentComplete + '%';
+        bar.width(percentVal)
+        percent.html(percentVal);
+    },
+    success: function() {
+        var percentVal = '100%';
+        bar.width(percentVal)
+        percent.html(percentVal);
+    },
+	complete: function(xhr) {
+		var res = xhr.responseText;
+		if(res >= 1){
+			window.location.href = "share-post.php?_p="+res;
+		}else{
+			swal("Lo sentimos", "Ha ocurrido un error, inténtalo m{as tarde", "warning");
+		}
+	}
+}); 
 
+})(); 
