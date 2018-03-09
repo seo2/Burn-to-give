@@ -215,7 +215,7 @@ function imagenSecundaria(){
 		  	    if(data >= 1){
 		  			window.location.href = "share-post.php?_p="+data;
 		  		}else{
-		  			swal("Lo sentimos", "Ha ocurrido un error, inténtalo m{as tarde", "warning");
+		  			swal("Lo sentimos", "Ha ocurrido un error, inténtalo más tarde", "warning");
 		  		}
 		  }
 		});

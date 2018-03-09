@@ -16,7 +16,7 @@
 				<div class="calculadora fondo-celeste clearfix">
 
 						<div class="igual"> = </div>
-						<div class="col-sm-3">
+						<div class="col-xs-4 text-center">
 			        		<div class="bloque-blanco center-block">
 			        			<div class="icono center">
 			        				<img class="img-responsive" src="assets/img/iconos/ico-correr.png" alt="" id="icono-activo">
@@ -24,7 +24,7 @@
 			        		</div>
 			        		<p>running</p>
 			        	</div>
-			        	<div class=" col-sm-3">
+			        	<div class="col-xs-4 text-center">
 			        		<div class="form-group">
 								<input type="text" class="form-control" name="minutos" id="minutos" placeholder="" required="">
 								<p>min</p>
@@ -32,7 +32,7 @@
 							</div>
 			        	</div>
 
-			        	<div class="col-sm-3">
+			        	<div class="col-xs-4 text-center">
 			        		<div class="form-group">
 								<input type="text" class="form-control" name="calCalorias" id="calCalorias" placeholder="" readonly="">
 								<p>calorías*</p>

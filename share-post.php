@@ -27,37 +27,16 @@ $id_p = $_GET["_p"];
 
 	<?php // include('main-nav.php'); ?>
 	<header class="position-relative fondo-degradado-naranja ">
-		<div class="container position-relative">
-
-			<div class="selector-idioma">
-				<ul>
-					<li>
-						<a class="selected" href="">esp</a>
-					</li>
-					<li class="divisor">|</li>
-					<li>
-						<a href="">eng</a>
-					</li>
-				</ul>
-			</div>
-		</div>
 		<img class="img-responsive logo-ingresa" src="assets/img/logo-ingresa.png" alt="">
 		<img class="img-responsive texto-ingresa center" src="assets/img/texto-ingresa.png" alt="">
-
 	</header>
 
 <section class="share">
 	<div class="container-fluid no-padding">
-
+		
+							<a class="back" href="index.php">volver</a>
 		<div class="row">
 			<div class="bloque-imagen text-center">
-					<div class="container">
-						<div class="row">
-							<div class="col-sm-12">
-							<a class="back" href="index.php">volver</a>
-							</div>
-						</div>
-					</div>
 					<div class="img-wrap">
 						<!--<div class="box-total-calorias">
 							<p>acabo de donar</p>
