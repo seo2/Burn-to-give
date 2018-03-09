@@ -17,6 +17,48 @@
 @import "modules/_share";
 @import "modules/_empresas";
 @import "modules/_footer";
+@import "modules/_login";
+
+/* ajustes seo2 */
+@media (max-width: 767px) {
+	h2.title-aporte{ font-size: 2.1rem;line-height: initial;    padding: 20px 0 20px 0;}
+	section.aporte p.txt1 { font-size: 0.80rem; margin-bottom: 20px; }
+
+	section.aporte form .form-group {
+	    margin-bottom: 15px;
+	    width: 60%;
+	    float: left;
+	}
+
+	section.aporte form {
+	    display: inline-block;
+	    margin-bottom: 20px;
+	    position: relative;
+	}
+	section.aporte form .form-group .form-control {
+		width: 100%;
+	    height: 90px;
+	    font-size: 50px;
+	    padding: 0 20px;
+	}
+	section.aporte form .btn-enviar-calorias {
+	    background-color: transparent;
+	    background: url(../img/btn-donar.png);
+	    background-size: cover;
+	    background-position: center;
+	    border: none;
+	    width: 96px;
+	    height: 90px;
+	    margin-left: 10px;
+	}
+	section.aporte p.txt2 {
+	    font-size: 1.1rem;
+	}
+	h2.title-status{font-size: 2rem;}
+	section.status .box-contador .range-container .llevamos{height: 20px;}
+	section.status .box-contador .range-container .total{height: 20px;}
+	section.status .box-contador .range-container .llevamos .t-naranjo{    top: 20px;}
+}
 
 //@import "modules/_navegacion";
 

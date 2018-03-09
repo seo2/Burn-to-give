@@ -23,6 +23,454 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
+	"\/ajax\/_lib\/config.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/config.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/MysqliDb.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/MysqliDb.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/Canvas.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/Canvas.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/Coordinate.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/Coordinate.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/Exception.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/Exception.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/Font\/GDF.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/Font\/GDF.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/Font\/PS.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/Font\/PS.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/Font\/TTF.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/Font\/TTF.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/Image.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/Image.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/Mapper\/BMP.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/Mapper\/BMP.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/Mapper\/GD.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/Mapper\/GD.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/Mapper\/GD2.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/Mapper\/GD2.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/Mapper\/GIF.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/Mapper\/GIF.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/Mapper\/JPEG.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/Mapper\/JPEG.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/Mapper\/PNG.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/Mapper\/PNG.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/Mapper\/TGA.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/Mapper\/TGA.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/MapperFactory.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/MapperFactory.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/Operation\/AddNoise.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/Operation\/AddNoise.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/Operation\/ApplyConvolution.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/Operation\/ApplyConvolution.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/Operation\/ApplyFilter.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/Operation\/ApplyFilter.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/Operation\/ApplyMask.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/Operation\/ApplyMask.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/Operation\/AsGrayscale.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/Operation\/AsGrayscale.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/Operation\/AsNegative.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/Operation\/AsNegative.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/Operation\/AutoCrop.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/Operation\/AutoCrop.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/Operation\/CopyChannelsPalette.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/Operation\/CopyChannelsPalette.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/Operation\/CopyChannelsTrueColor.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/Operation\/CopyChannelsTrueColor.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/Operation\/CorrectGamma.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/Operation\/CorrectGamma.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/Operation\/Crop.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/Operation\/Crop.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/Operation\/Flip.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/Operation\/Flip.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/Operation\/GetMask.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/Operation\/GetMask.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/Operation\/Merge.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/Operation\/Merge.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/Operation\/Mirror.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/Operation\/Mirror.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/Operation\/Resize.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/Operation\/Resize.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/Operation\/ResizeCanvas.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/Operation\/ResizeCanvas.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/Operation\/Rotate.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/Operation\/Rotate.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/Operation\/RoundCorners.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/Operation\/RoundCorners.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/Operation\/Unsharp.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/Operation\/Unsharp.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/OperationFactory.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/OperationFactory.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/PaletteImage.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/PaletteImage.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/TrueColorImage.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/TrueColorImage.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/vendor\/de77\/BMP.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/vendor\/de77\/BMP.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/vendor\/de77\/TGA.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/vendor\/de77\/TGA.php",
+		"oF": 0
+		},
+	"\/ajax\/_lib\/wideimage\/WideImage.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/_lib\/wideimage\/WideImage.php",
+		"oF": 0
+		},
+	"\/ajax\/fonts\/Gotham-Black.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/fonts\/Gotham-Black.ttf",
+		"oF": 0
+		},
+	"\/ajax\/fonts\/Gotham-BlackItalic.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/fonts\/Gotham-BlackItalic.ttf",
+		"oF": 0
+		},
+	"\/ajax\/fonts\/Gotham-Bold.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/fonts\/Gotham-Bold.ttf",
+		"oF": 0
+		},
+	"\/ajax\/fonts\/Gotham-BoldItalic.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/fonts\/Gotham-BoldItalic.ttf",
+		"oF": 0
+		},
+	"\/ajax\/fonts\/Gotham-Book.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/fonts\/Gotham-Book.ttf",
+		"oF": 0
+		},
+	"\/ajax\/fonts\/Gotham-BookItalic.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/fonts\/Gotham-BookItalic.ttf",
+		"oF": 0
+		},
+	"\/ajax\/fonts\/Gotham-Light.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/fonts\/Gotham-Light.ttf",
+		"oF": 0
+		},
+	"\/ajax\/fonts\/Gotham-LightItalic.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/fonts\/Gotham-LightItalic.ttf",
+		"oF": 0
+		},
+	"\/ajax\/fonts\/Gotham-Medium.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/fonts\/Gotham-Medium.ttf",
+		"oF": 0
+		},
+	"\/ajax\/fonts\/Gotham-MediumItalic.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/fonts\/Gotham-MediumItalic.ttf",
+		"oF": 0
+		},
+	"\/ajax\/fonts\/Gotham-Thin.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/fonts\/Gotham-Thin.ttf",
+		"oF": 0
+		},
+	"\/ajax\/fonts\/Gotham-ThinItalic.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/fonts\/Gotham-ThinItalic.ttf",
+		"oF": 0
+		},
+	"\/ajax\/fonts\/Gotham-Ultra.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/fonts\/Gotham-Ultra.ttf",
+		"oF": 0
+		},
+	"\/ajax\/fonts\/Gotham-UltraItalic.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/fonts\/Gotham-UltraItalic.ttf",
+		"oF": 0
+		},
+	"\/ajax\/fonts\/Gotham-XLight.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/fonts\/Gotham-XLight.ttf",
+		"oF": 0
+		},
+	"\/ajax\/fonts\/Gotham-XLightItalic.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/fonts\/Gotham-XLightItalic.ttf",
+		"oF": 0
+		},
+	"\/ajax\/login.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/login.php",
+		"oF": 0
+		},
+	"\/ajax\/save-calories.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/save-calories.php",
+		"oF": 0
+		},
+	"\/ajax\/save-user-fb.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/save-user-fb.php",
+		"oF": 0
+		},
+	"\/ajax\/save-user.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/save-user.php",
+		"oF": 0
+		},
+	"\/ajax\/upload.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/upload.php",
+		"oF": 0
+		},
 	"\/assets\/css\/custom.css": {
 		"aP": 1,
 		"bl": 0,
@@ -550,11 +998,99 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/assets\/img\/iconos\/ico-bici.png": {
+		"ft": 32768,
+		"iS": 2550,
+		"oA": 0,
+		"oAP": "\/assets\/img\/iconos\/ico-bici.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/iconos\/ico-boxeo.png": {
+		"ft": 32768,
+		"iS": 1932,
+		"oA": 0,
+		"oAP": "\/assets\/img\/iconos\/ico-boxeo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/img\/iconos\/ico-correr.png": {
 		"ft": 32768,
 		"iS": 6375,
 		"oA": 0,
 		"oAP": "\/assets\/img\/iconos\/ico-correr.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/iconos\/ico-futbol.png": {
+		"ft": 32768,
+		"iS": 2780,
+		"oA": 0,
+		"oAP": "\/assets\/img\/iconos\/ico-futbol.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/iconos\/ico-natacion.png": {
+		"ft": 32768,
+		"iS": 2421,
+		"oA": 0,
+		"oAP": "\/assets\/img\/iconos\/ico-natacion.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/iconos\/ico-pesas.png": {
+		"ft": 32768,
+		"iS": 1870,
+		"oA": 0,
+		"oAP": "\/assets\/img\/iconos\/ico-pesas.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/iconos\/ico-surf.png": {
+		"ft": 32768,
+		"iS": 2206,
+		"oA": 0,
+		"oAP": "\/assets\/img\/iconos\/ico-surf.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/iconos\/ico-tenis.png": {
+		"ft": 32768,
+		"iS": 2285,
+		"oA": 0,
+		"oAP": "\/assets\/img\/iconos\/ico-tenis.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/iconos\/ico-yoga.png": {
+		"ft": 32768,
+		"iS": 2520,
+		"oA": 0,
+		"oAP": "\/assets\/img\/iconos\/ico-yoga.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -647,6 +1183,17 @@
 		"opt": 1,
 		"q": 100
 		},
+	"\/assets\/img\/img-share2.png": {
+		"ft": 32768,
+		"iS": 130093,
+		"oA": 0,
+		"oAP": "\/assets\/img\/img-share2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/img\/logo-footer.png": {
 		"ft": 32768,
 		"iS": 167947,
@@ -707,6 +1254,17 @@
 		"iS": 23967,
 		"oA": 0,
 		"oAP": "\/assets\/img\/logos-footer.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/mascara.png": {
+		"ft": 32768,
+		"iS": 60141,
+		"oA": 0,
+		"oAP": "\/assets\/img\/mascara.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -775,6 +1333,16 @@
 		"oA": 1,
 		"oAP": "\/assets\/js\/app-min.js",
 		"oF": 1,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/assets\/js\/jasny-bootstrap.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/jasny-bootstrap.min-min.js",
+		"oF": 0,
 		"sC": 0,
 		"tS": 0
 		},
@@ -1558,6 +2126,13 @@
 		"oAP": "\/assets\/sass\/.sass-cache\/907a4e1d4c499db19624fb58ec436aa934d858c1\/_ingresa.scssc",
 		"oF": 0
 		},
+	"\/assets\/sass\/.sass-cache\/907a4e1d4c499db19624fb58ec436aa934d858c1\/_login.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/.sass-cache\/907a4e1d4c499db19624fb58ec436aa934d858c1\/_login.scssc",
+		"oF": 0
+		},
 	"\/assets\/sass\/.sass-cache\/907a4e1d4c499db19624fb58ec436aa934d858c1\/_modales.scssc": {
 		"cB": 0,
 		"ft": 8192,
@@ -2097,6 +2672,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/sass\/modules\/_login.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/modules\/_login.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/sass\/modules\/_modales.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -2227,6 +2815,46 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/vendor\/jquery.form.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/jquery.form.min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/assets\/vendor\/jquery.maskedinput.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/jquery.maskedinput-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/assets\/vendor\/jquery.validate.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/jquery.validate.min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/assets\/vendor\/sweetalert.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/sweetalert.min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
 	"\/datos-usuario.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -2274,6 +2902,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/ingresa.php",
+		"oF": 0
+		},
+	"\/login.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/login.php",
 		"oF": 0
 		},
 	"\/main-nav.php": {

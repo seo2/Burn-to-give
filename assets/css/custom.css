@@ -70,6 +70,8 @@ h2.title-aporte, section.problema h3.title-aporte, section.problema h4.title-apo
 h2.title-status, section.problema h3.title-status, section.problema h4.title-status, section.empresas h3.title-status, section.empresas h4.title-status, section.preguntas h3.title-status, section.preguntas h4.title-status { font-size: 70px; font-size: 4.375rem; color: #ed611c; line-height: 70px; }
 @media (max-width: 767px) { h2.title-status, section.problema h3.title-status, section.problema h4.title-status, section.empresas h3.title-status, section.empresas h4.title-status, section.preguntas h3.title-status, section.preguntas h4.title-status { font-size: 50px; font-size: 3.125rem; line-height: 56px; } }
 
+.fondo-azul { background: #258dc8; background: radial-gradient(ellipse at center, #258dc8 0%, #258dc8 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#258dc8', endColorstr='#258dc8',GradientType=1 ); }
+
 .fondo-celeste { background: #00a2e9; background: -webkit-gradient(linear, left top, left bottom, from(#00a2e9), to(#00a2e9)); background: linear-gradient(to bottom, #00a2e9 0%, #00a2e9 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a2e9', endColorstr='#00a2e9',GradientType=0 ); }
 
 .fondo-degradado-naranja { background: #fac118; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ background: -webkit-gradient(linear, left top, left bottom, from(#fac118), color-stop(44%, #f8763e), to(#f55f2c)); background: linear-gradient(to bottom, #fac118 0%, #f8763e 44%, #f55f2c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fac118', endColorstr='#f55f2c',GradientType=0 ); /* IE6-9 */ }
@@ -279,7 +281,7 @@ header .logo-ingresa { margin-left: 15px; }
 @media (max-width: 768px) { header .logo-ingresa { width: 80px; } }
 
 section.ingresa .con-facebook { min-height: 340px; padding-top: 100px; margin-bottom: 20px; }
-section.ingresa .con-facebook p { background-color: #33b2e9; font-size: 30px; font-size: 1.875rem; text-transform: uppercase; color: white; font-family: "Gotham-Bold", arial, sans-serif; text-align: center; padding: 50px 0; }
+section.ingresa .con-facebook p { background-color: #33b2e9; font-size: 30px; font-size: 1.875rem; text-transform: uppercase; color: white; font-family: "Gotham-Bold", arial, sans-serif; text-align: center; padding: 50px 0px; }
 section.ingresa .con-email, section.ingresa .datos { padding: 30px 15px; min-height: 340px; margin-bottom: 20px; }
 section.ingresa .con-email p, section.ingresa .datos p { font-size: 30px; font-size: 1.875rem; text-transform: uppercase; color: white; font-family: "Gotham-Bold", arial, sans-serif; text-align: center; }
 @media (max-width: 768px) { section.ingresa .con-email p, section.ingresa .datos p { font-size: 28px; font-size: 1.75rem; } }
@@ -439,47 +441,42 @@ footer .logos-footer .logo-footer { margin-bottom: 20px; max-width: 70px; }
 footer p { color: #BBD1E2; font-family: "Gotham-Medium", arial, sans-serif; text-transform: uppercase; text-align: center; font-size: 20px; font-size: 1.25rem; line-height: 20px; }
 footer p.copy { text-transform: none; }
 
+.video-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; }
 
+.video-container iframe, .video-container object, .video-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
-
+section.login .con-facebook { padding-top: 0; margin-bottom: 0px; }
+section.login .con-facebook p { font-size: 14px; font-size: 0.875rem; text-transform: uppercase; color: white; font-family: "Gotham-Bold", arial, sans-serif; text-align: center; padding: 50px 15px 0px 15px; }
+section.login .con-facebook p.hash { font-size: 24px; font-size: 1.5rem; font-family: "Gotham-Bold", arial, sans-serif; font-style: italic; padding: 0 0 30px 0; }
+section.login .quieres-ser-parte { padding: 20px 0; }
+section.login .quieres-ser-parte h3 { font-size: 26px; font-size: 1.625rem; text-transform: uppercase; font-family: "Gotham-Black", arial, sans-serif; text-align: center; color: #01547c; }
+section.login .quieres-ser-parte p { font-size: 14px; font-size: 0.875rem; text-transform: uppercase; font-family: "Gotham-Bold", arial, sans-serif; text-align: center; }
+section.login .quieres-ser-parte p a { font-size: 14px; font-size: 0.875rem; color: white; }
+section.login .quieres-ser-parte p a span i.fa-stack-2x { color: white; }
+section.login .quieres-ser-parte p a span i.fa-inverse { color: #3990bc; }
+section.login .con-email, section.login section.ingresa .datos, section.ingresa section.login .datos { padding: 30px 15px; min-height: 340px; }
+section.login .con-email p, section.login section.ingresa .datos p, section.ingresa section.login .datos p { font-size: 18px; font-size: 1.125rem; text-transform: uppercase; color: white; font-family: "Gotham-Bold", arial, sans-serif; text-align: center; }
+@media (max-width: 768px) { section.login .con-email p, section.login section.ingresa .datos p, section.ingresa section.login .datos p { font-size: 14px; font-size: 0.875rem; } }
+section.login .con-email .form-group, section.login section.ingresa .datos .form-group, section.ingresa section.login .datos .form-group { max-width: 350px; margin-top: 20px; }
+section.login .con-email .form-group .form-control, section.login section.ingresa .datos .form-group .form-control, section.ingresa section.login .datos .form-group .form-control { text-align: center; height: 40px; font-size: 30px; font-size: 1.875rem; font-family: "Gotham-Bold", arial, sans-serif; }
+section.login .fecha-nac { padding: 30px 15px; background-color: #fff; }
+section.login .fecha-nac .container { max-width: 650px; }
+section.login .fecha-nac p { font-size: 14px; font-size: 0.875rem; color: #ed611c; font-family: "Gotham-Medium", arial, sans-serif; margin-left: 20px; }
+section.login .fecha-nac p.inicia { color: #676666; }
+section.login .fecha-nac p.inicia a { color: #ed611c; }
+section.login .fecha-nac label { margin-left: 20px; }
+section.login .fecha-nac label.radio-inline { color: #ed611c; font-family: "Gotham-Medium", arial, sans-serif; }
+section.login .fecha-nac .bt-naranjo { margin: 20px auto 30px auto; padding: 17px 80px 10px 80px; font-size: 20px; font-size: 1.25rem; }
 
 /* ajustes seo2 */
-@media (max-width: 767px) {
-	h2.title-aporte{ font-size: 2.1rem;line-height: initial;    padding: 20px 0 20px 0;}
-	section.aporte p.txt1 { font-size: 0.80rem; margin-bottom: 20px; }
-	
-	section.aporte form .form-group {
-	    margin-bottom: 15px;
-	    width: 60%;
-	    float: left;
-	}
-
-	section.aporte form {
-	    display: inline-block;
-	    margin-bottom: 20px;
-	    position: relative;
-	}
-	section.aporte form .form-group .form-control {
-		width: 100%;
-	    height: 90px;
-	    font-size: 50px;
-	    padding: 0 20px;
-	}
-	section.aporte form .btn-enviar-calorias {
-	    background-color: transparent;
-	    background: url(../img/btn-donar.png);
-	    background-size: cover;
-	    background-position: center;
-	    border: none;
-	    width: 96px;
-	    height: 90px;
-	    margin-left: 10px;
-	}
-	section.aporte p.txt2 {
-	    font-size: 1.1rem;
-	}
-	h2.title-status{font-size: 2rem;}
-	section.status .box-contador .range-container .llevamos{height: 20px;}
-	section.status .box-contador .range-container .total{height: 20px;}
-	section.status .box-contador .range-container .llevamos .t-naranjo{    top: 20px;}
-}
+@media (max-width: 767px) { h2.title-aporte, section.problema h3.title-aporte, section.problema h4.title-aporte, section.empresas h3.title-aporte, section.empresas h4.title-aporte, section.preguntas h3.title-aporte, section.preguntas h4.title-aporte { font-size: 2.1rem; line-height: initial; padding: 20px 0 20px 0; }
+  section.aporte p.txt1 { font-size: 0.80rem; margin-bottom: 20px; }
+  section.aporte form .form-group { margin-bottom: 15px; width: 60%; float: left; }
+  section.aporte form { display: inline-block; margin-bottom: 20px; position: relative; }
+  section.aporte form .form-group .form-control { width: 100%; height: 90px; font-size: 50px; padding: 0 20px; }
+  section.aporte form .btn-enviar-calorias { background-color: transparent; background: url(../img/btn-donar.png); background-size: cover; background-position: center; border: none; width: 96px; height: 90px; margin-left: 10px; }
+  section.aporte p.txt2 { font-size: 1.1rem; }
+  h2.title-status, section.problema h3.title-status, section.problema h4.title-status, section.empresas h3.title-status, section.empresas h4.title-status, section.preguntas h3.title-status, section.preguntas h4.title-status { font-size: 2rem; }
+  section.status .box-contador .range-container .llevamos { height: 20px; }
+  section.status .box-contador .range-container .total { height: 20px; }
+  section.status .box-contador .range-container .llevamos .t-naranjo { top: 20px; } }
