@@ -458,7 +458,7 @@ section.login .con-email, section.login section.ingresa .datos, section.ingresa 
 section.login .con-email p, section.login section.ingresa .datos p, section.ingresa section.login .datos p { font-size: 18px; font-size: 1.125rem; text-transform: uppercase; color: white; font-family: "Gotham-Bold", arial, sans-serif; text-align: center; }
 @media (max-width: 768px) { section.login .con-email p, section.login section.ingresa .datos p, section.ingresa section.login .datos p { font-size: 14px; font-size: 0.875rem; } }
 section.login .con-email .form-group, section.login section.ingresa .datos .form-group, section.ingresa section.login .datos .form-group { max-width: 350px; margin-top: 20px; }
-section.login .con-email .form-group .form-control, section.login section.ingresa .datos .form-group .form-control, section.ingresa section.login .datos .form-group .form-control { text-align: center; height: 40px; font-size: 30px; font-size: 1.875rem; font-family: "Gotham-Bold", arial, sans-serif; }
+section.login .con-email .form-group .form-control, section.login section.ingresa .datos .form-group .form-control, section.ingresa section.login .datos .form-group .form-control { text-align: center; height: 40px; font-size: 30px; font-size: 1.875rem;}
 section.login .fecha-nac { padding: 30px 15px; background-color: #fff; }
 section.login .fecha-nac .container { max-width: 650px; }
 section.login .fecha-nac p { font-size: 14px; font-size: 0.875rem; color: #ed611c; font-family: "Gotham-Medium", arial, sans-serif; margin-left: 20px; }
@@ -540,11 +540,11 @@ section.login .fecha-nac .bt-naranjo { margin: 20px auto 30px auto; padding: 17p
 	
 	header.fondo-degradado-naranja .center {
 	    position: absolute;
-	    top: 50%;
-	    left: 65%;
+	    top: 51%;
+	    left: 54%;
 	    -webkit-transform: translate(-50%, -50%);
 	    transform: translate(-50%, -50%);
-	    width: 50%;
+	    width: 40%;
 	}
 	header.fondo-celeste { min-height: 130px;}
 	header.fondo-celeste .cerrar img{width: 20px;}
@@ -560,4 +560,54 @@ section.login .fecha-nac .bt-naranjo { margin: 20px auto 30px auto; padding: 17p
 	}
 	section.ingresa .datos-calorias .box-calorias p.equivalente{font-size: 1rem;}
 	section.ingresa .datos-calorias .box-calorias .bloque p {font-size: 0.7rem;}
+	header .selector-idioma ul {
+	    padding: 0;
+	    margin: 0;
+	    position: absolute;
+	    right: 10px;
+	    top: -10px;
+	}
+	header .selector-idioma ul li a { font-size: 0.7rem; }
+	header .selector-idioma ul li.divisor { margin: 0 5px; }
+	section.login .con-facebook p {
+	    font-size: 14px;
+	    font-size: 0.675rem;
+	    text-transform: uppercase;
+	    color: white;
+	    font-family: "Gotham-Bold", arial, sans-serif;
+	    text-align: center;
+	    padding: 30px 15px 0px 15px;
+	}
+	section.login .con-facebook p.hash {
+	    font-size: 24px;
+	    font-size: 1.5rem;
+	    font-family: "Gotham-Bold", arial, sans-serif;
+	    font-style: italic;
+	    padding: 0 0 10px 0;
+	}
+	.pl0{padding-left: 0;} 
+	.pr0{padding-right: 0;}
+	section.login .fecha-nac .bt-naranjo {
+	    margin: 20px auto 30px auto;
+	    padding: 12px 80px 0px 80px;
+	    font-size: 1.25rem;
+	}
+	section.login .quieres-ser-parte h3 { font-size: 1.425rem;}
+
+	.con-facebook a{color: #fff; font-size: 19px;}
+	.con-facebook a span .fa-inverse { color: #00a2e9;}
+	section.ingresa .con-facebook {
+	    min-height: auto;
+		padding: 40px 0;
+	    margin-bottom: 20px;
+	}
+	section.ingresa .con-facebook p{ padding: 10px 0px;}
+	section.ingresa .con-email p, section.ingresa .datos p { font-size: 0.8rem; }
+	section.ingresa .con-email, section.ingresa .datos {
+	    padding: 30px 15px 20px;
+	    min-height: auto;
+	    margin-bottom: 20px;
+	}
+	section.ingresa .con-email .form-group, section.ingresa .datos .form-group { margin-top: 20px; }
+	
 }

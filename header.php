@@ -1,12 +1,22 @@
 <?php
 session_start();
 $current_page = basename($_SERVER['PHP_SELF']);
-echo $current_page;
+//echo $current_page;
 
+/*
 if(!isset($_SESSION["burntogive"]) && $current_page != "ingresa.php") {
 	header("Location:ingresa.php");
 	exit();
 }
+*/
+
+if(!isset($_SESSION["burntogive"]) && $current_page != "registro.php") {
+	if($current_page != "ingresa.php") {
+		header("Location:registro.php");
+		exit();
+	}
+}
+
 
 require_once 'ajax/_lib/config.php';
 require_once 'ajax/_lib/MysqliDb.php';

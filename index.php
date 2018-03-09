@@ -65,12 +65,12 @@
 		<div class="container">
 			<?php
 			
-			$datos = $db->getOne ("datos_barra");
+			$datos 			= $db->getOne ("datos_barra");
 			
-			$datoQuedan = $datos['datoQuedan'];
-			$datoMeta = $datos['datoMeta'];
-			$datoLlevamos = $datos['datoLlevamos'];
-			$datoEquivale = $datos['datoEquivale'];
+			$datoQuedan 	= $datos['datoQuedan'];
+			$datoMeta 		= $datos['datoMeta'];
+			$datoLlevamos 	= $datos['datoLlevamos'];
+			$datoEquivale 	= $datos['datoEquivale'];
 			$datoPorcentaje = $datos['datoPorcentaje'];
 
 			?>
