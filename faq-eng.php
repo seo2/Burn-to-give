@@ -94,6 +94,7 @@
 							<div id="q6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="" aria-expanded="true" style="">
 								<div class="panel-body">
 									<p>Through the Chilean NGO Leche para Haití (www.lecheparahaiti.cl), with whom we are working side by side in this first challenge.</p>
+									<img class="img-responsive center-block" src="assets/img/leche-para-ahiti.png" alt="">
                         		</div>
                         	</div>
                     	</div><!-- panel -->

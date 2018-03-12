@@ -65,9 +65,10 @@ header{
 		cursor: pointer;
 		display: inline-block;
 		@media(max-width: 767px){
+			width: 40px;
 			right:10px;
 			top: 40px;
-			}
+		}
 
 
 

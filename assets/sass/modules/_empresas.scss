@@ -209,12 +209,18 @@ section.preguntas{
 								color: #0870a6;
 								//text-transform:uppercase;
 								font-style:italic;
+
 							}
 						}
 					}
 				}
 				.panel-body{
 					border: none;
+					p{
+						@include font-size(15px);
+						color: #0870a6;
+						font-family: $book-italic;
+					}
 				}
 
 			}

@@ -112,9 +112,7 @@
 						algo completamente distinto y opuesto
 						a lo que estaba haciendo hasta ese
 						momento. Elegí Tanzania como mi destino.</p>
-						<div class="pie-de-caja bloque-gris">
-
-						</div>
+						<div class="pie-de-caja bloque-gris"></div>
 				</div>
 				<div class="caja-texto-sombra mb-30">
 					<div class="linea-azul-xs clearfix"> </div>
@@ -124,13 +122,13 @@
 					Algo que me llamó mucho la atención fue qué para más de la mitad de mis alumnos, esta era el
 					 único alimento que comían en todo el día. Fue así cómo me tocó ver y conocer de cerca la devastadora
 					realidad de la desnutrición infantil.</p>
-					<div class="pie-de-caja bloque-gris">
-
-						</div>
+					<div class="pie-de-caja bloque-gris"></div>
 				</div>
 			</div>
 		</div>
-
+		<!-- <a href="">
+			<img class="center-block" src="assets/img/down.png" alt="">
+		</a> -->
 	</section>
 	<section class="problema">
 		<div class="container mw">
@@ -161,7 +159,9 @@
 				</div>
 		</div>
 	</div>
-
+		<a href="">
+			<img class="center-block" src="assets/img/down.png" alt="">
+		</a>
 	</section>
 	<section class="empresas fondo-azul">
 		<div class="container mw">
@@ -184,6 +184,7 @@
 				<h2>preguntas <br> frecuentes</h2>
 				<div class="caja-texto-sombra">
 					<?php include('faq-esp.php'); ?>
+					<?php //include('faq-eng.php'); ?>
 					<div class="pie-de-caja bloque-gris"></div>
 				</div>
 			</div>
