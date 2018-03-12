@@ -8,7 +8,6 @@ $db = new MysqliDb (HOST, USERNAME, PASSWORD, DATABASE);
 
 include("geoiploc.php");
 
-
 if($_SESSION["burntogivelang"]){
 	$lang = $_SESSION["burntogivelang"];
 }else{
@@ -77,15 +76,14 @@ if($_SESSION["burntogivelang"]){
 		<meta property="og:image:height" content="600" />
 		<?php }
 		endif;?>
-<?php	
-	if(!isset($_SESSION["burntogive"]) && $current_page != "home.php") {
-		if($current_page != "ingresa.php") {
-			header("Location:home.php");
-			exit();
-		}
-	}
-?>		
-
+		<?php	
+			if(!isset($_SESSION["burntogive"]) && $current_page != "home.php") {
+				if($current_page != "ingresa.php") {
+					header("Location:home.php");
+					exit();
+				}
+			}
+		?>		
 		<!-- Bootstrap -->
 		<!-- Latest compiled and minified CSS -->
 		<link href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700,800i" rel="stylesheet">
@@ -96,6 +94,7 @@ if($_SESSION["burntogivelang"]){
 		<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 		<link rel="stylesheet" href="assets/css/custom.css">
+		<link rel="stylesheet" href="assets/css/seo2.css">
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -113,30 +112,28 @@ if($_SESSION["burntogivelang"]){
 		
 		  gtag('config', 'UA-115586112-1');
 		</script>
-
-
 	</head>
 	<body data-lang="<?php echo $lang; ?>">
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId            : '224892328068443',
-      autoLogAppEvents : true,
-      xfbml            : true,
-      version          : 'v2.12'
-    });
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "https://connect.facebook.net/es_LA/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
-<!--  <a href="javascript:void(0);" id="return-to-top">
-	      	<i class="fa fa-chevron-up" aria-hidden="true"></i>
-</a>
- -->
+	<script>
+	  window.fbAsyncInit = function() {
+	    FB.init({
+	      appId            : '224892328068443',
+	      autoLogAppEvents : true,
+	      xfbml            : true,
+	      version          : 'v2.12'
+	    });
+	  };
+	
+	  (function(d, s, id){
+	     var js, fjs = d.getElementsByTagName(s)[0];
+	     if (d.getElementById(id)) {return;}
+	     js = d.createElement(s); js.id = id;
+	     js.src = "https://connect.facebook.net/es_LA/sdk.js";
+	     fjs.parentNode.insertBefore(js, fjs);
+	   }(document, 'script', 'facebook-jssdk'));
+	</script>
+	<!--  <a href="javascript:void(0);" id="return-to-top">
+		      	<i class="fa fa-chevron-up" aria-hidden="true"></i>
+	</a>
+	 -->
 

@@ -1,0 +1,45 @@
+@media (max-width: 767px) { 
+	section.aporte form {
+	    width: 100%;
+	}
+	section.aporte form .form-group {
+	    width: 140px;
+	    height: 90px;
+	    display: inline-block;
+	    vertical-align: top;
+	    float: none;
+		margin-right: 10px;
+	}
+	#flechita{width: 10px; height: 90px; background: url(../img/flecha.png) no-repeat center center; background-size: contain; display: inline-block; vertical-align: top;  }
+	section.aporte form .btn-enviar-calorias, section.aporte form .btn-enviar-calorias-eng{vertical-align: top; display: inline-block;}
+	#numCalorias-error{font-size: 8px; color: #fff;}
+	section.aporte form img {
+	    position: absolute;
+	    left: 46%;
+	    top: 36px;
+	    width: 4%;
+	    bottom: auto;
+	}
+	section.aporte p.txt1 {
+	    font-size: 0.70rem;
+	    margin-bottom: 0px;
+	}
+	h2.title-aporte{font-size: 1.5rem;}
+	section.aporte form .form-group .form-control {padding: 0px; font-size: 40px;}
+	
+	#modal-share .modal-dialog .modal-content .modal-body .bloque-imagen .img-wrap .box-total-calorias p {
+	    position: absolute;
+	    width: 100%;
+	    top: 15%;
+	}
+	#modal-share .modal-dialog .modal-content .modal-body .bloque-imagen .img-wrap .box-total-calorias p.num-calorias {
+	    top: 42%;
+	}
+	#modal-share .modal-dialog .modal-content .modal-body .bloque-imagen .img-wrap .box-total-calorias p.sub-text {
+	    top: 73%;
+	}
+	
+	#sharepaso1 a{color: #00a2e9; }
+	#sharepaso1 a .fa-instagram{font-size: 34px;}
+
+}

@@ -39,14 +39,15 @@
 					<p class="txt1"><?php if($lang=='en'){ ?>HOW MANY CALORIES DID YOU BURN TODAY?<?php }else{ ?>¿cuantas calorías quemaste hoy?<?php } ?></p>
 					<form id="formEnviarCalorias" action="ajax/save-calories.php" class="form-inline" method="post">
 						<div class="form-group">
-							<input type="number" class="form-control" name="numCalorias" id="numCalorias" placeholder="" required="" min="1" max="3000">
+							<input type="number" class="form-control" name="numCalorias" id="numCalorias" placeholder="" required="" min="1" max="3000" data-msg="<?php if($lang=='en'){ ?>Log your burned calories here<?php }else{ ?>Ingresa aquí tus calorías quemadas<?php } ?>">
 						</div>
-						<img src="assets/img/flecha.png" alt="">
+						<div id="flechita"></div>
+<!-- 						<img src="assets/img/flecha.png" alt=""> -->
 						<?php
 						if(isset($_SESSION["burntogive"])) :?>
-						<input type="hidden" name="userid" value="<?php echo $_SESSION["burntogive"];?>">
 						<!--logueado -->
-							<button type="submit" class="btn btn-default btn-enviar-calorias<?php if($lang=='en'){ ?>-eng<?php } ?>"></button>
+						<button type="submit" class="btn btn-default btn-enviar-calorias<?php if($lang=='en'){ ?>-eng<?php } ?>"></button>
+						<input type="hidden" name="userid" value="<?php echo $_SESSION["burntogive"];?>">
 						<?php else : ?>
 							<a href="ingresa.php" class="btn btn-default btn-enviar-calorias<?php if($lang=='en'){ ?>-eng<?php } ?>"></a>
 						<?php endif;?>

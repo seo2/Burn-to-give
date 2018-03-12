@@ -346,7 +346,7 @@ $('#modal-calcula').on('hidden.bs.modal', function () {
 			if(res >= 1){
 				window.location.href = "share-post.php?_p="+res;
 			}else{
-				swal("Lo sentimos", "Ha ocurrido un error, inténtalo m{as tarde", "warning");
+				swal("Lo sentimos", "Ha ocurrido un error, inténtalo más tarde", "warning");
 			}
 		}
 	});

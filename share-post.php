@@ -30,7 +30,7 @@
 
 <section class="share">
 	<div class="container-fluid no-padding">
-		<a class="back" href="share-image.php?userID=<?php echo $id_p; ?>">volver</a>
+		<a class="back" href="share-image.php?_p=<?php echo $id_p; ?>"><?php if($lang=='en'){ ?>Back<?php }else{ ?>volver<?php } ?></a>
 		<div class="row">
 			<div class="bloque-imagen text-center">
 				<div class="img-wrap">
@@ -40,7 +40,7 @@
 			
 			<div class="bloque-texto fondo-celeste" id="sharepaso1">
 				<div class="container text-center">
-				 	<h2>COMPARTIR EN</h2>
+				 	<h2><?php if($lang=='en'){ ?>Remember to use<?php }else{ ?>COMPARTIR EN<?php } ?></h2>
 				 	<a href="javascript:void(0);" onclick="sharefbimage();" class="share-fb">
 					 	<span class="fa-stack fa-lg">
 						  <i class="fa fa-circle fa-stack-2x"></i>
@@ -53,16 +53,16 @@
 						  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
 						</span>
 				 	</a>
-					<p class="recuerda">RECUERDA USAR <span class="txt-amarillo">#BURNTOGIVE</span></p>
+					<p class="recuerda"><?php if($lang=='en'){ ?>Remember to use<?php }else{ ?>RECUERDA USAR<?php } ?> <span class="txt-amarillo">#BURNTOGIVE</span></p>
 				</div>
 			</div>
 
 			<div class="bloque-texto  fondo-celeste hide" id="sharepaso2">
 				<div class="container">
-				 	<p>guarda esta imagen en tu carrete y luego súbela directamente desde instagram</p>
-					<p class="recuerda">RECUERDA USAR <span class="txt-amarillo">#BURNTOGIVE</span></p>
+				 	<p><?php if($lang=='en'){ ?>Save this image in your camera roll and then share it directly from instagram<?php }else{ ?>guarda esta imagen en tu carrete y luego súbela directamente desde instagram<?php } ?></p>
+				 	<p><?php if($lang=='en'){ ?>Remember to use<?php }else{ ?>RECUERDA USAR<?php } ?> <span class="txt-naranjo">#BURNTOGIVE</span></p>
 				</div>
-				<a href="<?php echo $rutaImg2;?>" class="btn btn-default bt-naranjo center-block fondo-degradado-naranja" download="<?php echo $rutaImg2;?>">guardar</a>
+<!-- 				<a href="<?php echo $rutaImg2;?>" class="btn btn-default bt-naranjo center-block fondo-degradado-naranja" download="<?php echo $rutaImg2;?>"><?php if($lang=='en'){ ?>Save<?php }else{ ?>guardar<?php } ?></a> -->
 
 			</div>
 		</div>
