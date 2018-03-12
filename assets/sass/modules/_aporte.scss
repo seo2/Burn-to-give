@@ -41,6 +41,11 @@ section.aporte{
 			width: 185px;
 			height: 175px;
 		}
+		.btn-enviar-calorias-eng{
+			@extend .btn-enviar-calorias;
+			background: url(../img/btn-donar-eng.png);;
+
+		}
 	}
 	p{
 
