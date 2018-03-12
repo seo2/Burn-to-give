@@ -30,7 +30,9 @@ a:focus, input[type="text"] { outline: none !important; }
 
 .texto-amarillo { font-family: "Gotham-Black", arial, sans-serif; font-size: 35px; font-size: 2.1875rem; text-transform: uppercase; color: #fdd80a; margin: 0; padding: 0; display: inline-block; line-height: 1; }
 
-.texto-naranjo { color: #ed611c; }
+.texto-naranjo-bold { color: #f28715; font-family: "Gotham-Bold", arial, sans-serif; }
+
+.texto-naranjo-bold { color: #ed611c; font-family: "Gotham-Bold", arial, sans-serif; }
 
 .bloque-amarillo { background-color: #f8b80b; margin: 0; padding: 15px 26px; }
 .bloque-amarillo h2, .bloque-amarillo section.problema h3, section.problema .bloque-amarillo h3, .bloque-amarillo section.problema h4, section.problema .bloque-amarillo h4, .bloque-amarillo section.empresas h3, section.empresas .bloque-amarillo h3, .bloque-amarillo section.empresas h4, section.empresas .bloque-amarillo h4 { font-family: "Gotham-Black", arial, sans-serif; font-size: 16px; font-size: 1rem; color: white; text-transform: uppercase; margin-bottom: 10px; font-style: italic; float: left; }
@@ -494,6 +496,14 @@ section.login .fecha-nac label { margin-left: 20px; }
 section.login .fecha-nac label.radio-inline { color: #ed611c; font-family: "Gotham-Medium", arial, sans-serif; }
 section.login .fecha-nac .bt-naranjo { margin: 20px auto 30px auto; padding: 17px 80px 10px 80px; font-size: 20px; font-size: 1.25rem; }
 @media (max-width: 767px) { section.login .fecha-nac .bt-naranjo { padding-right: 0; padding-left: 0; width: 100%; text-align: center; } }
+
+section.contacto .tit-contacto { background-color: #0874ac; text-align: left; text-transform: uppercase; font-size: 24px; font-size: 1.5rem; padding-left: 15px; padding-top: 10px; padding-bottom: 10px; margin-top: 150px; margin-bottom: 40px; }
+section.contacto .bg-contacto { position: absolute; position: absolute; left: 50%; -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); top: 0; z-index: -1; }
+section.contacto p { text-align: center; }
+section.contacto p a { font-size: 16px; font-size: 1rem; }
+section.contacto .huincha { border-bottom: none; }
+section.contacto .caja-texto-sombra { padding-bottom: 50px; }
+section.contacto .caja-texto-sombra .pie-de-caja { padding: 10px 0; }
 
 /* ajustes seo2 */
 @media (max-width: 767px) { h2.title-aporte, section.problema h3.title-aporte, section.problema h4.title-aporte, section.empresas h3.title-aporte, section.empresas h4.title-aporte, section.problema h3.title-aporte, section.problema h4.title-aporte, section.empresas h3.title-aporte, section.empresas h4.title-aporte, section.preguntas h3.title-aporte, section.preguntas h4.title-aporte { font-size: 2.1rem; line-height: initial; padding: 20px 0 20px 0; }
