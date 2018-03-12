@@ -12,3 +12,4 @@ config.codekit3
 *.scss
 *.scss
 *.scssc
+*.codekit3

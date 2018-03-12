@@ -491,6 +491,7 @@ section.login .fecha-nac p.inicia a { color: #ed611c; }
 section.login .fecha-nac label { margin-left: 20px; }
 section.login .fecha-nac label.radio-inline { color: #ed611c; font-family: "Gotham-Medium", arial, sans-serif; }
 section.login .fecha-nac .bt-naranjo { margin: 20px auto 30px auto; padding: 17px 80px 10px 80px; font-size: 20px; font-size: 1.25rem; }
+@media (max-width: 767px) { section.login .fecha-nac .bt-naranjo { padding-right: 0; padding-left: 0; width: 100%; text-align: center; } }
 
 /* ajustes seo2 */
 @media (max-width: 767px) { h2.title-aporte, section.problema h3.title-aporte, section.problema h4.title-aporte, section.empresas h3.title-aporte, section.empresas h4.title-aporte, section.problema h3.title-aporte, section.problema h4.title-aporte, section.empresas h3.title-aporte, section.empresas h4.title-aporte, section.preguntas h3.title-aporte, section.preguntas h4.title-aporte { font-size: 2.1rem; line-height: initial; padding: 20px 0 20px 0; }
