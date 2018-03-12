@@ -61,8 +61,13 @@
 	display: inline-block;
 	line-height: 1;
 }
-.texto-naranjo{
+.texto-naranjo-bold{
+	color: #f28715;
+	font-family: $bold;
+}
+.texto-naranjo-bold{
 	color: $naranjo;
+	font-family: $bold;
 }
 .bloque-amarillo{
 	background-color: #f8b80b;

@@ -167,6 +167,23 @@ section.empresas{
 				//	line-height: 31px;
 				}
 		}
+		ul{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			text-align: center;
+			li{
+				a{
+					display:inline-block;
+					margin-bottom: 20px;
+
+					//max-width: 90%;
+					img{
+
+					}
+				}
+			}
+		}
 } //empresas
 section.preguntas{
 	position: relative;
