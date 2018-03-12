@@ -41,10 +41,7 @@ $('.slider-iconos').owlCarousel({
             items:5
         }
     }
-})
-
-
-
+});
 
 function myFacebookLogin() {
   FB.login(function(response){
@@ -186,31 +183,32 @@ var v1 = jQuery("#form-login").validate({
 		});
 
 var v2 = jQuery("#formEnviarCalorias").validate({
-			submitHandler: function(form) {
-				jQuery(form).ajaxSubmit({
-					beforeSubmit: function(){
-						//mostrar login
-					},
-					success: function(data){
-						console.log(data);
-						if(data >= 1){
-							//window.location.href = "index.php";
-							console.log("mostrar modal");
-							var calorias = $("#numCalorias").val();
-							$("#num-calorias2").html(calorias);
-							$("#userID").val(data);
-							$("#modal-share").modal();
-
-						}else{
-							if(data == 0){
-								swal("Atención - Máximo de calorías diarias: 3.000", "Llegaste al límite de calorías diarias, vuelve a ingresar mañana.", "error");
-							}
-						}
-						
+	submitHandler: function(form) {
+		jQuery(form).ajaxSubmit({
+			beforeSubmit: function(){
+				//mostrar login
+			},
+			success: function(data){
+				console.log(data);
+				if(data >= 1){
+					//window.location.href = "index.php";
+					console.log("mostrar modal");
+					var calorias = $("#numCalorias").val();
+					$("#num-calorias2").html(calorias);
+					$("#userID").val(data);
+					//$("#modal-share").modal();
+					
+		  			window.location.href = "share-image.php?_p="+data;
+				}else{
+					if(data == 0){
+						swal("Atención - Máximo de calorías diarias: 3.000", "Llegaste al límite de calorías diarias, vuelve a ingresar mañana.", "error");
 					}
-				});
+				}
+				
 			}
 		});
+	}
+});
 
 
 
@@ -357,14 +355,15 @@ function readURL(input) {
         var reader = new FileReader();
 
         reader.onload = function (e) {
-            $('#fotoperfil').attr('src', e.target.result);
+//             $('#fotoperfil').attr('src', e.target.result);
+            $('.img-wrap').css('background-image', 'url('+e.target.result+')');
+            
             $('#nofoto').hide();
             $('#fotito').fadeIn();
             $('#confirmar').removeClass('hide');
             $('#elegir').html('Elegir otra');
         }
-        
-
+       
         reader.readAsDataURL(input.files[0]);
     }
 }
@@ -376,7 +375,9 @@ $("#fileToUpload").change(function(){
 
 
 $('.share-ig').on('click', function(){
-	
-	
-	
+	$('#sharepaso1').addClass('hide');
+	$('#sharepaso2').removeClass('hide');
 });
+
+$('.collapse').collapse();
+

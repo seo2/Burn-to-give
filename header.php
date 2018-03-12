@@ -1,23 +1,7 @@
 <?php
+ob_start();
 session_start();
-$current_page = basename($_SERVER['PHP_SELF']);
-//echo $current_page;
-
-/*
-if(!isset($_SESSION["burntogive"]) && $current_page != "ingresa.php") {
-	header("Location:ingresa.php");
-	exit();
-}
-*/
-
-if(!isset($_SESSION["burntogive"]) && $current_page != "registro.php") {
-	if($current_page != "ingresa.php") {
-		header("Location:registro.php");
-		exit();
-	}
-}
-
-
+$current_page = basename($_SERVER['PHP_SELF']);	
 require_once 'ajax/_lib/config.php';
 require_once 'ajax/_lib/MysqliDb.php';
 $db = new MysqliDb (HOST, USERNAME, PASSWORD, DATABASE);
@@ -57,6 +41,14 @@ $db = new MysqliDb (HOST, USERNAME, PASSWORD, DATABASE);
 		<meta property="og:image:height" content="600" />
 		<?php }
 		endif;?>
+<?php	
+	if(!isset($_SESSION["burntogive"]) && $current_page != "registro.php") {
+		if($current_page != "ingresa.php") {
+			header("Location:registro.php");
+			exit();
+		}
+	}
+?>		
 		<title>Burn To Give</title>
 
 		<!-- Bootstrap -->
@@ -75,7 +67,7 @@ $db = new MysqliDb (HOST, USERNAME, PASSWORD, DATABASE);
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
-		<link rel="icon" type="image/png" href="assets/img/logo.png" />
+		<link rel="icon" type="image/png" href="assets/img/favicon.png" />
 
 
 	</head>
