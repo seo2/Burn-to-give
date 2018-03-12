@@ -5,10 +5,40 @@ $current_page = basename($_SERVER['PHP_SELF']);
 require_once 'ajax/_lib/config.php';
 require_once 'ajax/_lib/MysqliDb.php';
 $db = new MysqliDb (HOST, USERNAME, PASSWORD, DATABASE);
-if($_GET['lang']){
-	$lang = $_GET['lang'];
+
+include("geoiploc.php");
+
+
+if($_SESSION["burntogivelang"]){
+	$lang = $_SESSION["burntogivelang"];
 }else{
-	$lang = 'es';
+	
+	if($_GET['lang']){
+		$lang = $_GET['lang'];
+	}else{
+		
+		if(getCountryFromIP($ip, "code")=='CL' || 
+		getCountryFromIP($ip, "code") == 'AR' || 
+		getCountryFromIP($ip, "code") == 'UY' || 
+		getCountryFromIP($ip, "code") == 'PY' || 
+		getCountryFromIP($ip, "code") == 'BO' || 
+		getCountryFromIP($ip, "code") == 'PE' || 
+		getCountryFromIP($ip, "code") == 'EC' || 
+		getCountryFromIP($ip, "code") == 'CO' || 
+		getCountryFromIP($ip, "code") == 'VE' || 
+		getCountryFromIP($ip, "code") == 'PA' || 
+		getCountryFromIP($ip, "code") == 'CR' || 
+		getCountryFromIP($ip, "code") == 'NI' || 
+		getCountryFromIP($ip, "code") == 'HN' || 
+		getCountryFromIP($ip, "code") == 'SV' || 
+		getCountryFromIP($ip, "code") == 'GT' || 
+		getCountryFromIP($ip, "code") == 'MX' || 
+		getCountryFromIP($ip, "code") == 'ES'){
+			$lang = 'es';
+		}else{
+			$lang = 'en';
+		}
+	}
 }
 ?>
 <!DOCTYPE html>

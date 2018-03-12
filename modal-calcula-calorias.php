@@ -9,7 +9,7 @@
        <!--  <h4 class="modal-title" id="calcula-calorias">Modal title</h4> -->
       </div>
       <div class="modal-body">
-        <h2>calcula tus calorías</h2>
+        <h2><?php if($lang=='en'){ ?>calculate your calories<?php }else{ ?>calcula tus calorías<?php } ?></h2>
 
         <form id="formCalculaCalorias" class="form-inline">
         	<div class="row">

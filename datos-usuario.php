@@ -144,9 +144,9 @@ function changeDateEn2($fecha){
 								if($total == ""){
 									$total = 0;
 								}
-								$calc_comidas = round($total / 500);
+								$calc_comidas = round($total / 500,1);
 								?>
-								<p class="numero"><?php echo $total;?> <?php if($lang=='en'){ ?>calories<?php }else{ ?>calorías<?php } ?></p>
+								<p class="numero"><?php echo number_format($total);?> <?php if($lang=='en'){ ?>calories<?php }else{ ?>calorías<?php } ?></p>
 							</div>
 						</div>
 						<p class="equivalente">
@@ -181,7 +181,7 @@ function changeDateEn2($fecha){
 								</p>
 							</div>
 							<div class="col-xs-8">
-								<p class="calorias"><?php echo $calVal;?> <?php if($lang=='en'){ ?>calories burned<?php }else{ ?>calorías quemadas<?php } ?></p>
+								<p class="calorias"><?php echo number_format($calVal);?> <?php if($lang=='en'){ ?>calories burned<?php }else{ ?>calorías quemadas<?php } ?></p>
 							</div>
 						</div>
 						<?

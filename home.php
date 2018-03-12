@@ -6,11 +6,11 @@
 			<div class="selector-idioma">
 				<ul>
 					<li>
-						<a <?php if($lang=='es'){ ?>class="selected"<?php } ?>href="">esp</a>
+						<a <?php if($lang=='es'){ ?>class="selected"<?php } ?>href="javascript:void(0);" data-lang="es">esp</a>
 					</li>
 					<li class="divisor">|</li>
 					<li>
-						<a <?php if($lang=='en'){ ?>class="selected"<?php } ?> href="">eng</a>
+						<a <?php if($lang=='en'){ ?>class="selected"<?php } ?> href="javascript:void(0);" data-lang="en">eng</a>
 					</li>
 				</ul>
 			</div>
@@ -145,6 +145,7 @@
 		</div>
 	</div>
 </section>
+
 
 
 <?php include('footer.php'); ?>

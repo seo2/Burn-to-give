@@ -36,7 +36,7 @@ $('.slider-iconos').owlCarousel({
             margin: 5
         },
         430:{
-            items:2
+            items:4
         },
         768:{
             items:5
@@ -366,7 +366,8 @@ function readURL(input) {
             $('#nofoto').hide();
             $('#fotito').fadeIn();
             $('#confirmar').removeClass('hide');
-            $('#elegir').html('Elegir otra');
+            $('.elegirfoto').addClass('hide');
+            $('.elegirotra').removeClass('hide');
         }
 
         reader.readAsDataURL(input.files[0]);
@@ -382,4 +383,25 @@ $("#fileToUpload").change(function(){
 $('.share-ig').on('click', function(){
 	$('#sharepaso1').addClass('hide');
 	$('#sharepaso2').removeClass('hide');
+});
+
+
+$('.selector-idioma a').on('click', function(){
+	
+	idioma = $(this).data('lang');
+	  $.ajax({
+		  type: "POST",
+		  url: 'ajax/lang.php',
+		  data: {lang: idioma},
+		  beforeSend: function() {
+	    	//mostrar loading
+	    	console.log("Cambiar idioma");
+	  		},
+		  success: function(data){
+		  	console.log(data);
+		  	    if(data =='ok'){
+		  			location.reload();
+		  		}
+		  }
+		});	
 });

@@ -3,15 +3,14 @@
 	<?php // include('main-nav.php'); ?>
 	<header class="fondo-degradado-naranja position-relative">
 		<div class="container position-relative">
-
 			<div class="selector-idioma">
 				<ul>
 					<li>
-						<a class="selected" href="">esp</a>
+						<a <?php if($lang=='es'){ ?>class="selected"<?php } ?>href="javascript:void(0);" data-lang="es">esp</a>
 					</li>
 					<li class="divisor">|</li>
 					<li>
-						<a href="">eng</a>
+						<a <?php if($lang=='en'){ ?>class="selected"<?php } ?> href="javascript:void(0);" data-lang="en">eng</a>
 					</li>
 				</ul>
 			</div>

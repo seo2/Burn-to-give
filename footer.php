@@ -2,8 +2,14 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-sm-12 text-center">
+						<?php if($lang=='en'){ ?>
+							<p>Companies that are converting  <br>
+							your calories into nutrition </p>
+						<?php }else{ ?>
 							<p>Empresas que transforman <br>
 							tus calorias en alimento</p>
+						<?php } ?>
+							
 					</div>
 				</div>
 				<section class="logos-footer clearfix">
@@ -11,6 +17,17 @@
 						<img class="logo-footer center-block" src="assets/img/logo-footer.png" alt="">
 						<p class="copy">© 2018 Burn to give <br>
 						Versión 0.1 Beta</p>
+						<p><small>
+							<?php 
+								
+								  $ip = $_SERVER["REMOTE_ADDR"];
+								  echo "IP: " . $ip . "<br />";
+								
+								  echo getCountryFromIP($ip, " NamE ");
+								  echo "<br />\n";
+								
+							?>
+						</small></p>
 				</section> <!-- logos footer -->
 			</div>
 		</footer>

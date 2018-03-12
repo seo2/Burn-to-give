@@ -3,7 +3,6 @@
 
 	$id_p = $_GET["_p"];
 
-//echo $id_p;
 
 	$db->where ("calID", $id_p);
 	$user = $db->getOne ("calorias");
@@ -34,34 +33,38 @@
        <!--  <h4 class="modal-title" id="calcula-calorias">Modal title</h4> -->
       </div>
       <div class="modal-body">
+	    <?php if($lang=='en'){ ?>
+		<h2>Many thanks!</h2>
+		<p>Multiply your calories X2 by sharing your donation in social media with <span class="txt-naranjo">#burntogive</span> To motivate others
+		</p>	    
+	    <?php }else{ ?>
 		<h2>Muchas gracias!!</h2>
 		<p>Multiplica tus calorías x2 compartiendo tu aporte en
 			redes sociales con <span class="txt-naranjo">#burntogive</span> para motivar a otros
 		</p>
+		<?php } ?>
 		<form action="ajax/upload.php" method="post" enctype="multipart/form-data" id="form-upload">
 			<input type="hidden" name="userID" id="userID" value="<?php echo $_GET['_p']; ?>">
 			<input type="hidden" name="op" value="personalizada">
 			<input type="file" name="fileToUpload" id="fileToUpload" class="hide">
-<!-- 			<input type="hidden" name="userid" value="<?php echo $_SESSION["burntogive"];?>"> -->
-
 			<div class="row">
 				<div class="col-xs-12">
 					<div id="fotito" class="bloque-imagen text-center" style="display:none;">
 						<div class="img-wrap">
 							<div class="box-total-calorias">
-								<p class="acabo-donar">acabo de donar</p>
+								<p><?php if($lang=='en'){ ?>I just donated<?php }else{ ?>acabo de donar<?php } ?></p>
 								<p class="num-calorias"><?php echo $calVal;?></p>
-								<p class="sub-text">calorías</p>
+								<p class="sub-text"><?php if($lang=='en'){ ?>calories<?php }else{ ?>calorías<?php } ?></p>
 							</div>
 							<img class="img-responsive img-barra" src="assets/img/barra-post.png" alt="">
-<!-- 							<img src="" class="img-responsive" id="fotoperfil" > -->
 						</div>
 					</div>		    		
 		    	</div>	
 			</div>
-			<button type="button" class="btn btn-default bt-naranjo bt-subir fondo-degradado-naranja center-block " onclick="document.getElementById('fileToUpload').click(); return false" id="elegir">Elegir foto</button>
+			<button type="button" class="btn btn-default bt-naranjo bt-subir fondo-degradado-naranja center-block " onclick="document.getElementById('fileToUpload').click(); return false" id="elegir">
+				<span class="elegirfoto"><?php if($lang=='en'){ ?>Upload photo<?php }else{ ?>Elegir foto<?php } ?></span><span class="elegirotra hide"><?php if($lang=='en'){ ?>Change photo<?php }else{ ?>Elegir otra<?php } ?></span></button>
 			
-			<button type="submit" class="btn btn-default bt-naranjo bt-subir fondo-degradado-naranja center-block hide" id="confirmar"><span class="txt">Confirmar</span> <span class="percent hide"></span></button>
+			<button type="submit" class="btn btn-default bt-naranjo bt-subir fondo-degradado-naranja center-block hide" id="confirmar"><span class="txt"><?php if($lang=='en'){ ?>Confirm<?php }else{ ?>Confirmar<?php } ?></span> <span class="percent hide"></span></button>
 		</form>
 		<div class="progress hide">
 		    <div class="bar"></div >
@@ -70,14 +73,14 @@
 		   
 		<div id="status"></div>
 
-		<h4 class="pordefecto">o usar esta imagen</h4>
+		<h4 class="pordefecto"><?php if($lang=='en'){ ?>Or use this image<?php }else{ ?>o usar esta imagen<?php } ?></h4>
 			<div class="text-center pordefecto">
 				<a href="javascript:void(0);" onclick="imagenSecundaria();">
 					<div class="img-wrap">
 					<div class="box-total-calorias">
-						<p>acabo de donar</p>
-						<p class="num-calorias" id="num-calorias2">385</p>
-						<p class="sub-text">calorías</p>
+						<p><?php if($lang=='en'){ ?>I just donated<?php }else{ ?>acabo de donar<?php } ?></p>
+						<p class="num-calorias" id="num-calorias2"><?php echo $calVal;?></p>
+						<p class="sub-text"><?php if($lang=='en'){ ?>calories<?php }else{ ?>calorías<?php } ?></p>
 					</div>
 					<img class="img-responsive center-block img-post" src="assets/img/img-share.jpg" alt="">
 				</a>
@@ -86,7 +89,7 @@
 
 
 
-		<p>RECUERDA USAR <span class="txt-naranjo">#BURNTOGIVE</span></p>
+		<p><?php if($lang=='en'){ ?>Remember to use<?php }else{ ?>RECUERDA USAR<?php } ?> <span class="txt-naranjo">#BURNTOGIVE</span></p>
       </div>
       <div class="modal-footer">
       <!--   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
