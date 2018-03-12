@@ -1,7 +1,7 @@
 <?php
 ob_start();
 session_start();
-$current_page = basename($_SERVER['PHP_SELF']);	
+$current_page = basename($_SERVER['PHP_SELF']);
 require_once 'ajax/_lib/config.php';
 require_once 'ajax/_lib/MysqliDb.php';
 $db = new MysqliDb (HOST, USERNAME, PASSWORD, DATABASE);
@@ -12,27 +12,27 @@ include("geoiploc.php");
 if($_SESSION["burntogivelang"]){
 	$lang = $_SESSION["burntogivelang"];
 }else{
-	
+
 	if($_GET['lang']){
 		$lang = $_GET['lang'];
 	}else{
-		
-		if(getCountryFromIP($ip, "code")=='CL' || 
-		getCountryFromIP($ip, "code") == 'AR' || 
-		getCountryFromIP($ip, "code") == 'UY' || 
-		getCountryFromIP($ip, "code") == 'PY' || 
-		getCountryFromIP($ip, "code") == 'BO' || 
-		getCountryFromIP($ip, "code") == 'PE' || 
-		getCountryFromIP($ip, "code") == 'EC' || 
-		getCountryFromIP($ip, "code") == 'CO' || 
-		getCountryFromIP($ip, "code") == 'VE' || 
-		getCountryFromIP($ip, "code") == 'PA' || 
-		getCountryFromIP($ip, "code") == 'CR' || 
-		getCountryFromIP($ip, "code") == 'NI' || 
-		getCountryFromIP($ip, "code") == 'HN' || 
-		getCountryFromIP($ip, "code") == 'SV' || 
-		getCountryFromIP($ip, "code") == 'GT' || 
-		getCountryFromIP($ip, "code") == 'MX' || 
+
+		if(getCountryFromIP($ip, "code")=='CL' ||
+		getCountryFromIP($ip, "code") == 'AR' ||
+		getCountryFromIP($ip, "code") == 'UY' ||
+		getCountryFromIP($ip, "code") == 'PY' ||
+		getCountryFromIP($ip, "code") == 'BO' ||
+		getCountryFromIP($ip, "code") == 'PE' ||
+		getCountryFromIP($ip, "code") == 'EC' ||
+		getCountryFromIP($ip, "code") == 'CO' ||
+		getCountryFromIP($ip, "code") == 'VE' ||
+		getCountryFromIP($ip, "code") == 'PA' ||
+		getCountryFromIP($ip, "code") == 'CR' ||
+		getCountryFromIP($ip, "code") == 'NI' ||
+		getCountryFromIP($ip, "code") == 'HN' ||
+		getCountryFromIP($ip, "code") == 'SV' ||
+		getCountryFromIP($ip, "code") == 'GT' ||
+		getCountryFromIP($ip, "code") == 'MX' ||
 		getCountryFromIP($ip, "code") == 'ES'){
 			$lang = 'es';
 		}else{
@@ -77,14 +77,14 @@ if($_SESSION["burntogivelang"]){
 		<meta property="og:image:height" content="600" />
 		<?php }
 		endif;?>
-<?php	
+<?php
 	if(!isset($_SESSION["burntogive"]) && $current_page != "home.php") {
 		if($current_page != "ingresa.php") {
-			header("Location:home.php");
-			exit();
+			//header("Location:home.php");
+			//exit();
 		}
 	}
-?>		
+?>
 
 		<!-- Bootstrap -->
 		<!-- Latest compiled and minified CSS -->
@@ -110,7 +110,7 @@ if($_SESSION["burntogivelang"]){
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());
-		
+
 		  gtag('config', 'UA-115586112-1');
 		</script>
 

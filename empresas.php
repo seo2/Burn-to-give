@@ -172,8 +172,25 @@
 						están donando. Al hacerlo están generando un doble impacto en la sociedad,
 						por una parte están motivando a miles de personas a llevar una vida sana y
 						activa y por otro lado están contribuyendo a alimentar a miles de niños alrededor del mundo. </p>
-						<p class="texto-amarillo"> ¡No podríamos hacer esto  <br> sin su apoyo!</p>
-						<img class="img-responsive center-block grilla-logos" src="assets/img/logos-footer.png" alt="">
+						<p class="texto-amarillo"> ¡No podríamos hacer esto <br> sin su apoyo!</p>
+						<ul>
+							<li><a href=""><img class="img-responsive" src="assets/img/logos-empresas/02.png" alt=""></a></li>
+							<li><a href=""><img class="img-responsive" src="assets/img/logos-empresas/04.png" alt=""></a></li>
+							<li><a href=""><img class="img-responsive" src="assets/img/logos-empresas/11.png" alt=""></a></li>
+							<li><a href=""><img class="img-responsive" src="assets/img/logos-empresas/09.png" alt=""></a></li>
+							<li><a href=""><img class="img-responsive" src="assets/img/logos-empresas/08.png" alt=""></a></li>
+							<li><a href=""><img class="img-responsive" src="assets/img/logos-empresas/12.png" alt=""></a></li>
+							<li><a href=""><img class="img-responsive" src="assets/img/logos-empresas/10.png" alt=""></a></li>
+							merrell
+							<li><a href=""><img class="img-responsive" src="assets/img/logos-empresas/14.png" alt=""></a></li>
+							<li><a href=""><img class="img-responsive" src="assets/img/logos-empresas/03.png" alt=""></a></li>
+
+							<li><a href=""><img class="img-responsive" src="assets/img/logos-empresas/07.png" alt=""></a></li>
+							<li><a href=""><img class="img-responsive" src="assets/img/logos-empresas/05.png" alt=""></a></li>
+							<li><a href=""><img class="img-responsive" src="assets/img/logos-empresas/01.png" alt=""></a></li>
+							first endurance
+							<li><a href=""><img class="img-responsive" src="assets/img/logos-empresas/06.png" alt=""></a></li>
+						</ul>
 			</div>
 		</div>
 	</section>

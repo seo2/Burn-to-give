@@ -20,3 +20,5 @@ config.codekit3
 *.scssc
 *.scssc
 *.scssc
+*.scssc
+assets/img/.DS_Store

@@ -449,6 +449,8 @@ section.empresas h3 { font-size: 45px; font-size: 2.8125rem; color: white; }
 section.empresas h4 { font-size: 40px; font-size: 2.5rem; color: #949494; display: inline-block; border-bottom: 1px solid #ed611c; margin-left: 0; text-transform: none; }
 section.empresas p { font-family: "Gotham-Medium", arial, sans-serif; font-size: 16px; font-size: 1rem; color: #fff; line-height: 20px; }
 section.empresas p.texto-amarillo { color: #f8b80b; text-align: center; font-family: "Gotham-Bold", arial, sans-serif; display: block; font-size: 16px; font-size: 1rem; margin: 24px 0 30px 0; }
+section.empresas ul { margin: 0; padding: 0; list-style: none; text-align: center; }
+section.empresas ul li a { display: inline-block; margin-bottom: 20px; }
 
 section.preguntas { position: relative; }
 section.preguntas .bg-faq { position: absolute; position: absolute; left: 50%; -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); top: 0; z-index: 0; }
