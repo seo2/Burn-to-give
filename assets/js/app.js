@@ -196,7 +196,9 @@ var v2 = jQuery("#formEnviarCalorias").validate({
 					var calorias = $("#numCalorias").val();
 					$("#num-calorias2").html(calorias);
 					$("#userID").val(data);
-					$("#modal-share").modal();
+					//$("#modal-share").modal();
+					
+		  			window.location.href = "share-image.php?_p="+data;
 				}else{
 					if(data == 0){
 						swal("Atención - Máximo de calorías diarias: 3.000", "Llegaste al límite de calorías diarias, vuelve a ingresar mañana.", "error");
@@ -353,7 +355,9 @@ function readURL(input) {
         var reader = new FileReader();
 
         reader.onload = function (e) {
-            $('#fotoperfil').attr('src', e.target.result);
+//             $('#fotoperfil').attr('src', e.target.result);
+            $('.img-wrap').css('background-image', 'url('+e.target.result+')');
+            
             $('#nofoto').hide();
             $('#fotito').fadeIn();
             $('#confirmar').removeClass('hide');
@@ -371,7 +375,9 @@ $("#fileToUpload").change(function(){
 
 
 $('.share-ig').on('click', function(){
-	
-	
-	
+	$('#sharepaso1').addClass('hide');
+	$('#sharepaso2').removeClass('hide');
 });
+
+$('.collapse').collapse();
+

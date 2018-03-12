@@ -37,9 +37,9 @@ if($userid != ""){
 	}else{
 
 	$data = array(
-			'usuID' => $userid, 
-			'calVal' => $numCalorias,
-			'calTS' => $hoy
+			'usuID' 	=> $userid, 
+			'calVal' 	=> $numCalorias,
+			'calTS' 	=> $hoy
 		);
 		$lastInsertId = "id";
 		$id = $db->insert ('calorias', $data);
