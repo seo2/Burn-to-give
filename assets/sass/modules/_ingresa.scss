@@ -96,8 +96,10 @@ section.ingresa{
 			margin: 0 auto 30px auto;
 			::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
 
-				    font-family: $bold-italic;
-				    color: $gris;
+				  //  font-family: $bold-italic;
+					font-family: arial, helvetica;
+					letter-spacing:normal;
+					color: $gris;
 				    opacity: 1; /* Firefox */
 				    @include font-size(20px);
 				     @media(max-width:768px){
@@ -113,8 +115,10 @@ section.ingresa{
 
 				:-ms-input-placeholder { /* Internet Explorer 10-11 */
 
-				    font-family: $bold-italic;
-				    color: $gris;
+				  //  font-family: $bold-italic;
+					font-family: arial, helvetica;
+					letter-spacing:normal;
+					color: $gris;
 				    @include font-size(20px);
 				      @media(max-width:768px){
 				 		@include font-size(16px);
