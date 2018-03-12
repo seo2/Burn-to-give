@@ -457,6 +457,13 @@
 		"oAP": "\/ajax\/save-user-fb.php",
 		"oF": 0
 		},
+	"\/ajax\/save-user-ini.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax\/save-user-ini.php",
+		"oF": 0
+		},
 	"\/ajax\/save-user.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -2904,11 +2911,11 @@
 		"oAP": "\/ingresa.php",
 		"oF": 0
 		},
-	"\/login.php": {
+	"\/logout.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/login.php",
+		"oAP": "\/logout.php",
 		"oF": 0
 		},
 	"\/main-nav.php": {
@@ -2930,6 +2937,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/modal-share.php",
+		"oF": 0
+		},
+	"\/registro.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/registro.php",
 		"oF": 0
 		},
 	"\/share-post.php": {

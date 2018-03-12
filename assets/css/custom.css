@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
 html { position: relative; height: 100%; font-size: 100%; }
@@ -13,11 +14,13 @@ a:focus, input[type="text"] { outline: none !important; }
 
 .mw { max-width: 750px; }
 
-.linea-azul-xs { width: 60px; height: 3px; background-color: #0870a6; display: block; margin-bottom: 30px; }
+.linea-azul-xs { width: 30px; height: 3px; background-color: #0870a6; display: block; margin-bottom: 15px; }
 
 .mb-100 { margin-bottom: 100px !important; }
 
 .mb-30 { margin-bottom: 30px !important; }
+
+.mb-50 { margin-bottom: 50px !important; }
 
 .pb-100 { padding-bottom: 100px !important; }
 
@@ -29,28 +32,34 @@ a:focus, input[type="text"] { outline: none !important; }
 
 .texto-naranjo { color: #ed611c; }
 
-.bloque-amarillo { background-color: #f8b80b; margin: 0; padding: 30px; }
-.bloque-amarillo h2, .bloque-amarillo section.problema h3, section.problema .bloque-amarillo h3, .bloque-amarillo section.problema h4, section.problema .bloque-amarillo h4, .bloque-amarillo section.empresas h3, section.empresas .bloque-amarillo h3, .bloque-amarillo section.empresas h4, section.empresas .bloque-amarillo h4, .bloque-amarillo section.preguntas h3, section.preguntas .bloque-amarillo h3, .bloque-amarillo section.preguntas h4, section.preguntas .bloque-amarillo h4 { font-family: "Gotham-Bold-Italic", arial, sans-serif; font-size: 35px; font-size: 2.1875rem; color: white; text-transform: uppercase; margin-bottom: 20px; }
+.bloque-amarillo { background-color: #f8b80b; margin: 0; padding: 15px 26px; }
+.bloque-amarillo h2, .bloque-amarillo section.problema h3, section.problema .bloque-amarillo h3, .bloque-amarillo section.problema h4, section.problema .bloque-amarillo h4, .bloque-amarillo section.empresas h3, section.empresas .bloque-amarillo h3, .bloque-amarillo section.empresas h4, section.empresas .bloque-amarillo h4 { font-family: "Gotham-Black", arial, sans-serif; font-size: 16px; font-size: 1rem; color: white; text-transform: uppercase; margin-bottom: 10px; font-style: italic; float: left; }
 .bloque-amarillo h3 { font-family: "Gotham-Medium", arial, sans-serif; font-size: 33px; font-size: 2.0625rem; color: #ed611c; text-transform: uppercase; }
-.bloque-amarillo p { font-family: "Gotham-Medium", arial, sans-serif; font-size: 23px; font-size: 1.4375rem; color: white; font-style: italic; line-height: 24px; }
+.bloque-amarillo p { font-family: "Gotham-Medium", arial, sans-serif; font-size: 15px; font-size: 0.9375rem; color: white; font-style: italic; line-height: 18px; }
 
-.bloque-celeste { padding: 30px; background: #00a2e9; background: -webkit-gradient(linear, left top, left bottom, from(#00a2e9), to(#00a2e9)); background: linear-gradient(to bottom, #00a2e9 0%, #00a2e9 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a2e9', endColorstr='#00a2e9',GradientType=0 ); }
+.bloque-celeste { padding: 15px 26px; background: #00a2e9; background: -webkit-gradient(linear, left top, left bottom, from(#00a2e9), to(#00a2e9)); background: linear-gradient(to bottom, #00a2e9 0%, #00a2e9 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a2e9', endColorstr='#00a2e9',GradientType=0 ); }
 .bloque-celeste.borde-amarillo { border-bottom: 10px solid #fdd80a; width: 100%; display: block; }
-.bloque-celeste p { font-family: "Gotham-Medium", arial, sans-serif; font-size: 23px; font-size: 1.4375rem; color: white; margin-bottom: 20px; line-height: 24px; }
-.bloque-celeste p.hash { font-family: "Gotham-Black", arial, sans-serif; font-size: 23px; font-size: 1.4375rem; color: white; }
+.bloque-celeste p { font-family: "Gotham-Medium", arial, sans-serif; font-size: 15px; font-size: 0.9375rem; color: white; margin-bottom: 20px; line-height: 18px; }
+.bloque-celeste p.hash { font-family: "Gotham-Black", arial, sans-serif; font-size: 15px; font-size: 0.9375rem; color: white; }
 
 .hash { font-family: "Gotham-Black", arial, sans-serif; font-size: 23px; font-size: 1.4375rem; color: white; }
 
-.caja-texto-sombra { -webkit-box-shadow: 1px 1px 17px 3px rgba(0, 0, 0, 0.31); box-shadow: 1px 1px 17px 3px rgba(0, 0, 0, 0.31); width: 80%; padding: 30px; background-color: #fff; display: block; margin-right: auto; margin-left: auto; position: relative; max-width: 680px; }
+.padding-30 { padding: 20px 20px 0 20px; }
+
+.caja-texto-sombra { -webkit-box-shadow: 1px 1px 17px 3px rgba(0, 0, 0, 0.31); box-shadow: 1px 1px 17px 3px rgba(0, 0, 0, 0.31); width: 90%; background-color: #fff; display: block; margin-right: auto; margin-left: auto; position: relative; max-width: 680px; margin-bottom: 30px; }
 .caja-texto-sombra ul { margin: 0; padding: 0; }
 .caja-texto-sombra ul li { font-family: "Gotham-Medium", arial, sans-serif; font-size: 30px; font-size: 1.875rem; color: #a7a7a7; margin-bottom: 30px; padding: 0; line-height: 1; }
-.caja-texto-sombra p { font-family: "Gotham-Medium", arial, sans-serif; font-size: 30px; font-size: 1.875rem; color: #a7a7a7; margin-bottom: 30px; padding: 0; line-height: 1; }
-.caja-texto-sombra p.texto-azul { font-style: italic; color: #0870a6; }
+.caja-texto-sombra p { font-family: "Gotham-Medium", arial, sans-serif; color: #8a8989; line-height: 18px; }
+.caja-texto-sombra p.texto-azul, .caja-texto-sombra p span.texto-azul { font-style: italic; color: #0870a6; font-size: 15px; font-size: 0.9375rem; margin-bottom: 0; line-height: 18px; }
+.caja-texto-sombra p span.texto-amarillo { font-size: 15px; font-size: 0.9375rem; margin-bottom: 0; display: block; margin-top: -1px; }
+.caja-texto-sombra ul { border-top: 1px solid #fdd80a; padding-top: 15px; list-style: none; }
+.caja-texto-sombra ul li { font-size: 15px; font-size: 0.9375rem; color: #8a8989; line-height: 18px; }
+.caja-texto-sombra ul li::before { content: "•"; color: #fdd80a; margin-right: 5px; }
 
 .pie-de-caja { padding: 20px 0px; text-align: center; background-color: #e7e7e7; display: block; margin-right: auto; margin-left: auto; width: 100%; }
 .pie-de-caja .hash { color: #ed611c; margin-bottom: 0; }
 .pie-de-caja.huincha { border-bottom: 10px solid #0870a6; position: absolute; bottom: 0px; left: 0; }
-.pie-de-caja.bloque-gris { position: absolute; bottom: 0px; left: 0; height: 40px; }
+.pie-de-caja.bloque-gris { position: absolute; bottom: 0px; left: 0; height: 20px; padding: 0; }
 
 .texto-amarillo-italic { font-family: "Gotham-Black", arial, sans-serif; font-size: 35px; font-size: 2.1875rem; color: white; text-transform: uppercase; font-style: italic; margin-bottom: 30px; text-align: left; font-size: 40px; font-size: 2.5rem; color: #fdd80a; }
 
@@ -64,13 +73,15 @@ a:focus, input[type="text"] { outline: none !important; }
 
 .linea-gris { max-width: 600px; height: 2px; border-bottom: 3px solid #a7a7a7; margin-bottom: 30px; }
 
-h2, section.problema h3, section.problema h4, section.empresas h3, section.empresas h4, section.preguntas h3, section.preguntas h4 { font-family: "Gotham-Black", arial, sans-serif; text-transform: uppercase; margin: 0; text-align: center; }
-h2.title-aporte, section.problema h3.title-aporte, section.problema h4.title-aporte, section.empresas h3.title-aporte, section.empresas h4.title-aporte, section.preguntas h3.title-aporte, section.preguntas h4.title-aporte { background-color: white; font-size: 75px; font-size: 4.6875rem; color: #a7a7a7; padding: 50px 0 20px 0; line-height: 70px; }
-@media (max-width: 767px) { h2.title-aporte, section.problema h3.title-aporte, section.problema h4.title-aporte, section.empresas h3.title-aporte, section.empresas h4.title-aporte, section.preguntas h3.title-aporte, section.preguntas h4.title-aporte { font-size: 60px; font-size: 3.75rem; line-height: 56px; } }
-h2.title-status, section.problema h3.title-status, section.problema h4.title-status, section.empresas h3.title-status, section.empresas h4.title-status, section.preguntas h3.title-status, section.preguntas h4.title-status { font-size: 70px; font-size: 4.375rem; color: #ed611c; line-height: 70px; }
-@media (max-width: 767px) { h2.title-status, section.problema h3.title-status, section.problema h4.title-status, section.empresas h3.title-status, section.empresas h4.title-status, section.preguntas h3.title-status, section.preguntas h4.title-status { font-size: 50px; font-size: 3.125rem; line-height: 56px; } }
+h2, section.problema h3, section.problema h4, section.empresas h3, section.empresas h4 { font-family: "Gotham-Black", arial, sans-serif; text-transform: uppercase; margin: 0; text-align: center; }
+h2.title-aporte, section.problema h3.title-aporte, section.problema h4.title-aporte, section.empresas h3.title-aporte, section.empresas h4.title-aporte { background-color: white; font-size: 75px; font-size: 4.6875rem; color: #a7a7a7; padding: 50px 0 20px 0; line-height: 70px; }
+@media (max-width: 767px) { h2.title-aporte, section.problema h3.title-aporte, section.problema h4.title-aporte, section.empresas h3.title-aporte, section.empresas h4.title-aporte { font-size: 60px; font-size: 3.75rem; line-height: 56px; } }
+h2.title-status, section.problema h3.title-status, section.problema h4.title-status, section.empresas h3.title-status, section.empresas h4.title-status { font-size: 70px; font-size: 4.375rem; color: #ed611c; line-height: 70px; }
+@media (max-width: 767px) { h2.title-status, section.problema h3.title-status, section.problema h4.title-status, section.empresas h3.title-status, section.empresas h4.title-status { font-size: 50px; font-size: 3.125rem; line-height: 56px; } }
 
 .fondo-azul { background: #258dc8; background: radial-gradient(ellipse at center, #258dc8 0%, #258dc8 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#258dc8', endColorstr='#258dc8',GradientType=1 ); }
+
+.fondo-azul-2 { background: #0874ac; background: -webkit-gradient(linear, left top, left bottom, from(#0874ac), to(#00435e)); background: linear-gradient(to bottom, #0874ac 0%, #00435e 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0874ac', endColorstr='#00435e',GradientType=0 ); }
 
 .fondo-celeste { background: #00a2e9; background: -webkit-gradient(linear, left top, left bottom, from(#00a2e9), to(#00a2e9)); background: linear-gradient(to bottom, #00a2e9 0%, #00a2e9 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a2e9', endColorstr='#00a2e9',GradientType=0 ); }
 
@@ -104,8 +115,8 @@ h2.title-status, section.problema h3.title-status, section.problema h4.title-sta
 .section-title-wrapper .title-img { width: 50px; float: left; display: inline-block; margin-top: 15px; margin-left: 15px; }
 .section-title-wrapper .title-img img { vertical-align: top; }
 .section-title-wrapper .title-text { position: relative; min-height: 50px; display: inline-block; margin-left: 30px; }
-.section-title-wrapper .title-text h2, .section-title-wrapper .title-text section.problema h3, section.problema .section-title-wrapper .title-text h3, .section-title-wrapper .title-text section.problema h4, section.problema .section-title-wrapper .title-text h4, .section-title-wrapper .title-text section.empresas h3, section.empresas .section-title-wrapper .title-text h3, .section-title-wrapper .title-text section.empresas h4, section.empresas .section-title-wrapper .title-text h4, .section-title-wrapper .title-text section.preguntas h3, section.preguntas .section-title-wrapper .title-text h3, .section-title-wrapper .title-text section.preguntas h4, section.preguntas .section-title-wrapper .title-text h4 { font-size: 35px; font-size: 2.1875rem; text-transform: uppercase; color: #059eb7; font-weight: 700; margin: 0 0 0 0px; padding: 0; line-height: 36px; }
-.section-title-wrapper .title-text h2.title-tutorial, .section-title-wrapper .title-text section.problema h3.title-tutorial, section.problema .section-title-wrapper .title-text h3.title-tutorial, .section-title-wrapper .title-text section.problema h4.title-tutorial, section.problema .section-title-wrapper .title-text h4.title-tutorial, .section-title-wrapper .title-text section.empresas h3.title-tutorial, section.empresas .section-title-wrapper .title-text h3.title-tutorial, .section-title-wrapper .title-text section.empresas h4.title-tutorial, section.empresas .section-title-wrapper .title-text h4.title-tutorial, .section-title-wrapper .title-text section.preguntas h3.title-tutorial, section.preguntas .section-title-wrapper .title-text h3.title-tutorial, .section-title-wrapper .title-text section.preguntas h4.title-tutorial, section.preguntas .section-title-wrapper .title-text h4.title-tutorial { color: #176b8a; }
+.section-title-wrapper .title-text h2, .section-title-wrapper .title-text section.problema h3, section.problema .section-title-wrapper .title-text h3, .section-title-wrapper .title-text section.problema h4, section.problema .section-title-wrapper .title-text h4, .section-title-wrapper .title-text section.empresas h3, section.empresas .section-title-wrapper .title-text h3, .section-title-wrapper .title-text section.empresas h4, section.empresas .section-title-wrapper .title-text h4 { font-size: 35px; font-size: 2.1875rem; text-transform: uppercase; color: #059eb7; font-weight: 700; margin: 0 0 0 0px; padding: 0; line-height: 36px; }
+.section-title-wrapper .title-text h2.title-tutorial, .section-title-wrapper .title-text section.problema h3.title-tutorial, section.problema .section-title-wrapper .title-text h3.title-tutorial, .section-title-wrapper .title-text section.problema h4.title-tutorial, section.problema .section-title-wrapper .title-text h4.title-tutorial, .section-title-wrapper .title-text section.empresas h3.title-tutorial, section.empresas .section-title-wrapper .title-text h3.title-tutorial, .section-title-wrapper .title-text section.empresas h4.title-tutorial, section.empresas .section-title-wrapper .title-text h4.title-tutorial { color: #176b8a; }
 .section-title-wrapper .title-text .title-bar { width: 50px; height: 10px; background-color: #ed611c; position: absolute; bottom: -15px; }
 .section-title-wrapper .title-text .title-bar.title-politica { left: 150px; }
 .section-title-wrapper .title-text .title-bar.title-procesos { left: 189px; }
@@ -147,9 +158,9 @@ h1 { font-weight: 800; font-size: 5em; line-height: 1.35em; margin-bottom: 40px;
 
 .content { padding: 0em 7.500em; margin-bottom: 100px; }
 @media (max-width: 768px) { .content { padding: 0em; margin-top: 50px; margin-bottom: 50px; } }
-.content h2, .content section.problema h3, section.problema .content h3, .content section.problema h4, section.problema .content h4, .content section.empresas h3, section.empresas .content h3, .content section.empresas h4, section.empresas .content h4, .content section.preguntas h3, section.preguntas .content h3, .content section.preguntas h4, section.preguntas .content h4 { font-family: "Gotham-Bold", arial, sans-serif; color: #682944; text-transform: uppercase; font-size: 60px; font-size: 3.75rem; }
-@media (max-width: 768px) { .content h2, .content section.problema h3, section.problema .content h3, .content section.problema h4, section.problema .content h4, .content section.empresas h3, section.empresas .content h3, .content section.empresas h4, section.empresas .content h4, .content section.preguntas h3, section.preguntas .content h3, .content section.preguntas h4, section.preguntas .content h4 { font-size: 34px; font-size: 2.125rem; } }
-@media (max-width: 767px) { .content h2, .content section.problema h3, section.problema .content h3, .content section.problema h4, section.problema .content h4, .content section.empresas h3, section.empresas .content h3, .content section.empresas h4, section.empresas .content h4, .content section.preguntas h3, section.preguntas .content h3, .content section.preguntas h4, section.preguntas .content h4 { font-size: 30px; font-size: 1.875rem; margin-bottom: 30px; } }
+.content h2, .content section.problema h3, section.problema .content h3, .content section.problema h4, section.problema .content h4, .content section.empresas h3, section.empresas .content h3, .content section.empresas h4, section.empresas .content h4 { font-family: "Gotham-Bold", arial, sans-serif; color: #682944; text-transform: uppercase; font-size: 60px; font-size: 3.75rem; }
+@media (max-width: 768px) { .content h2, .content section.problema h3, section.problema .content h3, .content section.problema h4, section.problema .content h4, .content section.empresas h3, section.empresas .content h3, .content section.empresas h4, section.empresas .content h4 { font-size: 34px; font-size: 2.125rem; } }
+@media (max-width: 767px) { .content h2, .content section.problema h3, section.problema .content h3, .content section.problema h4, section.problema .content h4, .content section.empresas h3, section.empresas .content h3, .content section.empresas h4, section.empresas .content h4 { font-size: 30px; font-size: 1.875rem; margin-bottom: 30px; } }
 .content p { font-weight: 300; font-size: 15px; font-size: 0.9375rem; color: #616552; margin-bottom: 2.188em; }
 
 .mt-0 { margin-top: 0 !important; }
@@ -300,7 +311,7 @@ section.ingresa .datos .form-group :-ms-input-placeholder { /* Internet Explorer
 @media (max-width: 768px) { section.ingresa .datos .form-group :-ms-input-placeholder { font-size: 16px; font-size: 1rem; } }
 section.ingresa .datos .form-group ::-ms-input-placeholder { /* Microsoft Edge */ font-family: "Gotham-Bold-Italic", arial, sans-serif; color: #a7a7a7; font-size: 20px; font-size: 1.25rem; }
 @media (max-width: 768px) { section.ingresa .datos .form-group ::-ms-input-placeholder { font-size: 16px; font-size: 1rem; } }
-section.ingresa .datos .form-group .form-control { font-size: 30px; font-size: 1.875rem; font-family: "Gotham-Bold", arial, sans-serif; color: black; }
+section.ingresa .datos .form-group .form-control { font-size: 30px; font-size: 1.875rem; color: black; }
 @media (max-width: 768px) { section.ingresa .datos .form-group .form-control { font-size: 16px; font-size: 1rem; } }
 section.ingresa .datos .form-group select.form-control { font-family: "Gotham-Bold", arial, sans-serif; background-color: #fdd80a; border: none; color: #f87b3b; font-size: 20px; font-size: 1.25rem; }
 section.ingresa .datos-calorias { background-color: #fff; margin-top: -30px; padding: 30px 15px; }
@@ -326,8 +337,8 @@ section.ingresa .datos-calorias .box-calorias .bloque p.calorias { color: #ed611
 @media (min-width: 768px) { #modal-calcula .modal-dialog { width: 750px; margin: 20px auto; } }
 #modal-calcula .modal-dialog .modal-content .modal-header { border-bottom: none; }
 #modal-calcula .modal-dialog .modal-content .modal-header button.close { opacity: 1; margin-top: 20px; margin-right: 20px; }
-#modal-calcula .modal-dialog .modal-content .modal-body h2, #modal-calcula .modal-dialog .modal-content .modal-body section.problema h3, section.problema #modal-calcula .modal-dialog .modal-content .modal-body h3, #modal-calcula .modal-dialog .modal-content .modal-body section.problema h4, section.problema #modal-calcula .modal-dialog .modal-content .modal-body h4, #modal-calcula .modal-dialog .modal-content .modal-body section.empresas h3, section.empresas #modal-calcula .modal-dialog .modal-content .modal-body h3, #modal-calcula .modal-dialog .modal-content .modal-body section.empresas h4, section.empresas #modal-calcula .modal-dialog .modal-content .modal-body h4, #modal-calcula .modal-dialog .modal-content .modal-body section.preguntas h3, section.preguntas #modal-calcula .modal-dialog .modal-content .modal-body h3, #modal-calcula .modal-dialog .modal-content .modal-body section.preguntas h4, section.preguntas #modal-calcula .modal-dialog .modal-content .modal-body h4 { font-size: 50px; font-size: 3.125rem; color: #a7a7a7; font-family: "Gotham-Black", arial, sans-serif; text-transform: uppercase; }
-@media (max-width: 767px) { #modal-calcula .modal-dialog .modal-content .modal-body h2, #modal-calcula .modal-dialog .modal-content .modal-body section.problema h3, section.problema #modal-calcula .modal-dialog .modal-content .modal-body h3, #modal-calcula .modal-dialog .modal-content .modal-body section.problema h4, section.problema #modal-calcula .modal-dialog .modal-content .modal-body h4, #modal-calcula .modal-dialog .modal-content .modal-body section.empresas h3, section.empresas #modal-calcula .modal-dialog .modal-content .modal-body h3, #modal-calcula .modal-dialog .modal-content .modal-body section.empresas h4, section.empresas #modal-calcula .modal-dialog .modal-content .modal-body h4, #modal-calcula .modal-dialog .modal-content .modal-body section.preguntas h3, section.preguntas #modal-calcula .modal-dialog .modal-content .modal-body h3, #modal-calcula .modal-dialog .modal-content .modal-body section.preguntas h4, section.preguntas #modal-calcula .modal-dialog .modal-content .modal-body h4 { font-size: 35px; font-size: 2.1875rem; } }
+#modal-calcula .modal-dialog .modal-content .modal-body h2, #modal-calcula .modal-dialog .modal-content .modal-body section.problema h3, section.problema #modal-calcula .modal-dialog .modal-content .modal-body h3, #modal-calcula .modal-dialog .modal-content .modal-body section.problema h4, section.problema #modal-calcula .modal-dialog .modal-content .modal-body h4, #modal-calcula .modal-dialog .modal-content .modal-body section.empresas h3, section.empresas #modal-calcula .modal-dialog .modal-content .modal-body h3, #modal-calcula .modal-dialog .modal-content .modal-body section.empresas h4, section.empresas #modal-calcula .modal-dialog .modal-content .modal-body h4 { font-size: 50px; font-size: 3.125rem; color: #a7a7a7; font-family: "Gotham-Black", arial, sans-serif; text-transform: uppercase; }
+@media (max-width: 767px) { #modal-calcula .modal-dialog .modal-content .modal-body h2, #modal-calcula .modal-dialog .modal-content .modal-body section.problema h3, section.problema #modal-calcula .modal-dialog .modal-content .modal-body h3, #modal-calcula .modal-dialog .modal-content .modal-body section.problema h4, section.problema #modal-calcula .modal-dialog .modal-content .modal-body h4, #modal-calcula .modal-dialog .modal-content .modal-body section.empresas h3, section.empresas #modal-calcula .modal-dialog .modal-content .modal-body h3, #modal-calcula .modal-dialog .modal-content .modal-body section.empresas h4, section.empresas #modal-calcula .modal-dialog .modal-content .modal-body h4 { font-size: 35px; font-size: 2.1875rem; } }
 #modal-calcula .modal-dialog .modal-content .modal-body h3 { font-size: 25px; font-size: 1.5625rem; text-align: center; color: #159fdd; font-family: "Gotham-Medium", arial, sans-serif; text-transform: uppercase; margin-bottom: 30px; }
 #modal-calcula .modal-dialog .modal-content .modal-body p { font-size: 25px; font-size: 1.5625rem; text-align: center; color: #159fdd; font-family: "Gotham-Medium", arial, sans-serif; text-transform: uppercase; line-height: 24px; }
 #modal-calcula .modal-dialog .modal-content .modal-body p.nota { font-size: 20px; font-size: 1.25rem; }
@@ -362,8 +373,8 @@ section.ingresa .datos-calorias .box-calorias .bloque p.calorias { color: #ed611
 #modal-share .modal-dialog .modal-content .modal-body .img-wrap .box-total-calorias p.sub-text { font-size: 20px; font-size: 1.25rem; font-family: "Gotham-Bold", arial, sans-serif; border-bottom: 1px solid white; display: inline-block; }
 @media (max-width: 480px) { #modal-share .modal-dialog .modal-content .modal-body .img-wrap .box-total-calorias p.sub-text { font-size: 15px; font-size: 0.9375rem; } }
 #modal-share .modal-dialog .modal-content .modal-body p { font-size: 25px; font-size: 1.5625rem; text-align: center; color: #fff; font-family: "Gotham-Bold", arial, sans-serif; text-transform: uppercase; margin-bottom: 30px; }
-#modal-share .modal-dialog .modal-content .modal-body h2, #modal-share .modal-dialog .modal-content .modal-body section.problema h3, section.problema #modal-share .modal-dialog .modal-content .modal-body h3, #modal-share .modal-dialog .modal-content .modal-body section.problema h4, section.problema #modal-share .modal-dialog .modal-content .modal-body h4, #modal-share .modal-dialog .modal-content .modal-body section.empresas h3, section.empresas #modal-share .modal-dialog .modal-content .modal-body h3, #modal-share .modal-dialog .modal-content .modal-body section.empresas h4, section.empresas #modal-share .modal-dialog .modal-content .modal-body h4, #modal-share .modal-dialog .modal-content .modal-body section.preguntas h3, section.preguntas #modal-share .modal-dialog .modal-content .modal-body h3, #modal-share .modal-dialog .modal-content .modal-body section.preguntas h4, section.preguntas #modal-share .modal-dialog .modal-content .modal-body h4 { font-size: 50px; font-size: 3.125rem; color: #0390d0; font-family: "Gotham-Black", arial, sans-serif; text-transform: uppercase; margin-bottom: 30px; }
-@media (max-width: 767px) { #modal-share .modal-dialog .modal-content .modal-body h2, #modal-share .modal-dialog .modal-content .modal-body section.problema h3, section.problema #modal-share .modal-dialog .modal-content .modal-body h3, #modal-share .modal-dialog .modal-content .modal-body section.problema h4, section.problema #modal-share .modal-dialog .modal-content .modal-body h4, #modal-share .modal-dialog .modal-content .modal-body section.empresas h3, section.empresas #modal-share .modal-dialog .modal-content .modal-body h3, #modal-share .modal-dialog .modal-content .modal-body section.empresas h4, section.empresas #modal-share .modal-dialog .modal-content .modal-body h4, #modal-share .modal-dialog .modal-content .modal-body section.preguntas h3, section.preguntas #modal-share .modal-dialog .modal-content .modal-body h3, #modal-share .modal-dialog .modal-content .modal-body section.preguntas h4, section.preguntas #modal-share .modal-dialog .modal-content .modal-body h4 { font-size: 35px; font-size: 2.1875rem; } }
+#modal-share .modal-dialog .modal-content .modal-body h2, #modal-share .modal-dialog .modal-content .modal-body section.problema h3, section.problema #modal-share .modal-dialog .modal-content .modal-body h3, #modal-share .modal-dialog .modal-content .modal-body section.problema h4, section.problema #modal-share .modal-dialog .modal-content .modal-body h4, #modal-share .modal-dialog .modal-content .modal-body section.empresas h3, section.empresas #modal-share .modal-dialog .modal-content .modal-body h3, #modal-share .modal-dialog .modal-content .modal-body section.empresas h4, section.empresas #modal-share .modal-dialog .modal-content .modal-body h4 { font-size: 50px; font-size: 3.125rem; color: #0390d0; font-family: "Gotham-Black", arial, sans-serif; text-transform: uppercase; margin-bottom: 30px; }
+@media (max-width: 767px) { #modal-share .modal-dialog .modal-content .modal-body h2, #modal-share .modal-dialog .modal-content .modal-body section.problema h3, section.problema #modal-share .modal-dialog .modal-content .modal-body h3, #modal-share .modal-dialog .modal-content .modal-body section.problema h4, section.problema #modal-share .modal-dialog .modal-content .modal-body h4, #modal-share .modal-dialog .modal-content .modal-body section.empresas h3, section.empresas #modal-share .modal-dialog .modal-content .modal-body h3, #modal-share .modal-dialog .modal-content .modal-body section.empresas h4, section.empresas #modal-share .modal-dialog .modal-content .modal-body h4 { font-size: 35px; font-size: 2.1875rem; } }
 #modal-share .modal-dialog .modal-content .modal-body h4 { font-size: 40px; font-size: 2.5rem; text-align: center; color: white; font-family: "Gotham-Black", arial, sans-serif; text-transform: uppercase; margin-bottom: 30px; }
 @media (max-width: 767px) { #modal-share .modal-dialog .modal-content .modal-body h4 { font-size: 30px; font-size: 1.875rem; } }
 #modal-share .modal-dialog .modal-content .modal-footer { border-top: none; }
@@ -410,27 +421,35 @@ section.share .bloque-texto p.recuerda { font-size: 30px; font-size: 1.875rem; m
 
 section.video { margin-bottom: 0px; }
 
-section.como h2, section.como section.problema h3, section.problema section.como h3, section.como section.problema h4, section.problema section.como h4, section.como section.empresas h3, section.empresas section.como h3, section.como section.empresas h4, section.empresas section.como h4, section.como section.preguntas h3, section.preguntas section.como h3, section.como section.preguntas h4, section.preguntas section.como h4 { margin-left: 70px; margin-top: 150px; }
+section.como h2, section.como section.problema h3, section.problema section.como h3, section.como section.problema h4, section.problema section.como h4, section.como section.empresas h3, section.empresas section.como h3, section.como section.empresas h4, section.empresas section.como h4 { margin-top: 60px; font-size: 24px; font-size: 1.5rem; margin-left: 25px; margin-bottom: 20px; color: #ffbc06; }
 section.como .bg-como { position: absolute; position: absolute; left: 50%; -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); top: 0; z-index: -1; }
+section.como .llamado { font-size: 18px; font-size: 1.125rem; }
+section.como p { font-size: 15px; font-size: 0.9375rem; color: #8a8989; }
 
-section.historia h2, section.historia section.problema h3, section.problema section.historia h3, section.historia section.problema h4, section.problema section.historia h4, section.historia section.empresas h3, section.empresas section.historia h3, section.historia section.empresas h4, section.empresas section.historia h4, section.historia section.preguntas h3, section.preguntas section.historia h3, section.historia section.preguntas h4, section.preguntas section.historia h4 { font-family: "Gotham-Black", arial, sans-serif; font-size: 60px; font-size: 3.75rem; color: white; text-transform: uppercase; font-style: italic; margin-bottom: 20px; margin-left: 70px; text-align: left; margin-top: 200px; }
+section.historia h2, section.historia section.problema h3, section.problema section.historia h3, section.historia section.problema h4, section.problema section.historia h4, section.historia section.empresas h3, section.empresas section.historia h3, section.historia section.empresas h4, section.empresas section.historia h4 { font-family: "Gotham-Black", arial, sans-serif; font-size: 28px; font-size: 1.75rem; color: white; text-transform: uppercase; font-style: italic; margin-bottom: 20px; margin-left: 25px; text-align: left; margin-top: 50px; }
 section.historia .bg-historia { position: absolute; position: absolute; left: 50%; -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); top: 0; z-index: -1; }
+section.historia .caja-texto-sombra { padding: 20px; }
+section.historia .caja-texto-sombra p { color: #8a8989; }
+section.historia .caja-texto-sombra p.texto-azul { color: #0870a6; margin-bottom: 20px; line-height: 18px; }
 
-section.problema { padding-top: 30px; background-color: #fff; }
-section.problema h2, section.problema h3, section.problema h4 { font-family: "Gotham-Black", arial, sans-serif; font-size: 50px; font-size: 3.125rem; color: #2362a3; text-transform: uppercase; font-style: italic; margin-bottom: 20px; margin-left: 70px; margin-top: 150px; text-align: left; }
-section.problema h3 { font-size: 45px; font-size: 2.8125rem; color: white; }
-section.problema h4 { font-size: 40px; font-size: 2.5rem; color: #949494; display: inline-block; border-bottom: 1px solid #ed611c; margin-left: 0; text-transform: none; }
+section.problema { padding-bottom: 30px; position: relative; background-color: #fff; }
+section.problema .caja-texto-sombra { padding: 10px; }
+section.problema .bg-obesidad { position: absolute; position: absolute; left: 50%; -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); top: 0; z-index: 0; }
+section.problema h2, section.problema h3, section.problema h4 { font-family: "Gotham-Black", arial, sans-serif; font-size: 28px; font-size: 1.75rem; color: #2362a3; text-transform: uppercase; font-style: italic; margin-bottom: 20px; margin-left: 25px; margin-top: 60px; text-align: left; }
+section.problema h3 { font-size: 24px; font-size: 1.5rem; color: white; z-index: 1; position: relative; margin-top: 20px; }
+section.problema h4 { font-size: 20px; font-size: 1.25rem; color: #949494; display: inline-block; border-bottom: 1px solid #f57527; margin-left: 0; text-transform: none; padding: 0; margin: 0; }
+section.problema ul { border: none; }
 
-section.empresas { padding: 30px 30px 50px 30px; }
-section.empresas h2, section.empresas h3, section.empresas h4 { font-family: "Gotham-Black", arial, sans-serif; font-size: 50px; font-size: 3.125rem; color: #fff; text-transform: uppercase; font-style: italic; margin-bottom: 20px; text-align: left; border-bottom: 1px solid #fdd80a; }
+section.empresas { padding: 30px 30px 50px 30px; position: relative; }
+section.empresas h2, section.empresas h3, section.empresas h4 { font-family: "Gotham-Black", arial, sans-serif; font-size: 28px; font-size: 1.75rem; color: #fff; text-transform: uppercase; font-style: italic; margin-bottom: 20px; text-align: left; border-bottom: 1px solid #fdd80a; line-height: 48px; }
 section.empresas h3 { font-size: 45px; font-size: 2.8125rem; color: white; }
 section.empresas h4 { font-size: 40px; font-size: 2.5rem; color: #949494; display: inline-block; border-bottom: 1px solid #ed611c; margin-left: 0; text-transform: none; }
-section.empresas .texto-amarillo { color: #fdd80a; text-align: center; font-family: "Gotham-Bold", arial, sans-serif; font-size: 30px; font-size: 1.875rem; display: block; line-height: 31px; }
+section.empresas p { font-family: "Gotham-Medium", arial, sans-serif; font-size: 16px; font-size: 1rem; color: #fff; line-height: 20px; }
+section.empresas p.texto-amarillo { color: #f8b80b; text-align: center; font-family: "Gotham-Bold", arial, sans-serif; display: block; font-size: 16px; font-size: 1rem; margin: 24px 0 30px 0; }
 
-section.preguntas { padding: 30px; }
-section.preguntas h2, section.preguntas h3, section.preguntas h4 { font-family: "Gotham-Black", arial, sans-serif; font-size: 50px; font-size: 3.125rem; color: #fff; text-transform: uppercase; font-style: italic; margin-bottom: 20px; margin-left: 70px; text-align: left; }
-section.preguntas h3 { font-size: 45px; font-size: 2.8125rem; color: white; }
-section.preguntas h4 { font-size: 40px; font-size: 2.5rem; color: #949494; display: inline-block; border-bottom: 1px solid #ed611c; margin-left: 0; text-transform: none; }
+section.preguntas { position: relative; }
+section.preguntas .bg-faq { position: absolute; position: absolute; left: 50%; -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); top: 0; z-index: 0; }
+section.preguntas h2, section.preguntas section.problema h3, section.problema section.preguntas h3, section.preguntas section.problema h4, section.problema section.preguntas h4, section.preguntas section.empresas h3, section.empresas section.preguntas h3, section.preguntas section.empresas h4, section.empresas section.preguntas h4 { font-family: "Gotham-Black", arial, sans-serif; font-size: 28px; font-size: 1.75rem; color: #fff; text-transform: uppercase; font-style: italic; margin-left: 25px; text-align: left; position: relative; margin-top: 20px; margin-bottom: 20px; }
 
 footer { position: relative; padding: 40px; }
 footer .logos-footer { margin: 70px 0 0px 0; }
@@ -458,7 +477,7 @@ section.login .con-email, section.login section.ingresa .datos, section.ingresa 
 section.login .con-email p, section.login section.ingresa .datos p, section.ingresa section.login .datos p { font-size: 18px; font-size: 1.125rem; text-transform: uppercase; color: white; font-family: "Gotham-Bold", arial, sans-serif; text-align: center; }
 @media (max-width: 768px) { section.login .con-email p, section.login section.ingresa .datos p, section.ingresa section.login .datos p { font-size: 14px; font-size: 0.875rem; } }
 section.login .con-email .form-group, section.login section.ingresa .datos .form-group, section.ingresa section.login .datos .form-group { max-width: 350px; margin-top: 20px; }
-section.login .con-email .form-group .form-control, section.login section.ingresa .datos .form-group .form-control, section.ingresa section.login .datos .form-group .form-control { text-align: center; height: 40px; font-size: 30px; font-size: 1.875rem;}
+section.login .con-email .form-group .form-control, section.login section.ingresa .datos .form-group .form-control, section.ingresa section.login .datos .form-group .form-control { text-align: center; height: 40px; font-size: 30px; font-size: 1.875rem; font-family: "Gotham-Bold", arial, sans-serif; }
 section.login .fecha-nac { padding: 30px 15px; background-color: #fff; }
 section.login .fecha-nac .container { max-width: 650px; }
 section.login .fecha-nac p { font-size: 14px; font-size: 0.875rem; color: #ed611c; font-family: "Gotham-Medium", arial, sans-serif; margin-left: 20px; }
@@ -469,214 +488,80 @@ section.login .fecha-nac label.radio-inline { color: #ed611c; font-family: "Goth
 section.login .fecha-nac .bt-naranjo { margin: 20px auto 30px auto; padding: 17px 80px 10px 80px; font-size: 20px; font-size: 1.25rem; }
 
 /* ajustes seo2 */
-@media (max-width: 767px) { 
-	h2.title-aporte, section.problema h3.title-aporte, section.problema h4.title-aporte, section.empresas h3.title-aporte, section.empresas h4.title-aporte, section.preguntas h3.title-aporte, section.preguntas h4.title-aporte { font-size: 2.1rem; line-height: initial; padding: 20px 0 20px 0; }
+@media (max-width: 767px) { h2.title-aporte, section.problema h3.title-aporte, section.problema h4.title-aporte, section.empresas h3.title-aporte, section.empresas h4.title-aporte, section.problema h3.title-aporte, section.problema h4.title-aporte, section.empresas h3.title-aporte, section.empresas h4.title-aporte, section.preguntas h3.title-aporte, section.preguntas h4.title-aporte { font-size: 2.1rem; line-height: initial; padding: 20px 0 20px 0; }
   section.aporte p.txt1 { font-size: 0.80rem; margin-bottom: 20px; }
   section.aporte form .form-group { margin-bottom: 15px; width: 60%; float: left; }
   section.aporte form { display: inline-block; margin-bottom: 20px; position: relative; }
   section.aporte form .form-group .form-control { width: 100%; height: 90px; font-size: 50px; padding: 0 20px; }
   section.aporte form .btn-enviar-calorias { background-color: transparent; background: url(../img/btn-donar.png); background-size: cover; background-position: center; border: none; width: 96px; height: 90px; margin-left: 10px; }
   section.aporte p.txt2 { font-size: 1.1rem; }
-  h2.title-status, section.problema h3.title-status, section.problema h4.title-status, section.empresas h3.title-status, section.empresas h4.title-status, section.preguntas h3.title-status, section.preguntas h4.title-status { font-size: 2rem; }
+  h2.title-status, section.problema h3.title-status, section.problema h4.title-status, section.empresas h3.title-status, section.empresas h4.title-status, section.problema h3.title-status, section.problema h4.title-status, section.empresas h3.title-status, section.empresas h4.title-status, section.preguntas h3.title-status, section.preguntas h4.title-status { font-size: 2rem; }
   section.status .box-contador .range-container .llevamos { height: 15px; }
   section.status .box-contador .range-container .total { height: 15px; }
-  section.status .box-contador .range-container .llevamos .t-naranjo { top: 15px; } 
-
-
-/* ajustes 09.03.2018 */
-	footer p { font-size: 0.6rem; }  
-	#modal-calcula .modal-dialog .modal-content .modal-header button.close{margin-top: 10px; margin-right: 10px;}
-	#modal-calcula .modal-dialog .modal-content .modal-header button.close img{width: 20px;}
-	#modal-calcula .modal-dialog .modal-content .modal-body h2{ font-size: 1.1875rem; margin-bottom: 10px;}
-	#modal-calcula .modal-dialog .modal-content .modal-body form#formCalculaCalorias .calculadora .igual {
-	    font-size: 40px;
-	    font-size: 1.5rem;
-	    right: 29%;
-	    top: 40%;
-	    color: white;
-	}	
-	#modal-calcula .modal-dialog .modal-content .modal-body form#formCalculaCalorias .calculadora {
-	    min-height: auto;
-	    position: relative;
-	    display: block;
-	    padding: 20px 0 0;
-	}	
-	#modal-calcula .modal-dialog .modal-content .modal-body h3{ font-size: 1rem;}
-	.bt-ok {
-	    padding: 20px 90px 0px 90px;
-	    font-size: 30px;
-	    font-size: 1.275rem;
-	    width: 100%;
-	}
-	#modal-calcula .modal-dialog .modal-content .modal-body p.nota {
-	    font-size: 0.7rem;
-	}
-	img.logo-share{width: 20px;}
-	#modal-share .modal-dialog .modal-content .modal-header button.close {
-	    opacity: 1;
-	    margin-top: -40px;
-	    margin-right: 10px;
-	}
-	#modal-share .modal-dialog .modal-content .modal-header button.close img{width: 20px;}
-	#modal-share .modal-dialog .modal-content .modal-body h2{ font-size: 1.4rem;}
-	#modal-share .modal-dialog .modal-content .modal-body p{font-size: 0.8rem;}
-	#modal-share .modal-dialog .modal-content .modal-body h4 { font-size: 1.175rem; }
-	#modal-share .modal-dialog .modal-content .modal-body button.bt-subir {
-	    padding: 20px 0 0;
-	    width: 100%;
-	}
-	section.share .bloque-texto p { font-size: 0.7rem; }
-	section.share .bloque-texto p.recuerda { font-size: 0.85rem; }
-	.bt-naranjo {
-	    padding: 15px 0 0;
-	    font-size: 1.675rem;
-	    width: 100%;
-	}
-	.back{margin: 20px; font-size: 0.8rem;}
-	
-	header.fondo-degradado-naranja {
-	    min-height: auto;
-	}
-	
-	header.fondo-degradado-naranja .center {
-	    position: absolute;
-	    top: 51%;
-	    left: 54%;
-	    -webkit-transform: translate(-50%, -50%);
-	    transform: translate(-50%, -50%);
-	    width: 40%;
-	}
-	header.fondo-celeste { min-height: 130px;}
-	header.fondo-celeste .cerrar img{width: 20px;}
-	header.fondo-celeste .center{width: 30%;}
-	section.ingresa .con-email .form-group .form-control, section.ingresa .datos .form-group .form-control{height: 50px;}
-	section.ingresa .datos-calorias .box-calorias h3 {
-	    font-size: 30px;
-	    font-size: 1.1rem;
-	    text-align: center;
-	    display: block;
-	    text-transform: uppercase;
-	    margin: 10px 0 10px;
-	}
-	section.ingresa .datos-calorias .box-calorias p.equivalente{font-size: 1rem;}
-	section.ingresa .datos-calorias .box-calorias .bloque p {font-size: 0.7rem;}
-	header .selector-idioma ul {
-	    padding: 0;
-	    margin: 0;
-	    position: absolute;
-	    right: 10px;
-	    top: -10px;
-	}
-	header .selector-idioma ul li a { font-size: 0.7rem; }
-	header .selector-idioma ul li.divisor { margin: 0 5px; }
-	section.login .con-facebook p {
-	    font-size: 14px;
-	    font-size: 0.675rem;
-	    text-transform: uppercase;
-	    color: white;
-	    font-family: "Gotham-Bold", arial, sans-serif;
-	    text-align: center;
-	    padding: 30px 15px 0px 15px;
-	}
-	section.login .con-facebook p.hash {
-	    font-size: 24px;
-	    font-size: 1.5rem;
-	    font-family: "Gotham-Bold", arial, sans-serif;
-	    font-style: italic;
-	    padding: 0 0 10px 0;
-	}
-	.pl0{padding-left: 0;} 
-	.pr0{padding-right: 0;}
-	section.login .fecha-nac .bt-naranjo {
-	    margin: 20px auto 30px auto;
-	    padding: 12px 80px 0px 80px;
-	    font-size: 1.25rem;
-	}
-	section.login .quieres-ser-parte h3 { font-size: 1.425rem;}
-
-	.con-facebook a{color: #fff; font-size: 19px;}
-	.con-facebook a span .fa-inverse { color: #00a2e9;}
-	section.ingresa .con-facebook {
-	    min-height: auto;
-		padding: 40px 0;
-	    margin-bottom: 20px;
-	}
-	section.ingresa .con-facebook p{ padding: 10px 0px;}
-	section.ingresa .con-email p, section.ingresa .datos p { font-size: 0.8rem; }
-	section.ingresa .con-email, section.ingresa .datos {
-	    padding: 30px 15px 20px;
-	    min-height: auto;
-	    margin-bottom: 20px;
-	}
-	section.ingresa .con-email .form-group, section.ingresa .datos .form-group { margin-top: 20px; }
-	section.login .con-email .form-group .form-control, section.login section.ingresa .datos .form-group .form-control, section.ingresa section.login .datos .form-group .form-control {
-	    text-align: center;
-	    height: 40px;
-	    font-size: 30px;
-	    font-size: 1rem;
-	}
-	section.login .fecha-nac p{margin-left: 0; text-align: center;}
-	section.aporte p.txt2 a:focus{color: #fdd80a;}
-/*
-	section.login .con-email .form-group select.form-control {
-	    font-family: "Gotham-Bold", arial, sans-serif;
-	    background-color: #fdd80a;
-	    border: none;
-	    color: #f87b3b;
-	    font-size: 20px;
-	    font-size: 1.25rem;
-	}
-*/
-	.btn-default.disabled.focus, .btn-default.disabled:focus, .btn-default.disabled:hover, .btn-default[disabled].focus, .btn-default[disabled]:focus, .btn-default[disabled]:hover, fieldset[disabled] .btn-default.focus, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default:hover,
-	.btn-default:hover, .btn-default:focus{background-color: #ed611c;border-color: #f45223;}
-	.share .fondo-celeste h2{color: #fff;}
-	section.aporte {
-	    padding: 5px;
-	    margin-bottom: 20px;
-	}
-	section.aporte p.txt2 {
-	    font-size: 0.7rem;
-	    margin-bottom: 0;
-	}
-	section.aporte p.txt1 {
-	    font-size: 0.80rem;
-	    margin-bottom: 10px;
-	}
-	section.aporte form {
-	    display: inline-block;
-	    margin-bottom: 0;
-	    position: relative;
-	}
-	h2.title-aporte{    padding: 20px 0 5px 0;}
-	section.status{padding: 0;}
-	section.status .box-contador .range-container {
-	    position: relative;
-	    margin-top: 40px;
-	    min-height: 90px;
-	}
-	section.status .box-contador .range-container .total p.txt-total {
-	    font-size: 0.8rem;
-	    top: -40px;
-	}
-	section.status .box-contador .range-container p.txt-llevamos {
-	    font-size: 16px;
-	    font-size: 0.8rem;
-	    bottom: 0px;
-	}
-	header img.logo-home {
-	    width: 50%;
-	}
-	section.share .bloque-texto {
-	    padding: 40px 15px;
-	    min-height: auto;
-	}
-	#sharepaso1 a{margin: 10px; display: inline-block;}
-	.share-fb .fa-stack-2x {
-	    font-size: 2em;
-	    color: #fff;
-	    
-	}
-	.share-fb .fa-inverse{
-		color: #00a2e9;
-	}
-}
+  section.status .box-contador .range-container .llevamos .t-naranjo { top: 15px; }
+  /* ajustes 09.03.2018 */
+  footer p { font-size: 0.6rem; }
+  #modal-calcula .modal-dialog .modal-content .modal-header button.close { margin-top: 10px; margin-right: 10px; }
+  #modal-calcula .modal-dialog .modal-content .modal-header button.close img { width: 20px; }
+  #modal-calcula .modal-dialog .modal-content .modal-body h2, #modal-calcula .modal-dialog .modal-content .modal-body section.problema h3, section.problema #modal-calcula .modal-dialog .modal-content .modal-body h3, #modal-calcula .modal-dialog .modal-content .modal-body section.problema h4, section.problema #modal-calcula .modal-dialog .modal-content .modal-body h4, #modal-calcula .modal-dialog .modal-content .modal-body section.empresas h3, section.empresas #modal-calcula .modal-dialog .modal-content .modal-body h3, #modal-calcula .modal-dialog .modal-content .modal-body section.empresas h4, section.empresas #modal-calcula .modal-dialog .modal-content .modal-body h4 { font-size: 1.1875rem; margin-bottom: 10px; }
+  #modal-calcula .modal-dialog .modal-content .modal-body form#formCalculaCalorias .calculadora .igual { font-size: 40px; font-size: 1.5rem; right: 29%; top: 40%; color: white; }
+  #modal-calcula .modal-dialog .modal-content .modal-body form#formCalculaCalorias .calculadora { min-height: auto; position: relative; display: block; padding: 20px 0 0; }
+  #modal-calcula .modal-dialog .modal-content .modal-body h3 { font-size: 1rem; }
+  .bt-ok { padding: 20px 90px 0px 90px; font-size: 30px; font-size: 1.275rem; width: 100%; }
+  #modal-calcula .modal-dialog .modal-content .modal-body p.nota { font-size: 0.7rem; }
+  img.logo-share { width: 20px; }
+  #modal-share .modal-dialog .modal-content .modal-header button.close { opacity: 1; margin-top: -40px; margin-right: 10px; }
+  #modal-share .modal-dialog .modal-content .modal-header button.close img { width: 20px; }
+  #modal-share .modal-dialog .modal-content .modal-body h2, #modal-share .modal-dialog .modal-content .modal-body section.problema h3, section.problema #modal-share .modal-dialog .modal-content .modal-body h3, #modal-share .modal-dialog .modal-content .modal-body section.problema h4, section.problema #modal-share .modal-dialog .modal-content .modal-body h4, #modal-share .modal-dialog .modal-content .modal-body section.empresas h3, section.empresas #modal-share .modal-dialog .modal-content .modal-body h3, #modal-share .modal-dialog .modal-content .modal-body section.empresas h4, section.empresas #modal-share .modal-dialog .modal-content .modal-body h4 { font-size: 1.4rem; }
+  #modal-share .modal-dialog .modal-content .modal-body p { font-size: 0.8rem; }
+  #modal-share .modal-dialog .modal-content .modal-body h4 { font-size: 1.175rem; }
+  #modal-share .modal-dialog .modal-content .modal-body button.bt-subir { padding: 20px 0 0; width: 100%; }
+  section.share .bloque-texto p { font-size: 0.7rem; }
+  section.share .bloque-texto p.recuerda { font-size: 0.85rem; }
+  .bt-naranjo { padding: 15px 0 0; font-size: 1.675rem; width: 100%; }
+  .back { margin: 20px; font-size: 0.8rem; }
+  header.fondo-degradado-naranja { min-height: auto; }
+  header.fondo-degradado-naranja .center { position: absolute; top: 51%; left: 54%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 40%; }
+  header.fondo-celeste { min-height: 130px; }
+  header.fondo-celeste .cerrar img { width: 20px; }
+  header.fondo-celeste .center { width: 30%; }
+  section.ingresa .con-email .form-group .form-control, section.ingresa .datos .form-group .form-control, section.ingresa .datos .form-group .form-control { height: 50px; }
+  section.ingresa .datos-calorias .box-calorias h3 { font-size: 30px; font-size: 1.1rem; text-align: center; display: block; text-transform: uppercase; margin: 10px 0 10px; }
+  section.ingresa .datos-calorias .box-calorias p.equivalente { font-size: 1rem; }
+  section.ingresa .datos-calorias .box-calorias .bloque p { font-size: 0.7rem; }
+  header .selector-idioma ul { padding: 0; margin: 0; position: absolute; right: 10px; top: -10px; }
+  header .selector-idioma ul li a { font-size: 0.7rem; }
+  header .selector-idioma ul li.divisor { margin: 0 5px; }
+  section.login .con-facebook p { font-size: 14px; font-size: 0.675rem; text-transform: uppercase; color: white; font-family: "Gotham-Bold", arial, sans-serif; text-align: center; padding: 30px 15px 0px 15px; }
+  section.login .con-facebook p.hash { font-size: 24px; font-size: 1.5rem; font-family: "Gotham-Bold", arial, sans-serif; font-style: italic; padding: 0 0 10px 0; }
+  .pl0 { padding-left: 0; }
+  .pr0 { padding-right: 0; }
+  section.login .fecha-nac .bt-naranjo { margin: 20px auto 30px auto; padding: 12px 80px 0px 80px; font-size: 1.25rem; }
+  section.login .quieres-ser-parte h3 { font-size: 1.425rem; }
+  .con-facebook a { color: #fff; font-size: 19px; }
+  .con-facebook a span .fa-inverse { color: #00a2e9; }
+  section.ingresa .con-facebook { min-height: auto; padding: 40px 0; margin-bottom: 20px; }
+  section.ingresa .con-facebook p { padding: 10px 0px; }
+  section.ingresa .con-email p, section.ingresa .datos p, section.ingresa .datos p { font-size: 0.8rem; }
+  section.ingresa .con-email, section.ingresa .datos, section.ingresa .datos { padding: 30px 15px 20px; min-height: auto; margin-bottom: 20px; }
+  section.ingresa .con-email .form-group, section.ingresa .datos .form-group, section.ingresa .datos .form-group { margin-top: 20px; }
+  section.login .con-email .form-group .form-control, section.login section.ingresa .datos .form-group .form-control, section.ingresa section.login .datos .form-group .form-control, section.login section.ingresa .datos .form-group .form-control, section.ingresa section.login .datos .form-group .form-control { text-align: center; height: 40px; font-size: 30px; font-size: 1rem; }
+  section.login .fecha-nac p { margin-left: 0; text-align: center; }
+  section.aporte p.txt2 a:focus { color: #fdd80a; }
+  /* 	section.login .con-email .form-group select.form-control { 	    font-family: "Gotham-Bold", arial, sans-serif; 	    background-color: #fdd80a; 	    border: none; 	    color: #f87b3b; 	    font-size: 20px; 	    font-size: 1.25rem; 	} */
+  .btn-default.disabled.focus, .btn-default.disabled:focus, .btn-default.disabled:hover, .btn-default[disabled].focus, .btn-default[disabled]:focus, .btn-default[disabled]:hover, fieldset[disabled] .btn-default.focus, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default:hover, .btn-default:hover, .btn-default:focus { background-color: #ed611c; border-color: #f45223; }
+  .share .fondo-celeste h2, .share .fondo-celeste section.problema h3, section.problema .share .fondo-celeste h3, .share .fondo-celeste section.problema h4, section.problema .share .fondo-celeste h4, .share .fondo-celeste section.empresas h3, section.empresas .share .fondo-celeste h3, .share .fondo-celeste section.empresas h4, section.empresas .share .fondo-celeste h4 { color: #fff; }
+  section.aporte { padding: 5px; margin-bottom: 20px; }
+  section.aporte p.txt2 { font-size: 0.7rem; margin-bottom: 0; }
+  section.aporte p.txt1 { font-size: 0.80rem; margin-bottom: 10px; }
+  section.aporte form { display: inline-block; margin-bottom: 0; position: relative; }
+  h2.title-aporte, section.problema h3.title-aporte, section.problema h4.title-aporte, section.empresas h3.title-aporte, section.empresas h4.title-aporte { padding: 20px 0 5px 0; }
+  section.status { padding: 0; }
+  section.status .box-contador .range-container { position: relative; margin-top: 40px; min-height: 90px; }
+  section.status .box-contador .range-container .total p.txt-total { font-size: 0.8rem; top: -40px; }
+  section.status .box-contador .range-container p.txt-llevamos { font-size: 16px; font-size: 0.8rem; bottom: 0px; }
+  header img.logo-home { width: 50%; }
+  section.share .bloque-texto { padding: 40px 15px; min-height: auto; }
+  #sharepaso1 a { margin: 10px; display: inline-block; }
+  .share-fb .fa-stack-2x { font-size: 2em; color: #fff; }
+  .share-fb .fa-inverse { color: #00a2e9; } }

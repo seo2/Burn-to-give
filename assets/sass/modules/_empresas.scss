@@ -9,8 +9,13 @@ section.como{
 
 	//padding-top: 50px;
 	h2{
-		margin-left: 70px;
-		margin-top: 150px;
+		//margin-left: 70px;
+		margin-top: 60px;
+		@include font-size(24px);
+		margin-left: 25px;
+		margin-bottom: 20px;
+		color: #ffbc06;
+
 	}
 	.bg-como{
 		position: absolute;
@@ -18,19 +23,28 @@ section.como{
 		top:0;
 		z-index: -1;
 	}
+	.llamado{
+		@include font-size(18px);
+	}
+	p{
+		@include font-size(15px);
+		color: #8a8989;
+		//padding: 0;
+	}
 }
 
 section.historia{
 		h2{
 			font-family: $black;
-			@include font-size(60px);
+			@include font-size(28px);
 			color: white;
 			text-transform: uppercase;
 			font-style: italic;
 			margin-bottom: 20px;
-			margin-left: 70px;
+			margin-left: 25px;
 			text-align: left;
-			margin-top: 200px;
+			//margin-top: 200px;
+			margin-top: 50px;
 		}
 		.bg-historia{
 			position: absolute;
@@ -38,45 +52,78 @@ section.historia{
 			top:0;
 			z-index: -1;
 		}
+		.caja-texto-sombra{
+			padding: 20px;
+			p{
+				color: #8a8989;
+				&.texto-azul{
+					color: #0870a6;
+					margin-bottom: 20px;
+					line-height: 18px;
+				}
+			}
+		}
 
 }
 section.problema{
-	padding-top: 30px;
+	padding-bottom: 30px;
+	.caja-texto-sombra{
+		padding: 10px;
+	}
+	position: relative;
+	//padding-top: 30px;
 	background-color: #fff;
+		.bg-obesidad{
+			position: absolute;
+			@include centerer(true, false);
+			top:0;
+			z-index: 0;
+		}
 		h2{
 			font-family: $black;
-			@include font-size(50px);
+			@include font-size(28px);
 			color: #2362a3;
 			text-transform: uppercase;
 			font-style: italic;
 			margin-bottom: 20px;
-			margin-left: 70px;
-			margin-top: 150px;
+			margin-left: 25px;
+			margin-top: 60px;
 			text-align: left;
 		}
 		h3{
 			@extend h2;
-			@include font-size(45px);
+			@include font-size(24px);
 			color: white;
+			z-index: 1;
+			position: relative;
+			margin-top: 20px;
 
 		}
 		h4{
 			@extend h2;
-			@include font-size(40px);
+			@include font-size(20px);
 			color: #949494;
 			display: inline-block;
-			border-bottom: 1px solid $naranjo;
+			border-bottom: 1px solid #f57527;
 			margin-left: 0;
 			text-transform: none;
+			//margin-top: 0;
+			padding: 0;
+			margin: 0;
+			//margin-bottom: 20px;
 
 
 		}
-}
+		ul{
+			border: none;
+		}
+} // problema
 section.empresas{
 	padding: 30px 30px 50px 30px;
+	position: relative;
 		h2{
 			font-family: $black;
-			@include font-size(50px);
+			@include font-size(28px);
 			color: #fff;
 			text-transform: uppercase;
 			font-style: italic;
@@ -84,6 +131,8 @@ section.empresas{
 			//margin-left: 70px;
 			text-align: left;
 			border-bottom: 1px solid $amarillo;
+			//margin-bottom: 20px;
+			line-height: 48px;
 		}
 		h3{
 			@extend h2;
@@ -102,43 +151,46 @@ section.empresas{
 
 
 		}
-		.texto-amarillo{
-			color: $amarillo;
-			text-align: center;
-			font-family: $bold;
-			@include font-size(30px);
-			display: block;
-			line-height: 31px;
+		p{
+			font-family: $medium;
+			@include font-size(16px);
+			color: #fff;
+			line-height: 20px;
+				&.texto-amarillo{
+					color: #f8b80b;
+					text-align: center;
+					font-family: $bold;
+				//	@include font-size(30px);
+					display: block;
+					@include font-size(16px);
+					margin: 24px 0 30px 0;
+				//	line-height: 31px;
+				}
 		}
-}
+} //empresas
 section.preguntas{
-	padding: 30px;
+	position: relative;
+	//padding: 30px;
+		.bg-faq{
+			position: absolute;
+			@include centerer(true, false);
+			top:0;
+			z-index: 0;
+		}
 	h2{
 			font-family: $black;
-			@include font-size(50px);
+			@include font-size(28px);
 			color: #fff;
 			text-transform: uppercase;
 			font-style: italic;
-			margin-bottom: 20px;
-			margin-left: 70px;
+			margin-left: 25px;
 			text-align: left;
+			position: relative;
+			margin-top: 20px;
+			margin-bottom: 20px;
 
 		}
-		h3{
-			@extend h2;
-			@include font-size(45px);
-			color: white;
+	 .caja-texto-sombra{
 
-		}
-		h4{
-			@extend h2;
-			@include font-size(40px);
-			color: #949494;
-			display: inline-block;
-			border-bottom: 1px solid $naranjo;
-			margin-left: 0;
-			text-transform: none;
-
-
-		}
-}
+	 }
+} //faq
