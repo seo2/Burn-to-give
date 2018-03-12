@@ -168,16 +168,6 @@ var v = jQuery("#form-register-ini").validate({
 $("input.fecha").mask("99-99-9999");
 
 var v1 = jQuery("#form-login").validate({
-<<<<<<< HEAD
-		submitHandler: function(form) {
-			jQuery(form).ajaxSubmit({
-				beforeSubmit: function(){
-					//mostrar login
-				},
-				success: function(data){
-					if(data == 'ok'){
-						window.location.href = "index.php";
-=======
 			submitHandler: function(form) {
 				jQuery(form).ajaxSubmit({
 					beforeSubmit: function(){
@@ -187,14 +177,11 @@ var v1 = jQuery("#form-login").validate({
 						if(data == 'ok'){
 							window.location.href = "index.php";
 						}
-
->>>>>>> 55821d7445807117d0e70195ad9edf14f50cfb00
+						
 					}
-					
-				}
-			});
-		}
-	});
+				});
+			}
+		});
 
 var v2 = jQuery("#formEnviarCalorias").validate({
 	submitHandler: function(form) {
@@ -396,9 +383,3 @@ $('.share-ig').on('click', function(){
 	$('#sharepaso1').addClass('hide');
 	$('#sharepaso2').removeClass('hide');
 });
-
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 55821d7445807117d0e70195ad9edf14f50cfb00
