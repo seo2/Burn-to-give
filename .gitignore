@@ -9,3 +9,4 @@ config.codekit3
 *.scssc
 *.scssc
 *.scssc
+*.scss
