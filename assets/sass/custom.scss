@@ -21,46 +21,217 @@
 
 /* ajustes seo2 */
 @media (max-width: 767px) {
-	h2.title-aporte{ font-size: 2.1rem;line-height: initial;    padding: 20px 0 20px 0;}
-	section.aporte p.txt1 { font-size: 0.80rem; margin-bottom: 20px; }
+	h2.title-aporte, section.problema h3.title-aporte, section.problema h4.title-aporte, section.empresas h3.title-aporte, section.empresas h4.title-aporte, section.preguntas h3.title-aporte, section.preguntas h4.title-aporte { font-size: 2.1rem; line-height: initial; padding: 20px 0 20px 0; }
+  section.aporte p.txt1 { font-size: 0.80rem; margin-bottom: 20px; }
+  section.aporte form .form-group { margin-bottom: 15px; width: 60%; float: left; }
+  section.aporte form { display: inline-block; margin-bottom: 20px; position: relative; }
+  section.aporte form .form-group .form-control { width: 100%; height: 90px; font-size: 50px; padding: 0 20px; }
+  section.aporte form .btn-enviar-calorias { background-color: transparent; background: url(../img/btn-donar.png); background-size: cover; background-position: center; border: none; width: 96px; height: 90px; margin-left: 10px; }
+  section.aporte p.txt2 { font-size: 1.1rem; }
+  h2.title-status, section.problema h3.title-status, section.problema h4.title-status, section.empresas h3.title-status, section.empresas h4.title-status, section.preguntas h3.title-status, section.preguntas h4.title-status { font-size: 2rem; }
+  section.status .box-contador .range-container .llevamos { height: 15px; }
+  section.status .box-contador .range-container .total { height: 15px; }
+  section.status .box-contador .range-container .llevamos .t-naranjo { top: 15px; }
 
-	section.aporte form .form-group {
-	    margin-bottom: 15px;
-	    width: 60%;
-	    float: left;
+
+/* ajustes 09.03.2018 */
+	footer p { font-size: 0.6rem; }
+	#modal-calcula .modal-dialog .modal-content .modal-header button.close{margin-top: 10px; margin-right: 10px;}
+	#modal-calcula .modal-dialog .modal-content .modal-header button.close img{width: 20px;}
+	#modal-calcula .modal-dialog .modal-content .modal-body h2{ font-size: 1.1875rem; margin-bottom: 10px;}
+	#modal-calcula .modal-dialog .modal-content .modal-body form#formCalculaCalorias .calculadora .igual {
+	    font-size: 40px;
+	    font-size: 1.5rem;
+	    right: 29%;
+	    top: 40%;
+	    color: white;
 	}
-
-	section.aporte form {
-	    display: inline-block;
-	    margin-bottom: 20px;
+	#modal-calcula .modal-dialog .modal-content .modal-body form#formCalculaCalorias .calculadora {
+	    min-height: auto;
 	    position: relative;
+	    display: block;
+	    padding: 20px 0 0;
 	}
-	section.aporte form .form-group .form-control {
-		width: 100%;
-	    height: 90px;
-	    font-size: 50px;
-	    padding: 0 20px;
+	#modal-calcula .modal-dialog .modal-content .modal-body h3{ font-size: 1rem;}
+	.bt-ok {
+	    padding: 20px 90px 0px 90px;
+	    font-size: 30px;
+	    font-size: 1.275rem;
+	    width: 100%;
 	}
-	section.aporte form .btn-enviar-calorias {
-	    background-color: transparent;
-	    background: url(../img/btn-donar.png);
-	    background-size: cover;
-	    background-position: center;
+	#modal-calcula .modal-dialog .modal-content .modal-body p.nota {
+	    font-size: 0.7rem;
+	}
+	img.logo-share{width: 20px;}
+	#modal-share .modal-dialog .modal-content .modal-header button.close {
+	    opacity: 1;
+	    margin-top: -40px;
+	    margin-right: 10px;
+	}
+	#modal-share .modal-dialog .modal-content .modal-header button.close img{width: 20px;}
+	#modal-share .modal-dialog .modal-content .modal-body h2{ font-size: 1.4rem;}
+	#modal-share .modal-dialog .modal-content .modal-body p{font-size: 0.8rem;}
+	#modal-share .modal-dialog .modal-content .modal-body h4 { font-size: 1.175rem; }
+	#modal-share .modal-dialog .modal-content .modal-body button.bt-subir {
+	    padding: 20px 0 0;
+	    width: 100%;
+	}
+	section.share .bloque-texto p { font-size: 0.7rem; }
+	section.share .bloque-texto p.recuerda { font-size: 0.85rem; }
+	.bt-naranjo {
+	    padding: 15px 0 0;
+	    font-size: 1.675rem;
+	    width: 100%;
+	}
+	.back{margin: 20px; font-size: 0.8rem;}
+
+	header.fondo-degradado-naranja {
+	    min-height: auto;
+	}
+
+	header.fondo-degradado-naranja .center {
+	    position: absolute;
+	    top: 51%;
+	    left: 54%;
+	    -webkit-transform: translate(-50%, -50%);
+	    transform: translate(-50%, -50%);
+	    width: 40%;
+	}
+	header.fondo-celeste { min-height: 130px;}
+	header.fondo-celeste .cerrar img{width: 20px;}
+	header.fondo-celeste .center{width: 30%;}
+	section.ingresa .con-email .form-group .form-control, section.ingresa .datos .form-group .form-control{height: 50px;}
+	section.ingresa .datos-calorias .box-calorias h3 {
+	    font-size: 30px;
+	    font-size: 1.1rem;
+	    text-align: center;
+	    display: block;
+	    text-transform: uppercase;
+	    margin: 10px 0 10px;
+	}
+	section.ingresa .datos-calorias .box-calorias p.equivalente{font-size: 1rem;}
+	section.ingresa .datos-calorias .box-calorias .bloque p {font-size: 0.7rem;}
+	header .selector-idioma ul {
+	    padding: 0;
+	    margin: 0;
+	    position: absolute;
+	    right: 10px;
+	    top: -10px;
+	}
+	header .selector-idioma ul li a { font-size: 0.7rem; }
+	header .selector-idioma ul li.divisor { margin: 0 5px; }
+	section.login .con-facebook p {
+	    font-size: 14px;
+	    font-size: 0.675rem;
+	    text-transform: uppercase;
+	    color: white;
+	    font-family: "Gotham-Bold", arial, sans-serif;
+	    text-align: center;
+	    padding: 30px 15px 0px 15px;
+	}
+	section.login .con-facebook p.hash {
+	    font-size: 24px;
+	    font-size: 1.5rem;
+	    font-family: "Gotham-Bold", arial, sans-serif;
+	    font-style: italic;
+	    padding: 0 0 10px 0;
+	}
+	.pl0{padding-left: 0;}
+	.pr0{padding-right: 0;}
+	section.login .fecha-nac .bt-naranjo {
+	    margin: 20px auto 30px auto;
+	    padding: 12px 80px 0px 80px;
+	    font-size: 1.25rem;
+	}
+	section.login .quieres-ser-parte h3 { font-size: 1.425rem;}
+
+	.con-facebook a{color: #fff; font-size: 19px;}
+	.con-facebook a span .fa-inverse { color: #00a2e9;}
+	section.ingresa .con-facebook {
+	    min-height: auto;
+		padding: 40px 0;
+	    margin-bottom: 20px;
+	}
+	section.ingresa .con-facebook p{ padding: 10px 0px;}
+	section.ingresa .con-email p, section.ingresa .datos p { font-size: 0.8rem; }
+	section.ingresa .con-email, section.ingresa .datos {
+	    padding: 30px 15px 20px;
+	    min-height: auto;
+	    margin-bottom: 20px;
+	}
+	section.ingresa .con-email .form-group, section.ingresa .datos .form-group { margin-top: 20px; }
+	section.login .con-email .form-group .form-control, section.login section.ingresa .datos .form-group .form-control, section.ingresa section.login .datos .form-group .form-control {
+	    text-align: center;
+	    height: 40px;
+	    font-size: 30px;
+	    font-size: 1rem;
+	}
+	section.login .fecha-nac p{margin-left: 0; text-align: center;}
+	section.aporte p.txt2 a:focus{color: #fdd80a;}
+/*
+	section.login .con-email .form-group select.form-control {
+	    font-family: "Gotham-Bold", arial, sans-serif;
+	    background-color: #fdd80a;
 	    border: none;
-	    width: 96px;
-	    height: 90px;
-	    margin-left: 10px;
+	    color: #f87b3b;
+	    font-size: 20px;
+	    font-size: 1.25rem;
+	}
+*/
+	.btn-default.disabled.focus, .btn-default.disabled:focus, .btn-default.disabled:hover, .btn-default[disabled].focus, .btn-default[disabled]:focus, .btn-default[disabled]:hover, fieldset[disabled] .btn-default.focus, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default:hover,
+	.btn-default:hover, .btn-default:focus{background-color: #ed611c;border-color: #f45223;}
+	.share .fondo-celeste h2{color: #fff;}
+	section.aporte {
+	    padding: 5px;
+	    margin-bottom: 20px;
 	}
 	section.aporte p.txt2 {
-	    font-size: 1.1rem;
+	    font-size: 0.7rem;
+	    margin-bottom: 0;
 	}
-	h2.title-status{font-size: 2rem;}
-	section.status .box-contador .range-container .llevamos{height: 20px;}
-	section.status .box-contador .range-container .total{height: 20px;}
-	section.status .box-contador .range-container .llevamos .t-naranjo{    top: 20px;}
+	section.aporte p.txt1 {
+	    font-size: 0.80rem;
+	    margin-bottom: 10px;
+	}
+	section.aporte form {
+	    display: inline-block;
+	    margin-bottom: 0;
+	    position: relative;
+	}
+	h2.title-aporte{    padding: 20px 0 5px 0;}
+	section.status{padding: 0;}
+	section.status .box-contador .range-container {
+	    position: relative;
+	    margin-top: 40px;
+	    min-height: 90px;
+	}
+	section.status .box-contador .range-container .total p.txt-total {
+	    font-size: 0.8rem;
+	    top: -40px;
+	}
+	section.status .box-contador .range-container p.txt-llevamos {
+	    font-size: 16px;
+	    font-size: 0.8rem;
+	    bottom: 0px;
+	}
+	header img.logo-home {
+	    width: 50%;
+	}
+	section.share .bloque-texto {
+	    padding: 40px 15px;
+	    min-height: auto;
+	}
+	#sharepaso1 a{margin: 10px; display: inline-block;}
+	.share-fb .fa-stack-2x {
+	    font-size: 2em;
+	    color: #fff;
+
+	}
+	.share-fb .fa-inverse{
+		color: #00a2e9;
+	}
 }
 
-//@import "modules/_navegacion";
 
 
 

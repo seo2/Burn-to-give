@@ -136,7 +136,7 @@ section.ingresa{
 			.form-control{
 
 				@include font-size(30px);
-				font-family: $bold;
+				//font-family: $bold;
 				color: black;
 				     @media(max-width:768px){
 						@include font-size(16px);
