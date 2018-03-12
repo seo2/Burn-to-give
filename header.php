@@ -5,6 +5,11 @@ $current_page = basename($_SERVER['PHP_SELF']);
 require_once 'ajax/_lib/config.php';
 require_once 'ajax/_lib/MysqliDb.php';
 $db = new MysqliDb (HOST, USERNAME, PASSWORD, DATABASE);
+if($_GET['lang']){
+	$lang = $_GET['lang'];
+}else{
+	$lang = 'es';
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -14,6 +19,7 @@ $db = new MysqliDb (HOST, USERNAME, PASSWORD, DATABASE);
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
+		<title>Burn To Give</title>
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 		<?php if(isset($_GET["_p"])) :
 		$id_p = $_GET["_p"];
@@ -42,14 +48,13 @@ $db = new MysqliDb (HOST, USERNAME, PASSWORD, DATABASE);
 		<?php }
 		endif;?>
 <?php	
-	if(!isset($_SESSION["burntogive"]) && $current_page != "registro.php") {
+	if(!isset($_SESSION["burntogive"]) && $current_page != "home.php") {
 		if($current_page != "ingresa.php") {
-			header("Location:registro.php");
+			header("Location:home.php");
 			exit();
 		}
 	}
 ?>		
-		<title>Burn To Give</title>
 
 		<!-- Bootstrap -->
 		<!-- Latest compiled and minified CSS -->
@@ -69,9 +74,19 @@ $db = new MysqliDb (HOST, USERNAME, PASSWORD, DATABASE);
 		<![endif]-->
 		<link rel="icon" type="image/png" href="assets/img/favicon.png" />
 
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115586112-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'UA-115586112-1');
+		</script>
+
 
 	</head>
-	<body>
+	<body data-lang="<?php echo $lang; ?>">
 <script>
   window.fbAsyncInit = function() {
     FB.init({

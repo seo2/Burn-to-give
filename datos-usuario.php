@@ -11,7 +11,15 @@ if($db->count > 0){
 	$usuNom = $user['usuNom']; 
 	$usuMail = $user['usuMail']; 
 	$usuPass = $user['usuPass']; 
-	$usuGen = $user['usuGen']; 
+	if($lang=='en'){
+		if($user['usuGen']=='HOMBRE'){		
+			$usuGen = 'MAN';
+		}else{
+			$usuGen = 'WOMAN';
+		}
+	}else{
+		$usuGen = $user['usuGen']; 
+	}
 	$usuFecNac = $user['usuFecNac']; 
 	$usuEdad = $user['usuEdad']; 
 	$usuPais = $user['usuPais']; 
@@ -46,6 +54,21 @@ function changeDateSp2($fecha){
 	
 
 	$fecha = $dia."/".$mes."/".$ano;
+
+	return($fecha);
+}
+
+function changeDateEn2($fecha){
+	$f = explode("-", $fecha);
+	$dia = $f[2];
+	$mes = $f[1];
+	$ano = $f[0];
+
+	$dia = substr($dia, 0, 2);
+
+	
+
+	$fecha = $mes."/".$dia."/".$ano;
 
 	return($fecha);
 }
@@ -101,7 +124,13 @@ function changeDateSp2($fecha){
 			<div class="container">
 				<div class="row">
 					<div class="box-calorias">
-						<h3>Mis Calorías donadas</h3>
+						<h3>
+						<?php if($lang=='en'){ ?>
+							MY CALORIES DONATED						
+						<?php }else{ ?>
+							Mis Calorías donadas
+						<?php } ?>
+						</h3>
 						<div class="linea-gris"> </div>
 						<div class="box-total clearfix">
 							<div class="col-xs-4">
@@ -117,10 +146,16 @@ function changeDateSp2($fecha){
 								}
 								$calc_comidas = round($total / 500);
 								?>
-								<p class="numero"><?php echo $total;?> calorías</p>
+								<p class="numero"><?php echo $total;?> <?php if($lang=='en'){ ?>calories<?php }else{ ?>calorías<?php } ?></p>
 							</div>
 						</div>
-						<p class="equivalente">Equivalente a <?php echo $calc_comidas;?> comidas</p>
+						<p class="equivalente">
+						<?php if($lang=='en'){ ?>
+							Equivalent to <?php echo $calc_comidas;?> meals  						
+						<?php }else{ ?>
+							Equivalente a <?php echo $calc_comidas;?> comidas
+						<?php } ?>
+						</p>
 						<div class="linea-gris"> </div>
 						<?php
 							//last data
@@ -137,10 +172,16 @@ function changeDateSp2($fecha){
 						<div class="bloque clearfix">
 							
 							<div class="col-xs-4">
-								<p class="fecha"><?php echo changeDateSp2($fecha);?>:</p>
+								<p class="fecha">
+								<?php if($lang=='en'){ ?>
+									<?php echo changeDateEn2($fecha);?>:						
+								<?php }else{ ?>
+									<?php echo changeDateSp2($fecha);?>:
+								<?php } ?>
+								</p>
 							</div>
 							<div class="col-xs-8">
-								<p class="calorias"><?php echo $calVal;?> calorías quemadas</p>
+								<p class="calorias"><?php echo $calVal;?> <?php if($lang=='en'){ ?>calories burned<?php }else{ ?>calorías quemadas<?php } ?></p>
 							</div>
 						</div>
 						<?

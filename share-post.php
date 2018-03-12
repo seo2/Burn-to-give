@@ -34,12 +34,6 @@
 		<div class="row">
 			<div class="bloque-imagen text-center">
 				<div class="img-wrap">
-					<div class="box-total-calorias">
-						<p>acabo de donar</p>
-						<p class="num-calorias"><?php echo $calVal;?></p>
-						<p class="sub-text">calorías</p>
-					</div>
-					<img class="img-responsive img-barra" src="assets/img/barra-post.png" alt="">
 					<img class="img-responsive center-block img-post" src="<?php echo $rutaImg2;?>" alt="" id="img-share" data-id="<?php echo $id_p;?>">
 				</div>
 			</div>

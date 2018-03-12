@@ -34,12 +34,12 @@
 		        	<div class="col-xs-4 text-center">
 		        		<div class="form-group">
 							<input type="text" class="form-control" name="calCalorias" id="calCalorias" placeholder="" readonly="">
-							<p>calorías*</p>
+							<p><?php if($lang=='en'){ ?>calories<?php }else{ ?>calorías<?php } ?>*</p>
 						</div>
 		        	</div>
 		        </div>
         	</div>
-			<h3>selecciona tu deporte</h3>
+			<h3><?php if($lang=='en'){ ?>CHOOSE YOUR SPORT<?php }else{ ?>selecciona tu deporte<?php } ?></h3>
 			<div class="slider-wrapper">
 				<div class="slider-iconos owl-carousel">
 				<div class="item">
@@ -74,11 +74,15 @@
 
 			<button type="button" class="btn btn-default bt-naranjo bt-ok center-block" data-dismiss="modal">OK</button>
 		</form>
-		<p class="nota">calorías APROXIMADAS CALCULADAS EN BASE A PESO, PROMEDIO Y BLA BLA BLA...</p>
+		<p class="nota">
+			<?php if($lang=='en'){ ?>
+			Approximate calories based on a 70 kgs individual, calculated at
+			<?php }else{ ?>
+			Calorías aproximadas en base a una persona de 70 kgs calculadas en<?php } ?> 
+			<a href="http://www.calorielab.com" target="_blank">www.calorielab.com</a></p>
       </div>
       <div class="modal-footer">
-      <!--   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button> -->
+      
       </div>
     </div>
   </div>

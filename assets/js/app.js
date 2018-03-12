@@ -1,4 +1,5 @@
-
+var lang = $('body').data('lang');
+console.log(lang);
 
 // ===== Scroll to Top ====
 $(window).scroll(function() {
@@ -167,20 +168,20 @@ var v = jQuery("#form-register-ini").validate({
 $("input.fecha").mask("99-99-9999");
 
 var v1 = jQuery("#form-login").validate({
-			submitHandler: function(form) {
-				jQuery(form).ajaxSubmit({
-					beforeSubmit: function(){
-						//mostrar login
-					},
-					success: function(data){
-						if(data == 'ok'){
-							window.location.href = "index.php";
-						}
-						
+		submitHandler: function(form) {
+			jQuery(form).ajaxSubmit({
+				beforeSubmit: function(){
+					//mostrar login
+				},
+				success: function(data){
+					if(data == 'ok'){
+						window.location.href = "index.php";
 					}
-				});
-			}
-		});
+					
+				}
+			});
+		}
+	});
 
 var v2 = jQuery("#formEnviarCalorias").validate({
 	submitHandler: function(form) {
@@ -201,7 +202,11 @@ var v2 = jQuery("#formEnviarCalorias").validate({
 		  			window.location.href = "share-image.php?_p="+data;
 				}else{
 					if(data == 0){
-						swal("Atención - Máximo de calorías diarias: 3.000", "Llegaste al límite de calorías diarias, vuelve a ingresar mañana.", "error");
+						if(lang=='en'){
+							swal("You reached the maximum calories per day of 3,000", "Please come back tomorrow after your next workout!", "error");
+						}else{
+							swal("Sobrepasaste el máximo de 3.000 calorías diarias a ingresar.", "Vuelve a ingresar mañana después de hacer ejercicio!", "error");
+						}
 					}
 				}
 				
@@ -378,6 +383,4 @@ $('.share-ig').on('click', function(){
 	$('#sharepaso1').addClass('hide');
 	$('#sharepaso2').removeClass('hide');
 });
-
-$('.collapse').collapse();
 

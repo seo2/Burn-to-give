@@ -49,7 +49,7 @@
 					<div id="fotito" class="bloque-imagen text-center" style="display:none;">
 						<div class="img-wrap">
 							<div class="box-total-calorias">
-								<p>acabo de donar</p>
+								<p class="acabo-donar">acabo de donar</p>
 								<p class="num-calorias"><?php echo $calVal;?></p>
 								<p class="sub-text">calorías</p>
 							</div>

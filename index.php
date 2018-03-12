@@ -67,8 +67,13 @@
 				$datoLlevamos 	= $datos['datoLlevamos'];
 				$datoEquivale 	= $datos['datoEquivale'];
 				$datoPorcentaje = $datos['datoPorcentaje'];
+				$cdate = mktime(0, 0, 0, 04, 16, 2018, 0);
+				$today = time();
+				$difference = $cdate - $today;
+				if ($difference < 0) { $difference = 0; }
+				//echo "There are ". floor($difference/60/60/24)." days remaining";
 			?>
-			<h2 class="title-status">quedan <?php echo $datoQuedan;?></h2>
+			<h2 class="title-status">quedan <?php echo floor($difference/60/60/24);?> Días</h2>
 			<div class="box-contador">
 				<div class="range-container">
 					<p class="txt-llevamos">llevamos <?php echo $datoLlevamos;?> calorías <br>
