@@ -65,13 +65,12 @@
 		<div class="container">
 			<?php
 			
-			$datos 			= $db->getOne ("datos_barra");
-			
-			$datoQuedan 	= $datos['datoQuedan'];
-			$datoMeta 		= $datos['datoMeta'];
-			$datoLlevamos 	= $datos['datoLlevamos'];
-			$datoEquivale 	= $datos['datoEquivale'];
-			$datoPorcentaje = $datos['datoPorcentaje'];
+				$datos 			= $db->getOne ("datos_barra");
+				$datoQuedan 	= $datos['datoQuedan'];
+				$datoMeta 		= $datos['datoMeta'];
+				$datoLlevamos 	= $datos['datoLlevamos'];
+				$datoEquivale 	= $datos['datoEquivale'];
+				$datoPorcentaje = $datos['datoPorcentaje'];
 
 			?>
 			<h2 class="title-status">quedan <?php echo $datoQuedan;?></h2>
@@ -91,7 +90,6 @@
 				</div>
 			</div>
 		</div>
-
 	</section> <!-- status -->
 	<section class="compra-polera section">
 		<div class="container">
@@ -100,10 +98,7 @@
 					<img class="img-responsive center-block" src="assets/img/compra-polera.jpg" alt="">
 				</div>
 			</div>
-
-
 		</div>
-
 	</section> <!-- compra polera -->
 
 <?php include('modal-calcula-calorias.php'); ?>

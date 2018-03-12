@@ -13,6 +13,8 @@
     			<li><a href="javascript:void(0);">el problema</a></li>
 
     			<li class="odd"><a href="javascript:void(0);">preguntas frecuentes</a></li>
+
+    			<li><a href="logout.php">Desconectar</a></li>
     		</ul>
     			<img class="center-block" src="assets/img/logo-mobile.png" alt="logo mobile">
 

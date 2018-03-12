@@ -14,34 +14,29 @@
         <form id="formCalculaCalorias" class="form-inline">
         	<div class="row">
 				<div class="calculadora fondo-celeste clearfix">
+					<div class="igual"> = </div>
+					<div class="col-xs-4 text-center">
+		        		<div class="bloque-blanco center-block">
+		        			<div class="icono center">
+		        				<img class="img-responsive" src="assets/img/iconos/ico-correr.png" alt="" id="icono-activo">
+		        			</div>
+		        		</div>
+		        		<p class="deporte">running</p>
+		        	</div>
+		        	<div class="col-xs-4 text-center">
+		        		<div class="form-group">
+							<input type="text" class="form-control" name="minutos" id="minutos" placeholder="" required="">
+							<p>min</p>
 
-						<div class="igual"> = </div>
-						<div class="col-xs-4 text-center">
-			        		<div class="bloque-blanco center-block">
-			        			<div class="icono center">
-			        				<img class="img-responsive" src="assets/img/iconos/ico-correr.png" alt="" id="icono-activo">
-			        			</div>
-			        		</div>
-			        		<p>running</p>
-			        	</div>
-			        	<div class="col-xs-4 text-center">
-			        		<div class="form-group">
-								<input type="text" class="form-control" name="minutos" id="minutos" placeholder="" required="">
-								<p>min</p>
+						</div>
+		        	</div>
 
-							</div>
-			        	</div>
-
-			        	<div class="col-xs-4 text-center">
-			        		<div class="form-group">
-								<input type="text" class="form-control" name="calCalorias" id="calCalorias" placeholder="" readonly="">
-								<p>calorías*</p>
-							</div>
-			        	</div>
-
-
-
-
+		        	<div class="col-xs-4 text-center">
+		        		<div class="form-group">
+							<input type="text" class="form-control" name="calCalorias" id="calCalorias" placeholder="" readonly="">
+							<p>calorías*</p>
+						</div>
+		        	</div>
 		        </div>
         	</div>
 			<h3>selecciona tu deporte</h3>
@@ -72,7 +67,7 @@
 					<a href="javascript:void(0);" id="4"  onClick="calcular_calorias(this.id)"><img src="assets/img/iconos/tenis.png"></a>
 				</div>
 				<div class="item">
-					<a href="javascript:void(0);" id="13"  onClick="calcular_calorias(this.id)"><img src="assets/img/iconos/yoga.png"></a>
+					<a href="javascript:void(0);" id="18"  onClick="calcular_calorias(this.id)"><img src="assets/img/iconos/yoga.png"></a>
 				</div>
 			</div>
 			</div>
@@ -90,7 +85,7 @@
 </div>
 <div style="display: none">
 	<?php 
-	$cols = Array ("conID", "conMin", "conHor");
+	$cols = Array ("conID", "conMin", "conHor", "conDep");
 	$conversion = $db->get ("conversion", null, $cols);
 	if ($db->count > 0){
 	    foreach ($conversion as $cv) { 
@@ -99,7 +94,7 @@
 	    	}
 	    	?>
 		
-		<span id="con-<?php echo $cv['conID'];?>" data-min="<?php echo $cv['conMin'];?>" data-hor="<?php echo $cv['conHor'];?>"></span>	
+		<span id="con-<?php echo $cv['conID'];?>" data-min="<?php echo $cv['conMin'];?>" data-dep="<?php echo $cv['conDep'];?>" data-hor="<?php echo $cv['conHor'];?>"></span>	
 
 		<?php
 	    }

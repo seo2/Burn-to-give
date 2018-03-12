@@ -38,6 +38,8 @@ if($sexo == 'female'){
 	$sexo = "HOMBRE";
 }
 
+	$today = date("Y-m-d");
+
 	//insertar en db
 	$db->where ("usuMail", $email);
 	$user = $db->getOne ("usuarios");
@@ -51,11 +53,14 @@ if($sexo == 'female'){
 			'usuFecNac' => '', 
 			'usuEdad' => '', 
 			'usuPais' => '',  
-			'usuEst' => ''
+			'usuEst' => '',
+			'usuFec' 	=> $today
 		);
 		
 		$id = $db->insert ('usuarios', $data);
 		if($id)
+			
+			$_SESSION["burntogive"] = $id;
 		    echo 'ok';
 	}else{
 		$_SESSION["burntogive"] = $user["usuID"];

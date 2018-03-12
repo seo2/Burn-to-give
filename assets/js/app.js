@@ -1,19 +1,19 @@
 
 
 // ===== Scroll to Top ====
-              $(window).scroll(function() {
-                  if ($(this).scrollTop() >= 400) {        // If page is scrolled more than 50px
-                      $('#return-to-top').fadeIn(500);    // Fade in the arrow
-                  } else {
-                      $('#return-to-top').fadeOut(1000);   // Else fade out the arrow
-                  }
-              });
+$(window).scroll(function() {
+  if ($(this).scrollTop() >= 400) {        // If page is scrolled more than 50px
+      $('#return-to-top').fadeIn(500);    // Fade in the arrow
+  } else {
+      $('#return-to-top').fadeOut(1000);   // Else fade out the arrow
+  }
+});
 
-              $('#return-to-top').click(function() {      // When arrow is clicked
-                  $('body,html').animate({
-                      scrollTop : 0                       // Scroll to top of body
-                  }, 500);
-              });
+$('#return-to-top').click(function() {      // When arrow is clicked
+  $('body,html').animate({
+      scrollTop : 0                       // Scroll to top of body
+  }, 500);
+});
 
 
 $('.slider-iconos').owlCarousel({
@@ -100,46 +100,72 @@ function sharefbimage() {
 }
 
 var v = jQuery("#form-register").validate({
-			submitHandler: function(form) {
-				jQuery(form).ajaxSubmit({
-					beforeSubmit: function(){
-						//mostrar login
-					},
-					success: function(data){
-						console.log(data);
-						if(data == 'ok'){
-							swal({
-							      title: "Usuario creado con éxito!", 
-							      text: "Debes ingresar con tus datos", 
-							      type: "success",
-							      button: "Ingresar",
-							      showCancelButton: true
-							    }).then(
-							      // Redirect the user
-							      function(){
-							      window.location.href = "ingresa.php";
-							      });
+	submitHandler: function(form) {
+		jQuery(form).ajaxSubmit({
+			beforeSubmit: function(){
+				//mostrar login
+			},
+			success: function(data){
+				console.log(data);
+				if(data == 'ok'){
+					swal({
+					      title: "Usuario creado con éxito!", 
+					      //text: "Debes ingresar con tus datos", 
+					      type: "success",
+					      button: "Ingresar",
+					      showCancelButton: true
+					}).then(
+					      // Redirect the user
+					      function(){
+					      window.location.href = "index.php";
+					});
 
-						}else if(data == 'ok-fb'){
-							swal({
-							      title: "Usuario creado con éxito!", 
-							      text: "Ya puedes ingresar con Facebook", 
-							      type: "success",
-							      button: "Ingresar",
-							      showCancelButton: true
-							    }).then(
-							      // Redirect the user
-							      function(){
-							      window.location.href = "ingresa.php";
-							      });
-	
-						}else if(data == 'existe'){
-							swal("Usuario ya existe!", "", "warning");
-						}
-					}
-				});
+				}else if(data == 'ok-fb'){
+					swal({
+					      title: "Usuario creado con éxito!", 
+					      //text: "Ya puedes ingresar con Facebook", 
+					      type: "success",
+					      button: "Ingresar",
+					      showCancelButton: true
+					    }).then(
+					      // Redirect the user
+					      function(){
+					      window.location.href = "index.php";
+					      });
+
+				}else if(data == 'existe'){
+					swal("Usuario ya existe!", "", "warning");
+				}
 			}
 		});
+	}
+});
+
+var v = jQuery("#form-register-ini").validate({
+	rules: {
+    email: "required",
+    email2: {
+      equalTo: "#email"
+    }
+  },
+	submitHandler: function(form) {
+		jQuery(form).ajaxSubmit({
+			beforeSubmit: function(){
+				//mostrar login
+			},
+			success: function(data){
+				console.log(data);
+				if(data == 'ok'){
+					window.location.href = "index.php";
+				}else if(data == 'existe'){
+					swal("Usuario ya existe!", "", "warning");
+				}
+			}
+		});
+	}
+});
+
+
 
 $("input.fecha").mask("99-99-9999");
 
@@ -229,8 +255,9 @@ function calcular_calorias(clicked_id){
 	$('#icono-activo').attr('src',img);
 
 	var factor = $("#con-"+clicked_id).attr("data-min");
-	//console.log(factor);
-
+	var deporte = $("#con-"+clicked_id).attr("data-dep");
+	console.log(deporte);
+	$("p.deporte").html(deporte);
 	$("#factor").val(factor);
 
 	doneTyping();
@@ -282,35 +309,74 @@ $('#modal-calcula').on('hidden.bs.modal', function () {
 
 (function() {
     
-var bar = $('.bar');
-var percent = $('.percent');
-var status = $('#status');
-   
-$('#form-upload').ajaxForm({
-    beforeSend: function() {
-        status.empty();
-        var percentVal = '0%';
-        bar.width(percentVal)
-        percent.html(percentVal);
-    },
-    uploadProgress: function(event, position, total, percentComplete) {
-        var percentVal = percentComplete + '%';
-        bar.width(percentVal)
-        percent.html(percentVal);
-    },
-    success: function() {
-        var percentVal = '100%';
-        bar.width(percentVal)
-        percent.html(percentVal);
-    },
-	complete: function(xhr) {
-		var res = xhr.responseText;
-		if(res >= 1){
-			window.location.href = "share-post.php?_p="+res;
-		}else{
-			swal("Lo sentimos", "Ha ocurrido un error, inténtalo m{as tarde", "warning");
+	var bar = $('.bar');
+	var percent = $('.percent');
+	var status = $('#status');
+	   
+	$('#form-upload').ajaxForm({
+		
+        
+	    beforeSend: function() {
+	        $('.pordefecto').addClass('hide');
+	        $('#elegir').addClass('hide');
+	        $('#confirmar').addClass('disabled');
+	        $('#confirmar span.txt').html('Cargando');
+	        $('#confirmar span.percent').removeClass('hide');
+	        status.empty();
+	        var percentVal = '0%';
+	        bar.width(percentVal)
+	        percent.html(percentVal);
+	    },
+	    uploadProgress: function(event, position, total, percentComplete) {
+	        var percentVal = percentComplete + '%';
+	        bar.width(percentVal)
+	        percent.html(percentVal);
+	    },
+	    success: function() {
+	        var percentVal = '100%';
+	        bar.width(percentVal)
+	        percent.html(percentVal);
+	        $('#confirmar span.txt').html('Redirigiendo');
+	    },
+		complete: function(xhr) {
+			var res = xhr.responseText;
+			if(res >= 1){
+				window.location.href = "share-post.php?_p="+res;
+			}else{
+				swal("Lo sentimos", "Ha ocurrido un error, inténtalo m{as tarde", "warning");
+			}
 		}
-	}
-}); 
+	}); 
 
 })(); 
+
+
+function readURL(input) {
+
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('#fotoperfil').attr('src', e.target.result);
+            $('#nofoto').hide();
+            $('#fotito').fadeIn();
+            $('#confirmar').removeClass('hide');
+            $('#elegir').html('Elegir otra');
+        }
+        
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+	
+$("#fileToUpload").change(function(){
+    readURL(this);
+});
+
+
+$('.share-ig').on('click', function(){
+	
+	
+	
+});

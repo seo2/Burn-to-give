@@ -46,21 +46,34 @@
 						</a>
 					</p>
 				</div>
-				<form method="post" action="ajax/save-user.php" id="form-register">
+				<form method="post" action="ajax/save-user-ini.php" id="form-register-ini">
 					<div class="con-email fondo-degradado-naranja">
 						<div class="container">
 							<p>o con tu dirección de email</p>
 							<div class="form-group center-block">
-							    <input type="email" class="form-control" id="email" placeholder="email@dominio.com" name="log-mail" required="">
+							    <input type="email" class="form-control" id="email" placeholder="email@dominio.com" name="email" required="">
 							</div>
 							<div class="form-group center-block">
-							    <input type="email" class="form-control" id="email" placeholder="confirma tu email" name="log-mail" required="">
+							    <input type="email" class="form-control" id="email2" placeholder="confirma tu email" name="email2" required="">
 							</div>
 							<div class="form-group center-block">
-							    <input type="password" class="form-control" id="pass" placeholder="Contraseña" name="log-pass" required="">
+							    <input type="password" class="form-control" id="pass" placeholder="Contraseña" name="clave" required="">
 							</div>
 							<div class="form-group center-block">
-							    <input type="text" class="form-control" id="nombre" placeholder="¿Cómo te llamas?" name="log-mail" required="">
+							    <input type="text" class="form-control" id="nombre" placeholder="Nombre y Apellido" name="nombre" required="">
+							</div>
+							<div class="form-group center-block">
+							<?php
+								$cols = Array ("paisID", "paisNombre", "paisName");
+								$paises = $db->get ("paises", null, $cols);								    
+							?>
+								<select class="form-control" name="pais" required="">
+									<option value="">País</option>
+									<?php
+										foreach ($paises as $pais) { ?>
+										<option value="<?php echo $pais['paisID']?>"><?php echo $pais['paisNombre'];?></option>
+									<?php } ?>
+								</select>
 							</div>
 						</div>
 					</div>
@@ -74,7 +87,7 @@
 							</div>
 							<div class="col-xs-5">
 								<div class="form-group center-block pl0 pr0">
-									<select class="form-control required" id="sel1" name="" aria-required="true">
+									<select class="form-control required" id="sel1" name="log-mes" aria-required="true">
 										<option value="0">Mes</option>
 										<option value="1">Enero</option>
 										<option value="2">Febrero</option>
@@ -93,14 +106,14 @@
 							</div>
 							<div class="col-xs-4 pr0">
 								<div class="form-group center-block">
-							    	<input type="number" class="form-control" id="dia" placeholder="DD" name="log-dia" required="">
+							    	<input type="number" class="form-control" id="ano" placeholder="AAAA" name="log-ano" required="">
 								</div>
 							</div>
 							<label class="radio-inline">
-  								<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Masculino
+  								<input type="radio" name="usuGen" id="inlineRadio1" value="HOMBRE" required> Masculino
 							</label>
 							<label class="radio-inline">
-  								<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Femenino
+  								<input type="radio" name="usuGen" id="inlineRadio2" value="MUJER" required> Femenino
 							</label>
 						</div>
 					<button type="submit" class="btn btn-default bt-naranjo center-block">regístrate</button>
