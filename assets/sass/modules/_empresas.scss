@@ -190,7 +190,33 @@ section.preguntas{
 			margin-bottom: 20px;
 
 		}
-	 .caja-texto-sombra{
+		.caja-texto-sombra{
+			padding-bottom: 1px;
+			#accordion{
+				.panel-default{
+					margin-top: 0;
+					border: none;
+				}
+				.panel-heading{
+					background-color: #fff;
+					border-radius: 0;
+					border: none;
+					.panel-title{
+						a{
+							&.cd-faq-trigger{
+								font-family: $bold;
+								@include font-size(15px);
+								color: #0870a6;
+								//text-transform:uppercase;
+								font-style:italic;
+							}
+						}
+					}
+				}
+				.panel-body{
+					border: none;
+				}
 
-	 }
+			}
+		}
 } //faq

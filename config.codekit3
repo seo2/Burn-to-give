@@ -921,6 +921,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/assets\/img\/favicon.png": {
+		"ft": 32768,
+		"iS": 13057,
+		"oA": 0,
+		"oAP": "\/assets\/img\/favicon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/img\/flecha.png": {
 		"ft": 32768,
 		"iS": 3873,
@@ -2883,6 +2894,13 @@
 		"oAP": "\/footer.php",
 		"oF": 0
 		},
+	"\/geoiploc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/geoiploc.php",
+		"oF": 0
+		},
 	"\/header.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -2932,6 +2950,23 @@
 		"oAP": "\/modal-share.php",
 		"oF": 0
 		},
+<<<<<<< HEAD
+=======
+	"\/registro.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/registro.php",
+		"oF": 0
+		},
+	"\/share-image.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/share-image.php",
+		"oF": 0
+		},
+>>>>>>> 55821d7445807117d0e70195ad9edf14f50cfb00
 	"\/share-post.php": {
 		"cB": 0,
 		"ft": 8192,

@@ -232,6 +232,59 @@
 	}
 }
 
+/* Cambios Seo2 al 12.03.2018 */
+	#modal-share{
+		position: relative;
+	    top: auto;
+	    right: auto;
+	    bottom: auto;
+	    left: auto;
+	    z-index: 1;
+	    display: block;
+	}
+	#modal-share .modal-dialog .modal-content .modal-header a.close {
+	    opacity: 1;
+	    margin-top: -40px;
+	    margin-right: 10px;
+	}
+	#modal-share .modal-dialog .modal-content .modal-header a.close img {
+	    width: 20px;
+	}
+
+	#modal-share .modal-dialog .modal-content .modal-body .bloque-imagen .img-wrap { position: relative; display: inline-block; width: 100%; background-size: cover; background-position: center center;}
+	#modal-share .modal-dialog .modal-content .modal-body .bloque-imagen .img-wrap:after {
+	  content: "";
+	  display: block;
+	  padding-bottom: 100%;
+	}
+	#modal-share .modal-dialog .modal-content .modal-body .bloque-imagen .img-wrap .img-post { width: 100%; max-width: 580px; margin-bottom: 0; }
+	#modal-share .modal-dialog .modal-content .modal-body .bloque-imagen .img-wrap .img-barra { position: absolute; bottom: 0; left: 0; width: 100%; max-width: 580px; z-index: 0; }
+	#modal-share .modal-dialog .modal-content .modal-body .bloque-imagen .img-wrap .box-total-calorias {
+		position: absolute;
+	    right: 5px;
+	    bottom: 5px;
+	    z-index: 1;
+	    background-color: #fff;
+	    border-radius: 50%;
+	    width: 25%;
+	    height: 25%;
+	    padding-top: 0;
+    }
+    #modal-share .modal-dialog .modal-content .modal-body .bloque-imagen .img-wrap .box-total-calorias p { font-size: 11px; font-size: 0.6875rem; text-align: center; color: #ed611c; font-family: "Gotham-Medium", arial, sans-serif; text-transform: uppercase; margin: 0; padding: 0; }
+	#modal-share .modal-dialog .modal-content .modal-body .bloque-imagen .img-wrap .box-total-calorias p { font-size: 10px; font-size: 0.3rem; }
+	#modal-share .modal-dialog .modal-content .modal-body .bloque-imagen .img-wrap .box-total-calorias p.acabo-donar{position: absolute; width: 100%; top: 12px;}
+	#modal-share .modal-dialog .modal-content .modal-body .bloque-imagen .img-wrap .box-total-calorias p.num-calorias { font-family: "Gotham-Black", arial, sans-serif; font-size: 35px; font-size: 2.1875rem; line-height: 0.4; position: absolute;
+    width: 90%;
+    text-align: right;
+    top: 30px;
+}
+	#modal-share .modal-dialog .modal-content .modal-body .bloque-imagen .img-wrap .box-total-calorias p.sub-text {font-family: "Gotham-Medium", arial, sans-serif;  font-size: 0.5rem; position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 5px;
+    border: none;
+}
+
 
 
 
