@@ -177,20 +177,25 @@ var v = jQuery("#form-register-ini").validate({
 $("input.fecha").mask("99-99-9999");
 
 var v1 = jQuery("#form-login").validate({
-			submitHandler: function(form) {
-				jQuery(form).ajaxSubmit({
-					beforeSubmit: function(){
-						//mostrar login
-					},
-					success: function(data){
-						if(data == 'ok'){
-							window.location.href = "index.php";
-						}
-						
+	submitHandler: function(form) {
+		jQuery(form).ajaxSubmit({
+			beforeSubmit: function(){
+				//mostrar login
+			},
+			success: function(data){
+				if(data == 'ok'){
+					window.location.href = "index.php";
+				}else{
+					if(lang=='en'){
+						swal("", "Invalid email and/or password", "warning");
+					}else{
+						swal("", "Tu email y/o contraseña no son válidos", "warning");
 					}
-				});
+				}
 			}
 		});
+	}
+});
 
 var v2 = jQuery("#formEnviarCalorias").validate({
 	submitHandler: function(form) {

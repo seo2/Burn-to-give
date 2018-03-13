@@ -302,45 +302,24 @@
 				activa y por otro lado están contribuyendo a alimentar a miles de niños alrededor del mundo. </p>
 				<p class="texto-amarillo"> ¡No podríamos hacer esto <br> sin su apoyo!</p>
 				<?php } ?>
-				<div class="col-sm-12">
-					<img src="assets/img/logos_footer.png" class="img-responsive">
-				</div>
-<!--
-				<ul>
-					<li><a href=""><img class="img-responsive" src="assets/img/logos-empresas/02.png" alt=""></a></li>
-					<li><a href=""><img class="img-responsive" src="assets/img/logos-empresas/04.png" alt=""></a></li>
-					<li><a href=""><img class="img-responsive" src="assets/img/logos-empresas/11.png" alt=""></a></li>
-					<li><a href=""><img class="img-responsive" src="assets/img/logos-empresas/09.png" alt=""></a></li>
-					<li><a href=""><img class="img-responsive" src="assets/img/logos-empresas/08.png" alt=""></a></li>
-					<li><a href=""><img class="img-responsive" src="assets/img/logos-empresas/12.png" alt=""></a></li>
-					<li><a href=""><img class="img-responsive" src="assets/img/logos-empresas/10.png" alt=""></a></li>
-					<li><a href=""><img class="img-responsive" src="assets/img/logos-empresas/merrel.jpg" alt=""></a></li>
-					<li><a href=""><img class="img-responsive" src="assets/img/logos-empresas/14.png" alt=""></a></li>
-					<li><a href=""><img class="img-responsive" src="assets/img/logos-empresas/03.png" alt=""></a></li>
-					<li><a href=""><img class="img-responsive" src="assets/img/logos-empresas/07.png" alt=""></a></li>
-					<li><a href=""><img class="img-responsive" src="assets/img/logos-empresas/05.png" alt=""></a></li>
-					<li><a href=""><img class="img-responsive" src="assets/img/logos-empresas/01.png" alt=""></a></li>
-					<li><a href=""><img class="img-responsive" src="assets/img/logos-empresas/endurance.jpg" alt=""></a></li>
-					<li><a href=""><img class="img-responsive" src="assets/img/logos-empresas/06.png" alt=""></a></li>
-
-https://www.enjoy.cl/
-https://ventumracing.com/
-https://www.walmartchile.cl/
-https://www.cocacoladechile.cl/productos/powerade
-https://simple.ripley.cl/
-https://www.paz.cl/
-https://www.facebook.com/Capitalizarme/
-http://www.merrell.cl/
-http://www.youtopia.club/
-http://www.xterrachile.com/
-https://www.k1.cl/
-https://firstendurance.com
-http://www.sansport.com/marca/taymory
-http://www.tyndallgroup.com/
-
-
-				</ul>
--->
+			</div>
+			<div class="row">
+				<div class="col-xs-6"><a target="_blank" href="https://www.k1.cl/"><img class="img-responsive" src="assets/img/logos-empresas/02.png" alt=""></a></div>
+				<div class="col-xs-6"><a target="_blank" href="https://www.walmartchile.cl/"><img class="img-responsive" src="assets/img/logos-empresas/04.png" alt=""></a></div>
+				<div class="col-xs-6"><a target="_blank" href="https://www.facebook.com/Capitalizarme/"><img class="img-responsive" src="assets/img/logos-empresas/11.png" alt=""></a></div>
+				<div class="col-xs-6"><a target="_blank" href="https://www.paz.cl/"><img class="img-responsive" src="assets/img/logos-empresas/09.png" alt=""></a></div>
+				<div class="col-xs-6"><a target="_blank" href="https://simple.ripley.cl/"><img class="img-responsive" src="assets/img/logos-empresas/08.png" alt=""></a></div>
+				<div class="col-xs-6"><a target="_blank" href="https://www.enjoy.cl/"><img class="img-responsive" src="assets/img/logos-empresas/12.png" alt=""></a></div>
+				<div class="col-xs-6"><a target="_blank" href="https://www.cocacoladechile.cl/productos/powerade"><img class="img-responsive" src="assets/img/logos-empresas/10.png" alt=""></a></div>
+				<div class="col-xs-6"><a target="_blank" href="http://www.merrell.cl/"><img class="img-responsive" src="assets/img/logos-empresas/merrel.png" alt=""></a></div>
+				<div class="col-xs-6"><a target="_blank" href="http://www.jugosbless.cl/"><img class="img-responsive" src="assets/img/logos-empresas/14.png" alt=""></a></div>
+				<div class="col-xs-6"><a target="_blank" href="http://www.youtopia.club/"><img class="img-responsive" src="assets/img/logos-empresas/03.png" alt=""></a></div>
+				<div class="col-xs-6"><a target="_blank" href="http://www.sansport.com/marca/taymory"><img class="img-responsive" src="assets/img/logos-empresas/07.png" alt=""></a></div>
+				<div class="col-xs-6"><a target="_blank" href="https://ventumracing.com/"><img class="img-responsive" src="assets/img/logos-empresas/05.png" alt=""></a></div>
+				<div class="col-xs-6"><a target="_blank" href="http://www.xterrachile.com/"><img class="img-responsive" src="assets/img/logos-empresas/01.png" alt=""></a></div>
+				<div class="col-xs-6"><a target="_blank" href="https://firstendurance.com"><img class="img-responsive" src="assets/img/logos-empresas/endurance.png" alt=""></a></div>
+				<div class="col-xs-6"><a target="_blank" href="javascript:void(0);"><img class="img-responsive" src="assets/img/logos-empresas/heav.png" alt=""></a></div>
+				<div class="col-xs-6"><a target="_blank" href="http://www.tyndallgroup.com/"><img class="img-responsive" src="assets/img/logos-empresas/06.png" alt=""></a></div>
 			</div>
 		</div>
 	</section>

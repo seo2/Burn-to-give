@@ -68,26 +68,14 @@ if(isset($_POST["email"])){ //registro normal
 			
 			$id = $db->insert ('usuarios', $data);
 			if($id)
-/*
 				$_SESSION["burntogive"] = $id;
-				$headers = "From: Burn to give <info@burntogive.com>\r\n". 
-				           "MIME-Version: 1.0" . "\r\n" . 
-				           "Content-type: text/html; charset=UTF-8" . "\r\n";				
-				$msg = file_get_contents("mail/mail.html");
-				mail($email, 'Hello', 'test', $headers);
-*/
 
-			    $from 	 = "test@burntogive.com";
-			    $to 	 = "seo2@seo2.cl";
-			    $subject = "PHP Mail Test script 1";
-			    $message = "This is a test to check the PHP Mail functionality";
-			    $headers = "From:" . $from;
-			    
+			    $to 	 = $email;
+			    $subject = "Gracias por unirte a Burn to Give";
 				$headers = "From: Burn to give <info@burntogive.com>\r\n". 
 				           "MIME-Version: 1.0" . "\r\n" . 
 				           "Content-type: text/html; charset=UTF-8" . "\r\n";				
 				$msg = file_get_contents("mail/mail.html");    
-			    
 			    
 			    mail($to,$subject,$msg, $headers);
 

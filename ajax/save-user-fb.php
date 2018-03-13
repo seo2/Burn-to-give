@@ -61,6 +61,16 @@ if($sexo == 'female'){
 		if($id)
 			
 			$_SESSION["burntogive"] = $id;
+
+		    $to 	 = $email;
+		    $subject = "Gracias por unirte a Burn to Give";
+			$headers = "From: Burn to give <info@burntogive.com>\r\n". 
+			           "MIME-Version: 1.0" . "\r\n" . 
+			           "Content-type: text/html; charset=UTF-8" . "\r\n";				
+			$msg = file_get_contents("mail/mail.html");    
+		    
+		    mail($to,$subject,$msg, $headers);
+		    
 		    echo 'ok';
 	}else{
 		$_SESSION["burntogive"] = $user["usuID"];
