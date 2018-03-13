@@ -13,7 +13,7 @@
 				</div>
 			</div>
 			<section class="logos-footer clearfix">
-				<img class="img-responsive center-block grilla-logos" src="assets/img/logos_footer.png" alt="">
+				<img class="img-responsive center-block grilla-logos" src="assets/img/logos_footer.png?v=2" alt="">
 				<img class="logo-footer center-block" src="assets/img/logo-footer.png" alt="Burn to give">
 				<p class="copy">© 2018 Burn to give <br>
 				Versión 0.1 Beta</p>
