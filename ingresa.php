@@ -45,7 +45,7 @@
 							    <input type="password" class="form-control" id="pass" placeholder="<?php if($lang=='en'){ ?>Password<?php }else{ ?>Contraseña<?php } ?>" name="log-pass" required="">
 							</div>
 							<div class="row">
-								<a href="recuperar.php" class="olvide"><?php if($lang=='en'){ ?>I forgot my password<?php }else{ ?>Olvide mi contraseña<?php } ?></a>
+								<a href="recuperar.php" class="olvide"><?php if($lang=='en'){ ?>I forgot my password<?php }else{ ?>Olvidé mi contraseña<?php } ?></a>
 							</div>
 						</div>
 					</div>

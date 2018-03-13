@@ -260,7 +260,7 @@
 						<li>A solution exists and is called RUTF (Ready to Use Therapeutic Food), a nutrient- and energy-rich peanut-based paste that helps treat dangerous nutritional deficiencies in children</li>
 						<li>A 6-week feeding program on RUTF, permanently eliminates malnutrition for 95% of children</li>
 					<?php }else{ ?>
-						<li>L155 millones de niños en el mundo sufren de desnutrición (17 millones de desnutrición severa)</li>
+						<li>155 millones de niños en el mundo sufren de desnutrición (17 millones de desnutrición severa)</li>
 						<li>50% de las muertes de niños menores de 5 años en el mundo están directamente relacionadas con la desnutrición</li>
 						<li>Cada 10 segundos, un niño muere a causa de la desnutrición en el mundo</li>
 						<li>Existe una solución, se llama RUTF (Ready to Use Therapeutic Food) alimento en base a mantequilla de maní y que cuenta con los nutrientes básicos para un niño con desnutrición</li>

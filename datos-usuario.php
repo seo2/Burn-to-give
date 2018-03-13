@@ -101,7 +101,12 @@ function changeDateEn2($fecha){
 				    <input type="text" class="form-control" id="sexo" placeholder="<?php echo $usuGen;?>" readonly>
 				  </div>
 				    <div class="form-group center-block">
-				    <input type="text" class="form-control" id="fecha" placeholder="<?php echo changeDateEn2($usuFecNac);?>" readonly>
+						<?php if($lang=='en'){ ?>
+							<?php $fechanac = changeDateEn2($usuFecNac);?>						
+						<?php }else{ ?>
+							<?php  $fechanac = changeDateSp2($usuFecNac);?>
+						<?php } ?>
+				    <input type="text" class="form-control" id="fecha" placeholder="<?php echo $fechanac;?>" readonly>
 				  </div>
 				    <div class="form-group center-block">
 					    <input type="text" class="form-control" id="pais" placeholder="<?php echo $nomPais;?>" readonly>

@@ -80,7 +80,7 @@
                         	</div>
 							<div id="q9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="" aria-expanded="true" style="">
 								<div class="panel-body">
-									<p>Que estamos “probando el concepto” de que el círculo virtuoso entre personas- empresas-necesitados funciona, antes de entrar a desarrollar la tecnología de monitoreo de calorías. En este primer desafió, estamos confiando en la buena fe de las personas y que ingresen las calorías que cada uno efectivamente quemó.
+									<p>Que estamos “probando el concepto” de que el círculo virtuoso entre personas- empresas-necesitados funciona, antes de entrar a desarrollar la tecnología de monitoreo de calorías. En este primer desafío, estamos confiando en la buena fe de las personas y que ingresen las calorías que cada uno efectivamente quemó.
 										</p>
                         		</div>
                         	</div>
@@ -148,7 +148,7 @@
                         	<div class="panel-heading" role="tab" id="">
 								<h4 class="panel-title">
 									<a class="cd-faq-trigger" role="button" data-toggle="collapse" data-parent="#accordion" href="#q11" aria-expanded="true" aria-controls="q11">
-										¿Cuál es la diferencia entre una empresa social y una sin tfines de lucro?
+										¿Cuál es la diferencia entre una empresa social y una sin fines de lucro?
 									</a>
                         		</h4>
                         	</div>
