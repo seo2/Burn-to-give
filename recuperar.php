@@ -22,7 +22,13 @@
 <section class="ingresa section recuperar">
 	<div class="container-fluid no-padding">
 		<div class="row">
-			<p class="titrecuperar"><?php if($lang=='en'){ ?>ingresa tu email registrado<?php }else{ ?>ingresa tu email registrado<?php } ?></p>
+			<p class="titrecuperar"><?php if($lang=='en'){ ?>I forgot my password
+<?php }else{ ?>Olvidé mi contraseña<?php } ?></p>
+
+<p class="intruccionesrecuperar">
+	<?php if($lang=='en'){ ?>Enter your registered email address 
+	<?php }else{ ?>Ingresa tu email registrado<?php } ?>
+</p>
 
 			<form method="post" action="ajax/recuperar.php" id="form-recuperar" autocomplete="false">
 				<div class="con-email fondo-degradado-naranja">

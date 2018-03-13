@@ -33,10 +33,12 @@ if($err == 0){
 			    if(isset($_SESSION["burntogivelang"])){
 			    	if($_SESSION["burntogivelang"] == 'es'){
 			    		$lang = 'es';
-			    		$subject = "Burntogive - Recuperar Contraseña";
+			    		$subject = "Recuperar contraseña burntogive.com";
+			    		$msg = file_get_contents("mail/mail_recuperar.html");  
 			    	}else{
 			    		$lang = '';
-			    		$subject = "Burntogive - Restore password";
+			    		$subject = "burntogive.com password recovery";
+			    		$msg = file_get_contents("mail/mail_recover.html");  
 			    	}
 			    }
 		
@@ -44,9 +46,9 @@ if($err == 0){
 				$headers = "From: Burn to give <info@burntogive.com>\r\n". 
 				           "MIME-Version: 1.0" . "\r\n" . 
 				           "Content-type: text/html; charset=UTF-8" . "\r\n";				
-				$msg = file_get_contents("mail/mail_recuperar.html");    
+				  
 				$msg = str_replace("#link", $url, $msg);
-				$msg = str_replace("#textolink", $url, $msg);
+				
 			    //echo $msg;
 			    mail($to,$subject,$msg, $headers);
 				echo $url;

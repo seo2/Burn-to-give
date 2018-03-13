@@ -252,17 +252,17 @@ var v3 = jQuery("#form-recuperar").validate({
 						var str = data;
 						if(data == 'error'){
 							if(lang=='en'){
-							swal("Error", "The email was not found", "warning");
+							swal("Error", "Your email is not registered", "warning");
 							}else{
-							swal("Ha ocurrido un error", "Email ingresado no existe", "warning");
+							swal("Ha ocurrido un error", "Tu email no está registrado", "warning");
 							}
 						}else{
 							if (str.indexOf("token") >= 0){
 								//console.log("Hay token");
 								if(lang=='en'){
-								swal("Restore password", "An email has been sent with the instructions to restore your password.", "success");
+								swal("Restore password", "We have sent you an email to recover your password", "success");
 								}else{
-								swal("Recuperar contraseña", "Se ha enviado un correo con las instrucciones para recuperar tu contraseña.", "success");
+								swal("Recuperar contraseña", "Te hemos enviado un correo para recuperar tu contraseña", "success");
 								}
 							}else{
 								if(lang=='en'){
@@ -279,6 +279,29 @@ var v3 = jQuery("#form-recuperar").validate({
 			}
 		});
 
+var v4 = jQuery("#form-recuperar2").validate({
+	submitHandler: function(form) {
+		jQuery(form).ajaxSubmit({
+			beforeSubmit: function(){
+				//mostrar login
+			},
+			success: function(data){
+				//console.log(data);
+
+				if(data == 'ok'){
+					window.location.href = "index.php";
+				}else{
+					if(data == 'error-pass')
+					if(lang=='en'){
+						swal("", "passwords does not match", "warning");
+					}else{
+						swal("", "Las contraseñas no coinciden", "warning");
+					}
+				}
+			}
+		});
+	}
+});
 
 
 function openNav() {
