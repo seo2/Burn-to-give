@@ -138,7 +138,7 @@ var v = jQuery("#form-register").validate({
 	}
 });
 
-var v = jQuery("#form-register-ini").validate({
+var v0 = jQuery("#form-register-ini").validate({
 	rules: {
     email: "required",
     email2: {
@@ -239,6 +239,45 @@ var v2 = jQuery("#formEnviarCalorias").validate({
 	}
 });
 
+var v3 = jQuery("#form-recuperar").validate({
+			submitHandler: function(form) {
+				jQuery(form).ajaxSubmit({
+					beforeSubmit: function(){
+						//mostrar login
+						$(".loading").fadeIn();
+					},
+					success: function(data){
+						console.log(data);
+						$(".loading").fadeOut();
+						var str = data;
+						if(data == 'error'){
+							if(lang=='en'){
+							swal("Error", "The email was not found", "warning");
+							}else{
+							swal("Ha ocurrido un error", "Email ingresado no existe", "warning");
+							}
+						}else{
+							if (str.indexOf("token") >= 0){
+								//console.log("Hay token");
+								if(lang=='en'){
+								swal("Restore password", "An email has been sent with the instructions to restore your password.", "success");
+								}else{
+								swal("Recuperar contraseña", "Se ha enviado un correo con las instrucciones para recuperar tu contraseña.", "success");
+								}
+							}else{
+								if(lang=='en'){
+								swal("An error has occurred", "Please, try later.", "warning");
+								}else{
+								swal("Ha ocurrido un error", "Por favor, inténtalo más tarde.", "warning");
+								}
+							}
+
+						}
+						
+					}
+				});
+			}
+		});
 
 
 

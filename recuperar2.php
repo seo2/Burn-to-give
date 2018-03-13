@@ -24,7 +24,7 @@
 		<div class="row">
 			<p class="titrecuperar"><?php if($lang=='en'){ ?>Type your new password<?php }else{ ?>ingresa tu nueva contraseña<?php } ?></p>
 
-			<form method="post" action="ajax/login.php" id="form-login" autocomplete="false">
+			<form method="post" action="ajax/recuperar2.php" id="form-recuperar2" autocomplete="false">
 				<div class="con-email fondo-degradado-naranja">
 					<div class="container">
 						<div class="form-group center-block">

@@ -24,7 +24,7 @@
 		<div class="row">
 			<p class="titrecuperar"><?php if($lang=='en'){ ?>ingresa tu email registrado<?php }else{ ?>ingresa tu email registrado<?php } ?></p>
 
-			<form method="post" action="ajax/login.php" id="form-login" autocomplete="false">
+			<form method="post" action="ajax/recuperar.php" id="form-recuperar" autocomplete="false">
 				<div class="con-email fondo-degradado-naranja">
 					<div class="container">
 						<div class="form-group center-block">
@@ -35,7 +35,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="container">
+				<div class="container" style="position: relative;">
+					<div class="loading"><img src="assets/img/ajax-loader.gif" alt=""></div>
 					<button type="submit" class="btn btn-default bt-naranjo center-block"><?php if($lang=='en'){ ?>Recover Password<?php }else{ ?>recuperar contraseña<?php } ?></button>
 				</div>
 			</form>
