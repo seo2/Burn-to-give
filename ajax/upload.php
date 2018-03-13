@@ -97,10 +97,21 @@ if ($uploadOk == 0) {
 } else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
         //echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+
+
     	//CHEQUEAR ORIENTACION
     	$grados = image_fix_orientation($target_file);
     	if($grados!= ""){
-    		WideImage::load($target_file)->rotate($grados)->saveToFile($target_file);
+    		$img1 = WideImage::load($target_file);
+    		$image1_w = $img1->getWidth();
+        	$image1_h = $img1->getHeight();
+    		if($image1_w > 1200){
+    			$img1->resize(1200, '100%')->saveToFile($target_dir.$filename);
+    			$img2 = WideImage::load($target_file);
+    			$img2->rotate($grados)->saveToFile($target_file);
+    		}else{
+    			$img1->rotate($grados)->saveToFile($target_file);
+    		}
     	}
 
         //HACER RESIZE
