@@ -65,10 +65,11 @@
 					</div>		    		
 		    	</div>	
 			</div>
+			<button type="submit" class="btn btn-default bt-naranjo bt-subir fondo-degradado-naranja center-block hide" id="confirmar"><span class="txt"><?php if($lang=='en'){ ?>Confirm<?php }else{ ?>Confirmar<?php } ?></span> <span class="percent hide"></span></button>
+			
 			<button type="button" class="btn btn-default bt-naranjo bt-subir fondo-degradado-naranja center-block " onclick="document.getElementById('fileToUpload').click(); return false" id="elegir">
 				<span class="elegirfoto"><?php if($lang=='en'){ ?>Upload photo<?php }else{ ?>Elegir foto<?php } ?></span><span class="elegirotra hide"><?php if($lang=='en'){ ?>Change photo<?php }else{ ?>Elegir otra<?php } ?></span></button>
 			
-			<button type="submit" class="btn btn-default bt-naranjo bt-subir fondo-degradado-naranja center-block hide" id="confirmar"><span class="txt"><?php if($lang=='en'){ ?>Confirm<?php }else{ ?>Confirmar<?php } ?></span> <span class="percent hide"></span></button>
 		</form>
 		<div class="progress hide">
 		    <div class="bar"></div >

@@ -59,7 +59,7 @@
 
 			<div class="bloque-texto  fondo-celeste hide" id="sharepaso2">
 				<div class="container">
-				 	<p><?php if($lang=='en'){ ?>Save this image in your camera roll and then share it directly from instagram<?php }else{ ?>Mantén presionada la imagen y guárdala. Luego súbela directamente desde Instagram<?php } ?></p>
+				 	<p><?php if($lang=='en'){ ?>Press and hold image to save on your phone. Then upload it directly from Instagram<?php }else{ ?>Mantén presionada la imagen y guárdala. Luego súbela directamente desde Instagram<?php } ?>.</p>
 				 	<p><?php if($lang=='en'){ ?>Remember to use<?php }else{ ?>RECUERDA USAR<?php } ?> <span class="txt-naranjo">#BURNTOGIVE</span></p>
 				</div>
 <!-- 				<a href="<?php echo $rutaImg2;?>" class="btn btn-default bt-naranjo center-block fondo-degradado-naranja" download="<?php echo $rutaImg2;?>"><?php if($lang=='en'){ ?>Save<?php }else{ ?>guardar<?php } ?></a> -->
