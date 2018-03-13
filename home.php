@@ -1,6 +1,6 @@
 <?php include('header.php'); ?>
+<?php include('main-nav.php'); ?>
 
-	<?php // include('main-nav.php'); ?>
 	<header class="fondo-degradado-naranja position-relative">
 		<div class="container position-relative">
 			<div class="selector-idioma">
@@ -13,6 +13,11 @@
 						<a <?php if($lang=='en'){ ?>class="selected"<?php } ?> href="javascript:void(0);" data-lang="en">eng</a>
 					</li>
 				</ul>
+			</div>
+			<div class="row">
+				<span class="menu-icon" onclick="openNav()">
+					<img class="img-responsive toggle-menu" src="assets/img/menu-icon.png" alt="">
+				</span>
 			</div>
 		</div>
 		<img class="img-responsive logo-ingresa" src="assets/img/logo-ingresa.png" alt="">

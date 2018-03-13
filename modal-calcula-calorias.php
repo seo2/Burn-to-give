@@ -88,7 +88,7 @@
 			Approximate calories based on a 70 kgs individual, calculated at
 			<?php }else{ ?>
 			Calorías aproximadas en base a una persona de 70 kgs calculadas en<?php } ?> 
-			<a href="http://www.calorielab.com" target="_blank">www.calorielab.com</a></p>
+			www.calorielab.com</p>
       </div>
       <div class="modal-footer">
       

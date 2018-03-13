@@ -95,7 +95,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
-					<img class="img-responsive center-block" src="assets/img/compra-polera.jpg" alt="">
+					<a href="" target="_blank">
+						<img class="img-responsive center-block" src="assets/img/banner_sitiov2.png" alt="">
+					</a>
 				</div>
 			</div>
 		</div>

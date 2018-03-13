@@ -78,8 +78,12 @@ if(!isset($_SESSION["burntogivelang"])){
 				if($current_page != "ingresa.php" ) {
 					if($current_page != "recuperar.php" ) {
 						if($current_page != "recuperar2.php" ) {
-							header("Location:home.php");
-							exit();
+							if($current_page != "empresas.php" ) {
+								if($current_page != "contacto.php" ) {
+									header("Location:home.php");
+									exit();
+								}
+							}
 						}
 					}
 				}

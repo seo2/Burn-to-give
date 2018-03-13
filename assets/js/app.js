@@ -146,6 +146,16 @@ var v = jQuery("#form-register-ini").validate({
     }
   },
 	submitHandler: function(form) {
+		
+			$('#form-register-ini button').addClass('disabled');
+			if(lang=='en'){
+			
+				$('#form-register-ini button').html('Loading');
+			}else{
+			
+				$('#form-register-ini button').html('Cargando');
+			}	        
+	        
 		jQuery(form).ajaxSubmit({
 			beforeSubmit: function(){
 				//mostrar login
@@ -260,11 +270,11 @@ function imagenSecundaria(){
 		  success: function(data){
 		  	console.log(data);
 		  	alert(data);
-		  	    if(data >= 1){
-		  			window.location.href = "share-post.php?_p="+data;
-		  		}else{
-		  			swal("Lo sentimos", "Ha ocurrido un error, inténtalo más tarde", "warning");
-		  		}
+	  	    if(data >= 1){
+	  			window.location.href = "share-post.php?_p="+data;
+	  		}else{
+	  			swal("Lo sentimos", "Ha ocurrido un error, inténtalo más tarde", "warning");
+	  		}
 		  }
 		});
 
@@ -404,10 +414,12 @@ $('#modal-calcula').on('hidden.bs.modal', function () {
 	    },
 		complete: function(xhr) {
 			var res = xhr.responseText;
+			
+		  	alert(res);
 			if(res >= 1){
 				window.location.href = "share-post.php?_p="+res;
 			}else{
-				swal("Lo sentimos", "Ha ocurrido un error, inténtalo más tarde", "warning");
+				swal("Lo sentimos", "Ha ocurrido un error, inténtalo más tarde "+res, "warning");
 			}
 		}
 	});

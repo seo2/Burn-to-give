@@ -7,7 +7,7 @@
 						your calories into nutrition </p>
 					<?php }else{ ?>
 						<p>Empresas que transforman <br>
-						tus calorias en alimento</p>
+						tus calorías en alimento</p>
 					<?php } ?>
 						
 				</div>
