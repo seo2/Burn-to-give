@@ -87,36 +87,29 @@ function changeDateEn2($fecha){
 		<div class="row">
 
 
-				<form>
-					<div class="datos fondo-degradado-naranja">
-						<div class="container">
-								  <div class="form-group center-block">
-								  <!--   <label for="exampleInputEmail1">Email address</label> -->
-								    <input type="text" class="form-control" id="nombre" placeholder="<?php echo $usuNom;?>" readonly>
-								    <img class="img-responsive ico-user hidden-xs" src="assets/img/ico-user.png" alt="">
-								  </div>
-								    <div class="form-group center-block">
-								  <!--   <label for="exampleInputEmail1">Email address</label> -->
-								    <input type="email" class="form-control" id="email" placeholder="<?php echo $usuMail;?>" readonly>
-								  </div>
-								    <div class="form-group center-block">
-								  <!--   <label for="exampleInputEmail1">Email address</label> -->
-								    <input type="text" class="form-control" id="sexo" placeholder="<?php echo $usuGen;?>" readonly>
-								  </div>
-								    <div class="form-group center-block">
-								  <!--   <label for="exampleInputEmail1">Email address</label> -->
-								    <input type="text" class="form-control" id="fecha" placeholder="<?php echo changeDateSp($usuFecNac);?>" readonly>
-								  </div>
-								    <div class="form-group center-block">
-								  <!--   <label for="exampleInputEmail1">Email address</label> -->
-								    <select class="form-control" readonly>
-									  <option><?php echo $nomPais;?></option>
-									</select>
-								  </div>
-						</div>
+		<form>
+			<div class="datos fondo-degradado-naranja">
+				<div class="container">
+				  <div class="form-group center-block">
+				    <input type="text" class="form-control" id="nombre" placeholder="<?php echo $usuNom;?>" readonly>
+				    <img class="img-responsive ico-user hidden-xs" src="assets/img/ico-user.png" alt="">
+				  </div>
+				    <div class="form-group center-block">
+				    <input type="email" class="form-control" id="email" placeholder="<?php echo $usuMail;?>" readonly>
+				  </div>
+				    <div class="form-group center-block">
+				    <input type="text" class="form-control" id="sexo" placeholder="<?php echo $usuGen;?>" readonly>
+				  </div>
+				    <div class="form-group center-block">
+				    <input type="text" class="form-control" id="fecha" placeholder="<?php echo changeDateEn2($usuFecNac);?>" readonly>
+				  </div>
+				    <div class="form-group center-block">
+					    <input type="text" class="form-control" id="pais" placeholder="<?php echo $nomPais;?>" readonly>
+				  </div>
+				</div>
 
-					</div>
-				</form>
+			</div>
+		</form>
 
 		</div>
 	</div>

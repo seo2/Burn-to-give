@@ -184,7 +184,16 @@ var v1 = jQuery("#form-login").validate({
 
 var v2 = jQuery("#formEnviarCalorias").validate({
 	submitHandler: function(form) {
-		jQuery(form).ajaxSubmit({
+		numCalorias = $('#numCalorias').val();
+		if(numCalorias>3000){
+			if(lang=='en'){
+				swal("", "Maximum calories per day is 3,000", "warning");
+			}else{
+				swal("", "El máximo de calorías diarias a ingresar son 3.000.", "warning");
+			}
+			$('#numCalorias').val('');
+		}else{
+			jQuery(form).ajaxSubmit({
 			beforeSubmit: function(){
 				//mostrar login
 			},
@@ -211,6 +220,7 @@ var v2 = jQuery("#formEnviarCalorias").validate({
 
 			}
 		});
+		}
 	}
 });
 

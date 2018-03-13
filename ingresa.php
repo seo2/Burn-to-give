@@ -1,24 +1,23 @@
 <?php include('header.php'); ?>
 
-	<?php // include('main-nav.php'); ?>
-	<header class="fondo-degradado-naranja position-relative">
-		<div class="container position-relative">
-			<div class="selector-idioma">
-				<ul>
-					<li>
-						<a <?php if($lang=='es'){ ?>class="selected"<?php } ?>href="javascript:void(0);" data-lang="es">esp</a>
-					</li>
-					<li class="divisor">|</li>
-					<li>
-						<a <?php if($lang=='en'){ ?>class="selected"<?php } ?> href="javascript:void(0);" data-lang="en">eng</a>
-					</li>
-				</ul>
-			</div>
+<header class="fondo-degradado-naranja position-relative">
+	<div class="container position-relative">
+		<div class="selector-idioma">
+			<ul>
+				<li>
+					<a <?php if($lang=='es'){ ?>class="selected"<?php } ?>href="javascript:void(0);" data-lang="es">esp</a>
+				</li>
+				<li class="divisor">|</li>
+				<li>
+					<a <?php if($lang=='en'){ ?>class="selected"<?php } ?> href="javascript:void(0);" data-lang="en">eng</a>
+				</li>
+			</ul>
 		</div>
-		<img class="img-responsive logo-ingresa" src="assets/img/logo-ingresa.png" alt="">
-		<img class="img-responsive texto-ingresa center" src="assets/img/texto-ingresa.png" alt="">
+	</div>
+	<img class="img-responsive logo-ingresa" src="assets/img/logo-ingresa.png" alt="">
+	<img class="img-responsive texto-ingresa center" src="assets/img/texto-ingresa.png" alt="">
 
-	</header>
+</header>
 
 <section class="ingresa section">
 	<div class="container-fluid no-padding">
@@ -44,6 +43,9 @@
 							</div>
 							<div class="form-group center-block">
 							    <input type="password" class="form-control" id="pass" placeholder="<?php if($lang=='en'){ ?>Password<?php }else{ ?>Contraseña<?php } ?>" name="log-pass" required="">
+							</div>
+							<div class="row">
+								<a href="recuperar.php" class="olvide"><?php if($lang=='en'){ ?>I forgot my password<?php }else{ ?>Olvide mi contraseña<?php } ?></a>
 							</div>
 						</div>
 					</div>

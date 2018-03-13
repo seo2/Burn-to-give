@@ -51,6 +51,10 @@
 				<div class="col-xs-12">
 					<div id="fotito" class="bloque-imagen text-center" style="display:none;">
 						<div class="img-wrap">
+							<div id="lafotito">
+								
+							</div>
+							
 							<div class="box-total-calorias">
 								<p><?php if($lang=='en'){ ?>I just donated<?php }else{ ?>acabo de donar<?php } ?></p>
 								<p class="num-calorias"><?php echo $calVal;?></p>

@@ -41,6 +41,7 @@
 	<script src="assets/vendor/jquery.validate.min.js"></script>
 	<script src="assets/vendor/jquery.maskedinput.js"></script>
 	<script src="assets/vendor/sweetalert.min.js"></script>
+	<script src="assets/js/load-image.all.min.js"></script>
 	<script src="assets/js/app.js"></script>
 </body>
 </html>

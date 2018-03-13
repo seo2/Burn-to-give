@@ -75,9 +75,13 @@ if(!isset($_SESSION["burntogivelang"])){
 		endif;?>
 		<?php	
 			if(!isset($_SESSION["burntogive"]) && $current_page != "home.php") {
-				if($current_page != "ingresa.php") {
-					header("Location:home.php");
-					exit();
+				if($current_page != "ingresa.php" ) {
+					if($current_page != "recuperar.php" ) {
+						if($current_page != "recuperar2.php" ) {
+							header("Location:home.php");
+							exit();
+						}
+					}
 				}
 			}
 		?>		
