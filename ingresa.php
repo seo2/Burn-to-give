@@ -39,7 +39,7 @@
 						<div class="container">
 							<p><?php if($lang=='en'){ ?>Or with your email address<?php }else{ ?>o con los datos de tu cuenta<?php } ?></p>
 							<div class="form-group center-block">
-							  <input type="email" class="form-control" id="email" placeholder="email" name="log-mail" required="" data-msg="<?php if($lang=='en'){ ?>This field is required<?php }else{ ?>Campo obligatorio<?php } ?>">
+							  <input type="email" class="form-control" id="email" placeholder="Email" name="log-mail" required="" data-msg="<?php if($lang=='en'){ ?>This field is required<?php }else{ ?>Campo obligatorio<?php } ?>">
 							</div>
 							<div class="form-group center-block">
 							    <input type="password" class="form-control" id="pass" placeholder="<?php if($lang=='en'){ ?>Password<?php }else{ ?>Contraseña<?php } ?>" name="log-pass" required=""  data-msg="<?php if($lang=='en'){ ?>This field is required<?php }else{ ?>Campo obligatorio<?php } ?>">
