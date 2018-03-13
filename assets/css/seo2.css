@@ -44,15 +44,14 @@
 	.overlay .overlay-content ul#nav-list li{    padding: 5px 0;}
 	.overlay .overlay-content ul#nav-list li a {font-size: 0.8rem; }
 
-
-
 	section.ingresa .datos .form-group input[type="email"]::-webkit-input-placeholder, 
 	section.ingresa .datos .form-group input[type="text"]::-webkit-input-placeholder, 
 	section.ingresa .datos .form-group input[type="password"]::-webkit-input-placeholder,
 	input[type="email"]::-webkit-input-placeholder, 
 	input[type="text"]::-webkit-input-placeholder, 
 	input[type="password"]::-webkit-input-placeholder{
-		 font-weight: 400; color: #000000; font-size: 13px; font-size: 0.8125rem; text-transform: uppercase; letter-spacing: normal; text-align: left; 
+		font-family: helvetica, Arial, sans-serif;
+		 font-weight: 400; color: #676666; font-size: 13px; font-size: 0.8125rem;  letter-spacing: normal; text-align: left; 
 	}
 	section.ingresa .datos .form-group input[type="email"]::-moz-placeholder, 
 	section.ingresa .datos .form-group input[type="text"]::-moz-placeholder, 
@@ -60,7 +59,8 @@
 	input[type="email"]::-moz-placeholder, 
 	input[type="text"]::-moz-placeholder, 
 	input[type="password"]::-moz-placeholder{
-		 font-weight: 400; color: #000000; font-size: 13px; font-size: 0.8125rem; text-transform: uppercase; letter-spacing: normal; text-align: left; 
+		font-family: helvetica, Arial, sans-serif;
+		 font-weight: 400; color: #676666; font-size: 13px; font-size: 0.8125rem;  letter-spacing: normal; text-align: left; 
 	}
 	section.ingresa .datos .form-group input[type="email"]:-ms-input-placeholder, 
 	section.ingresa .datos .form-group input[type="text"]:-ms-input-placeholder, 
@@ -68,7 +68,8 @@
 	input[type="email"]:-ms-input-placeholder, 
 	input[type="text"]:-ms-input-placeholder, 
 	input[type="password"]:-ms-input-placeholder{
-		 font-weight: 400; color: #000000; font-size: 13px; font-size: 0.8125rem; text-transform: uppercase; letter-spacing: normal; text-align: left; 
+		font-family: helvetica, Arial, sans-serif;
+		 font-weight: 400; color: #676666; font-size: 13px; font-size: 0.8125rem;  letter-spacing: normal; text-align: left; 
 	}
 	section.ingresa .datos .form-group input[type="email"]:-moz-placeholder, 
 	section.ingresa .datos .form-group input[type="text"]:-moz-placeholder, 
@@ -76,10 +77,12 @@
 	input[type="email"]:-moz-placeholder, 
 	input[type="text"]:-moz-placeholder, 
 	input[type="password"]:-moz-placeholder{
-		 font-weight: 400; color: #000000; font-size: 13px; font-size: 0.8125rem; text-transform: uppercase; letter-spacing: normal; text-align: left; 
+		font-family: helvetica, Arial, sans-serif;
+		 font-weight: 400; color: #676666; font-size: 13px; font-size: 0.8125rem; letter-spacing: normal; text-align: left; 
 	}
 	section.ingresa .con-email .form-group .form-control, section.ingresa .datos .form-group .form-control, section.ingresa .datos .form-group .form-control,
-	section.login .con-email .form-group .form-control, section.login section.ingresa .datos .form-group .form-control, section.ingresa section.login .datos .form-group .form-control, section.login section.ingresa .datos .form-group .form-control, section.ingresa section.login .datos .form-group .form-control{font-weight: 400; color: #000000; font-size: 13px; font-size: 0.8125rem; text-transform: uppercase; letter-spacing: normal; text-align: left; }
+	section.login .con-email .form-group .form-control, section.login section.ingresa .datos .form-group .form-control, section.ingresa section.login .datos .form-group .form-control, section.login section.ingresa .datos .form-group .form-control, section.ingresa section.login .datos .form-group .form-control{font-weight: 400; color: #676666; font-size: 13px; font-size: 0.8125rem; letter-spacing: normal; text-align: left;  font-family: helvetica, Arial, sans-serif;}
+	
 	section.login .fecha-nac label {
 	    margin: 0 10px;
 	}
