@@ -73,7 +73,7 @@ function sharefbimage() {
 
 	var img = $("#img-share").attr('src');
 	var id = $("#img-share").attr('data-id');
-	var url_img = "http://burntogive.com/app/"+img;
+	var url_img = "http://burntogive.com/app/fb_image.php?p="+id;
 
 	console.log('http://burntogive.com/app/home.php?p=' + id);
 
@@ -269,7 +269,7 @@ function imagenSecundaria(){
 	  		},
 		  success: function(data){
 		  	console.log(data);
-		  	alert(data);
+		  	//alert(data);
 	  	    if(data >= 1){
 	  			window.location.href = "share-post.php?_p="+data;
 	  		}else{
@@ -415,7 +415,7 @@ $('#modal-calcula').on('hidden.bs.modal', function () {
 		complete: function(xhr) {
 			var res = xhr.responseText;
 			
-		  	alert(res);
+		  	//alert(res);
 			if(res >= 1){
 				window.location.href = "share-post.php?_p="+res;
 			}else{

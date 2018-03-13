@@ -1,4 +1,5 @@
 <?php
+error_reporting(E_ERROR | E_PARSE);
 ob_start();
 session_start();
 $current_page = basename($_SERVER['PHP_SELF']);	
@@ -6,9 +7,10 @@ require_once 'ajax/_lib/config.php';
 require_once 'ajax/_lib/MysqliDb.php';
 $db = new MysqliDb (HOST, USERNAME, PASSWORD, DATABASE);
 $ip = $_SERVER["REMOTE_ADDR"];
+$lang = "";
 include("geoiploc.php");
 if(!isset($_SESSION["burntogivelang"])){
-	if($_GET['lang']){
+	if(isset($_GET['lang'])){
 		$lang = $_GET['lang'];
 	}else{
 		if(getCountryFromIP($ip, "code")=='CL' || 
@@ -61,13 +63,14 @@ if(!isset($_SESSION["burntogivelang"])){
 			$ext = explode(".", $calImg);
 			$Img2 = str_replace($ext[1], "png", $calImg);
 			$rutaImg2 = "uploads/".$Img2;
+			
 		?>
 		<meta property="fb:app_id" content="224892328068443"/>
 		<meta property="og:url" content="http://burntogive.com/app/home.php?p=<?php echo $id_p;?>" />
 		<meta property="og:type" content="article" />
 		<meta property="og:title" content="Burn to Give" />
 		<meta property="og:description" content="Burn a Calorie Feed a Child" />
-		<meta property="og:image" content="http://burntogive.com/app/<?php echo $rutaImg2;?>" />
+		<meta property="og:image" content="http://burntogive.com/app/fb_image.php?p=<?php echo $id_p;?>" />
 		<meta property="og:image:type" content="image/png" />
 		<meta property="og:image:width" content="600" />
 		<meta property="og:image:height" content="600" />
@@ -78,12 +81,8 @@ if(!isset($_SESSION["burntogivelang"])){
 				if($current_page != "ingresa.php" ) {
 					if($current_page != "recuperar.php" ) {
 						if($current_page != "recuperar2.php" ) {
-							if($current_page != "empresas.php" ) {
-								if($current_page != "contacto.php" ) {
-									header("Location:home.php");
-									exit();
-								}
-							}
+							header("Location:home.php");
+							exit();
 						}
 					}
 				}
