@@ -142,20 +142,6 @@
                         		</div>
                         	</div>
                     	</div><!-- panel -->
-                    	<div class="panel panel-default">
-                        	<div class="panel-heading" role="tab" id="">
-								<h4 class="panel-title">
-									<a class="cd-faq-trigger" role="button" data-toggle="collapse" data-parent="#accordion" href="#q8" aria-expanded="true" aria-controls="q8">
-										¿Por qué entregar la nutrición de urgencia en Haití y no en Chile?
-									</a>
-                        		</h4>
-                        	</div>
-							<div id="q8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="" aria-expanded="true" style="">
-								<div class="panel-body">
-									<p>En Chile no existe desnutrición, pero si mucha obesidad. Es ahí donde queremos enfocar nuestra ayuda. Nuestra misión es motivar a miles de Chilenos a llevar una vida sana y activa, inspirado por su deseo de ayudar a quienes más lo necesitan. Para este primer desafío elegimos ayudar a Haití por ser el país con mayor desnutrición de la región.</p>
-                        		</div>
-                        	</div>
-                    	</div><!-- panel -->
 
                     	<div class="panel panel-default">
                         	<div class="panel-heading" role="tab" id="">

@@ -26,7 +26,7 @@
 				<div class="con-facebook fondo-celeste">
 					<p>
 						<a href="javascript:void(0);" class="login-fb" onclick="myFacebookLogin()">
-							inicia sesión con 
+							<?php if($lang=='en'){ ?>Sign in with<?php }else{ ?>inicia sesión con<?php } ?>  
 							<span class="fa-stack fa-lg">
 							  <i class="fa fa-circle fa-stack-2x"></i>
 							  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -38,17 +38,17 @@
 				<form method="post" action="ajax/login.php" id="form-login" autocomplete="false">
 					<div class="con-email fondo-degradado-naranja">
 						<div class="container">
-							<p>o con los datos de tu cuenta</p>
+							<p><?php if($lang=='en'){ ?>Or with your email address<?php }else{ ?>o con los datos de tu cuenta<?php } ?></p>
 							<div class="form-group center-block">
-							  <input type="email" class="form-control" id="email" placeholder="email@dominio.com" name="log-mail" required="">
+							  <input type="email" class="form-control" id="email" placeholder="email" name="log-mail" required="">
 							</div>
 							<div class="form-group center-block">
-							    <input type="password" class="form-control" id="pass" placeholder="Contraseña" name="log-pass" required="">
+							    <input type="password" class="form-control" id="pass" placeholder="<?php if($lang=='en'){ ?>Password<?php }else{ ?>Contraseña<?php } ?>" name="log-pass" required="">
 							</div>
 						</div>
 					</div>
 					<div class="container">
-						<button type="submit" class="btn btn-default bt-naranjo center-block">iniciar sesión</button>
+						<button type="submit" class="btn btn-default bt-naranjo center-block"><?php if($lang=='en'){ ?>Sign in<?php }else{ ?>iniciar sesión<?php } ?></button>
 					</div>
 				</form>
 

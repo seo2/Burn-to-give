@@ -215,17 +215,6 @@ li.divisor-item-sub-menu { display: none !important; }
 .boton-submit:hover, .boton-submit:focus { color: black; }
 .boton-submit:hover, .boton-submit:focus { background-color: #682944; border-color: #682944; color: white; }
 
-input[type="email"]::-webkit-input-placeholder, input[type="text"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */ font-weight: 400; color: #000000; font-size: 13px; font-size: 0.8125rem; text-transform: uppercase; letter-spacing: 4px; text-align: center; }
-@media (max-width: 1024px) { input[type="email"]::-webkit-input-placeholder, input[type="text"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder { font-size: 11px; font-size: 0.6875rem; } }
-
-input[type="email"]::-moz-placeholder, input[type="text"]::-moz-placeholder, input[type="password"]::-moz-placeholder { /* Firefox 19+ */ font-weight: 400; color: #000000; font-size: 13px; font-size: 0.8125rem; text-transform: uppercase; letter-spacing: 4px; text-align: center; }
-@media (max-width: 1024px) { input[type="email"]::-moz-placeholder, input[type="text"]::-moz-placeholder, input[type="password"]::-moz-placeholder { font-size: 11px; font-size: 0.6875rem; } }
-
-input[type="email"]:-ms-input-placeholder, input[type="text"]:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder { /* IE 10+ */ font-weight: 400; color: #000000; font-size: 13px; font-size: 0.8125rem; text-transform: uppercase; letter-spacing: 4px; text-align: center; }
-@media (max-width: 1024px) { input[type="email"]:-ms-input-placeholder, input[type="text"]:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder { font-size: 11px; font-size: 0.6875rem; } }
-
-input[type="email"]:-moz-placeholder, input[type="text"]:-moz-placeholder, input[type="password"]:-moz-placeholder { /* Firefox 18- */ font-weight: 400; color: #000000; font-size: 13px; font-size: 0.8125rem; text-transform: uppercase; letter-spacing: 4px; text-align: center; }
-@media (max-width: 1024px) { input[type="email"]:-moz-placeholder, input[type="text"]:-moz-placeholder, input[type="password"]:-moz-placeholder { font-size: 11px; font-size: 0.6875rem; } }
 
 header img.logo-home { position: absolute; left: 10px; top: 20px; }
 @media (max-width: 768px) { header img.logo-home { width: 30%; } }
@@ -541,7 +530,7 @@ section.contacto .caja-texto-sombra .pie-de-caja { padding: 10px 0; }
   .bt-naranjo { padding: 15px 0 0; font-size: 1.675rem; width: 100%; }
   .back { margin: 20px; font-size: 0.8rem; }
   header.fondo-degradado-naranja { min-height: auto; }
-  header.fondo-degradado-naranja .center { position: absolute; top: 51%; left: 54%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 40%; }
+  header.fondo-degradado-naranja .center { position: absolute; top: 51%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 40%; }
   header.fondo-celeste { min-height: 130px; }
   header.fondo-celeste .cerrar img { width: 20px; }
   header.fondo-celeste .center { width: 30%; }

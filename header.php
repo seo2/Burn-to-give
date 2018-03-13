@@ -5,17 +5,12 @@ $current_page = basename($_SERVER['PHP_SELF']);
 require_once 'ajax/_lib/config.php';
 require_once 'ajax/_lib/MysqliDb.php';
 $db = new MysqliDb (HOST, USERNAME, PASSWORD, DATABASE);
-
+$ip = $_SERVER["REMOTE_ADDR"];
 include("geoiploc.php");
-
-if($_SESSION["burntogivelang"]){
-	$lang = $_SESSION["burntogivelang"];
-}else{
-	
+if(!isset($_SESSION["burntogivelang"])){
 	if($_GET['lang']){
 		$lang = $_GET['lang'];
 	}else{
-		
 		if(getCountryFromIP($ip, "code")=='CL' || 
 		getCountryFromIP($ip, "code") == 'AR' || 
 		getCountryFromIP($ip, "code") == 'UY' || 
@@ -37,7 +32,10 @@ if($_SESSION["burntogivelang"]){
 		}else{
 			$lang = 'en';
 		}
+		$_SESSION["burntogivelang"] = $lang;
 	}
+}else{
+	$lang = $_SESSION["burntogivelang"];
 }
 ?>
 <!DOCTYPE html>
@@ -49,13 +47,12 @@ if($_SESSION["burntogivelang"]){
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<title>Burn To Give</title>
-		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<?php if(isset($_GET["_p"])) :
-		$id_p = $_GET["_p"];
+		
+		<?php if(isset($_GET["p"])) :
+		$id_p = $_GET["p"];
 		$db->where ("calID", $id_p);
 		$user = $db->getOne ("calorias");
-		//echo "Last executed query was ". $db->getLastQuery();
-
+		
 		if($db->count > 0){
 			$calVal = $user["calVal"];
 			$calImg = $user["calImg"];
@@ -66,7 +63,7 @@ if($_SESSION["burntogivelang"]){
 			$rutaImg2 = "uploads/".$Img2;
 		?>
 		<meta property="fb:app_id" content="224892328068443"/>
-		<meta property="og:url" content="http://burntogive.com/app/?_p=<?php echo $id_p;?>" />
+		<meta property="og:url" content="http://burntogive.com/app/home.php?p=<?php echo $id_p;?>" />
 		<meta property="og:type" content="article" />
 		<meta property="og:title" content="Burn to Give" />
 		<meta property="og:description" content="Burn a Calorie Feed a Child" />

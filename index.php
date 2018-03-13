@@ -29,14 +29,14 @@
 
 	</header>
 
-	<h2 class="title-aporte"><?php if($lang=='en'){ ?>MAKE YOU DONATION<?php }else{ ?>haz tu aporte<?php } ?></h2>
+	<h2 class="title-aporte"><?php if($lang=='en'){ ?>MAKE YOUR DONATION<?php }else{ ?>haz tu aporte<?php } ?></h2>
 
 	<section class="aporte section fondo-degradado-naranja">
 
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-m-12 text-center">
-					<p class="txt1"><?php if($lang=='en'){ ?>HOW MANY CALORIES DID YOU BURN TODAY?<?php }else{ ?>¿cuantas calorías quemaste hoy?<?php } ?></p>
+					<p class="txt1"><?php if($lang=='en'){ ?>HOW MANY CALORIES DID YOU BURN TODAY?<?php }else{ ?>¿cúantas calorías quemaste hoy?<?php } ?></p>
 					<form id="formEnviarCalorias" action="ajax/save-calories.php" class="form-inline" method="post">
 						<div class="form-group">
 							<input type="number" class="form-control" name="numCalorias" id="numCalorias" placeholder="" required="" min="1" max="3000" data-msg="<?php if($lang=='en'){ ?>Log your burned calories here<?php }else{ ?>Ingresa aquí tus calorías quemadas<?php } ?>">

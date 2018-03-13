@@ -20,12 +20,12 @@
 				<p><small>
 					<?php 
 						
-						  $ip = $_SERVER["REMOTE_ADDR"];
+						  
 						  echo "IP: " . $ip . "<br />";
 						
 						  echo getCountryFromIP($ip, " NamE ");
 						  echo "<br />\n";
-						
+						echo getCountryFromIP($ip, "code");
 					?>
 				</small></p>
 			</section> <!-- logos footer -->

@@ -87,8 +87,6 @@
 			</div>
 		</div>
 
-
-
 		<p><?php if($lang=='en'){ ?>Remember to use<?php }else{ ?>RECUERDA USAR<?php } ?> <span class="txt-naranjo">#BURNTOGIVE</span></p>
       </div>
       <div class="modal-footer">

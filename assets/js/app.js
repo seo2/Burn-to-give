@@ -26,10 +26,8 @@ $('.slider-iconos').owlCarousel({
     nav:true,
     center: false,
     dots: false,
-   // autoWidth: true,
+    autoWidth: true,
     autoplay: true,
-   // responsiveClass:true,
-   // responsive: true,
    responsive:{
         0:{
             items:1,
@@ -77,13 +75,13 @@ function sharefbimage() {
 	var id = $("#img-share").attr('data-id');
 	var url_img = "http://burntogive.com/app/"+img;
 
-	//console.log(url_img);
+	console.log('http://burntogive.com/app/home.php?p=' + id);
 
     FB.ui(
     {
         method: 'share',
         name: 'Burn a calorie feed a child',
-        href: $(location).attr('href') + '?_p=' + id,
+        href: 'http://burntogive.com/app/home.php?p=' + id,
         picture: url_img,
         caption: '#BURNTOGIVE',
         description: 'Burn a calorie feed a child'
@@ -91,6 +89,7 @@ function sharefbimage() {
     function (response) {
         if (response) {
             console.log(response);
+			window.location.href = "index.php";
         } else {
             console.log('error');
         }
@@ -203,9 +202,9 @@ var v2 = jQuery("#formEnviarCalorias").validate({
 				}else{
 					if(data == 0){
 						if(lang=='en'){
-							swal("You reached the maximum calories per day of 3,000", "Please come back tomorrow after your next workout!", "error");
+							swal("You reached the maximum calories per day of 3,000", "Please come back tomorrow after your next workout!", "warning");
 						}else{
-							swal("Sobrepasaste el máximo de 3.000 calorías diarias a ingresar.", "Vuelve a ingresar mañana después de hacer ejercicio!", "error");
+							swal("Sobrepasaste el máximo de 3.000 calorías diarias a ingresar.", "Vuelve a ingresar mañana después de hacer ejercicio!", "warning");
 						}
 					}
 				}
@@ -220,10 +219,19 @@ var v2 = jQuery("#formEnviarCalorias").validate({
 
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
+    $('html').css('height','100%');
+    $('html').css('overflow','hidden');
+    $('body').css('height','100%');
+    $('body').css('overflow','hidden');
+    
 }
 
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
+    $('html').css('height','auto');
+    $('html').css('overflow','auto');
+    $('body').css('height','auto');
+    $('body').css('overflow','auto');
 }
 
 
@@ -258,7 +266,11 @@ function calcular_calorias(clicked_id){
 	$('#icono-activo').attr('src',img);
 
 	var factor = $("#con-"+clicked_id).attr("data-min");
-	var deporte = $("#con-"+clicked_id).attr("data-dep");
+	if(lang=='en'){
+		var deporte = $("#con-"+clicked_id).attr("data-depen");
+	}else{
+		var deporte = $("#con-"+clicked_id).attr("data-dep");
+	}
 	console.log(deporte);
 	$("p.deporte").html(deporte);
 	$("#factor").val(factor);
@@ -297,6 +309,32 @@ function doneTyping () {
   }
 
 }
+$('#modal-calcula').on('show.bs.modal', function () {
+    $('.slider-iconos').owlCarousel({
+	    loop:true,
+	   // stagePadding: 50,
+	   autoWidth:true,
+	    lazyLoad: true,
+	    margin:10,
+	    nav:true,
+	    center: false,
+	    dots: false,
+	    autoWidth: true,
+	    autoplay: true,
+	   responsive:{
+	        0:{
+	            items:1,
+	            margin: 5
+	        },
+	        430:{
+	            items:4
+	        },
+	        768:{
+	            items:5
+	        }
+	    }
+	});
+});
 
 $('#modal-calcula').on('hidden.bs.modal', function () {
     // do something…
@@ -323,7 +361,13 @@ $('#modal-calcula').on('hidden.bs.modal', function () {
 	        $('.pordefecto').addClass('hide');
 	        $('#elegir').addClass('hide');
 	        $('#confirmar').addClass('disabled');
-	        $('#confirmar span.txt').html('Cargando');
+
+			if(lang=='en'){
+				$('#confirmar span.txt').html('Loading');
+			}else{
+				$('#confirmar span.txt').html('Cargando');
+			}	        
+	        
 	        $('#confirmar span.percent').removeClass('hide');
 	        status.empty();
 	        var percentVal = '0%';
@@ -339,7 +383,13 @@ $('#modal-calcula').on('hidden.bs.modal', function () {
 	        var percentVal = '100%';
 	        bar.width(percentVal)
 	        percent.html(percentVal);
-	        $('#confirmar span.txt').html('Redirigiendo');
+
+	        $('#confirmar span.percent').addClass('hide');
+			if(lang=='en'){
+	        	$('#confirmar span.txt').html('Wait');
+			}else{
+	        	$('#confirmar span.txt').html('Espere');
+			}	   
 	    },
 		complete: function(xhr) {
 			var res = xhr.responseText;
