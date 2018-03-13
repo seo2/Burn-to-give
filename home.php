@@ -134,7 +134,7 @@
 								</div>
 								<div class="col-xs-4 pr0">
 									<div class="form-group center-block">
-								    	<input type="number" class="form-control" id="ano" placeholder="<?php if($lang=='en'){ echo "Yeah";  }else{ echo "Año"; } ?>" name="log-ano" required="" max>
+								    	<input type="number" class="form-control" id="ano" placeholder="<?php if($lang=='en'){ echo "Year";  }else{ echo "Año"; } ?>" name="log-ano" required="">
 									</div>
 								</div>
 							</div>

@@ -63,14 +63,15 @@ if($sexo == 'female'){
 			$_SESSION["burntogive"] = $id;
 
 		    $to 	 = $email;
-		    $subject = "Gracias por unirte a Burn to Give";
 			$headers = "From: Burn to give <info@burntogive.com>\r\n". 
 			           "MIME-Version: 1.0" . "\r\n" . 
 			           "Content-type: text/html; charset=UTF-8" . "\r\n";	
 			           
 			if($_SESSION["burntogivelang"]=='en'){
+		    	$subject = "Thanks for join Burn to Give";
 				$msg = file_get_contents("mail/mail_en.html");    
 			}else{
+		    	$subject = "Gracias por unirte a Burn to Give";
 				$msg = file_get_contents("mail/mail.html");    
 			}		
 		    
