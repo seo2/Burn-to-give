@@ -73,10 +73,10 @@
 							<?php } ?>
 							</p>
 							<div class="form-group center-block">
-							    <input type="email" class="form-control" id="email" placeholder="email" name="email" required="">
+							    <input type="email" class="form-control" id="email" placeholder="Email" name="email" required="">
 							</div>
 							<div class="form-group center-block">
-							    <input type="email" class="form-control" id="email2" placeholder="<?php if($lang=='en'){ echo "Confirm your email";  }else{ echo "confirma tu email"; } ?>" name="email2" required="">
+							    <input type="email" class="form-control" id="email2" placeholder="<?php if($lang=='en'){ echo "Confirm your email";  }else{ echo "Confirma tu email"; } ?>" name="email2" required="">
 							</div>
 							<div class="form-group center-block">
 							    <input type="password" class="form-control" id="pass" placeholder="<?php if($lang=='en'){ echo "Password";  }else{ echo "Contraseña"; } ?>" name="clave" required="">
