@@ -1,4 +1,6 @@
-<?php require_once 'header.php';?>
+<?php require_once 'header.php';
+$hoy = date("Y-m-d");
+?>
 
 <body>
 
@@ -18,8 +20,22 @@
 
             //$count = $db->getValue ("lollapalooza_2018", "count(*)");
             $stats = $db->getOne ("usuarios", "sum(usuID), count(*) as cnt");
+            //total diario usuarios
+            $db->where ("DATE_FORMAT(usuTS, '%Y-%m-%d') = '".$hoy."' ");
+            $stats_users_dia = $db->getOne ("usuarios", "count(*) as cnt");
+            //print_r($stats_users_dia);
+
             $stats2 = $db->getOne ("calorias", "sum(calVal) as totCal, count(*) as cnt");
+
+            //$db->where('calTS', Array ($hoy, $hoy), 'BETWEEN');
+            $db->where ("DATE_FORMAT(calTS, '%Y-%m-%d') = '".$hoy."' ");
+            $stats_calorias_dia = $db->getOne ("calorias", "sum(calVal) as totCal");
 			//echo "total ".$stats['cnt']. "users found";
+			if($stats_calorias_dia['totCal'] == ""){
+				$totalCalDia = 0;
+			}else{
+				$totalCalDia = $stats_calorias_dia['totCal'];
+			}
             ?>
 
             <div class="row">
@@ -31,9 +47,16 @@
             	                    <i class="fa fa-fire fa-5x"></i>
             	                </div>
             	                <div class="col-xs-9 text-right">
-            	                    <div class="huge"><?php echo $stats2['totCal'];?></div>
+            	                    <div class="huge"><?php echo format_number($stats2['totCal']);?></div>
             	                    <div>Calorias</div>
             	                </div>
+            	            </div>
+            	            <div class="row">
+            	            	<div class="col-xs-12">
+            	            		<div class="pull-right">
+            	            			<h4>Total Hoy: <?php echo format_number($totalCalDia);?></h4>
+            	            		</div>
+            	            	</div>
             	            </div>
             	        </div>
             	        <a href="calorias.php">
@@ -53,9 +76,16 @@
                                     <i class="fa fa-user fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge"><?php echo $stats['cnt'];?></div>
+                                    <div class="huge"><?php echo format_number($stats['cnt']);?></div>
                                     <div>Usuarios</div>
                                 </div>
+                            </div>
+                            <div class="row">
+                            	<div class="col-xs-12">
+                            		<div class="pull-right">
+                            			<h4>Total Hoy: <?php echo format_number($stats_users_dia['cnt']);?></h4>
+                            		</div>
+                            	</div>
                             </div>
                         </div>
                         <a href="usuarios.php">
@@ -108,7 +138,7 @@
                                 	<td><?php echo $rs["calTS"];?></td>
                                 	<td>
                                     <span class="pull-right text-muted small">
-                                    	<em><?php echo $rs["calVal"];?></em>
+                                    	<em><?php echo format_number($rs["calVal"]);?></em>
                                     </span>
                                     </td>
                                </tr>

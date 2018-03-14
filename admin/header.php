@@ -1,9 +1,11 @@
 <?php
 error_reporting(E_ALL & ~E_NOTICE || ~E_WARNING);
-
 session_start();
+date_default_timezone_set('America/Santiago');
+
 require_once("_lib/config.php");
 require_once("_lib/MysqliDb.php");
+require_once("functions.php");
 
 $db = new MysqliDb (DBHOST, DBUSER, DBPASS, DBNAME);
 
@@ -33,7 +35,7 @@ if($_SESSION['ccid']){
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Admin - Lollapalooza</title>
+    <title>Admin - Burntogive</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
