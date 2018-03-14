@@ -1,6 +1,25 @@
 var lang = $('body').data('lang');
 console.log(lang);
 
+
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+    $('html').css('height','100%');
+    $('html').css('overflow','hidden');
+    $('body').css('height','100%');
+    $('body').css('overflow','hidden');
+    
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+    $('html').css('height','auto');
+    $('html').css('overflow','auto');
+    $('body').css('height','auto');
+    $('body').css('overflow','auto');
+}
+
+
 // ===== Scroll to Top ====
 $(window).scroll(function() {
   if ($(this).scrollTop() >= 400) {        // If page is scrolled more than 50px
@@ -324,23 +343,6 @@ var v4 = jQuery("#form-recuperar2").validate({
 	}
 });
 
-
-function openNav() {
-    document.getElementById("myNav").style.width = "100%";
-    $('html').css('height','100%');
-    $('html').css('overflow','hidden');
-    $('body').css('height','100%');
-    $('body').css('overflow','hidden');
-    
-}
-
-function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-    $('html').css('height','auto');
-    $('html').css('overflow','auto');
-    $('body').css('height','auto');
-    $('body').css('overflow','auto');
-}
 
 
 function imagenSecundaria(){

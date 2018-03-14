@@ -56,13 +56,13 @@
 					<p>Burn to Give uses technology to connect to opposite and fast-growing health concerns – such as obesity and hunger –  in a way that helps solve them both</p>
 					<p>At Burn to Give we want to become the largest team of calorie-sponsored athletes in the world; burning calories and giving them away. And we want you to become a part of this team!</p>
 					<?php }else{ ?>
+					<p>Queremos motivar a millones de personas a llevar una vida sana y activa, inspiradas por el deseo de ayudar a quienes más lo necesitan</p>
+
 					<p>Por cada caloría quemada haciendo deportes, una caloría es entregada a un niño sufriendo de desnutrición.</p>
 
 					<p>Burn to Give utiliza la tecnología para conectar dos pandemias globales como son la obesidad y desnutrición, de una manera que ayude a solucionar ambas.</p>
 
-					<p>Queremos motivar a millones de personas a llevar una vida sana y activa, inspiradas por el deseo de ayudar a quienes más lo necesitan</p>
-
-					<p>En Burn to Give queremos formar el equipo más grande de personas que queman calorías para donarlas como alimento a las personas
+										<p>En Burn to Give queremos formar el equipo más grande de personas que queman calorías para donarlas como alimento a las personas
 						que más lo necesitan y queremos que seas parte de esta increíble causa.</p>
 					<?php } ?>
 					 <p class="hash text-right">#BurnToGive</p>
@@ -361,12 +361,14 @@
 				<p><small>
 					<?php 
 						
-						  $ip = $_SERVER["REMOTE_ADDR"];
+	/*
+					  $ip = $_SERVER["REMOTE_ADDR"];
 						  echo "IP: " . $ip . "<br />";
 						
 						  echo getCountryFromIP($ip, " NamE ");
 						  echo "<br />\n";
 						
+*/
 					?>
 				</small></p>
 			</section> <!-- logos footer -->

@@ -190,4 +190,20 @@
                         	</div>
                     	</div><!-- panel -->
 
+                    	<div class="panel panel-default">
+                        	<div class="panel-heading" role="tab" id="">
+								<h4 class="panel-title">
+									<a class="cd-faq-trigger" role="button" data-toggle="collapse" data-parent="#accordion" href="#q14" aria-expanded="true" aria-controls="q14">
+										¿Cómo saben si las calorías ingresadas son reales?
+									</a>
+                        		</h4>
+                        	</div>
+							<div id="q14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="" aria-expanded="true" style="">
+								<div class="panel-body">
+									<p>En este primer desafío estamos confiando en la buena fe de las personas y en que ingresen las calorías que cada uno efectivamente quemó.
+En esta versión beta estamos probando el concepto de que el círculo virtuoso entre “personas- empresas-necesitados” funciona, y si lo logramos podremos desarrollar una plataforma con la tecnología que nos permitirá monitorear las calorías efectivamente quemadas por cada usuario.</p>
+                        		</div>
+                        	</div>
+                    	</div><!-- panel -->
+
 				</div> <!-- panel faq -->

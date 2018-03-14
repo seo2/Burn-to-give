@@ -3,7 +3,7 @@
                         	<div class="panel-heading" role="tab" id="">
 								<h4 class="panel-title">
 									<a class="cd-faq-trigger" role="button" data-toggle="collapse" data-parent="#accordion" href="#q1" aria-expanded="true" aria-controls="q1">
-										¿What does RUTF stand for?
+										What does RUTF stand for?
 									</a>
                         		</h4>
                         	</div>
@@ -17,7 +17,7 @@
                         	<div class="panel-heading" role="tab" id="">
 								<h4 class="panel-title">
 									<a class="cd-faq-trigger" role="button" data-toggle="collapse" data-parent="#accordion" href="#q2" aria-expanded="true" aria-controls="q2">
-										¿How long does a RUTF treatment last?
+										How long does a RUTF treatment last?
 									</a>
                         		</h4>
                         	</div>
@@ -31,7 +31,7 @@
                         	<div class="panel-heading" role="tab" id="">
 								<h4 class="panel-title">
 									<a class="cd-faq-trigger" role="button" data-toggle="collapse" data-parent="#accordion" href="#q3" aria-expanded="true" aria-controls="q3">
-										¿How many calories doeas each pack of RUTF have?
+										How many calories doeas each pack of RUTF have?
 									</a>
                         		</h4>
                         	</div>
@@ -45,7 +45,7 @@
                         	<div class="panel-heading" role="tab" id="">
 								<h4 class="panel-title">
 									<a class="cd-faq-trigger" role="button" data-toggle="collapse" data-parent="#accordion" href="#q4" aria-expanded="true" aria-controls="q4">
-										¿How do the calories we burn exercising get financed to buy RUTF?
+										How do the calories we burn exercising get financed to buy RUTF?
 									</a>
                         		</h4>
                         	</div>
@@ -59,7 +59,7 @@
                         	<div class="panel-heading" role="tab" id="">
 								<h4 class="panel-title">
 									<a class="cd-faq-trigger" role="button" data-toggle="collapse" data-parent="#accordion" href="#q5" aria-expanded="true" aria-controls="q5">
-										¿Is there a maximum of calories I can burn and give?
+										Is there a maximum of calories I can burn and give?
 									</a>
                         		</h4>
                         	</div>
@@ -73,7 +73,7 @@
                         	<div class="panel-heading" role="tab" id="">
 								<h4 class="panel-title">
 									<a class="cd-faq-trigger" role="button" data-toggle="collapse" data-parent="#accordion" href="#q9" aria-expanded="true" aria-controls="q9">
-										¿What does it mean that this is the “beta version” of Burn to Give?
+										What does it mean that this is the “beta version” of Burn to Give?
 									</a>
                         		</h4>
                         	</div>
@@ -87,7 +87,7 @@
                         	<div class="panel-heading" role="tab" id="">
 								<h4 class="panel-title">
 									<a class="cd-faq-trigger" role="button" data-toggle="collapse" data-parent="#accordion" href="#q6" aria-expanded="true" aria-controls="q6">
-										¿How is the emergency nutrition delivered in Haiti?
+										How is the emergency nutrition delivered in Haiti?
 									</a>
                         		</h4>
                         	</div>
@@ -102,7 +102,7 @@
                         	<div class="panel-heading" role="tab" id="">
 								<h4 class="panel-title">
 									<a class="cd-faq-trigger" role="button" data-toggle="collapse" data-parent="#accordion" href="#q7" aria-expanded="true" aria-controls="q7">
-										¿Which NGOs is Burn to Give working with?
+										Which NGOs is Burn to Give working with?
 									</a>
                         		</h4>
                         	</div>
@@ -116,7 +116,7 @@
                         	<div class="panel-heading" role="tab" id="">
 								<h4 class="panel-title">
 									<a class="cd-faq-trigger" role="button" data-toggle="collapse" data-parent="#accordion" href="#q10" aria-expanded="true" aria-controls="q10">
-										¿What type of company is Burn to Give?
+										What type of company is Burn to Give?
 									</a>
                         		</h4>
                         	</div>
@@ -130,7 +130,7 @@
                         	<div class="panel-heading" role="tab" id="">
 								<h4 class="panel-title">
 									<a class="cd-faq-trigger" role="button" data-toggle="collapse" data-parent="#accordion" href="#q11" aria-expanded="true" aria-controls="q11">
-										¿What is the difference between a social enterprise and a non-profit?
+										What is the difference between a social enterprise and a non-profit?
 									</a>
                         		</h4>
                         	</div>
@@ -169,6 +169,21 @@
 							<div id="q13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="" aria-expanded="true" style="">
 								<div class="panel-body">
 									<p>Great! This means a lot of people were motivated to exercise inspired by their desire to helo others. However, 30 million is the maximum amount of calories we cab purchase and deliver given it’s what has been committed by our sponsor companies.</p>
+                        		</div>
+                        	</div>
+                    	</div><!-- panel -->
+
+                    	<div class="panel panel-default">
+                        	<div class="panel-heading" role="tab" id="">
+								<h4 class="panel-title">
+									<a class="cd-faq-trigger" role="button" data-toggle="collapse" data-parent="#accordion" href="#q14" aria-expanded="true" aria-controls="q14">
+										How do you know if the calories entered by each user are real (i.e. were actually burned exercising)?
+									</a>
+                        		</h4>
+                        	</div>
+							<div id="q14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="" aria-expanded="true" style="">
+								<div class="panel-body">
+									<p>In this first challenge, we are trusting the good faith of people when entering the calories each has entered. This is our “beta version” to prove the concept that the virtuous circle of users-brands-people in need works, before moving into the development phase of the calorie tracking technology behind Burn to Give.</p>
                         		</div>
                         	</div>
                     	</div><!-- panel -->

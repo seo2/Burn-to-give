@@ -34,7 +34,7 @@
 				<div class="con-facebook fondo-celeste">
 					<p class="">
 						<?php if($lang=='en'){ ?>
-						BURN TO GIVE IS A PLATFORM THAT CONVERTS YOUR CALORIES BURNED EXERCISING INTO LIFE-SAVING NUTRITION FOR CHILDREN IN NEED. WE WANT TO USE TECHNOLOGY TO CONNECT TWO OPPOSITE AND FAST-GROWING HEALTH CONCERNS - SUCH AS OBESITY AND MALNUTRITION - IN A WAY THAT HELPS SOLVE THEM BOTH.							
+						BURN TO GIVE IS A PLATFORM THAT CONVERTS YOUR CALORIES BURNED EXERCISING INTO LIFE-SAVING NUTRITION FOR CHILDREN IN NEED. WE WANT TO USE TECHNOLOGY TO CONNECT TWO OPPOSITE AND FAST-GROWING HEALTH CONCERNS - SUCH AS OBESITY AND HUNGER - IN A WAY THAT HELPS SOLVE THEM BOTH.							
 						<?php }else{ ?>
 						BURN TO GIVE ES UNA PLATAFORMA QUE CONVIERTE TUS CALORÍAS QUEMADAS HACIENDO DEPORTE, EN ALIMENTACIÓN DE URGENCIA PARA UN NIÑO QUE LAS NECESITA. QUEREMOS UTILIZAR LA TECNOLOGÍA PARA CONECTAR DOS PANDEMIAS GLOBALES COMO SON LA OBESIDAD Y DESNUTRICIÓN, DE UNA MANERA QUE AYUDE A SOLUCIONAR AMBAS.
 						<?php } ?>
@@ -152,9 +152,9 @@
 						</div>
 					<p class="text-center inicia politicas">
 					<?php if($lang=='en'){ ?>
-					By registering, using Facebook or directly, you accept the <a href="terms.pdf" target="_blank">Terms and Conditions</a> and the <a href="privacy.pdf" target="_blank">Privacy Policy</a> of Burn to Give.
+					By registering, using Facebook or directly, you accept the <a href="pdf/terms.pdf" target="_blank">Terms and Conditions</a> and the <a href="pdf/privacy.pdf" target="_blank">Privacy Policy</a> of Burn to Give.
 					<?php }else{ ?>
-					Al Registrarte, usando Facebook o directamente, aceptas los <a href="terminos.pdf" target="_blank">Términos y Condiciones</a> y la <a href="privacidad.pdf" target="_blank">Política de Privacidad</a> de Burn to Give.
+					Al Registrarte, usando Facebook o directamente, aceptas los <a href="pdf/terminos.pdf" target="_blank">Términos y Condiciones</a> y la <a href="pdf/privacidad.pdf" target="_blank">Política de Privacidad</a> de Burn to Give.
 					<?php } ?> </p>
 					<button type="submit" class="btn btn-default bt-naranjo center-block"><?php if($lang=='en'){ ?>Create Account<?php }else{ ?>regístrate<?php } ?></button>
 					<p class="text-center inicia"><?php if($lang=='en'){ ?>Do you have an account?<?php }else{ ?>¿Ya tienes cuenta?<?php } ?> <a href="ingresa.php"><?php if($lang=='en'){ ?>Sign In<?php }else{ ?>Inicia Sesión<?php } ?></a></p>
