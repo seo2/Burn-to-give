@@ -147,14 +147,26 @@ var v0 = jQuery("#form-register-ini").validate({
   },
 	submitHandler: function(form) {
 		
-			$('#form-register-ini button').addClass('disabled');
-			if(lang=='en'){
-			
-				$('#form-register-ini button').html('Loading');
-			}else{
-			
-				$('#form-register-ini button').html('Cargando');
-			}	        
+                $('#usuGen-error').addClass('hide');
+		$('#form-register-ini button').addClass('disabled');
+		if(lang=='en'){
+		
+			$('#form-register-ini button').html('Loading');
+		}else{
+		
+			$('#form-register-ini button').html('Cargando');
+		}	    
+		 if($('#radio_button').is(':checked')) { alert("it's checked"); }
+
+		 $("input:radio").each(function () {
+            var name = $(this).attr("name");
+            //Checking whether radio button is selected and based on selection setting variable to true or false
+            if ($("input:radio[name=usuGen]:checked").length == 0) {
+                all_answered = false;
+                $('#usuGen-error').removeClass('hide');
+                return;
+            }
+        });
 	        
 		jQuery(form).ajaxSubmit({
 			beforeSubmit: function(){
@@ -166,6 +178,15 @@ var v0 = jQuery("#form-register-ini").validate({
 					window.location.href = "index.php";
 				}else if(data == 'existe'){
 					swal("Usuario ya existe!", "", "warning");
+					$('#form-register-ini button').removeClass('disabled');
+					if(lang=='en'){
+					
+						$('#form-register-ini button').html('Create Account');
+					}else{
+					
+						$('#form-register-ini button').html('Regístrate');
+					}	    
+					    
 				}
 			}
 		});
@@ -387,13 +408,15 @@ function doneTyping () {
   //do something
   //console.log("calcular ahora");
   var factor = $("#factor").val();
-  var min = $("#minutos").val();
+  var min 	 = $("#minutos").val();
 
   var totalCalorias = Math.round(parseFloat(factor) * parseFloat(min));
 
   //console.log(totalCalorias);
   if(!isNaN(totalCalorias)){
   	$("#calCalorias").val(totalCalorias);
+  }else{
+  	$("#calCalorias").val(0);
   }
 
 }
@@ -486,7 +509,15 @@ $('#modal-calcula').on('hidden.bs.modal', function () {
 			if(res >= 1){
 				window.location.href = "share-post.php?_p="+res;
 			}else{
-				swal("Lo sentimos", "Ha ocurrido un error, inténtalo más tarde "+res, "warning");
+				swal("Lo sentimos", "Ha ocurrido un error, inténtalo más tarde.", "warning");
+		        $('.pordefecto').removeClass('hide');
+		        $('#elegir').removeClass('hide');
+		        $('#confirmar').removeClass('disabled');
+				if(lang=='en'){
+					$('#confirmar span.txt').html('Confirm');
+				}else{
+					$('#confirmar span.txt').html('Confirmar');
+				}			        
 			}
 		}
 	});

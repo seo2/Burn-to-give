@@ -175,4 +175,19 @@
                         	</div>
                     	</div><!-- panel -->
 
+                    	<div class="panel panel-default">
+                        	<div class="panel-heading" role="tab" id="">
+								<h4 class="panel-title">
+									<a class="cd-faq-trigger" role="button" data-toggle="collapse" data-parent="#accordion" href="#q13" aria-expanded="true" aria-controls="q13">
+										¿Qué pasa si juntamos mas de 30 millones de calorías haciendo deporte?
+									</a>
+                        		</h4>
+                        	</div>
+							<div id="q13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="" aria-expanded="true" style="">
+								<div class="panel-body">
+									<p>Genial! Significa que mucha gente se motivó a moverse y hacer deporte. Sin embargo, 30 millones es la cantidad máxima de calorías que podemos comprar y entregar ya que es lo que tenemos comprometido con nuestros auspiciadores.</p>
+                        		</div>
+                        	</div>
+                    	</div><!-- panel -->
+
 				</div> <!-- panel faq -->
