@@ -2,6 +2,7 @@
 require_once("../_lib/config.php");
 require_once("../_lib/MysqliDb.php");
 require_once("pagination.class.php");
+require_once("../functions.php");
 
 $db = new MysqliDb (DBHOST, DBUSER, DBPASS, DBNAME);
 
@@ -51,7 +52,7 @@ $perPage = new PerPage();
 	 $output .= '<td>' . $dec[$k]["usuGen"] . '</td>';
 	 $output .= '<td>' . $dec[$k]["usuEdad"] . '</td>';
 	 $output .= '<td>' . $dec[$k]["paisNombre"] . '</td>';
-	 $output .= '<td>' . $dec[$k]["calVal"] . '</td>';
+	 $output .= '<td>' . format_number($dec[$k]["calVal"]) . '</td>';
 	 $output .= '<td>' . $dec[$k]["calImg"] . '</td>';
 	 $output .= '<td>' . $dec[$k]["calTS"] . '</td>';
 

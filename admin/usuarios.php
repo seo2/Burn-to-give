@@ -44,7 +44,7 @@
                         	<div class="col-md-6">
                         
                         		<div class="pull-right">
-                        		<!--<a href="exportar_usuarios.php" class="btn btn-success">Exportar XLS</a>-->
+                        		<a href="exportar_usuarios.php" class="btn btn-success">Exportar XLS</a>
                         		</div>
                         	</div>	
 

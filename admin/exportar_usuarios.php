@@ -17,13 +17,13 @@ if($_SESSION['ccid']){
 $db2 = new mysqli(DBHOST, DBUSER, DBPASS);
 mysqli_select_db($db2, DBNAME); 
 
-$sql = "SELECT u.usuID, c.calID, u.usuNom, u.usuMail, u.usuGen, u.usuFecNac, u.usuEdad, p.paisNombre, c.calVal, c.calImg, c.calTS, DATE_FORMAT(c.calTS, '%Y-%m-%d') as calTS2 FROM usuarios u inner join calorias c on u.usuID = c.usuID left join paises p on u.usuPais = p.paisID ORDER BY calTS DESC"; 
+$sql = "SELECT usuID, usuFB, usuNom, usuMail, usuGen, usuFecNac, usuEdad, usuPais, usuTS, usuEst, DATE_FORMAT(u.usuTS, '%Y-%m-%d') as usuTS2 FROM usuarios u left join paises p on u.usuPais = p.paisID ORDER BY usuID DESC"; 
 $setRec = mysqli_query($db2, $sql); 
 $columnHeader = ''; 
-$columnHeader = "IdUsuario" . "\t" . "IdCaloria" . "\t" . "Nombre" . "\t"; 
+$columnHeader = "IdUsuario" . "\t" . "IdFacebook" . "\t" . "Nombre" . "\t"; 
 $columnHeader.= "Email" . "\t" . "Genero" . "\t" . "FechaNac" . "\t"; 
-$columnHeader.= "Edad" . "\t" . "Pais" . "\t" . "Calorias" . "\t"; 
-$columnHeader.= "Imagen" . "\t" . "FechaHora" . "\t" . "Fecha" . "\t";
+$columnHeader.= "Edad" . "\t" . "Pais" . "\t" . "FechaHora" . "\t"; 
+$columnHeader.= "Estado". "\t" . "Fecha" . "\t"; 
 
 $setData = ''; 
 while ($rec = mysqli_fetch_row($setRec)) { 
@@ -35,7 +35,7 @@ $rowData .= $value;
 $setData .= trim($rowData) . "\n"; 
 } 
 header("Content-type: application/octet-stream"); 
-header("Content-Disposition: attachment; filename=calorias.xls"); 
+header("Content-Disposition: attachment; filename=usuarios.xls"); 
 header("Pragma: no-cache"); 
 header("Expires: 0"); 
 echo ucwords($columnHeader) . "\n" . $setData . "\n"; 
