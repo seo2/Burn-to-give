@@ -110,13 +110,13 @@
 							<div class="row">
 								<div class="col-xs-3 pl0">
 									<div class="form-group center-block">
-								    	<input type="number" class="form-control" id="dia" placeholder="<?php if($lang=='en'){ echo "Day";  }else{ echo "Día"; } ?>" name="log-dia" required="" maxlength="2">
+								    	<input type="number" class="form-control" id="dia" placeholder="<?php if($lang=='en'){ echo "Day";  }else{ echo "Día"; } ?>" name="log-dia" required="" maxlength="2" data-msg="<?php if($lang=='en'){ ?>Complete<?php }else{ ?>Completar<?php } ?>">
 								  </div>
 								</div>
 								<div class="col-xs-5">
 									<div class="form-group center-block pl0 pr0">
-										<select class="form-control required" id="sel1" name="log-mes" aria-required="true">
-											<option value="0"><?php if($lang=='en'){ ?>Month<?php }else{ ?>Mes<?php } ?></option>
+										<select class="form-control required" id="sel1" name="log-mes" aria-required="true" required data-msg="<?php if($lang=='en'){ ?>Select month<?php }else{ ?>Seleccionar mes<?php } ?>">
+											<option value=""><?php if($lang=='en'){ ?>Month<?php }else{ ?>Mes<?php } ?></option>
 											<option value="1"><?php if($lang=='en'){ ?>January<?php }else{ ?>Enero<?php } ?></option>
 											<option value="2"><?php if($lang=='en'){ ?>February<?php }else{ ?>Febrero<?php } ?></option>
 											<option value="3"><?php if($lang=='en'){ ?>March<?php }else{ ?>Marzo<?php } ?></option>
@@ -134,21 +134,28 @@
 								</div>
 								<div class="col-xs-4 pr0">
 									<div class="form-group center-block">
-								    	<input type="number" class="form-control" id="ano" placeholder="<?php if($lang=='en'){ echo "Year";  }else{ echo "Año"; } ?>" name="log-ano" required="" maxlength="4">
+								    	<input type="number" class="form-control" id="ano" placeholder="<?php if($lang=='en'){ echo "Year";  }else{ echo "Año"; } ?>" name="log-ano" required="" maxlength="4" data-msg="<?php if($lang=='en'){ ?>Complete<?php }else{ ?>Completar<?php } ?>">
 									</div>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-xs-12 text-center">
 									<label class="radio-inline">
-		  								<input type="radio" name="usuGen" id="inlineRadio1" value="HOMBRE" required> <?php if($lang=='en'){ ?>Male<?php }else{ ?>Masculino<?php } ?>
+		  								<input type="radio" name="usuGen" id="inlineRadio1" value="HOMBRE"> <?php if($lang=='en'){ ?>Male<?php }else{ ?>Masculino<?php } ?>
 									</label>
 									<label class="radio-inline">
-		  								<input type="radio" name="usuGen" id="inlineRadio2" value="MUJER" required> <?php if($lang=='en'){ ?>Female<?php }else{ ?>Femenino<?php } ?>
+		  								<input type="radio" name="usuGen" id="inlineRadio2" value="MUJER"> <?php if($lang=='en'){ ?>Female<?php }else{ ?>Femenino<?php } ?>
 									</label>
+									<label id="usuGen-error" class="error hide" for="sel1"><?php if($lang=='en'){ ?>Select Genre<?php }else{ ?>Seleccione Genero<?php } ?></label>
 								</div>
 							</div>
 						</div>
+					<p class="text-center inicia politicas">
+					<?php if($lang=='en'){ ?>
+					By registering, using Facebook or directly, you accept the <a href="terms.pdf" target="_blank">Terms and Conditions</a> and the <a href="privacy.pdf" target="_blank">Privacy Policy</a> of Burn to Give.
+					<?php }else{ ?>
+					Al Registrarte, usando Facebook o directamente, aceptas los <a href="terminos.pdf" target="_blank">Términos y Condiciones</a> y la <a href="privacidad.pdf" target="_blank">Política de Privacidad</a> de Burn to Give.
+					<?php } ?> </p>
 					<button type="submit" class="btn btn-default bt-naranjo center-block"><?php if($lang=='en'){ ?>Create Account<?php }else{ ?>regístrate<?php } ?></button>
 					<p class="text-center inicia"><?php if($lang=='en'){ ?>Do you have an account?<?php }else{ ?>¿Ya tienes cuenta?<?php } ?> <a href="ingresa.php"><?php if($lang=='en'){ ?>Sign In<?php }else{ ?>Inicia Sesión<?php } ?></a></p>
 				</div>
