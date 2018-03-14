@@ -73,16 +73,16 @@
 							<?php } ?>
 							</p>
 							<div class="form-group center-block">
-							    <input type="email" class="form-control" id="email" placeholder="Email" name="email" required="">
+							    <input type="email" class="form-control" id="email" placeholder="Email" name="email" required="" data-msg="<?php if($lang=='en'){ ?>Please enter your email<?php }else{ ?>Por favor ingresa tu email<?php } ?>">
 							</div>
 							<div class="form-group center-block">
-							    <input type="email" class="form-control" id="email2" placeholder="<?php if($lang=='en'){ echo "Confirm your email";  }else{ echo "Confirma tu email"; } ?>" name="email2" required="">
+							    <input type="email" class="form-control" id="email2" placeholder="<?php if($lang=='en'){ echo "Confirm your email";  }else{ echo "Confirma tu email"; } ?>" name="email2" required=""  data-msg="<?php if($lang=='en'){ ?>Please repeat your email<?php }else{ ?>Por favor repite tu email<?php } ?>">
 							</div>
 							<div class="form-group center-block">
-							    <input type="password" class="form-control" id="pass" placeholder="<?php if($lang=='en'){ echo "Password";  }else{ echo "Contraseña"; } ?>" name="clave" required="">
+							    <input type="password" class="form-control" id="pass" placeholder="<?php if($lang=='en'){ echo "Password";  }else{ echo "Contraseña"; } ?>" name="clave" required=""  data-msg="<?php if($lang=='en'){ ?>This field is requiered<?php }else{ ?>Campo obligatorio<?php } ?>">
 							</div>
 							<div class="form-group center-block">
-							    <input type="text" class="form-control" id="nombre" placeholder="<?php if($lang=='en'){ echo "What’s your name?";  }else{ echo "Nombre y Apellido"; } ?>" name="nombre" required="">
+							    <input type="text" class="form-control" id="nombre" placeholder="<?php if($lang=='en'){ echo "What’s your name?";  }else{ echo "Nombre y Apellido"; } ?>" name="nombre" required="" data-msg="<?php if($lang=='en'){ ?>This field is requiered<?php }else{ ?>Campo obligatorio<?php } ?>">
 							</div>
 							<div class="form-group center-block">
 							<?php
@@ -110,7 +110,7 @@
 							<div class="row">
 								<div class="col-xs-3 pl0">
 									<div class="form-group center-block">
-								    	<input type="number" class="form-control" id="dia" placeholder="<?php if($lang=='en'){ echo "Day";  }else{ echo "Día"; } ?>" name="log-dia" required="">
+								    	<input type="number" class="form-control" id="dia" placeholder="<?php if($lang=='en'){ echo "Day";  }else{ echo "Día"; } ?>" name="log-dia" required="" maxlength="2">
 								  </div>
 								</div>
 								<div class="col-xs-5">
@@ -134,7 +134,7 @@
 								</div>
 								<div class="col-xs-4 pr0">
 									<div class="form-group center-block">
-								    	<input type="number" class="form-control" id="ano" placeholder="<?php if($lang=='en'){ echo "Year";  }else{ echo "Año"; } ?>" name="log-ano" required="">
+								    	<input type="number" class="form-control" id="ano" placeholder="<?php if($lang=='en'){ echo "Year";  }else{ echo "Año"; } ?>" name="log-ano" required="" maxlength="4">
 									</div>
 								</div>
 							</div>

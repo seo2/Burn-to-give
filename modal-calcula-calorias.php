@@ -27,7 +27,7 @@
 		        	<div class="col-xs-2 col-xs-offset-2 col-md-4 text-center pl0 pr0">
 		        		<div class="form-group">
 			        		<div class="bloque-blanco center-block">
-								<input type="text" class="form-control" name="minutos" id="minutos" placeholder="" required="">
+								<input type="number" class="form-control" name="minutos" id="minutos" placeholder="" required="">
 			        		</div>
 							<p>min</p>
 						</div>
@@ -53,7 +53,7 @@
 						<a href="javascript:void(0);" id="3" onClick="calcular_calorias(this.id)"><img src="assets/img/iconos/bici.png"></a>
 					</div>
 					<div class="item">
-						<a href="javascript:void(0);" id="13" onClick="calcular_calorias(this.id)"><img src="assets/img/iconos/boxeo.png"></a>
+						<a href="javascript:void(0);" id="13" onClick="calcular_calorias(this.id)"><img src="assets/img/iconos/boxeo.png?v=2"></a>
 					</div>
 					<div class="item">
 						<a href="javascript:void(0);" id="2"  onClick="calcular_calorias(this.id)"><img src="assets/img/iconos/correr.png"></a>

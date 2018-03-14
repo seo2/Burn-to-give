@@ -26,15 +26,15 @@
 <?php }else{ ?>Olvidé mi contraseña<?php } ?></p>
 
 <p class="intruccionesrecuperar">
-	<?php if($lang=='en'){ ?>Enter your registered email address 
-	<?php }else{ ?>Ingresa tu email registrado<?php } ?>
+	
 </p>
 
 			<form method="post" action="ajax/recuperar.php" id="form-recuperar" autocomplete="false">
 				<div class="con-email fondo-degradado-naranja">
 					<div class="container">
 						<div class="form-group center-block">
-						  <input type="email" class="form-control" id="email" placeholder="email" name="log-mail" required="">
+						  <input type="email" class="form-control" id="email" placeholder="<?php if($lang=='en'){ ?>Enter your registered email address 
+	<?php }else{ ?>Ingresa tu email registrado<?php } ?>" name="log-mail" required="" data-msg="<?php if($lang=='en'){ ?>Please enter your email<?php }else{ ?>Por favor ingresa tu email<?php } ?>">
 						</div>
 						<div class="row">
 							<a href="ingresa.php" class="olvide"><?php if($lang=='en'){ ?>I remember now<?php }else{ ?>ya me acordé<?php } ?></a>

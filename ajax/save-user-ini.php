@@ -72,7 +72,7 @@ if(isset($_POST["email"])){ //registro normal
 
 			    $to 	 = $email;
 
-				$headers = "From: Burn to give <info@burntogive.com>\r\n". 
+				$headers = "From: Burn to Give <info@burntogive.com>\r\n". 
 				           "MIME-Version: 1.0" . "\r\n" . 
 				           "Content-type: text/html; charset=UTF-8" . "\r\n";		
 			           

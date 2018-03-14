@@ -142,6 +142,15 @@ function changeDateEn2($fecha){
 								if($total == ""){
 									$total = 0;
 								}
+								
+								$db->where ("usuID", $usuID);
+								$db->where ("calImg", '',  "!=");
+								$stats = $db->getOne ("calorias", "sum(calVal) as cnt");
+								$total = $total + $stats['cnt'];
+								
+								
+								
+								
 								$calc_comidas = round($total / 500,1);
 								?>
 								<p class="numero"><?php echo number_format($total);?> <?php if($lang=='en'){ ?>calories<?php }else{ ?>calorías<?php } ?></p>
@@ -163,9 +172,22 @@ function changeDateEn2($fecha){
 							    $fecha = $uc["calTS"];
 							    $calVal = $uc["totCal"];
 							
+							
+								$compartidas = 0;
+								$fecha2 = substr( str_replace('-', '', $fecha),0,8);
+								$sql =  "SELECT * from calorias where usuID=$usuID and DATE_FORMAT( calTS,  '%Y%m%d' )='$fecha2' and calImg != ''";
+								//echo $sql;
+							$ultimaCal = $db->rawQuery($sql);
+							foreach ($ultimaCal as $uc) {
+							    $compartidas = $compartidas + $uc["calVal"];
+							}
+							
 							if($calVal == ""){
 								$calVal = 0;
 							}
+							
+							
+							
 							?>
 						<div class="bloque clearfix">
 							
@@ -179,7 +201,7 @@ function changeDateEn2($fecha){
 								</p>
 							</div>
 							<div class="col-xs-8">
-								<p class="calorias"><?php echo number_format($calVal);?> <?php if($lang=='en'){ ?>calories burned<?php }else{ ?>calorías quemadas<?php } ?></p>
+								<p class="calorias"><?php echo number_format($calVal);?> <?php if($lang=='en'){ ?>calories burned<?php }else{ ?>calorías quemadas<?php } ?><?php if($compartidas>0){ ?><br><?php echo $compartidas; ?> <?php if($lang=='en'){ ?>for sharing in social media<?php }else{ ?>por compartir en RRSS<?php } ?><?php } ?></p>
 							</div>
 						</div>
 						<?
