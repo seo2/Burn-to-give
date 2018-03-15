@@ -6,16 +6,16 @@
 			<div class="selector-idioma">
 				<ul>
 					<li>
-						<a <?php if($lang=='es'){ ?>class="selected"<?php } ?>href="javascript:void(0);" data-lang="es">esp</a>
+						<a <?php if($lang=='es'){ ?>class="selected"<?php } ?>href="javascript:void(0);" data-lang="es" onclick="gtag('event', 'Botón', {  'event_category': 'Idioma Español','event_label': 'Inicio' });">esp</a>
 					</li>
 					<li class="divisor">|</li>
 					<li>
-						<a <?php if($lang=='en'){ ?>class="selected"<?php } ?> href="javascript:void(0);" data-lang="en">eng</a>
+						<a <?php if($lang=='en'){ ?>class="selected"<?php } ?> href="javascript:void(0);" data-lang="en" onclick="gtag('event', 'Botón', {  'event_category': 'Idioma Inglés','event_label': 'Inicio' });">eng</a>
 					</li>
 				</ul>
 			</div>
 			<div class="row">
-				<span class="menu-icon" onclick="openNav()">
+				<span class="menu-icon" onclick="openNav(); gtag('event', 'Botón', {  'event_category': 'Menú','event_label': 'Inicio' });" >
 					<img class="img-responsive toggle-menu" src="assets/img/menu-icon.png" alt="">
 				</span>
 			</div>
@@ -25,7 +25,7 @@
 	</header>
 
 	<div class="video-container">
-		<iframe width="853" height="480" src="https://www.youtube.com/embed/z9Ul9ccDOqE" frameborder="0" allowfullscreen></iframe>
+		<iframe width="853" height="480" src="https://www.youtube.com/embed/vKwUpkYlHSc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 	</div>
 
 	<section class="login">
@@ -79,10 +79,10 @@
 							    <input type="email" class="form-control" id="email2" placeholder="<?php if($lang=='en'){ echo "Confirm your email";  }else{ echo "Confirma tu email"; } ?>" name="email2" required=""  data-msg="<?php if($lang=='en'){ ?>Please repeat your email<?php }else{ ?>Por favor repite tu email<?php } ?>">
 							</div>
 							<div class="form-group center-block">
-							    <input type="password" class="form-control" id="pass" placeholder="<?php if($lang=='en'){ echo "Password";  }else{ echo "Contraseña"; } ?>" name="clave" required=""  data-msg="<?php if($lang=='en'){ ?>This field is requiered<?php }else{ ?>Campo obligatorio<?php } ?>">
+							    <input type="password" class="form-control" id="pass" placeholder="<?php if($lang=='en'){ echo "Password";  }else{ echo "Contraseña"; } ?>" name="clave" required=""  data-msg="<?php if($lang=='en'){ ?>This field is required<?php }else{ ?>Campo obligatorio<?php } ?>">
 							</div>
 							<div class="form-group center-block">
-							    <input type="text" class="form-control" id="nombre" placeholder="<?php if($lang=='en'){ echo "What’s your name?";  }else{ echo "Nombre y Apellido"; } ?>" name="nombre" required="" data-msg="<?php if($lang=='en'){ ?>This field is requiered<?php }else{ ?>Campo obligatorio<?php } ?>">
+							    <input type="text" class="form-control" id="nombre" placeholder="<?php if($lang=='en'){ echo "What’s your name?";  }else{ echo "Nombre y Apellido"; } ?>" name="nombre" required="" data-msg="<?php if($lang=='en'){ ?>This field is required<?php }else{ ?>Campo obligatorio<?php } ?>">
 							</div>
 							<div class="form-group center-block">
 							<?php
@@ -146,18 +146,18 @@
 									<label class="radio-inline">
 		  								<input type="radio" name="usuGen" id="inlineRadio2" value="MUJER"> <?php if($lang=='en'){ ?>Female<?php }else{ ?>Femenino<?php } ?>
 									</label>
-									<label id="usuGen-error" class="error hide" for="sel1"><?php if($lang=='en'){ ?>Select Genre<?php }else{ ?>Seleccione Genero<?php } ?></label>
+									<span id="usuGen-error" class="error hide" for="sel1"><?php if($lang=='en'){ ?>Select Genre<?php }else{ ?>Seleccione Genero<?php } ?></span>
 								</div>
 							</div>
 						</div>
 					<p class="text-center inicia politicas">
 					<?php if($lang=='en'){ ?>
-					By registering, using Facebook or directly, you accept the <a href="pdf/terms.pdf" target="_blank">Terms and Conditions</a> and the <a href="pdf/privacy.pdf" target="_blank">Privacy Policy</a> of Burn to Give.
+					By registering, using Facebook or directly, you accept the <a href="pdf/terms.pdf" target="_blank" onclick="_trackEvent('Botón', 'Click', 'Terms');">Terms and Conditions</a> and the <a href="pdf/privacy.pdf" target="_blank" onclick="_trackEvent('Botón', 'Click', 'Privacy');">Privacy Policy</a> of Burn to Give.
 					<?php }else{ ?>
-					Al Registrarte, usando Facebook o directamente, aceptas los <a href="pdf/terminos.pdf" target="_blank">Términos y Condiciones</a> y la <a href="pdf/privacidad.pdf" target="_blank">Política de Privacidad</a> de Burn to Give.
+					Al Registrarte, usando Facebook o directamente, aceptas los <a href="pdf/terminos.pdf" target="_blank" onclick="_trackEvent('Botón', 'Click', 'Términos');">Términos y Condiciones</a> y la <a href="pdf/privacidad.pdf" target="_blank"  onclick="_trackEvent('Botón', 'Click', 'Política');">Política de Privacidad</a> de Burn to Give.
 					<?php } ?> </p>
-					<button type="submit" class="btn btn-default bt-naranjo center-block"><?php if($lang=='en'){ ?>Create Account<?php }else{ ?>regístrate<?php } ?></button>
-					<p class="text-center inicia"><?php if($lang=='en'){ ?>Do you have an account?<?php }else{ ?>¿Ya tienes cuenta?<?php } ?> <a href="ingresa.php"><?php if($lang=='en'){ ?>Sign In<?php }else{ ?>Inicia Sesión<?php } ?></a></p>
+					<button type="submit" class="btn btn-default bt-naranjo center-block" onclick="gtag('event', 'Botón', {  'event_category': 'Regístrate','event_label': 'Inicio' });"><?php if($lang=='en'){ ?>Create Account<?php }else{ ?>regístrate<?php } ?></button>
+					<p class="text-center inicia"><?php if($lang=='en'){ ?>Do you have an account?<?php }else{ ?>¿Ya tienes cuenta?<?php } ?> <a href="ingresa.php" onclick="gtag('event', 'Botón', {  'event_category': 'Ingresa','event_label': 'Inicio' });"><?php if($lang=='en'){ ?>Sign In<?php }else{ ?>Inicia Sesión<?php } ?></a></p>
 				</div>
 			</form>
 		</div>

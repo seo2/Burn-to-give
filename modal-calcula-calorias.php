@@ -3,7 +3,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" onClick=" gtag('event', 'Botón', {  'event_category': 'Cerrar','event_label': 'Calcular' });">
         	<img src="assets/img/cerrar-modal.png" alt="">
         </button>
         <img src="assets/img/logo-b2g-azul.png" class="logoazul">
@@ -49,29 +49,29 @@
 			<h3><?php if($lang=='en'){ ?>CHOOSE YOUR SPORT<?php }else{ ?>selecciona tu deporte<?php } ?></h3>
 			<div class="slider-wrapper">
 				<div class="slider-iconos owl-carousel">
-					<div class="item">
-						<a href="javascript:void(0);" id="3" onClick="calcular_calorias(this.id)"><img src="assets/img/iconos/bici.png"></a>
+					<div class="item"
+						<a href="javascript:void(0);" id="3" onClick="calcular_calorias(this.id); gtag('event', 'Botón', {  'event_category': 'Bici','event_label': 'Calcular' });"><img src="assets/img/iconos/bici.png"></a>
 					</div>
 					<div class="item">
-						<a href="javascript:void(0);" id="13" onClick="calcular_calorias(this.id)"><img src="assets/img/iconos/boxeo.png?v=2"></a>
+						<a href="javascript:void(0);" id="13" onClick="calcular_calorias(this.id); gtag('event', 'Botón', {  'event_category': 'Otros','event_label': 'Calcular' });"><img src="assets/img/iconos/boxeo.png?v=2"></a>
 					</div>
 					<div class="item">
-						<a href="javascript:void(0);" id="2"  onClick="calcular_calorias(this.id)"><img src="assets/img/iconos/correr.png"></a>
+						<a href="javascript:void(0);" id="2"  onClick="calcular_calorias(this.id); gtag('event', 'Botón', {  'event_category': 'Correr','event_label': 'Calcular' });"><img src="assets/img/iconos/correr.png"></a>
 					</div>
 					<div class="item">
-						<a href="javascript:void(0);" id="1"  onClick="calcular_calorias(this.id)"><img src="assets/img/iconos/futbol.png"></a>
+						<a href="javascript:void(0);" id="1"  onClick="calcular_calorias(this.id); gtag('event', 'Botón', {  'event_category': 'Futbol','event_label': 'Calcular' });"><img src="assets/img/iconos/futbol.png"></a>
 					</div>
 					<div class="item">
-						<a href="javascript:void(0);" id="5"  onClick="calcular_calorias(this.id)"><img src="assets/img/iconos/natacion.png"></a>
+						<a href="javascript:void(0);" id="5"  onClick="calcular_calorias(this.id); gtag('event', 'Botón', {  'event_category': 'Natación','event_label': 'Calcular' });"><img src="assets/img/iconos/natacion.png"></a>
 					</div>
 					<div class="item">
-						<a href="javascript:void(0);" id="6"  onClick="calcular_calorias(this.id)"><img src="assets/img/iconos/pesas.png"></a>
+						<a href="javascript:void(0);" id="6"  onClick="calcular_calorias(this.id); gtag('event', 'Botón', {  'event_category': 'Pesas','event_label': 'Calcular' });"><img src="assets/img/iconos/pesas.png"></a>
 					</div>
 					<div class="item">
-						<a href="javascript:void(0);" id="10"  onClick="calcular_calorias(this.id)"><img src="assets/img/iconos/surf.png"></a>
+						<a href="javascript:void(0);" id="10"  onClick="calcular_calorias(this.id); gtag('event', 'Botón', {  'event_category': 'Surf','event_label': 'Calcular' });"><img src="assets/img/iconos/surf.png"></a>
 					</div>
 					<div class="item">
-						<a href="javascript:void(0);" id="4"  onClick="calcular_calorias(this.id)"><img src="assets/img/iconos/tenis.png"></a>
+						<a href="javascript:void(0);" id="4"  onClick="calcular_calorias(this.id); gtag('event', 'Botón', {  'event_category': 'tenis','event_label': 'Calcular' });"><img src="assets/img/iconos/tenis.png"></a>
 					</div>
 <!--
 					<div class="item">
@@ -81,7 +81,7 @@
 				</div>
 			</div>
 
-			<button type="button" class="btn btn-default bt-naranjo bt-ok center-block" data-dismiss="modal">OK</button>
+			<button type="button" class="btn btn-default bt-naranjo bt-ok center-block" data-dismiss="modal" onClick=" gtag('event', 'Botón', {  'event_category': 'OK','event_label': 'Calcular' });">OK</button>
 		</form>
 		<p class="nota">
 			<?php if($lang=='en'){ ?>

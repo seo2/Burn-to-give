@@ -1,25 +1,6 @@
 var lang = $('body').data('lang');
 console.log(lang);
 
-
-function openNav() {
-    document.getElementById("myNav").style.width = "100%";
-    $('html').css('height','100%');
-    $('html').css('overflow','hidden');
-    $('body').css('height','100%');
-    $('body').css('overflow','hidden');
-    
-}
-
-function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-    $('html').css('height','auto');
-    $('html').css('overflow','auto');
-    $('body').css('height','auto');
-    $('body').css('overflow','auto');
-}
-
-
 // ===== Scroll to Top ====
 $(window).scroll(function() {
   if ($(this).scrollTop() >= 400) {        // If page is scrolled more than 50px
@@ -71,7 +52,7 @@ function myFacebookLogin() {
        var id = response.id;
        $.ajax({
 		  type: "POST",
-		  url: 'ajax/temp-user-fb.php',
+		  url: 'ajax/save-user-fb.php',
 		  data: response,
 		  success: function(data){
 		  	if(data == 'ok'){
@@ -92,44 +73,23 @@ function sharefbimage() {
 
 	var img = $("#img-share").attr('src');
 	var id = $("#img-share").attr('data-id');
-	var url_img = "http://burntogive.com/fb_image.php?p="+id;
+	var url_img = "http://burntogive.com/app/fb_image.php?p="+id;
 
-	console.log('http://burntogive.com/home.php?p=' + id);
+	console.log('http://burntogive.com/app/home.php?p=' + id);
 
     FB.ui(
     {
         method: 'share',
         name: 'Burn a calorie feed a child',
-        href: 'http://burntogive.com/home.php?p=' + id,
+        href: 'http://burntogive.com/app/home.php?p=' + id,
         picture: url_img,
         caption: '#BURNTOGIVE',
         description: 'Burn a calorie feed a child'
     },
     function (response) {
         if (response) {
-
-			var idUser = $("#userID").val();
-		
-			  $.ajax({
-				  type: "POST",
-				  url: 'ajax/update-share.php',
-				  data: {userID: idUser},
-				  beforeSend: function() {
-			    	//mostrar loading
-			    	console.log("actualizar share");
-			  		},
-				  success: function(data){
-				  	console.log(data);
-				  	//alert(data);
-			  	    if(data >= 1){
-			  			window.location.href = "index.php";
-			  		}else{
-			  			swal("Lo sentimos", "Ha ocurrido un error, inténtalo más tarde", "warning");
-			  		}
-				  }
-				});
-
-
+            console.log(response);
+			window.location.href = "index.php";
         } else {
             console.log('error');
         }
@@ -138,12 +98,6 @@ function sharefbimage() {
 
 var v = jQuery("#form-register").validate({
 	submitHandler: function(form) {
-			$('#form-register button').addClass('disabled');
-		if(lang=='en'){
-			$('#form-register button').html('Loading');
-		}else{
-			$('#form-registerr button').html('Cargando');
-		}	    
 		jQuery(form).ajaxSubmit({
 			beforeSubmit: function(){
 				//mostrar login
@@ -151,25 +105,40 @@ var v = jQuery("#form-register").validate({
 			success: function(data){
 				console.log(data);
 				if(data == 'ok'){
-					
-					window.location.href = "index.php";
+					swal({
+					      title: "Usuario creado con éxito!",
+					      //text: "Debes ingresar con tus datos",
+					      type: "success",
+					      button: "Ingresar",
+					      showCancelButton: true
+					}).then(
+					      // Redirect the user
+					      function(){
+					      window.location.href = "index.php";
+					});
 
 				}else if(data == 'ok-fb'){
-					
-					window.location.href = "index.php";
+					swal({
+					      title: "Usuario creado con éxito!",
+					      //text: "Ya puedes ingresar con Facebook",
+					      type: "success",
+					      button: "Ingresar",
+					      showCancelButton: true
+					    }).then(
+					      // Redirect the user
+					      function(){
+					      window.location.href = "index.php";
+					      });
+
 				}else if(data == 'existe'){
-					if(lang=='en'){				
-						swal("This email is already registered", "", "warning");
-					}else{
-						swal("Usuario ya existe!", "", "warning");
-					}	  
+					swal("Usuario ya existe!", "", "warning");
 				}
 			}
 		});
 	}
 });
 
-var v0 = jQuery("#form-register-ini").validate({
+var v = jQuery("#form-register-ini").validate({
 	rules: {
     email: "required",
     email2: {
@@ -178,23 +147,14 @@ var v0 = jQuery("#form-register-ini").validate({
   },
 	submitHandler: function(form) {
 		
-        $('#usuGen-error').addClass('hide');
-		
-		$('#form-register-ini button').addClass('disabled');
-		if(lang=='en'){
-			$('#form-register-ini button').html('Loading');
-		}else{
-			$('#form-register-ini button').html('Cargando');
-		}	    
-		
-		if($('input:radio').is(':checked')){
-			console.log('checkeados');
-		}else{
-			console.log('no checkeados');
-            $('#usuGen-error').removeClass('hide');
-			$('#form-register-ini button').removeClass('disabled');
-            return;
-		}
+			$('#form-register-ini button').addClass('disabled');
+			if(lang=='en'){
+			
+				$('#form-register-ini button').html('Loading');
+			}else{
+			
+				$('#form-register-ini button').html('Cargando');
+			}	        
 	        
 		jQuery(form).ajaxSubmit({
 			beforeSubmit: function(){
@@ -205,19 +165,7 @@ var v0 = jQuery("#form-register-ini").validate({
 				if(data == 'ok'){
 					window.location.href = "index.php";
 				}else if(data == 'existe'){
-					if(lang=='en'){				
-						swal("This email is already registered", "", "warning");
-					}else{
-						swal("Usuario ya existe!", "", "warning");
-					}	  
-					$('#form-register-ini button').removeClass('disabled');
-					if(lang=='en'){
-						$('#form-register-ini button').html('Create Account');
-					}else{
-
-						$('#form-register-ini button').html('Regístrate');
-					}	    
-					    
+					swal("Usuario ya existe!", "", "warning");
 				}
 			}
 		});
@@ -291,70 +239,25 @@ var v2 = jQuery("#formEnviarCalorias").validate({
 	}
 });
 
-var v3 = jQuery("#form-recuperar").validate({
-			submitHandler: function(form) {
-				jQuery(form).ajaxSubmit({
-					beforeSubmit: function(){
-						//mostrar login
-						$(".loading").fadeIn();
-					},
-					success: function(data){
-						console.log(data);
-						$(".loading").fadeOut();
-						var str = data;
-						if(data == 'error'){
-							if(lang=='en'){
-								swal("Error", "This email is not registered", "warning");
-							}else{
-								swal("Error", "Este email no está registrado", "warning");
-							}
-						}else{
-							if (str.indexOf("token") >= 0){
-								//console.log("Hay token");
-								if(lang=='en'){
-									swal("Restore password", "We have sent you an email to recover your password", "success");
-								}else{
-									swal("Recuperar contraseña", "Te hemos enviado un correo para recuperar tu contraseña", "success");
-								}
-							}else{
-								if(lang=='en'){
-									swal("Error", "This email is not registered", "warning");
-								}else{
-									swal("Error", "Este email no está registrado", "warning");
-								}
-							}
 
-						}
-						
-					}
-				});
-			}
-		});
 
-var v4 = jQuery("#form-recuperar2").validate({
-	submitHandler: function(form) {
-		jQuery(form).ajaxSubmit({
-			beforeSubmit: function(){
-				//mostrar login
-			},
-			success: function(data){
-				//console.log(data);
 
-				if(data == 'ok'){
-					window.location.href = "index.php";
-				}else{
-					if(data == 'error-pass')
-					if(lang=='en'){
-						swal("", "passwords does not match", "warning");
-					}else{
-						swal("", "Las contraseñas no coinciden", "warning");
-					}
-				}
-			}
-		});
-	}
-});
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+    $('html').css('height','100%');
+    $('html').css('overflow','hidden');
+    $('body').css('height','100%');
+    $('body').css('overflow','hidden');
+    
+}
 
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+    $('html').css('height','auto');
+    $('html').css('overflow','auto');
+    $('body').css('height','auto');
+    $('body').css('overflow','auto');
+}
 
 
 function imagenSecundaria(){
@@ -379,34 +282,8 @@ function imagenSecundaria(){
 	  		}
 		  }
 		});
-}
-
-
-function grabacompartir(){
-
-	var idUser = $("#userID").val();
-
-	  $.ajax({
-		  type: "POST",
-		  url: 'ajax/update-share.php',
-		  data: {userID: idUser},
-		  beforeSend: function() {
-	    	//mostrar loading
-	    	console.log("actualizar share");
-	  		},
-		  success: function(data){
-		  	console.log(data);
-		  	//alert(data);
-	  	    if(data >= 1){
-	  			//window.location.href = "share-post.php?_p="+data;
-	  		}else{
-	  			swal("Lo sentimos", "Ha ocurrido un error, inténtalo más tarde", "warning");
-	  		}
-		  }
-		});
 
 }
-
 
 function calcular_calorias(clicked_id){
 	//console.log(clicked_id);
@@ -448,15 +325,13 @@ function doneTyping () {
   //do something
   //console.log("calcular ahora");
   var factor = $("#factor").val();
-  var min 	 = $("#minutos").val();
+  var min = $("#minutos").val();
 
   var totalCalorias = Math.round(parseFloat(factor) * parseFloat(min));
 
   //console.log(totalCalorias);
   if(!isNaN(totalCalorias)){
   	$("#calCalorias").val(totalCalorias);
-  }else{
-  	$("#calCalorias").val(0);
   }
 
 }
@@ -549,15 +424,7 @@ $('#modal-calcula').on('hidden.bs.modal', function () {
 			if(res >= 1){
 				window.location.href = "share-post.php?_p="+res;
 			}else{
-				swal("Lo sentimos", "Ha ocurrido un error, inténtalo más tarde.", "warning");
-		        $('.pordefecto').removeClass('hide');
-		        $('#elegir').removeClass('hide');
-		        $('#confirmar').removeClass('disabled');
-				if(lang=='en'){
-					$('#confirmar span.txt').html('Confirm');
-				}else{
-					$('#confirmar span.txt').html('Confirmar');
-				}			        
+				swal("Lo sentimos", "Ha ocurrido un error, inténtalo más tarde "+res, "warning");
 			}
 		}
 	});

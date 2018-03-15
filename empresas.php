@@ -27,7 +27,7 @@
 	<section class="video">
 		<div class="container-fluid no-padding">
 			<div class="video-container">
-				<iframe width="853" height="480" src="https://www.youtube.com/embed/z9Ul9ccDOqE" frameborder="0" allowfullscreen></iframe>
+				<iframe width="853" height="480" src="https://www.youtube.com/embed/vKwUpkYlHSc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 			</div>
 		</div>
 	</section>

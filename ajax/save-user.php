@@ -1,9 +1,10 @@
 <?php
+session_start();
+date_default_timezone_set('America/Santiago');
 require_once '_lib/config.php';
 require_once '_lib/MysqliDb.php';
 $db = new MysqliDb (HOST, USERNAME, PASSWORD, DATABASE);
 
-//var_dump($_POST);
 function changeDate($fecha){
 	$f = explode("-", $fecha);
 	$dia = $f[0];
@@ -23,35 +24,31 @@ function calculateAge($birthDate){
 	return($age);
 }
 
-if(isset($_POST["fbid"])){
-		$fbid = $_POST["fbid"];
-	}else{
-		$fbid = "";
+	$fbid = $_POST["fbid"];
+	$err 		= 0;
+	$email 		= $_POST["email"];
+	$nombre 	= $_POST["nombre"];
+	$clave 		= $_POST["clave"];
+	$sexo 		= $_POST["sexo"];
+	$fechanac 	= $_POST["fechanac"];
+	$pais 		= $_POST["pais"];
+	
+	if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+	    $err++; 
 	}
-
-if(isset($_POST["email"]) && $fbid == ""){ //registro normal
-$err 		= 0;
-$email 		= $_POST["email"];
-$nombre 	= $_POST["nombre"];
-$clave 		= $_POST["clave"];
-$sexo 		= $_POST["sexo"];
-$fechanac 	= $_POST["fechanac"];
-$pais 		= $_POST["pais"];
-
-if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    $err++; 
-}
-if($nombre == "") { $err++; }
-if($clave == "") { $err++; }
-if($sexo == "") { $err++; }
-if($fechanac == "") { $err++; }
-if($pais == "") { $err++; }
+	if($nombre == "") { $err++; }
+	//if($clave == "") { $err++; }
+	if($sexo == "") { $err++; }
+	if($fechanac == "") { $err++; }
+	if($pais == "") { $err++; }
 
 
 	if($err == 0){
 		$fecha_en = changeDate($fechanac);
 		$edad = calculateAge($fecha_en);
 
+		$today = date("Y-m-d");
+		$todayFull = date("Y-m-d H:i:s");
 		//insertar en db
 		$db->where ("usuMail", $email);
 		$user = $db->getOne ("usuarios");
@@ -66,42 +63,35 @@ if($pais == "") { $err++; }
 				'usuFecNac' => $fecha_en, 
 				'usuEdad' 	=> $edad, 
 				'usuPais' 	=> $pais,  
-				'usuEst' 	=> ''
+				'usuEst' 	=> '',
+				'usuTS' 	=> $todayFull,
+				'usuFec' 	=> $today
 			);
 			
 			$id = $db->insert ('usuarios', $data);
 			if($id)
-			    echo 'ok';
+				$_SESSION["burntogive"] = $id;
+	
+			    $to 	 = $email;
+				$headers = "From: Burn to Give <info@burntogive.com>\r\n". 
+				           "MIME-Version: 1.0" . "\r\n" . 
+				           "Content-type: text/html; charset=UTF-8" . "\r\n";	
+				           
+				if($_SESSION["burntogivelang"]=='en'){
+			    	$subject = "Thanks for join Burn to Give";
+					$msg = file_get_contents("mail/mail_en.html");    
+				}else{
+			    	$subject = "Gracias por unirte a Burn to Give";
+					$msg = file_get_contents("mail/mail.html");    
+				}		
+			    
+			    mail($to,$subject,$msg, $headers);
+		    
+		    echo 'ok';
 		}else{
 			echo 'existe';
 		
 		}
+	}else{
+		echo $err;
 	}
-}
-
-if($fbid != ""){
-
-	$email 		= $_POST["email"];
-	$nombre 	= $_POST["nombre"];
-	$sexo 		= $_POST["sexo"];
-	$fechanac 	= $_POST["fechanac"];
-	$pais 		= $_POST["pais"];
-
-	$fecha_en 	= changeDate($fechanac);
-	$edad 		= calculateAge($fecha_en);
-
-	//actualizar fb
-	$data = array(
-		'usuNom' 	=> $nombre, 
-		'usuMail' 	=> $email,
-		'usuGen' 	=> $sexo, 
-		'usuFecNac' => $fecha_en, 
-		'usuEdad' 	=> $edad, 
-		'usuPais' 	=> $pais,  
-		'usuEst' 	=> ''
-	);
-	$db->where ('usuFB', $fbid);
-	if ($db->update ('usuarios', $data)){
-		echo 'ok-fb';
-	}
-}

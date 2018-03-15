@@ -40,47 +40,18 @@ if($sexo == 'female'){
 }
 
 	$today = date("Y-m-d");
-	$todayFull = date("Y-m-d H:i:s");
 
 	//insertar en db
 	$db->where ("usuMail", $email);
 	$user = $db->getOne ("usuarios");
 	if($db->count == 0){
-		$data = array(
-			'usuFB' => $idFB, 
-			'usuNom' => $nombre, 
-			'usuMail' => $email,
-			'usuPass' => '',
-			'usuGen' => $sexo, 
-			'usuFecNac' => '', 
-			'usuEdad' => '', 
-			'usuPais' => '',  
-			'usuEst' => '',
-			'usuTS' 	=> $todayFull,
-			'usuFec' 	=> $today
-		);
-		
-		$id = $db->insert ('usuarios', $data);
-		if($id)
-			
-			$_SESSION["burntogive"] = $id;
 
-		    $to 	 = $email;
-			$headers = "From: Burn to Give <info@burntogive.com>\r\n". 
-			           "MIME-Version: 1.0" . "\r\n" . 
-			           "Content-type: text/html; charset=UTF-8" . "\r\n";	
-			           
-			if($_SESSION["burntogivelang"]=='en'){
-		    	$subject = "Thanks for join Burn to Give";
-				$msg = file_get_contents("mail/mail_en.html");    
-			}else{
-		    	$subject = "Gracias por unirte a Burn to Give";
-				$msg = file_get_contents("mail/mail.html");    
-			}		
-		    
-		    mail($to,$subject,$msg, $headers);
-		    
-		    echo 'ok';
+		$_SESSION["burntogiveFB"]   = $idFB;
+		$_SESSION["burntogiveNom"]  = $nombre; 
+		$_SESSION["burntogiveMail"] = $email;
+		$_SESSION["burntogiveSex"]  = $sexo;
+		$_SESSION["burntogiveFec"]  = $today;
+	    echo 'ok';
 	}else{
 		$_SESSION["burntogive"] = $user["usuID"];
 		echo 'existe';

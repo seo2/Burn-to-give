@@ -65,9 +65,9 @@
 					</div>		    		
 		    	</div>	
 			</div>
-			<button type="submit" class="btn btn-default bt-naranjo bt-subir fondo-degradado-naranja center-block hide" id="confirmar"><span class="txt"><?php if($lang=='en'){ ?>Confirm<?php }else{ ?>Confirmar<?php } ?></span> <span class="percent hide"></span></button>
+			<button type="submit" class="btn btn-default bt-naranjo bt-subir fondo-degradado-naranja center-block hide" id="confirmar" onclick="gtag('event', 'Botón', {  'event_category': 'Confirmar','event_label': 'Elegir Foto' });"><span class="txt"><?php if($lang=='en'){ ?>Confirm<?php }else{ ?>Confirmar<?php } ?></span> <span class="percent hide"></span></button>
 			
-			<button type="button" class="btn btn-default bt-naranjo bt-subir fondo-degradado-naranja center-block " onclick="document.getElementById('fileToUpload').click(); return false" id="elegir">
+			<button type="button" class="btn btn-default bt-naranjo bt-subir fondo-degradado-naranja center-block " onclick="document.getElementById('fileToUpload').click(); return false" id="elegir" onclick="gtag('event', 'Botón', {  'event_category': 'Subir Foto','event_label': 'Elegir Foto' });">
 				<span class="elegirfoto"><?php if($lang=='en'){ ?>Upload photo<?php }else{ ?>Elegir foto<?php } ?></span><span class="elegirotra hide"><?php if($lang=='en'){ ?>Change photo<?php }else{ ?>Elegir otra<?php } ?></span></button>
 			
 		</form>
@@ -80,7 +80,7 @@
 
 		<h4 class="pordefecto"><?php if($lang=='en'){ ?>Or use this image<?php }else{ ?>o usar esta imagen<?php } ?></h4>
 			<div class="text-center pordefecto">
-				<a href="javascript:void(0);" onclick="imagenSecundaria();">
+				<a href="javascript:void(0);" onclick="imagenSecundaria(); gtag('event', 'Botón', {  'event_category': 'Imagen predeterminada','event_label': 'Elegir Foto' });">
 					<div class="img-wrap">
 					<div class="box-total-calorias">
 						<p><?php if($lang=='en'){ ?>I just donated<?php }else{ ?>acabo de donar<?php } ?></p>

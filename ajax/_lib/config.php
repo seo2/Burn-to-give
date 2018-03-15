@@ -3,7 +3,4 @@
 	define("USERNAME", "db219587");
 	define("PASSWORD", "7f3A[)*Gixc");
 	define("DATABASE", "db219587_burntogive");
-
-
-
 ?>

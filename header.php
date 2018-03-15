@@ -66,11 +66,11 @@ if(!isset($_SESSION["burntogivelang"])){
 			
 		?>
 		<meta property="fb:app_id" content="224892328068443"/>
-		<meta property="og:url" content="http://burntogive.com/app/home.php?p=<?php echo $id_p;?>" />
+		<meta property="og:url" content="http://burntogive.com/home.php?p=<?php echo $id_p;?>" />
 		<meta property="og:type" content="article" />
 		<meta property="og:title" content="Burn to Give" />
 		<meta property="og:description" content="Burn a Calorie Feed a Child" />
-		<meta property="og:image" content="http://burntogive.com/app/fb_image.php?p=<?php echo $id_p;?>" />
+		<meta property="og:image" content="http://burntogive.com/fb_image.php?p=<?php echo $id_p;?>" />
 		<meta property="og:image:type" content="image/png" />
 		<meta property="og:image:width" content="600" />
 		<meta property="og:image:height" content="600" />
@@ -83,8 +83,10 @@ if(!isset($_SESSION["burntogivelang"])){
 						if($current_page != "recuperar2.php" ) {
 							if($current_page != "empresas.php" ) {
 								if($current_page != "contacto.php" ) {
-									header("Location:home.php");
-									exit();
+									if($current_page != "datos.php" ) {
+										header("Location:home.php");
+										exit();
+									}
 								}
 							}
 						}

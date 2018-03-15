@@ -1,5 +1,6 @@
 <?php
 session_start();
+date_default_timezone_set('America/Santiago');
 require_once '_lib/config.php';
 require_once '_lib/MysqliDb.php';
 $db = new MysqliDb (HOST, USERNAME, PASSWORD, DATABASE);
@@ -47,7 +48,8 @@ if(isset($_POST["email"])){ //registro normal
 	if($err == 0){
 		//$fecha_en = changeDate($fechanac);
 		$edad = calculateAge($fechanac);
-
+		$today = date("Y-m-d");
+		$todayFull = date("Y-m-d H:i:s");
 		//insertar en db
 		$db->where ("usuMail", $email);
 		$user = $db->getOne ("usuarios");
@@ -63,6 +65,7 @@ if(isset($_POST["email"])){ //registro normal
 				'usuGen'	=> $usuGen, 
 				'usuPais' 	=> $pais,
 				'usuEst' 	=> '',
+				'usuTS' 	=> $todayFull,
 				'usuFec' 	=> $today
 			);
 			

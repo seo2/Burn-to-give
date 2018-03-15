@@ -10,13 +10,9 @@ section.aporte{
 	   			img{
 	   				margin: 0 30px;
 	   				@media(max-width: 767px){
-						//position: absolute;
-						//left: -20px;
-						//bottom: 70px;
 						position: absolute;
-						left: 46%;
-						bottom: 49%;
-						width: 4%;
+						left: -20px;
+						bottom: 70px;
 	   				}
    			}
 		.form-group {
@@ -44,11 +40,6 @@ section.aporte{
 			border: none;
 			width: 185px;
 			height: 175px;
-		}
-		.btn-enviar-calorias-eng{
-			@extend .btn-enviar-calorias;
-			background: url(../img/btn-donar-eng.png);;
-
 		}
 	}
 	p{

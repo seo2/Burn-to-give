@@ -26,6 +26,7 @@
 	<header class="position-relative fondo-degradado-naranja ">
 		<img class="img-responsive logo-ingresa" src="assets/img/logo-ingresa.png" alt="">
 		<img class="img-responsive texto-ingresa center" src="assets/img/texto-ingresa.png" alt="">
+		<a href="index.php" class="cerrar"><img src="assets/img/cerrar.png" alt=""></a>
 	</header>
 
 <section class="share">
@@ -39,15 +40,16 @@
 			</div>
 			
 			<div class="bloque-texto fondo-celeste" id="sharepaso1">
+			<input type="hidden" name="userID" id="userID" value="<?php echo $_GET['_p']; ?>">
 				<div class="container text-center">
 				 	<h2><?php if($lang=='en'){ ?>Remember to use<?php }else{ ?>COMPARTIR EN<?php } ?></h2>
-				 	<a href="javascript:void(0);" onclick="sharefbimage();" class="share-fb">
+				 	<a href="javascript:void(0);" onclick="sharefbimage(); gtag('event', 'Botón', {  'event_category': 'Facebook','event_label': 'Compartir' });" class="share-fb">
 					 	<span class="fa-stack fa-lg">
 						  <i class="fa fa-circle fa-stack-2x"></i>
 						  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
 						</span>
 				 	</a>
-				 	<a href="javascript:void(0);"  class="share-ig">
+				 	<a href="javascript:void(0);"  class="share-ig" onclick="grabacompartir(); gtag('event', 'Botón', {  'event_category': 'Instagram','event_label': 'Compartir' });">
 					 	<span class="fa-stack fa-lg">
 						  <i class="fa fa-circle fa-stack-2x"></i>
 						  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>

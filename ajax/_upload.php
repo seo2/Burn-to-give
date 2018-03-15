@@ -1,5 +1,4 @@
 <?php
-session_start();
 date_default_timezone_set('America/Santiago');
 require_once '_lib/config.php';
 require_once '_lib/MysqliDb.php';
@@ -9,31 +8,6 @@ $db = new MysqliDb (HOST, USERNAME, PASSWORD, DATABASE);
 
 $userID = $_POST["userID"];
 $op = $_POST["op"];
-
-function image_fix_orientation($filename)
-    {
-        $exif = exif_read_data($filename);
-        if (!empty($exif['Orientation']))
-        {
-            
-            switch ($exif['Orientation'])
-            {
-                case 3:
-                    return(180);
-                    break;
-
-                case 6:
-                    return(90);
-                    break;
-
-                case 8:
-                    return(-90);
-                    break;
-            }
-
-            
-        }
-    }
 
 //sacamos los datos de las calorias
         $db->where ("calID", $userID);
@@ -47,7 +21,6 @@ function image_fix_orientation($filename)
 $target_dir = "../uploads/fotos/";
 $target_dir2 = "../uploads/";
 $fecha = date("YmdHis");
-$abs_path = dirname( __FILE__ );
 
 if($op == 'personalizada'){
 $partes_ruta = pathinfo($target_dir . basename($_FILES["fileToUpload"]["name"]));
@@ -98,47 +71,22 @@ if ($uploadOk == 0) {
 } else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
         //echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
-
-
-    	//CHEQUEAR ORIENTACION
-    	$grados = image_fix_orientation($target_file);
-    	if($grados!= ""){
-    		$img1 = WideImage::load($target_file);
-    		$image1_w = $img1->getWidth();
-        	$image1_h = $img1->getHeight();
-    		if($image1_w > 1200){
-    			$img1->resize(1200, '100%')->saveToFile($target_dir.$filename);
-    			$img2 = WideImage::load($target_file);
-    			$img2->rotate($grados)->saveToFile($target_file);
-    		}else{
-    			$img1->rotate($grados)->saveToFile($target_file);
-    		}
-    	}
-
         //HACER RESIZE
         $image = WideImage::load($target_dir.$filename);
 
         $image_w = $image->getWidth();
         $image_h = $image->getHeight();
 
-        if($image_h > $image_w){
-        	$image = $image->resize(630, '100%');
-        }elseif($image_w > $image_h){
-        	$image = $image->resize('100%', 630);
-        }else{
-        	$image = $image->resize(630, 630);
-        }
+        $image = $image->resize(1600, 1200);
 
-        $image->crop('center', 'center', 630, 630)->saveToFile($target_dir.$filename);
+        $image->crop('center', 'center', 800, 800)->resize(600, 600)->saveToFile($target_dir.$filename);
+
+        
+
+		$abs_path = dirname( __FILE__ );
 
 		$last_filename =  $target_dir.$filename;
-
-		if($_SESSION["burntogivelang"]=='en'){
-			$mask = "../assets/img/mascara-en.png";
-		}else{
-			$mask = "../assets/img/mascara.png"; 
-		}
-		
+		$mask = "../assets/img/mascara.png";
 		$PngFile = $fecha.".png";
 		$newfile_name = $target_dir2.$PngFile;
 
@@ -147,16 +95,12 @@ if ($uploadOk == 0) {
 		$new = $img->merge($watermark, 'center', 'bottom', 100);
 
 		$canvas = $new->getCanvas();
-		$canvas->useFont($abs_path.'/fonts/Gotham-Black.ttf', 36, $new->allocateColor(235, 83, 31));
+		$canvas->useFont($abs_path.'/fonts/Gotham-Black.ttf', 33, $new->allocateColor(235, 83, 31));
 
 		if($calorias > 999){
-			$canvas->writeText('right - 26', 'bottom - 68', $calorias);
-		}elseif($calorias < 100 && $calorias > 9){
-			$canvas->writeText('right - 56', 'bottom - 68', $calorias);
-		}elseif($calorias < 10){
-			$canvas->writeText('right - 72', 'bottom - 68', $calorias);
+			$canvas->writeText('right - 22', 'bottom - 62', $calorias);
 		}else{
-			$canvas->writeText('right - 42', 'bottom - 68', $calorias);
+			$canvas->writeText('right - 42', 'bottom - 62', $calorias);
 		}
 
 		//guardar en el server la foto png con el marco
@@ -179,16 +123,12 @@ if ($uploadOk == 0) {
 		
 
 		$canvas = $img->getCanvas();
-		$canvas->useFont($abs_path.'/fonts/Gotham-Black.ttf', 54, $img->allocateColor(255, 255, 255));
+		$canvas->useFont($abs_path.'/fonts/Gotham-Black.ttf', 40, $img->allocateColor(255, 255, 255));
 
 		if($calorias > 999){
-			$canvas->writeText('right - 50', 'bottom - 70', $calorias);
-		}elseif($calorias < 100 && $calorias > 9){
-			$canvas->writeText('right - 86', 'bottom - 68', $calorias);
-		}elseif($calorias < 10){
-			$canvas->writeText('right - 108', 'bottom - 68', $calorias);
+			$canvas->writeText('right - 80', 'bottom - 70', $calorias);
 		}else{
-			$canvas->writeText('right - 62', 'bottom - 70', $calorias);
+			$canvas->writeText('right - 100', 'bottom - 70', $calorias);
 		}
 
 		//guardar en el server la foto png con el marco

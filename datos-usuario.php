@@ -91,14 +91,14 @@ function changeDateEn2($fecha){
 			<div class="datos fondo-degradado-naranja">
 				<div class="container">
 				  <div class="form-group center-block">
-				    <input type="text" class="form-control" id="nombre" placeholder="<?php echo $usuNom;?>" readonly>
+				    <input type="text" class="form-control" id="nombre" placeholder="<?php echo $usuNom;?>" readonly disabled>
 				    <img class="img-responsive ico-user hidden-xs" src="assets/img/ico-user.png" alt="">
 				  </div>
 				    <div class="form-group center-block">
-				    <input type="email" class="form-control" id="email" placeholder="<?php echo $usuMail;?>" readonly>
+				    <input type="email" class="form-control" id="email" placeholder="<?php echo $usuMail;?>" readonly disabled>
 				  </div>
 				    <div class="form-group center-block">
-				    <input type="text" class="form-control" id="sexo" placeholder="<?php echo $usuGen;?>" readonly>
+				    <input type="text" class="form-control" id="sexo" placeholder="<?php echo $usuGen;?>" readonly disabled>
 				  </div>
 				    <div class="form-group center-block">
 						<?php if($lang=='en'){ ?>
@@ -106,10 +106,10 @@ function changeDateEn2($fecha){
 						<?php }else{ ?>
 							<?php  $fechanac = changeDateSp2($usuFecNac);?>
 						<?php } ?>
-				    <input type="text" class="form-control" id="fecha" placeholder="<?php echo $fechanac;?>" readonly>
+				    <input type="text" class="form-control" id="fecha" placeholder="<?php echo $fechanac;?>" readonly disabled>
 				  </div>
 				    <div class="form-group center-block">
-					    <input type="text" class="form-control" id="pais" placeholder="<?php echo $nomPais;?>" readonly>
+					    <input type="text" class="form-control" id="pais" placeholder="<?php echo $nomPais;?>" readonly disabled>
 				  </div>
 				</div>
 
@@ -144,7 +144,7 @@ function changeDateEn2($fecha){
 								}
 								
 								$db->where ("usuID", $usuID);
-								$db->where ("calImg", '',  "!=");
+								$db->where ("calShare", '1',  "=");
 								$stats = $db->getOne ("calorias", "sum(calVal) as cnt");
 								$total = $total + $stats['cnt'];
 								
@@ -153,14 +153,14 @@ function changeDateEn2($fecha){
 								
 								$calc_comidas = round($total / 500,1);
 								?>
-								<p class="numero"><?php echo number_format($total);?> <?php if($lang=='en'){ ?>calories<?php }else{ ?>calorías<?php } ?></p>
+								<p class="numero"><?php if($lang=='en'){  echo number_format($total); }else{ echo number_format($total,0,',','.'); } ?> <?php if($lang=='en'){ ?>calories<?php }else{ ?>calorías<?php } ?></p>
 							</div>
 						</div>
 						<p class="equivalente">
 						<?php if($lang=='en'){ ?>
 							Equivalent to <?php echo $calc_comidas;?> meals  						
 						<?php }else{ ?>
-							Equivalente a <?php echo $calc_comidas;?> comidas
+							Equivalente a <?php echo number_format($calc_comidas,1,',','.');?> comidas
 						<?php } ?>
 						</p>
 						<div class="linea-gris"> </div>
@@ -175,7 +175,7 @@ function changeDateEn2($fecha){
 							
 								$compartidas = 0;
 								$fecha2 = substr( str_replace('-', '', $fecha),0,8);
-								$sql =  "SELECT * from calorias where usuID=$usuID and DATE_FORMAT( calTS,  '%Y%m%d' )='$fecha2' and calImg != ''";
+								$sql =  "SELECT * from calorias where usuID=$usuID and DATE_FORMAT( calTS,  '%Y%m%d' )='$fecha2' and calShare = 1";
 								//echo $sql;
 							$ultimaCal = $db->rawQuery($sql);
 							foreach ($ultimaCal as $uc) {
@@ -201,7 +201,7 @@ function changeDateEn2($fecha){
 								</p>
 							</div>
 							<div class="col-xs-8">
-								<p class="calorias"><?php echo number_format($calVal);?> <?php if($lang=='en'){ ?>calories burned<?php }else{ ?>calorías quemadas<?php } ?><?php if($compartidas>0){ ?><br><?php echo $compartidas; ?> <?php if($lang=='en'){ ?>for sharing in social media<?php }else{ ?>por compartir en RRSS<?php } ?><?php } ?></p>
+								<p class="calorias"><?php if($lang=='en'){  echo number_format($calVal); }else{ echo number_format($calVal,0,',','.'); } ?> <?php if($lang=='en'){ ?>calories burned<?php }else{ ?>calorías quemadas<?php } ?><?php if($compartidas>0){ ?><br><?php if($lang=='en'){ echo number_format($compartidas); }else{ echo number_format($compartidas,0,',','.');  } ?> <?php if($lang=='en'){ ?>for sharing in social media<?php }else{ ?>por compartir en RRSS<?php } ?><?php } ?></p>
 							</div>
 						</div>
 						<?
