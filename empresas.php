@@ -310,7 +310,7 @@
 				<div class="col-xs-6"><a target="_blank" href="https://www.paz.cl/"><img class="img-responsive" src="assets/img/logos-empresas/09.png" alt=""></a></div>
 				<div class="col-xs-6"><a target="_blank" href="https://simple.ripley.cl/"><img class="img-responsive" src="assets/img/logos-empresas/08.png" alt=""></a></div>
 				<div class="col-xs-6"><a target="_blank" href="https://www.enjoy.cl/"><img class="img-responsive" src="assets/img/logos-empresas/12.png" alt=""></a></div>
-				<div class="col-xs-6"><a target="_blank" href="https://www.cocacoladechile.cl/productos/powerade"><img class="img-responsive" src="assets/img/logos-empresas/10.png" alt=""></a></div>
+				<div class="col-xs-6"><a target="_blank" href="https://www.coca-cola.cl"><img class="img-responsive" src="assets/img/logos-empresas/10.png" alt=""></a></div>
 				<div class="col-xs-6"><a target="_blank" href="http://www.merrell.cl/"><img class="img-responsive" src="assets/img/logos-empresas/merrel.png" alt=""></a></div>
 				<div class="col-xs-6"><a target="_blank" href="http://www.jugosbless.cl/"><img class="img-responsive" src="assets/img/logos-empresas/14.png" alt=""></a></div>
 				<div class="col-xs-6"><a target="_blank" href="http://www.youtopia.club/"><img class="img-responsive" src="assets/img/logos-empresas/03.png" alt=""></a></div>
@@ -319,7 +319,8 @@
 				<div class="col-xs-6"><a target="_blank" href="http://www.xterrachile.com/"><img class="img-responsive" src="assets/img/logos-empresas/01.png" alt=""></a></div>
 				<div class="col-xs-6"><a target="_blank" href="https://firstendurance.com"><img class="img-responsive" src="assets/img/logos-empresas/endurance.png" alt=""></a></div>
 				<div class="col-xs-6"><a target="_blank" href="javascript:void(0);"><img class="img-responsive" src="assets/img/logos-empresas/heav.png" alt=""></a></div>
-				<div class="col-xs-6"><a target="_blank" href="http://www.tyndallgroup.com/"><img class="img-responsive" src="assets/img/logos-empresas/06.png" alt=""></a></div>
+				<div class="col-xs-6"><a target="_blank" href="http://www.medproclinica.cl/"><img class="img-responsive" src="assets/img/logos-empresas/medpro.png" alt=""></a></div>
+				<div class="col-xs-6 col-xs-offset-3"><a target="_blank" href="http://www.tyndallgroup.com/"><img class="img-responsive" src="assets/img/logos-empresas/06.png" alt=""></a></div>
 			</div>
 		</div>
 	</section>

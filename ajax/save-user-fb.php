@@ -71,7 +71,7 @@ if($sexo == 'female'){
 			           "Content-type: text/html; charset=UTF-8" . "\r\n";	
 			           
 			if($_SESSION["burntogivelang"]=='en'){
-		    	$subject = "Thanks for join Burn to Give";
+		    	$subject = "Thanks for joining Burn to Give";
 				$msg = file_get_contents("mail/mail_en.html");    
 			}else{
 		    	$subject = "Gracias por unirte a Burn to Give";
