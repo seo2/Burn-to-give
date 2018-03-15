@@ -17,12 +17,18 @@ if($clave == ""){
 }
 
 if($err == 0){
-	$db->where ("usuPass", md5($clave));
+	$db->where ("usuMail", $email);
 	$user = $db->getOne ("usuarios");
 	if($db->count > 0){
 		//loguear
-		$_SESSION["burntogive"] = $user["usuID"];
-		echo "ok";
+		$clave = md5($clave);
+		$usuPass = $user['usuPass'];
+		if($usuPass == $clave){
+			$_SESSION["burntogive"] = $user["usuID"];
+			echo "ok";
+		}else{
+			echo "error";
+		}
 
 	}else{
 		echo "error";
